@@ -10,6 +10,24 @@ operation that finds no animal reports success and writes nothing. That flag buy
 animals their coats when one defName moves, and it buys them by making the loss invisible. Only
 animals on screen settle it.
 
+## What is settled before the game starts
+
+`_tools/Check-Coats.ps1` answers the three questions that do not need RimWorld running: every
+`texPath` has its three rotation files shipped, every shipped texture is referenced by some
+`texPath`, and the 26 defNames still exist in Megafauna with no `alternateGraphics` of their own
+already. It exits non-zero and names the file when one is missing.
+
+```
+powershell -File _tools/Check-Coats.ps1
+```
+
+The monorepo's shared checkers cover the rest and this mod passes all four: `Check-XmlFields.ps1`
+finds no element that fails to map to a 1.6 field, `Check-XmlClasses.ps1` resolves both `Class=`
+values, `Check-DefRefs.ps1` finds no dangling reference, and `Check-TypeRefs.ps1` finds no
+reference to a third-party type.
+
+None of that says the coats appear. That is what the scenarios below are for.
+
 ## Load order
 
 ```
