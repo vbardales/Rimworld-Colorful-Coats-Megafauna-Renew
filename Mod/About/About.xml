@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>nelim.colorfulcoats.spinomegafauna</packageId>
+  <name>Colorful Coats - Megafauna! 1.6</name>
+  <author>purpleyam - 1.6 port: nelim</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <url>https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew</url>
+  <incompatibleWith>
+    <li>purpleyam.colorfulcoats.spinomegafauna</li>
+  </incompatibleWith>
+  <modDependencies>
+    <li>
+      <packageId>Spino.Megafauna</packageId>
+      <displayName>Megafauna</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=1055485938</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Spino.Megafauna</li>
+  </loadAfter>
+  <description>Coat variations for 26 of Megafauna's prehistoric animals, so a mammoth herd is a herd of individuals rather than 12 copies of one mammoth. Between two and five extra coats each, 67 in all, and between 60% and 80% of animals get one - the rest keep the coat Spino drew.
+
+Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a single XML patch and 201 textures. Safe to add to a save in progress, and safe to remove from one; animals already on the map simply go back to their original coat.
+
+WHAT IS COVERED
+
+Andrewsarchus, Arthropleura, Castoroides, Chalicotherium, Daeodon, Deinotherium, Dinocrocuta, Diprotodon, Doedicurus, Elasmotherium, Enhydriodon, Gomphotaria, Josephoartigasia, Macrauchenia, Megalania, Paraceratherium, Platybelodon, Procoptodon, Pulmonoscorpius, Purussaurus, Sivatherium, Smilodon, Titanis, Uintatherium, Woolly mammoth and Zygolophodon.
+
+The most generous are the Chalicotherium with five extra coats, and the Enhydriodon and the Purussaurus with four.
+
+I am not the author of this mod. The textures and the whole idea are purpleyam's - all I did was the work needed to run it on 1.6. Credit goes to them; mistakes in the port are mine.
+
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 - declares 1.4 and nothing further.
+
+WHAT CHANGED IN THE PORT
+
+Nothing an animal can see. RimWorld 1.6 still has alternateGraphics and alternateGraphicChance on PawnKindDef under those names, Megafauna is still called Megafauna, and all 26 defNames the patch aims at are still there, so the patch does on 1.6 exactly what it did on 1.4. Two things were made sturdier rather than fixed:
+
+- Each of the 26 operations now reports success whether or not it found its animal. They sit in one PatchOperationSequence, and a sequence stops at the first operation that fails - so if a future release of Megafauna ever renamed one animal, every animal listed after it would have quietly lost its coats too. purpleyam already wrote it this way in the Vanilla Animals Expanded mod; this brings this one into line.
+- The four large screenshots left in the About folder were removed. RimWorld reads Preview.png and ModIcon.png and nothing else in there, and those four were 7.6 MB of the mod's 13.
+
+The colours, the chances and the 201 textures are untouched.
+
+CREDIT AND REMOVAL
+
+purpleyam declared no licence: no file in the mod, nothing in its About.xml, no linked repository, and nothing in the body of the description on its Steam page. It is republished here under the usual convention for abandoned mods - full credit, a link to the original, and removal on request. If purpleyam would rather this port did not exist, say so and it comes down: no argument, no delay.
+
+Source, changelog and attribution: https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew
+
+The port work was done with the help of an AI assistant (Claude, by Anthropic), under human direction and in-game testing. Thanks to purpleyam for the coats and to Spino for the animals.
+
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.</description>
+</ModMetaData>

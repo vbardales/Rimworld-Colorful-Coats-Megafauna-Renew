@@ -1,0 +1,91 @@
+# Colorful Coats - Megafauna! 1.6
+
+Port of **purpleyam's Colorful Coats - Megafauna!** to RimWorld 1.6.
+
+**I am not the author of this mod.** The coats and the whole idea are purpleyam's — all I did was
+the work needed to run it on 1.6. Credit goes to them; mistakes in the port are mine.
+
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 — declares 1.4 and
+nothing further. The page is still online; the mod is abandoned, not withdrawn.
+
+## What the mod does
+
+Coat variations for 26 of Megafauna's prehistoric animals: 67 extra coats, between two and five
+each, with a 60% to 80% chance of an animal getting one. A mammoth herd becomes a herd of
+individuals rather than twelve copies of one mammoth.
+
+One patch file, 201 textures, no `Defs`, no assembly, no Harmony, no DLC. Safe to add to a save in
+progress and safe to remove from one: it changes how an animal is drawn, nothing else.
+
+## What it needs
+
+**Megafauna**, by Spino — https://steamcommunity.com/workshop/filedetails/?id=1055485938 —
+declared as a dependency, and alive on 1.6.
+
+## What was checked, and what it found
+
+This is the rare port where 1.6 had broken nothing. The check is worth writing down anyway,
+because that claim is only worth something if it was tested.
+
+**The two fields still exist under those names.** Verified by reflection against the 1.6
+`Assembly-CSharp.dll`:
+
+```
+Verse.PawnKindDef.alternateGraphics      List<Verse.AlternateGraphic>
+Verse.PawnKindDef.alternateGraphicChance float
+Verse.AlternateGraphic.texPath           string
+```
+
+This is the failure mode that kills ported XML quietly. RimWorld does not stop for an element that
+matches no field — it logs one line and loads with the field unset. A renamed field here would
+have left every animal loading, walking and simply being the wrong colour.
+
+**The patch is not name-guarded**, unlike the other mods in this family. It is a bare
+`PatchOperationSequence`, so it applies wherever the defs are and stays quiet where they are not.
+That is why the rename that broke the Dodos mod could not touch this one. Megafauna is in any case
+still called `Megafauna`, still `Spino.Megafauna`, and declares 1.6.
+
+**All 26 `defName`s still exist**, all 67 `texPath`s resolve to shipped textures, no shipped
+texture is unreferenced, and Megafauna does not already define `alternateGraphics` on any of them.
+
+## The one change to the patch
+
+Each of the 26 operations now carries `<success>Always</success>`.
+
+`PatchOperationSequence` **stops at the first operation that returns false** — it does not skip and
+carry on. The flag was on the sequence, which silences the error but does not resume the run. So a
+single renamed animal would have cost that animal and **every animal listed after it** their
+coats, with nothing in the log to say so.
+
+purpleyam already wrote the Vanilla Animals Expanded mod this way, one flag per operation. This
+brings this one into line. It changes nothing about what happens today.
+
+The four large screenshots left in `About/` were also dropped. RimWorld reads `Preview.png` and
+`ModIcon.png` from that folder and nothing else, and those four were **7.6 MB of the mod's 13** —
+more than the textures.
+
+## Layout
+
+```
+Mod/          published — the junction into RimWorld/Mods points here
+  About/
+  Patches/
+  Textures/
+```
+
+Everything outside `Mod/` — this file, the changelog, the attribution — stays out of the Steam
+upload by construction. `SteamUGC.SetItemContent` takes the junction's target directory as it
+stands on disk, with no filtering.
+
+## Credit and removal
+
+purpleyam declared no licence, checked at all four places one could be: no `LICENSE` file, nothing
+in `About.xml`, no linked repository, and nothing in the body of the Steam description. Republished
+under the usual convention for abandoned mods — full credit, a link to the original, removal on
+request. If purpleyam would rather this did not exist, say so and it comes down.
+
+See [ATTRIBUTION.md](ATTRIBUTION.md) for what was taken and what was changed, [LICENSE](LICENSE)
+for what the MIT grant does and does not cover, and [CHANGELOG.md](CHANGELOG.md).
+
+The port work was done with the help of an AI assistant (Claude, by Anthropic), under human
+direction and in-game testing.

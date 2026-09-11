@@ -1,0 +1,51 @@
+# Changelog
+
+All notable changes to this mod are documented here.
+
+## [1.0.0] — 2026-09-05
+
+First release. Port of purpleyam's **Colorful Coats - Megafauna!** to RimWorld 1.6.
+
+Nothing in this mod was broken by 1.6. The one change to the patch is hardening, not a repair.
+
+### Changed
+
+- `<success>Always</success>` added to each of the 26 `PatchOperationAdd` operations.
+  `PatchOperationSequence` **stops at the first operation that returns false** — it does not skip
+  it and carry on. The flag was on the sequence itself, which silences the error but does not
+  resume the run, so one renamed animal would have cost that animal and every animal listed after
+  it their coats, with nothing in the log to say so. purpleyam already wrote the Vanilla Animals
+  Expanded mod this way, one flag per operation. Nothing changes today: all 26 animals are present.
+- `packageId` changed from `purpleyam.colorfulcoats.spinomegafauna` to
+  `nelim.colorfulcoats.spinomegafauna`.
+- `<supportedVersions>` set to 1.6.
+- `About/PublishedFileId.txt` dropped: it names purpleyam's Workshop item.
+
+### Removed
+
+- `About/colorfulmegafauna1.png` through `4.png`, **7.6 MB of the mod's 13** — more than the 4.6 MB
+  of textures. RimWorld reads `Preview.png` and `ModIcon.png` from that folder and nothing else;
+  those four were Workshop screenshots, which live on the Steam page and not in the download.
+- `About/Preview.png`, purpleyam's own. The port has its own showcase.
+
+### Unchanged
+
+- The 26 animals, their 67 coats, every `alternateGraphicChance`, and the 201 textures, byte for
+  byte.
+- The absence of a `PatchOperationFindMod` guard. The patch is a bare sequence, so it applies
+  wherever the defs are found and stays silent where they are not — which is why the mod rename
+  that broke the Dodos mod in this family could not touch this one. Adding a name guard would only
+  have narrowed it.
+- The `defName`s the patch aims at, which are not this mod's to choose.
+
+### Verified
+
+- `Verse.PawnKindDef.alternateGraphics` and `alternateGraphicChance`, and
+  `Verse.AlternateGraphic.texPath`, all still exist under those names in 1.6 — checked by
+  reflection against `Assembly-CSharp.dll`. An XML element matching no field does not stop the
+  game: it logs one line and loads with the field unset, so the animals would have loaded, walked,
+  and simply been the wrong colour.
+- All 26 `defName`s still exist in Megafauna's 1.6 release, which is still named `Megafauna` and
+  still `Spino.Megafauna`.
+- All 67 `texPath` values resolve to shipped textures; no shipped texture is unreferenced.
+- Megafauna does not already define `alternateGraphics` on any of the 26.
