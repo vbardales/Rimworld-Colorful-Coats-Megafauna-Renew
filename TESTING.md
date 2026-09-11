@@ -60,7 +60,18 @@ That order is what scenario B is about.
 `Player.log` sits in
 `%USERPROFILE%\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Player.log`.
 
-Every string below was read out of 1.6's own `Assembly-CSharp.dll` rather than remembered.
+Every string below was read out of 1.6's own `Assembly-CSharp.dll` rather than remembered. The
+messages are UTF-16 there, so an ASCII `grep` finds none of them — and decoding the file as
+Unicode from byte 0 finds only the ones that happen to start on an even byte. Search **both**
+alignments, or half the table comes back absent:
+
+```powershell
+$b = [IO.File]::ReadAllBytes($dll)
+foreach ($off in 0, 1) { [Text.Encoding]::Unicode.GetString($b, $off, $b.Length - $off).IndexOf($s) }
+```
+
+A string being in the assembly is not the same as a code path reaching it. The `Adding duplicate`
+row below is in the assembly and unreachable, which is the more useful half of what it says.
 
 | String in the log | Written by | What it would mean for this mod |
 |---|---|---|
@@ -68,7 +79,7 @@ Every string below was read out of 1.6's own `Assembly-CSharp.dll` rather than r
 | `Failed to find any textures at` | `Graphic_Multi.Init` | The same fault one level up: no rotation at all found for a coat. |
 | `doesn't correspond to any field in type` | `DirectXmlToObject` | The failure the port was checked against. It would name `alternateGraphics` or `alternateGraphicChance` and mean 1.6 renamed the field under us. The animals would still load, walk, and simply be the wrong colour. |
 | `Patch operation` … `failed` | `PatchOperation.Complete` | Expected count from this mod: **zero**, and here zero says nothing at all. Every operation carries `<success>Always</success>`. |
-| `Adding duplicate` | `DefDatabase.Add` | purpleyam's original is enabled alongside this port. `<incompatibleWith>` should make that impossible. |
+| `Adding duplicate` | `DefDatabase.Add` | **Never this mod.** The string is in the assembly, but nothing here can reach it: this mod declares no def of its own, and between two mods the message is unreachable anyway — `DefDatabase.AddAllInMods` removes the previous entry before adding, so a defName declared twice is overwritten in silence, last mod loaded winning. |
 | `Could not find type named` | `DirectXmlToObject.ClassTypeOf` | Only two `Class=` values are used here, both `Verse` patch operations. This would mean 1.6 renamed one of them. |
 
 Lines naming other mods are not ours to fix, and are worth leaving in whatever gets pasted back.
@@ -157,8 +168,11 @@ a list the def no longer has.
 ## H — the original enabled alongside
 
 - Try to enable purpleyam's `purpleyam.colorfulcoats.spinomegafauna` at the same time as this one.
-- `<incompatibleWith>` should refuse the pair. If both somehow load, the log fills with
-  `Adding duplicate`, and the animals end up with whichever list was applied last.
+- `<incompatibleWith>` should refuse the pair, and that refusal is the whole of the protection.
+- If both somehow load, **nothing is logged and nothing visibly breaks**. Neither mod declares a
+  def; both add an `<alternateGraphics>` element to the same `PawnKindDef`, and a field written
+  twice is simply read twice, the last one winning. The animals get coats either way, which is
+  exactly why this scenario cannot be judged from the screen.
 
 ## I — the mod list entry itself
 
