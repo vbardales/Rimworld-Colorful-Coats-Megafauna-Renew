@@ -1,4 +1,4 @@
-# Colorful Coats - Megafauna! 1.6
+# Colorful Coats - Megafauna! Renew
 
 Port of **purpleyam's Colorful Coats - Megafauna!** to RimWorld 1.6.
 

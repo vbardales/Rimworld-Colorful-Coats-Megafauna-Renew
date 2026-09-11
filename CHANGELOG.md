@@ -17,7 +17,12 @@ Nothing in this mod was broken by 1.6. The one change to the patch is hardening,
   it their coats, with nothing in the log to say so. purpleyam already wrote the Vanilla Animals
   Expanded mod this way, one flag per operation. Nothing changes today: all 26 animals are present.
 - `packageId` changed from `purpleyam.colorfulcoats.spinomegafauna` to
-  `nelim.colorfulcoats.spinomegafauna`.
+  `nelim.colorfulcoats.megafaunarenew`. `<incompatibleWith>` keeps purpleyam's, which is what that
+  field is for: the two mods patch the same 26 animals, and only one of them may.
+- `<name>` changed from `Colorful Coats - Megafauna!` to `Colorful Coats - Megafauna! Renew`, in
+  line with the Dodos port of the same family. Nothing was ever published under the earlier form
+  of the name, which said 1.6 where the repository said Renew, so this replaces it rather than
+  succeeding it.
 - `<supportedVersions>` set to 1.6.
 - `About/PublishedFileId.txt` dropped: it names purpleyam's Workshop item.
 
