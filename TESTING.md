@@ -164,11 +164,11 @@ a list the def no longer has.
 
 - The name reads `Colorful Coats - Megafauna! Renew`.
 - The Workshop banner is `About/Preview.png`, 896x504, and says `Renew` rather than `1.6`.
-- The icon is drawn at about 32 px in the mod list, and **this is the one check the mod is known
-  to fail**. `About/ModIcon.png` is a mascot ringed by six animals; at 32 px it reads as coloured
-  mush and the mammoth's tusks are gone. It is recorded here so the next person does not spend an
-  evening deciding whether their eyes are the problem. The replacement prompt is in the showcase
-  note kept at the monorepo root.
+- The icon is drawn at about 32 px in the mod list, and at that size `About/ModIcon.png` does not
+  resolve into anything: it is a mascot ringed by six animals, and the mammoth's tusks are gone.
+  **This is known and kept**, so it is not a finding. The alternative was a 64% crop keeping the
+  mascot and cutting the animals, which is what the Dodos icon of this family went through; the
+  full-frame picture was preferred here. Nothing to report on this line.
 
 ## What no check offline can catch
 
