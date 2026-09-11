@@ -8,6 +8,17 @@ First release. Port of purpleyam's **Colorful Coats - Megafauna!** to RimWorld 1
 
 Nothing in this mod was broken by 1.6. The one change to the patch is hardening, not a repair.
 
+### Added
+
+- `About/Preview.png`, drawn for this port and engraved at final size by `Art/preview.html`, with
+  the full-resolution source kept in `Art/` rather than in `About/`.
+- `About/ModIcon.png`. It does not read at 32 px, which is the size the mod list draws it at, and
+  is recorded as a known failure in `TESTING.md` rather than left to be rediscovered.
+- `TESTING.md`, nine in-game scenarios, and `_tools/Check-Coats.ps1` for the three questions that
+  can be answered without starting the game.
+- All of the above is port work and is listed in `LICENSE` among what the MIT grant covers.
+  purpleyam's coats and textures stay outside it, as they always were.
+
 ### Changed
 
 - `<success>Always</success>` added to each of the 26 `PatchOperationAdd` operations.

@@ -27,6 +27,9 @@ SCOPE OF THE ABOVE
 The MIT licence above covers only what the 1.6 port added:
 
   - the per-operation success flag on the 26 patch operations
+  - the showcase drawn for this port: About/Preview.png and About/ModIcon.png,
+    with the Art/ sources and the engraving page behind them
+  - the checker under _tools/ and the test scenarios
   - the packaging and the documentation
 
 IT DOES NOT COVER THE ORIGINAL MOD. The 67 coats, their chances and the 201
