@@ -1,19 +1,20 @@
 ---
-mod:        Colorful Coats - Megafauna! Renew
-packageId:  nelim.colorfulcoats.megafaunarenew
-repo:       Rimworld-Colorful-Coats-Megafauna-Renew
-visibility: public
-detached:   yes
-stage:      done
-licence:    silent
-licence_at: four places, the About and the Steam page among them
-showcase:   complete
+mod:          Colorful Coats - Megafauna! Renew
+packageId:    nelim.colorfulcoats.megafaunarenew
+repo:         Rimworld-Colorful-Coats-Megafauna-Renew
+visibility:   public
+detached:     yes
+stage:        done
+licence:      silent
+licence_at:   four places, the About and the Steam page among them
+dependencies: declared
+showcase:     complete
 tested_on:
 workshop:
 remaining:
   - unverified: no coat has ever been seen to appear in game
-session:    local_aa123338-053f-4ea8-a01d-068bdd74a18c
-updated:    2026-09-12, held by the mod's own thread
+session:      local_aa123338-053f-4ea8-a01d-068bdd74a18c
+updated:      2026-09-12, held by the mod's own thread
 ---
 
 # Colorful Coats - Megafauna! Renew — status
@@ -53,3 +54,9 @@ for the 201 textures and the 26 defNames, and the monorepo's four shared checker
 `stage` vocabulary: `port`, `showcase`, `preTest`, `done`, `tested`, `published`.
 `remaining` vocabulary: `feature` for something missing from a first release, `defect` for a known
 fault left unfixed, `unverified` for what could not be checked.
+
+- **`dependencies`** — `declared` when every mod this one needs is named in the About's
+  `modDependencies`, `to check` when a non-vanilla `loadAfter` suggests a dependency that is not
+  declared, `none` when the mod needs nothing. An undeclared dependency is not cosmetic: on
+  2026-09-11 Reequilibrage animaux took 47 vanilla animals down with it, Muffalo included, because
+  the class it injects belongs to a mod that was not declared and not loaded.
