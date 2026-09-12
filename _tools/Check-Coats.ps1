@@ -3,9 +3,8 @@
   Checks the three things about this mod that can be settled without starting the game.
 
 .DESCRIPTION
-  The shared checkers under the monorepo's scripts/ cover the general faults - unknown fields,
-  unresolved types, dangling def references - and this mod passes all of them. What they cannot
-  see is the only thing it actually does: hand 67 texture paths to 26 of another mod's animals.
+  Run alongside the repository's Check-Xml.ps1 for metadata and patch structure validation.
+  This script checks the texture paths and the installed Megafauna animal definitions.
 
   So, three checks, and each one is a question the game would otherwise answer by drawing nothing:
 

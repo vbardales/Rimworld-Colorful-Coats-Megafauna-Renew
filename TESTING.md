@@ -18,13 +18,17 @@ animals on screen settle it.
 already. It exits non-zero and names the file when one is missing.
 
 ```
-powershell -File _tools/Check-Coats.ps1
+pwsh -NoProfile -File _tools/Check-Coats.ps1
+pwsh -NoProfile -File _tools/Check-Xml.ps1
 ```
 
-The monorepo's shared checkers cover the rest and this mod passes all four: `Check-XmlFields.ps1`
-finds no element that fails to map to a 1.6 field, `Check-XmlClasses.ps1` resolves both `Class=`
-values, `Check-DefRefs.ps1` finds no dangling reference, and `Check-TypeRefs.ps1` finds no
-reference to a third-party type.
+`Check-Xml.ps1` parses all shipped XML, checks metadata, dependency and incompatibility declarations,
+the GitHub link, the 26 operations and their success flags, XPath selection on minimal fixtures,
+field names, probability bounds and 67 unique coat paths. Both scripts are local to this repository.
+The former monorepo's four shared checkers are historical verification, not available local tests.
+These static checks do not execute RimWorld's patch engine or validate types against its assembly.
+Verified with PowerShell 7.6.5 on 2026-09-12. Windows PowerShell (`powershell.exe`) was blocked by
+the machine's script execution policy; that policy was not changed.
 
 None of that says the coats appear. That is what the scenarios below are for.
 
@@ -176,7 +180,7 @@ a list the def no longer has.
 
 ## I — the mod list entry itself
 
-- The name reads `Colorful Coats - Megafauna! Renew`.
+- The name reads `Colorful Coats - Megafauna! Renew (unofficial)`.
 - The Workshop banner is `About/Preview.png`, 896x504, and says `Renew` rather than `1.6`.
 - The icon is drawn at about 32 px in the mod list, and at that size `About/ModIcon.png` does not
   resolve into anything: it is a mascot ringed by six animals, and the mammoth's tusks are gone.
