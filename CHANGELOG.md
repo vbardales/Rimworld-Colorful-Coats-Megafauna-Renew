@@ -2,6 +2,16 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased] — 2026-09-13
+
+- Qualified source-maintenance and permission findings in README, attribution, licence scope
+  notes and About metadata; synchronized the distributed attribution and licence copies.
+- Removed unsupported claims of completed in-game testing and established save compatibility.
+- Put the required Steam-formatted GitHub source link at the end of the About description.
+- Clarified functional-test setup and the limits of the probabilistic appearance check.
+- No patch, texture, image, identifier or dependency changed. Historical release notes below
+  are preserved; their broad compatibility claims are superseded by the current validation limits.
+
 ## [1.0.0] — 2026-09-05
 
 First release. Port of purpleyam's **Colorful Coats - Megafauna!** to RimWorld 1.6.

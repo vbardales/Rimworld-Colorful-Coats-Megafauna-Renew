@@ -10,6 +10,19 @@ operation that finds no animal reports success and writes nothing. That flag buy
 animals their coats when one defName moves, and it buys them by making the loss invisible. Only
 animals on screen settle it.
 
+## Shared setup and execution record
+
+Use RimWorld 1.6 with Core, Megafauna and this mod in the order below; keep the original
+Colorful Coats mod disabled except for scenario H. Enable developer mode. Record the game
+build, Megafauna version/date, repository revision plus local changes, language and results.
+Start a new colony for A-C, then save that colony for D. Use a backed-up existing Megafauna
+save for E-F. G-H deliberately alter the mod list; restore the baseline afterward.
+Run the suite in English and French, inspect Player.log after each load and check the
+mod-list presentation in both languages. Keep observations and log excerpts with each result.
+No settings page or MainButtons shortcut is expected from this mod.
+
+Execution status: not run. These instructions are scenarios, not successful test results.
+
 ## What is settled before the game starts
 
 `_tools/Check-Coats.ps1` answers the three questions that do not need RimWorld running: every
@@ -96,8 +109,10 @@ The one scenario that matters. Everything else assumes this one passed.
 
 - Dev mode on, spawn **20** with the debug spawn-pawn action, `WoollyMammoth`.
 - Expect roughly **14 coloured, 6 original**. Each animal rolls the coats at `0.7`.
-- **All 20 in the original coat means the defName moved**, not bad luck: at `0.7` a clean sweep is
-  about one run in thirty billion (`0.3^20`).
+- **All 20 in the original coat fails the appearance check.** At `0.7` that sample has
+  probability `0.3^20` (about one in 29 billion) if the expected independent rolls occur.
+  Investigate target names, mod activation and patch loading; this result alone does not
+  identify the cause.
 - If they all come out original, open Megafauna's own defs and read the `defName` on its mammoth
   as it stands today, then compare it against the xpath in
   `Mod/Patches/ColorfulCoats_Megafauna.xml`. Nothing in the log will have said a word.
@@ -142,9 +157,9 @@ goes into the save under that same name. The label is present in 1.6's assembly.
 
 ## E — added to a save in progress
 
-The README says this is safe. What "safe" means is worth pinning down, because the index is stored
-per animal: an animal generated before the mod was added has **no** index, and no index means the
-coat it was born with.
+The README leaves existing-save compatibility unverified. Test a backup: the expected behavior
+is that an animal generated before this mod was added retains its original coat, while newly
+generated animals can receive alternate coats. Record any difference from that expectation.
 
 - Add the mod to a running colony that already has Megafauna animals.
 - Expect the animals already in the save to stay exactly as they were, and **new** ones — spawned,

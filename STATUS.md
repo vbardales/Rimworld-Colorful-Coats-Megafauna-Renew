@@ -1,4 +1,12 @@
 ---
+settings_audit: not_applicable
+workflow_audit: partial
+rights_audit: partial
+audit_revision: 8bea896ca32fb21ad53fd444db6d1370b60ea021
+audit_date: 2026-09-13
+localization: not_applicable
+translation_en: not_applicable
+translation_fr: not_applicable
 mod:          Colorful Coats - Megafauna! Renew (unofficial)
 packageId:    nelim.colorfulcoats.megafaunarenew
 repo:         Rimworld-Colorful-Coats-Megafauna-Renew
@@ -6,26 +14,29 @@ remote:       https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Ren
 local_folder: C:/Users/nelim/Documents/rimworld/ColorfulCoatsMegafaunaRenew
 maintainer:   Codex, this repository's dedicated task
 visibility:   public
-visibility_reason: documented public silent continuation, no prohibition found; unofficial under PUBLISHING.md
+visibility_reason: historical public silent classification retained provisionally; abandonment premise unverified; see correction follow-up
 redistribution_permission: not found in sources checked 2026-09-12
 source_maintenance: last update 2022-10-26; abandonment not explicitly confirmed
-github_visibility: public (technical setting checked 2026-09-12)
+github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-stage:        done
+stage:        dansMonoRepo
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
 dependencies: declared
 showcase:     complete
 tested_on:
-automated_tests: passed, 2026-09-12, PowerShell 7.6.5
+automated_tests: passed, 2026-09-13, PowerShell 7.6.5
+xml_tests: passed, 2026-09-13, Check-Xml.ps1
 manual_tests: nine scenarios documented in TESTING.md, not executed
 workshop:
 remaining:
+  - unverified: source abandonment required by the publishing silent classification is not established
+  - unverified: execute scenarios A-I, inspect logs and presentation in English and French, including new game and existing save
   - unverified: no coat has ever been seen to appear in game
   - unverified: redistribution permission for original assets not established
 session:      local_aa123338-053f-4ea8-a01d-068bdd74a18c
-updated:      2026-09-12, held by the mod's own thread
+updated:      2026-09-13, held by the mod's own thread
 ---
 
 # Colorful Coats - Megafauna! Renew (unofficial) — status
@@ -33,6 +44,167 @@ updated:      2026-09-12, held by the mod's own thread
 Read by a sweep across every mod, rather than by asking each thread in turn. It lives at the
 root, never inside `Mod/`, so Steam never receives it. Dropped here by the sweep of 2026-09-12 and
 held since by this mod's thread, which updates it in the commit that changes what it describes.
+
+## Correction follow-up — 2026-09-13
+
+This follow-up and the front matter are the current result; the ordered audit below
+records the pre-correction findings and is preserved as history.
+
+Corrected all three documented defects: README and both ATTRIBUTION copies now describe
+the bounded source audit without asserting abandonment; README and About explicitly say
+in-game tests are unexecuted; About ends with the required Steam-formatted source link.
+The explanatory scope notes in both LICENSE copies were aligned without changing the MIT
+grant or extending it to third-party material. Existing-save compatibility is now described
+as unverified. Attribution identifies Spino's underlying artwork and the permission limit.
+TESTING.md now gives explicit new-game/existing-save and EN/FR setup, and avoids treating
+a random sample as proof of a specific failure cause. CHANGELOG records these corrections.
+
+Validation on HEAD `8bea896ca32fb21ad53fd444db6d1370b60ea021` plus the local changes in
+README.md, ATTRIBUTION.md, LICENSE, Mod/ATTRIBUTION.md, Mod/LICENSE, Mod/About/About.xml,
+TESTING.md, CHANGELOG.md and STATUS.md:
+
+- `pwsh -NoProfile -File _tools/Check-Coats.ps1`: PASS, including installed Megafauna
+  targets; 26 animals, 67 coats, 201 textures, no missing or orphan textures.
+- `pwsh -NoProfile -File _tools/Check-Xml.ps1`: PASS for both delivered XML files.
+- Parsed About.description and checked its trimmed ending against the exact expected
+  `[url=...]Source code on GitHub[/url]` link: PASS.
+- SHA-256 equality of each root/distribution LICENSE and ATTRIBUTION pair: PASS.
+- `git diff --check`: PASS. Patch, images, identifiers, dependency declarations and
+  scripts are unchanged. Settings/localization non-applicability and prior image checks
+  remain valid; no new in-game text was introduced.
+
+**Stage remains dansMonoRepo**, solely because the abandonment premise for the historical
+public/silent classification is still unverified. The documentary contradictions themselves
+are fixed. Establishing that premise, or another supported classification basis, remains
+the next gate; this edit does not invent evidence or infer active maintenance/prohibition.
+No remote visibility change, publication, author contact or game test was performed.
+All independently validated later gates are retained, including the now-corrected English
+description. Final in-game testing remains pending separately. Existing local STATUS edits
+and historical results were preserved; no commit or push was made.
+
+## Ordered workflow audit — 2026-09-13 (before corrections)
+
+At the time of this audit, this section superseded historical stage conclusions below, which
+are preserved as evidence. Applied the user's ordered workflow, with its explicit
+precedence over `../PUBLISHING.md`, `../STYLE_RIMWORLD.md`, `../MOD_SETTINGS.md` and
+`../TRANSLATIONS.md`; all four documents and `../AGENTS.md` were read.
+
+**Previous stage: done. Retained stage: dansMonoRepo.** This is the literal initial
+workflow state (no abbreviated code), meaning the first cumulative gate is incomplete.
+It does NOT mean the repository physically belongs to a monorepo: `detached: yes`
+remains verified. No repository move, remote removal or visibility change is required
+by this finding. The chain used here is:
+`dansMonoRepo -> horsMonoRepo -> ModIcon generated -> Preview generated -> preOptions
+-> options -> l10n -> preTest -> done -> tested`.
+
+### Scope and reproducibility
+
+- Autonomous Git root: `C:/Users/nelim/Documents/rimworld/ColorfulCoatsMegafaunaRenew`;
+  `.git` is its own directory, `git rev-parse --show-superproject-working-tree` is empty.
+  Distribution root: `Mod/`, tree object `2ca246143f45a989996b438570f2c45600307f00`.
+- Audited HEAD: `8bea896ca32fb21ad53fd444db6d1370b60ea021`. At entry only `STATUS.md`
+  was modified (the translation audit and its fields); those edits were preserved.
+  This audit edits only STATUS.md. No build, image generation, game launch, commit,
+  push or publication was performed. Delivered files and test scripts match HEAD.
+- `git remote -v`, `git ls-remote origin refs/heads/main` and `gh repo view ...
+  --json name,isPrivate,url`: GitHub exists, is public, and main equals audited HEAD.
+  Initial sandbox network/config access failed; the read-only retry with expanded
+  permissions succeeded. There is no outstanding GitHub-access uncertainty.
+- Recursive distribution inventory: two XML files, 203 PNGs (201 animal textures,
+  two About images), LICENSE and ATTRIBUTION.md. No C#, assembly, project, Defs,
+  Languages, LoadFolders or version-specific directory in this mod.
+- `pwsh -NoProfile -File _tools/Check-Coats.ps1`: PASS; 26 animals, 67 coats,
+  201 textures, no missing/orphan texture; 38 installed Megafauna 1.6 PawnKindDefs
+  read, all 26 targets present, none already has alternateGraphics. Dependency
+  checking was actually executed, not skipped.
+- `pwsh -NoProfile -File _tools/Check-Xml.ps1`: PASS; both XML files parsed,
+  metadata, 26 operations, XPath fixtures, success flags, probabilities and 67
+  unique coat paths checked. Runtime: PowerShell 7.6.5. Scripts were also read;
+  they are static tests, not execution of RimWorld's patch engine.
+- LICENSE and Mod/LICENSE hashes match; ATTRIBUTION.md and Mod/ATTRIBUTION.md
+  hashes match. MIT scope explicitly excludes original coats/chances/textures;
+  no third-party licence is invented. These copies share the documentation issue below.
+
+### Ordered transition results
+
+| Transition | Result and evidence |
+| --- | --- |
+| dansMonoRepo -> horsMonoRepo | **Incomplete: documented inconsistency and unverified premise.** Repository, pushed commit, identifiers, English documentation and scoped licence files pass. However README calls the original abandoned and both ATTRIBUTION copies call it dead, while the preserved source audit explicitly says abandonment was not established. PUBLISHING defines silent using abandonment; the public/silent rationale is therefore not fully established and consistent. This is not proof that the original is alive or that redistribution is prohibited. |
+| horsMonoRepo -> ModIcon generated | **Independent checks validated.** No unfinished implementation identified in the delivered patch. Build/compiled-artifact freshness is not applicable to XML and textures. ModIcon directly decoded/viewed: PNG, 128 x 128, 44,146 bytes. The documented owner decision to retain its crowded composition is preserved. The 20-30 KB guidance is not a hard blocker. |
+| ModIcon generated -> Preview generated | **Independent checks validated.** Delivered PNG directly viewed: 896 x 504, 682,412 bytes, below 1 MB. Also viewed Art/preview-268.png. Mammoth coats remain identifiable; no concrete camera defect, clipping or overlap found. No historical generation report or side-by-side game screenshot is required. |
+| Preview generated -> preOptions | **Visual/naming checks validated; publishing-description defect.** Orange-rust accent is distinct from pale ochre secondary ink at both sizes; Renew is reduced, unofficial is on its own line, no linking word requires reduction. About description is English. It does not end with the required `[url=...]Source code on GitHub[/url]`: its bare source URL occurs before credits/adoption text. The description also implies in-game testing without supporting execution results. |
+| preOptions -> options | **Not applicable, justified; gate passes independently.** See settings inventory below. No in-game evidence is required for this no-settings case under the user's precedence rule. |
+| options -> l10n | **Not applicable, justified; gate passes independently.** Rechecked every patch leaf: 26 alternateGraphicChance, 67 texPath, 26 xpath and 27 success values. Only internal paths, probabilities, selectors and flags are added. No owned display text, translation keys, parameters or DefInjected targets. Metadata is outside this gate; dependency animal text is not modified. |
+| l10n -> preTest | **Independent checks validated.** Sole required mod is installed Spino.Megafauna, declaring 1.6, matching modDependencies and loadAfter. All targets checked against its 1.6 Defs. Original package is incompatibleWith. No Harmony, DLC, custom classes, optional integration or conditional load folder is used here; no extra version constraint is evidenced as necessary. |
+| preTest -> done | **Independent offline checks validated.** TESTING.md contains A-I scenarios with common load-order setup, actions and expected outcomes. Both meaningful automated/XML scripts executed successfully on the delivered revision. Compiled-code tests are not applicable. This certifies offline readiness only, subject to earlier gates; it does not substantiate the README's in-game-testing claim. |
+| done -> tested | **Not verified.** No scenarios were executed in game during this audit and historical records explicitly leave them unexecuted. Actual coat appearance/rotations, persistence, adding/removing on an existing save, dependency/conflict behavior, logs and EN/FR mod-list presentation remain to be checked. New-game setup must be recorded alongside the existing-save cases. Settings and shortcut runtime tests are not applicable. |
+
+### Settings audit
+
+The complete behavior inventory is a fixed cosmetic expansion: original per-species
+chances (0.6-0.8), lists of alternate texture paths and patch success flags. These are
+content definitions, not a documented user configuration or a hidden XML-only settings
+interface. There is no demonstrated need to expose every coat/chance as a control for
+this faithful port; enabling/disabling the cosmetic pack already selects its scope.
+No inherited configuration or optional configuration integration is referenced.
+The full source/distribution inventory and patch structure show no Mod subclass,
+settings page, MainButtonDef or shortcut: no empty page or shortcut is exposed.
+Thus `settings_audit: not_applicable` is justified by behavior and source inspection,
+not merely by absence of an assembly. Input validation, saved settings, application
+timing, reset/migration and RIMMSQOL integration tests are not applicable. No integration
+was tested or certified. Animal-coat save persistence remains a separate game test.
+
+### Required next work and limits
+
+For the **next transition only**, reconcile README and both ATTRIBUTION copies with
+the qualified source findings, and establish/document the premise supporting the
+chosen rights classification and visibility under PUBLISHING. Explicit permission
+would be one possible basis, not an extra universal requirement for silent mods.
+The absence of permission alone does not trigger this downgrade. No legal prohibition,
+active maintenance or author abandonment is inferred here; the 2026-09-12 source audit
+is historical evidence and its live Steam investigation was not repeated today.
+
+For later gates, fix the description's final formatted source link and reconcile its
+and README's in-game-testing wording with the actual unexecuted scenarios. Then run
+the final in-game suite and record the game/dependency versions, language, save setup,
+observations and logs. Missing execution is an unverified check, not a gameplay defect.
+
+Optional only: the nine scenarios could use more uniform explicit setup headings;
+the probabilistic coat checks should describe an all-original sample as a failure to
+observe the feature, not definitive proof of one particular cause. No new feature,
+new image or automatic licence/visibility change is requested by this audit.
+
+## Translation audit — 2026-09-13 (historical; independently rechecked above)
+
+Applied the new gate in `../PUBLISHING.md` and `../TRANSLATIONS.md` to the working
+tree based on revision `8bea896ca32fb21ad53fd444db6d1370b60ea021`. All three translation
+fields are `not_applicable`: the inventory proves this mod adds or changes no in-game text.
+
+- Inspected the complete published tree with `Get-ChildItem Mod -Recurse -File`:
+  two XML files, 203 PNGs (201 animal textures and two About images), `LICENSE` and
+  `ATTRIBUTION.md`. There is no assembly, source code, Defs directory, language resource,
+  LoadFolders file, version-specific content or optional integration to audit separately.
+- Parsed every leaf element of `Mod/Patches/ColorfulCoats_Megafauna.xml` using
+  `SelectNodes('//*[not(*)]')`: 26 `alternateGraphicChance` values, 67 `texPath` values,
+  26 `xpath` selectors and 27 `success` flags. Read the patch structure and ran
+  `pwsh -NoProfile -File _tools/Check-Xml.ps1`: PASS for both XML files, all 26 operations
+  and all 67 coats. Each operation only adds `alternateGraphicChance` and
+  `alternateGraphics`; each coat only contains `texPath`.
+- These values are probabilities, internal paths, selectors and patch control flags.
+  No labels, descriptions, UI strings, generated text, translation keys or DefInjected
+  targets are introduced or replaced. Animal names and descriptions remain owned by
+  Megafauna; this mod reuses no translation keys and does not certify its dependency's
+  English or French coverage.
+- `Mod/About/About.xml`, the title embedded in the preview, licences and documentation
+  are publishing metadata/material outside the in-game translation gate. The About
+  description remains English as required by the publishing workflow.
+
+No English or French resources need to be added, and `Check-DefInjected.ps1` is not
+applicable because there are no injection paths. No translation-specific runtime checks
+remain: there is no owned text to exercise in either language. No in-game test was run;
+the existing functional scenarios remain unverified. The historical `stage: done` is
+preserved. Repeat this inventory after patch changes, and reset affected fields to
+`unchecked` if text, Defs, UI code or language resources are added or changed.
 
 ## Repository ownership and checks — 2026-09-12
 

@@ -8,7 +8,8 @@ Port of **purpleyam's Colorful Coats - Megafauna!** to RimWorld 1.6.
 the work needed to run it on 1.6. Credit goes to them; mistakes in the port are mine.
 
 Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 — declares 1.4 and
-nothing further. The page is still online; the mod is abandoned, not withdrawn.
+nothing further in the installed source copy. The source audit of 2026-09-12 recorded
+its last Workshop update as 2022-10-26; abandonment was not established.
 
 ## What the mod does
 
@@ -16,8 +17,9 @@ Coat variations for 26 of Megafauna's prehistoric animals: 67 extra coats, betwe
 each, with a 60% to 80% chance of an animal getting one. A mammoth herd becomes a herd of
 individuals rather than twelve copies of one mammoth.
 
-One patch file, 201 textures, no `Defs`, no assembly, no Harmony, no DLC. Safe to add to a save in
-progress and safe to remove from one: it changes how an animal is drawn, nothing else.
+One patch file, 201 textures, no `Defs`, no assembly, no Harmony, no DLC. It changes animal
+graphics. Adding or removing it on an existing save and coat persistence remain unverified
+in game; use a backup when running the scenarios in TESTING.md.
 
 ## What it needs
 
@@ -26,8 +28,8 @@ declared as a dependency, and alive on 1.6.
 
 ## What was checked, and what it found
 
-This is the rare port where 1.6 had broken nothing. The check is worth writing down anyway,
-because that claim is only worth something if it was tested.
+The recorded compatibility inspection and current static checks found no field, target or
+texture-path mismatch. In-game behavior has not yet been validated.
 
 **The two fields still exist under those names.** Verified by reflection against the 1.6
 `Assembly-CSharp.dll`:
@@ -82,14 +84,17 @@ filtering.
 
 ## Credit and removal
 
-purpleyam declared no licence, checked at all four places one could be: no `LICENSE` file, nothing
-in `About.xml`, no linked repository, and nothing in the body of the Steam description. Republished
-under the usual convention for abandoned mods — full credit, a link to the original, removal on
-request. If purpleyam would rather this did not exist, say so and it comes down.
+The source audit of 2026-09-12 found no explicit licence, redistribution permission or
+prohibition in the installed original, its Steam description and comments, or the author's
+public profile. No source repository was linked in the inspected material. This is a bounded
+finding, not proof of abandonment or permission. The public repository retains its historical
+`silent` classification pending verification of that classification's abandonment premise.
+Credit and removal on request do not grant redistribution rights. If purpleyam would rather
+this did not exist, say so and it comes down.
 
 See [TESTING.md](TESTING.md) for what the game has to settle, [ATTRIBUTION.md](ATTRIBUTION.md) for
 what was taken and what was changed, [LICENSE](LICENSE) for what the MIT grant does and does not
 cover, and [CHANGELOG.md](CHANGELOG.md).
 
 The port work was done with the help of an AI assistant (Claude, by Anthropic), under human
-direction and in-game testing.
+direction. Static checks pass; the in-game scenarios have not been executed.

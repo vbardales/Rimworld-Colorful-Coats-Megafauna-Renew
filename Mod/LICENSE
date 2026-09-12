@@ -37,12 +37,15 @@ textures are purpleyam's work, reused here:
 
   https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727
 
-purpleyam never declared a licence for them, so none is granted here and none
-can be. They are redistributed under the usual practice for abandoned mods -
-explicit credit, a link to the original, and removal on request.
+No explicit licence or redistribution permission was found in the sources
+inspected on 2026-09-12; none is granted here for that original material.
+Abandonment is unverified. Credit, a link to the original and removal on request
+are commitments, not a grant of permission. See ATTRIBUTION.md for the audit scope.
 
 The animals themselves are neither purpleyam's nor mine: they belong to Spino's
-Megafauna. This mod ships no part of it and only patches it at load time.
+Megafauna. This mod patches its animal definitions at load time and ships
+purpleyam's alternate textures; the original description credits Spino for
+the base textures. Permission for that underlying artwork is not established.
 
 If purpleyam asks for this to be taken down, it comes down. Immediately, and
 without discussion.

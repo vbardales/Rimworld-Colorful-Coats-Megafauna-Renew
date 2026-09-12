@@ -5,16 +5,24 @@ A 1.6 port of **Colorful Coats - Megafauna!**, by **purpleyam**
 
 ## Status: public
 
-The source mod is **dead** — it declares 1.4 and nothing further — and **no licence is declared
-anywhere**, checked at the four places one could be: no `LICENSE` file in the mod, no mention in
-its `About.xml`, no linked repository (`<url>` is absent entirely), and nothing in the body of
-the description on its Steam page. That last check is the one that matters: it is the one that
-was skipped once on たたら製鉄, whose ban on redistribution turned out to be a sentence in its
-description and nowhere else.
+The source audit of 2026-09-12 recorded a last Workshop update of 2022-10-26 and an
+installed source copy declaring support through RimWorld 1.4. These observations do not
+establish abandonment. No explicit licence, redistribution permission or prohibition was
+found in the installed files, the Steam description, all 15 item comments or the author's
+public profile. No source repository was linked in the material inspected. This does not
+claim that no licence or repository exists elsewhere.
 
-This is the usual convention for ports on the RimWorld Workshop: republished with **credit by
-name** and **removal on request, without argument**. The `<author>` field reads
-`purpleyam - 1.6 port: nelim`, and the removal clause is in the description.
+The repository is public and retains the historical `silent` classification and `(unofficial)`
+notice. The abandonment premise required by the publishing workflow remains unverified;
+this classification is provisional, not a finding of author consent. No active maintenance
+or explicit prohibition was established either. Credit and removal on request are commitments,
+not permission. The `<author>` field reads `purpleyam - 1.6 port: nelim`, and the removal
+clause is in the description. The first workflow gate remains pending in STATUS.md.
+
+The original description credits Spino for the base textures. The same source audit found
+no explicit reuse permission in the inspected Megafauna files, Steam description or texture
+reuse discussion. Permission for the underlying artwork therefore also remains unverified.
+The MIT grant covers port additions only and excludes the original artwork and coat data.
 
 purpleyam published four mods under the *Colorful Coats* name. Three are ported, each in its own
 repository; the fourth is not, for the reason given at the end of this file.
@@ -62,10 +70,10 @@ Verse.AlternateGraphic.texPath           string
 A `PatchOperationAdd` puts both onto each animal's `PawnKindDef`, and the game then rolls a coat
 for each animal as it is generated. That is the entire mod.
 
-## Nothing was broken
+## Static compatibility findings
 
-This is the rare port where 1.6 had broken nothing at all, and the check is worth recording
-because it is what makes that claim more than an assumption.
+The recorded inspection and static checks below found no compatibility mismatch in their
+scope. They do not establish that the coats render correctly in game; that remains untested.
 
 - **Both `PawnKindDef` fields still exist under those names.** This is the failure mode that
   kills ported XML quietly: RimWorld does not stop for an element that matches no field, it logs
