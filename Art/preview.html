@@ -1,52 +1,40 @@
-<!doctype html><meta charset="utf-8">
-<!--
-  Engraving page for Mod/About/Preview.png, per STYLE_RIMWORLD.md.
-
-  Rasterised with headless Chrome at 896x504, so the glyphs are composed at final size and never
-  resampled. The background is Preview-source.png at full resolution, scaled and cropped here
-  rather than beforehand: starting from an already-reduced Preview.png would resample the picture
-  twice.
-
-    chrome --headless --disable-gpu --screenshot=Mod/About/Preview.png \
-           --window-size=896,504 --hide-scrollbars Art/preview.html
-
-  The source is 1536x1024, which is 3:2, so 160 source pixels of height have to go. The crop is
-  centred: taking it all off the bottom would cut the feet of the nearest mammoth, and taking it
-  all off the top would eat the dark corner the title sits in.
-
-  The count is engraved: 26 animals is a number that cannot move. The source mod stopped at 1.4
-  and the patch names its 26 defNames one by one, so nothing outside this repository can change
-  it. See the rule in STYLE_RIMWORLD.md.
--->
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Colorful Coats - Megafauna! Renew</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html,body { width:896px; height:504px; overflow:hidden; background:#000; }
-  .stage { position:relative; width:896px; height:504px;
-           font-family:"Segoe UI",system-ui,sans-serif; }
-
-  /* Centred crop, see above. The herd walks from the lower left to the upper right, so the
-     diagonal survives either way; what does not survive is losing the feet. */
-  .shot { position:absolute; inset:0; width:896px; height:504px;
-          object-fit:cover; object-position:50% 50%; }
-
-  /* Repository standard: radial darkening from the top-left, nil at 74%. It lands on the bare
-     snow and the dark rocks above the settler, which is the calmest corner of the picture and
-     the one the prompt reserved. */
-  .veil { position:absolute; inset:0;
-    background: radial-gradient(circle at 0% 0%, rgba(6,5,4,.86) 0%, rgba(6,5,4,0) 74%); }
-
-  .text { position:absolute; left:56px; top:92px; width:430px; }
-  h1 { font-size:40px; line-height:1.06; font-weight:700; color:#f2ece1;
-       letter-spacing:-.5px; text-shadow:0 2px 10px rgba(0,0,0,.7); }
-  .rule { width:58px; height:3px; background:#D68F2C; margin:22px 0 20px; }
-  p { font-size:21px; line-height:1.42; color:#d8cfc0; text-shadow:0 1px 6px rgba(0,0,0,.75); }
-</style>
-<div class="stage">
-  <img class="shot" src="Preview-source.png">
-  <div class="veil"></div>
-  <div class="text">
-    <h1>Colorful Coats -<br>Megafauna! Renew</h1>
-    <div class="rule"></div>
-    <p>Coat variations for 26 prehistoric animals, so a mammoth herd is a herd of individuals.</p>
-  </div>
-</div>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body,.stage { width:896px; height:504px; overflow:hidden; }
+.stage { position:relative; font-family:"Segoe UI",system-ui,sans-serif; color:var(--inkPrimary); }
+.shot { position:absolute; inset:0; width:896px; height:504px; object-fit:cover; object-position:50% 50%; }
+/* Extended opacity protects the summary from bright snow. Palette comes only from JSON. */
+.veil { position:absolute; inset:0; background:radial-gradient(ellipse 900px 680px at top left,rgb(var(--veilRGB) / .94) 0%,rgb(var(--veilRGB) / .90) 60%,rgb(var(--veilRGB) / 0) 100%); }
+.text { position:absolute; left:50px; top:54px; width:460px; text-shadow:0 3px 10px rgb(0 0 0 / .75); }
+h1 { font-size:46px; line-height:1.1; font-weight:600; letter-spacing:0; }
+h1 .suffix { font-size:.65em; color:var(--inkSecondary); white-space:nowrap; }
+.tag { font-size:24px; font-weight:400; line-height:1.1; letter-spacing:.2px; margin-top:8px; color:var(--inkSecondary); }
+.rule { width:58px; height:3px; background:var(--accent); margin:20px 0 16px; }
+.summary { width:430px; font-size:21px; font-weight:400; line-height:1.45; }
+.badge { position:absolute; right:0; top:0; width:80px; height:80px; background:var(--accent); clip-path:polygon(0 0,100% 0,100% 100%); }
+.version { position:absolute; left:869px; top:27px; transform:translate(-50%,-50%) rotate(45deg); font-size:26px; font-weight:700; line-height:1; color:var(--badgeInk); }
+.background-only .text,.background-only .version { visibility:hidden; }
+</style></head><body><main class="stage">
+<img class="shot" src="Preview.png" alt="Mammoths with different coats crossing snowy ground"><div class="veil"></div>
+<section class="text"><h1><span id="title-first">Colorful Coats -</span><br><span id="title-second">Megafauna!</span> <span class="suffix" id="suffix">Renew</span></h1>
+<p class="tag" id="tag"></p><div class="rule"></div>
+<p class="summary" id="summary">Coat variations for 26 prehistoric animals, so a mammoth herd is a herd of individuals.</p></section>
+<div class="badge"></div><span class="version" id="version"></span></main>
+<script>
+window.previewReady = (async () => {
+ const [palette, aboutText, status] = await Promise.all([fetch('preview-palette.json').then(r=>r.json()),fetch('../Mod/About/About.xml').then(r=>r.text()),fetch('../STATUS.md').then(r=>r.text())]);
+ for(const [key,value] of Object.entries(palette)) document.documentElement.style.setProperty('--'+key,value);
+ document.documentElement.style.setProperty('--veilRGB',palette.veil.slice(1).match(/../g).map(v=>parseInt(v,16)).join(' '));
+ const about=new DOMParser().parseFromString(aboutText,'application/xml');
+ const versions=[...about.querySelectorAll('supportedVersions > li')].map(n=>n.textContent.trim()).filter(v=>/^\d+\.\d+$/.test(v));
+ versions.sort((a,b)=>{const x=a.split('.').map(Number),y=b.split('.').map(Number);return y[0]-x[0]||y[1]-x[1];});
+ if(!versions.length) throw new Error('No stable supported version');
+ document.querySelector('#version').textContent=versions[0];
+ const tag=document.querySelector('#tag');
+ tag.textContent=/^visibility:\s*private\s*$/m.test(status)?'(prohibited)':/\(unofficial\)/.test(about.querySelector('name').textContent)?'(unofficial)':'';
+ if(!tag.textContent) tag.remove();
+ await document.fonts.ready; await document.querySelector('.shot').decode();
+ return {palette,version:versions[0],tag:tag.textContent};
+})();
+</script></body></html>

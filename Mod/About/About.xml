@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <packageId>nelim.colorfulcoats.megafaunarenew</packageId>
-  <name>Colorful Coats - Megafauna! Renew</name>
+  <name>Colorful Coats - Megafauna! Renew (unofficial)</name>
   <author>purpleyam - 1.6 port: nelim</author>
   <supportedVersions>
     <li>1.6</li>
@@ -20,7 +20,9 @@
   <loadAfter>
     <li>Spino.Megafauna</li>
   </loadAfter>
-  <description>Coat variations for 26 of Megafauna's prehistoric animals, so a mammoth herd is a herd of individuals rather than 12 copies of one mammoth. Between two and five extra coats each, 67 in all, and between 60% and 80% of animals get one - the rest keep the coat Spino drew.
+  <description>UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+Coat variations for 26 of Megafauna's prehistoric animals, so a mammoth herd is a herd of individuals rather than 12 copies of one mammoth. Between two and five extra coats each, 67 in all, and between 60% and 80% of animals get one - the rest keep the coat Spino drew.
 
 Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a single XML patch and 201 textures. Safe to add to a save in progress, and safe to remove from one; animals already on the map simply go back to their original coat.
 

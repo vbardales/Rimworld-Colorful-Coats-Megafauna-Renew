@@ -1,4 +1,6 @@
-# Colorful Coats - Megafauna! Renew
+# Colorful Coats - Megafauna! Renew (unofficial)
+
+UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
 
 Port of **purpleyam's Colorful Coats - Megafauna!** to RimWorld 1.6.
 

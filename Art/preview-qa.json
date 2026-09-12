@@ -1,0 +1,162 @@
+{
+  "date": "2026-09-12T21:26:38.359Z",
+  "settings": {
+    "palette": {
+      "veil": "#343838",
+      "inkPrimary": "#F2ECE1",
+      "inkSecondary": "#E8CE9B",
+      "accent": "#EC7138",
+      "badgeInk": "#17120E"
+    },
+    "version": "1.6",
+    "tag": "(unofficial)"
+  },
+  "dimensions": {
+    "width": 896,
+    "height": 504
+  },
+  "bytes": 682412,
+  "rects": {
+    "title-first": {
+      "x": 50,
+      "y": 48,
+      "width": 328,
+      "height": 62,
+      "color": "rgb(242, 236, 225)"
+    },
+    "title-second": {
+      "x": 50,
+      "y": 98.59375,
+      "width": 250.21875,
+      "height": 62,
+      "color": "rgb(242, 236, 225)"
+    },
+    "suffix": {
+      "x": 312.875,
+      "y": 116.59375,
+      "width": 89.65625,
+      "height": 40,
+      "color": "rgb(232, 206, 155)"
+    },
+    "tag": {
+      "x": 50,
+      "y": 163.1875,
+      "width": 460,
+      "height": 26.390625,
+      "color": "rgb(232, 206, 155)"
+    },
+    "summary": {
+      "x": 50,
+      "y": 228.578125,
+      "width": 430,
+      "height": 60.875,
+      "color": "rgb(242, 236, 225)"
+    },
+    "version": {
+      "x": 846.7371826171875,
+      "y": 4.737185001373291,
+      "width": 44.525634765625,
+      "height": 44.52562713623047,
+      "color": "rgb(23, 18, 14)"
+    }
+  },
+  "fonts": {
+    "title-first": [
+      {
+        "familyName": "Segoe UI Semibold",
+        "postScriptName": "SegoeUI-Semibold",
+        "isCustomFont": false,
+        "glyphCount": 16
+      }
+    ],
+    "title-second": [
+      {
+        "familyName": "Segoe UI Semibold",
+        "postScriptName": "SegoeUI-Semibold",
+        "isCustomFont": false,
+        "glyphCount": 10
+      }
+    ],
+    "suffix": [
+      {
+        "familyName": "Segoe UI Semibold",
+        "postScriptName": "SegoeUI-Semibold",
+        "isCustomFont": false,
+        "glyphCount": 5
+      }
+    ],
+    "tag": [
+      {
+        "familyName": "Segoe UI",
+        "postScriptName": "SegoeUI",
+        "isCustomFont": false,
+        "glyphCount": 12
+      }
+    ],
+    "summary": [
+      {
+        "familyName": "Segoe UI",
+        "postScriptName": "SegoeUI",
+        "isCustomFont": false,
+        "glyphCount": 86
+      }
+    ],
+    "version": [
+      {
+        "familyName": "Segoe UI",
+        "postScriptName": "SegoeUI-Bold",
+        "isCustomFont": false,
+        "glyphCount": 3
+      }
+    ]
+  },
+  "contrast": {
+    "title-first": {
+      "minimumContrast": 9.461718299754326,
+      "point": {
+        "x": 377,
+        "y": 109
+      },
+      "pass": true
+    },
+    "title-second": {
+      "minimumContrast": 9.501766625126017,
+      "point": {
+        "x": 287,
+        "y": 139
+      },
+      "pass": true
+    },
+    "suffix": {
+      "minimumContrast": 6.762126176593624,
+      "point": {
+        "x": 397,
+        "y": 145
+      },
+      "pass": true
+    },
+    "tag": {
+      "minimumContrast": 6.4320650581818315,
+      "point": {
+        "x": 477,
+        "y": 163
+      },
+      "pass": true
+    },
+    "summary": {
+      "minimumContrast": 5.718546665281816,
+      "point": {
+        "x": 471,
+        "y": 287
+      },
+      "pass": true
+    },
+    "version": {
+      "minimumContrast": 6.185918182401853,
+      "point": null,
+      "pass": true
+    }
+  },
+  "method": "Minimum over every pixel in each full text bounding rectangle on a second render with text hidden; badge against its opaque accent. CDP reports actual fonts.",
+  "pass": true
+}
