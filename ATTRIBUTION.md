@@ -6,18 +6,19 @@ A 1.6 port of **Colorful Coats - Megafauna!**, by **purpleyam**
 ## Status: public
 
 The source audit of 2026-09-12 recorded a last Workshop update of 2022-10-26 and an
-installed source copy declaring support through RimWorld 1.4. These observations do not
-establish abandonment. No explicit licence, redistribution permission or prohibition was
+installed source copy declaring support through RimWorld 1.4. The absence of declared 1.6
+support meets the project's definition of abandoned, clarified on 2026-09-13.
+No explicit licence, redistribution permission or prohibition was
 found in the installed files, the Steam description, all 15 item comments or the author's
 public profile. No source repository was linked in the material inspected. This does not
 claim that no licence or repository exists elsewhere.
 
-The repository is public and retains the historical `silent` classification and `(unofficial)`
-notice. The abandonment premise required by the publishing workflow remains unverified;
-this classification is provisional, not a finding of author consent. No active maintenance
-or explicit prohibition was established either. Credit and removal on request are commitments,
+The repository is public with the `silent` classification and `(unofficial)` notice.
+The original declares versions 1.2, 1.3 and 1.4, not 1.6; no explicit author declaration
+of abandonment or inactivity threshold is required by this workflow. This establishes
+the classification, not author consent. Credit and removal on request are commitments,
 not permission. The `<author>` field reads `purpleyam - 1.6 port: nelim`, and the removal
-clause is in the description. The first workflow gate remains pending in STATUS.md.
+clause is in the description. The first workflow gate is validated in STATUS.md.
 
 The original description credits Spino for the base textures. The same source audit found
 no explicit reuse permission in the inspected Megafauna files, Steam description or texture

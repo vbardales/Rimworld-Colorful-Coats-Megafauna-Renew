@@ -4,6 +4,9 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased] — 2026-09-13
 
+- Applied the clarified publishing definition: an original without declared RimWorld 1.6
+  support qualifies as abandoned for the workflow. Restored `done`; final game tests remain pending.
+
 - Qualified source-maintenance and permission findings in README, attribution, licence scope
   notes and About metadata; synchronized the distributed attribution and licence copies.
 - Removed unsupported claims of completed in-game testing and established save compatibility.

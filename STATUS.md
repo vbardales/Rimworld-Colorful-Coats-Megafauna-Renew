@@ -1,7 +1,7 @@
 ---
 settings_audit: not_applicable
-workflow_audit: partial
-rights_audit: partial
+workflow_audit: complete_through_done
+rights_audit: complete
 audit_revision: 8bea896ca32fb21ad53fd444db6d1370b60ea021
 audit_date: 2026-09-13
 localization: not_applicable
@@ -14,12 +14,12 @@ remote:       https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Ren
 local_folder: C:/Users/nelim/Documents/rimworld/ColorfulCoatsMegafaunaRenew
 maintainer:   Codex, this repository's dedicated task
 visibility:   public
-visibility_reason: historical public silent classification retained provisionally; abandonment premise unverified; see correction follow-up
+visibility_reason: public silent source without declared 1.6 support or prohibition found; unofficial notice present
 redistribution_permission: not found in sources checked 2026-09-12
-source_maintenance: last update 2022-10-26; abandonment not explicitly confirmed
+source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the project definition of no declared 1.6 support
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-stage:        dansMonoRepo
+stage:        done
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
@@ -31,7 +31,6 @@ xml_tests: passed, 2026-09-13, Check-Xml.ps1
 manual_tests: nine scenarios documented in TESTING.md, not executed
 workshop:
 remaining:
-  - unverified: source abandonment required by the publishing silent classification is not established
   - unverified: execute scenarios A-I, inspect logs and presentation in English and French, including new game and existing save
   - unverified: no coat has ever been seen to appear in game
   - unverified: redistribution permission for original assets not established
@@ -44,6 +43,66 @@ updated:      2026-09-13, held by the mod's own thread
 Read by a sweep across every mod, rather than by asking each thread in turn. It lives at the
 root, never inside `Mod/`, so Steam never receives it. Dropped here by the sweep of 2026-09-12 and
 held since by this mod's thread, which updates it in the commit that changes what it describes.
+
+## Workflow definition clarified — 2026-09-13
+
+This section and the front matter supersede the historical conclusions below.
+The user clarified that abandoned means no declared RimWorld 1.6 support, with no
+additional requirement. Updated `../PUBLISHING.md` accordingly. Requiring an author
+statement or proof of intent was an audit interpretation error, not a missing feature.
+
+Re-read the installed original's About.xml at Steam workshop item 2560113727:
+supportedVersions contains 1.2, 1.3 and 1.4, not 1.6. Together with the documented
+source-permission inventory, this establishes `silent` under the clarified workflow.
+`rights_audit: complete` certifies classification and accurate licence scope, not
+redistribution consent. No prohibition was found in the inspected sources. The public
+decision, unofficial notice and MIT exclusion of third-party material remain coherent.
+
+**Stage: dansMonoRepo -> done.** All prior independent validations through done are
+retained; the only remaining first-gate concern is resolved by the clarified definition.
+README, ATTRIBUTION and its distributed copy, LICENSE and its distributed copy, and
+About metadata were aligned. No patch, texture, image, settings or translation changed.
+Historical audit results are preserved below; their provisional-classification conclusions
+are superseded. The permission question is recorded as a limit, not an extra stage gate.
+
+Scope: commit `5545dea` plus these local documentation/metadata edits and the existing
+post-commit STATUS update. The shared publishing policy is outside this standalone repo.
+The next transition is done -> tested: execute the documented in-game scenarios,
+including logs, English/French presentation, new game and existing-save cases. No in-game
+test is claimed. No publication, remote visibility change or additional commit was made.
+
+Post-edit validation: Check-Coats.ps1 and Check-Xml.ps1 both executed successfully
+under PowerShell 7.6.5, including all 26 installed Megafauna targets and 201 textures.
+SHA-256 comparisons confirm both distributed document copies match their root versions;
+`git diff --check` passed. Results apply to this modified working tree.
+
+## Source verification after commit — 2026-09-13 (historical)
+
+Committed the corrections as `5545dea` (`Correct audit documentation and publishing
+metadata`), then verified the working tree was clean. No push was requested or performed.
+This section is a subsequent local status update, not part of that commit.
+
+Revisited the remaining classification premise using direct HTTPS reads after the web
+reader returned a rate-limit page and the Firecrawl CLI was unavailable:
+
+- [Original item](https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727&l=english):
+  successful response; last update still 26 October 2022. Read its description: no explicit
+  abandonment, permission or prohibition statement. It credits Spino for original textures.
+- [All item comments](https://steamcommunity.com/comment/PublishedFile_Public/render/76561198342847927/2560113727/?start=0&count=100):
+  read all 15 returned comments. The author's comment thanks players; other commenters
+  discuss compatibility, including questions about 1.6. No author declaration settling
+  abandonment or redistribution permission was found.
+- [Author profile](https://steamcommunity.com/profiles/76561198342847927/?l=english):
+  successful response; public content provides no statement settling either question.
+  An offline indicator is not evidence of abandoned development.
+
+Result: inactivity is supported, but the outstanding classification premise is still
+unverified. No code or documentation edit can establish author intent. Stage remains
+unchanged; no new gameplay or licensing defect is inferred. Resolving this point requires
+additional source evidence or an explicit project decision about whether documented
+long-term inactivity satisfies its `silent` classification. No author contact, change
+to the shared policy, visibility change or fabricated permission was made. The previous
+automated checks remain applicable because only STATUS.md changed after the commit.
 
 ## Correction follow-up — 2026-09-13
 

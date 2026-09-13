@@ -9,7 +9,8 @@ the work needed to run it on 1.6. Credit goes to them; mistakes in the port are 
 
 Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 — declares 1.4 and
 nothing further in the installed source copy. The source audit of 2026-09-12 recorded
-its last Workshop update as 2022-10-26; abandonment was not established.
+its last Workshop update as 2022-10-26. It qualifies as abandoned under this project's
+workflow because it does not declare RimWorld 1.6 support.
 
 ## What the mod does
 
@@ -87,8 +88,8 @@ filtering.
 The source audit of 2026-09-12 found no explicit licence, redistribution permission or
 prohibition in the installed original, its Steam description and comments, or the author's
 public profile. No source repository was linked in the inspected material. This is a bounded
-finding, not proof of abandonment or permission. The public repository retains its historical
-`silent` classification pending verification of that classification's abandonment premise.
+finding, not proof of permission. Under the publishing definition clarified on 2026-09-13,
+the absence of declared 1.6 support establishes the `silent` classification for this source.
 Credit and removal on request do not grant redistribution rights. If purpleyam would rather
 this did not exist, say so and it comes down.
 
