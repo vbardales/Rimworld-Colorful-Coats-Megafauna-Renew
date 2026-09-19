@@ -325,7 +325,7 @@ The title already carries the appropriate `(unofficial)` suffix in `Mod/About/Ab
 `README.md`; no additional suffix is needed. The About description includes
 https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew, also present in its `url` field.
 
-Licence, as recorded in both `LICENSE` and `Mod/LICENSE`: **MIT, copyright (c) 2026 nelim, for
+Licence, as recorded in both `LICENSE` and `Mod/LICENSE`: **MIT, copyright (c) 2026 Nelim, for
 the port additions only**. The original coats, chances and 201 textures by purpleyam are explicitly
 excluded; the repository records no declared licence for them. Thus `licence: silent` describes
 the original material, while `port_licence` describes the additions. Credit and removal on request
