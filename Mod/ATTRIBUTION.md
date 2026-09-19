@@ -17,7 +17,7 @@ The repository is public with the `silent` classification and `(unofficial)` not
 The original declares versions 1.2, 1.3 and 1.4, not 1.6; no explicit author declaration
 of abandonment or inactivity threshold is required by this workflow. This establishes
 the classification, not author consent. Credit and removal on request are commitments,
-not permission. The `<author>` field reads `purpleyam - 1.6 port: nelim`, and the removal
+not permission. The `<author>` field reads `purpleyam - 1.6 adapted by Nelim`, and the removal
 clause is in the description. The first workflow gate is validated in STATUS.md.
 
 The original description credits Spino for the base textures. The same source audit found
