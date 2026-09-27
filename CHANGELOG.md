@@ -2,6 +2,15 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased] — 2026-09-28
+
+- `packageId` changed from `nelim.colorfulcoats.megafaunarenew` to
+  `nelim.colorfulcoats.megafauna`, dropping the suffix the 2026-09-11 rename had added. Checked
+  first that nothing depends on the old value: no `ModsConfig.xml` on this machine names it, and
+  the Workshop item created for `0.1.0` is still private and unannounced. `<name>` keeps
+  ` Renew`; only the identifier drops it. `<incompatibleWith>` is unaffected — it has always
+  carried purpleyam's own packageId, never this mod's.
+
 ## [Unreleased] — 2026-09-13
 
 - Applied the clarified publishing definition: an original without declared RimWorld 1.6

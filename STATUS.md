@@ -8,7 +8,7 @@ localization: not_applicable
 translation_en: not_applicable
 translation_fr: not_applicable
 mod:          Colorful Coats - Megafauna! Renew (unofficial)
-packageId:    nelim.colorfulcoats.megafaunarenew
+packageId:    nelim.colorfulcoats.megafauna
 repo:         Rimworld-Colorful-Coats-Megafauna-Renew
 remote:       https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew.git
 local_folder: C:/Users/nelim/Documents/rimworld/ColorfulCoatsMegafaunaRenew

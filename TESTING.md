@@ -48,8 +48,8 @@ None of that says the coats appear. That is what the scenarios below are for.
 ## Load order
 
 ```
-Spino.Megafauna                     Megafauna            1055485938   the target
-nelim.colorfulcoats.megafaunarenew  this mod                          after it
+Spino.Megafauna                Megafauna            1055485938   the target
+nelim.colorfulcoats.megafauna  this mod                          after it
 ```
 
 Megafauna **is** declared as a dependency here, unlike the Dodos mod of the same family: this
