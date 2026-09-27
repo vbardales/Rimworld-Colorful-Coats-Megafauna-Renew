@@ -38,3 +38,13 @@ PROMPT_*.md
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Compressed texture cache written by the game or its tools next to the shipped .png
+# sources; never authored here and safe to regenerate, so it never enters git.
+*.dds
+
+# Pickle test-run reports and screenshots (AGENTS.md): can reach gigabytes and none of it is
+# authored here. Kept on disk only; a short summary of a finished run goes in docs/runs/
+# instead, one text line per run, and that is what STATUS.md cites.
+Tests/Pickle/Evidence/
+evidence/

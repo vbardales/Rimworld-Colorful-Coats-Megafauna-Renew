@@ -15,6 +15,22 @@ All notable changes to this mod are documented here.
 - No patch, texture, image, identifier or dependency changed. Historical release notes below
   are preserved; their broad compatibility claims are superseded by the current validation limits.
 
+## [0.1.0] — 2026-09-28
+
+Creation of a `PublishedFileId.txt` (`3806766441`). A first send whose only purpose is to
+create the Workshop item — private, as Steam creates every item — and obtain its identifier.
+This does not mean the mod is public or tested; the item stays private until switched by hand.
+
+`Mod/` as sent matches commit `7f868a9`, unchanged since. This entry adds nothing beyond what
+the `[Unreleased]` notes above already describe.
+
+> **Note left for whoever settles this file's numbering:** the section below is headed
+> `[1.0.0]`, dated 2026-09-05, from before this repository's publishing workflow existed and
+> before any Workshop item had been created. Under the current rule, `1.0.0` is reserved for the
+> `published` state (a public item, tagged `v1.0.0`), which has not happened yet. Left as
+> written rather than renumbered unilaterally: renaming a released-looking entry is a call for
+> the person who owns this mod, not a session passing through.
+
 ## [1.0.0] — 2026-09-05
 
 First release. Port of purpleyam's **Colorful Coats - Megafauna!** to RimWorld 1.6.
