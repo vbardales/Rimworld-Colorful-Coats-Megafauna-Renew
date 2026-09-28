@@ -23,6 +23,7 @@ stage:        done
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
+upstream_mod_remotes: N/A
 dependencies: declared
 showcase:     complete
 tested_on:
