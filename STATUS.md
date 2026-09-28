@@ -28,15 +28,15 @@ showcase:     complete
 tested_on:
 automated_tests: passed, 2026-09-28, Windows PowerShell 5.1 (Check-Coats.ps1; Tests/Pickle/Check-Steps.ps1 for the Pickle step phrases)
 xml_tests: passed, 2026-09-28, Check-Xml.ps1, Windows PowerShell 5.1 (failed for a while after the 2026-09-28 packageId rename, which the script had hardcoded; fixed)
-manual_tests: nine scenarios documented in TESTING.md, not executed
+manual_tests: nine scenarios documented in TESTING.md, not executed by hand; Pickle run 79e5 (2026-09-28, minimal pass) covered A, B and D in game, see docs/runs/2026-09-28-79e5-minimal.txt
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
-  - unverified: execute scenarios A-I, inspect logs and presentation in English and French, including new game and existing save
-  - unverified: no coat has ever been seen to appear in game
+  - unverified: scenarios C, E, F and I by hand, and the English and French presentation; E and F (existing save) cannot be automated, G is the game's own behaviour and not ours to test
+  - unverified: no person has looked at an image of the coats in game. Pickle asserted that they are drawn, with their own texture (run 79e5); its @review capture failed on a test-side error and is queued again
   - unverified: redistribution permission for original assets not established
-  - unverified: Pickle suite written 2026-09-28 (Tests/Pickle, two passes: minimal and the declared incompatibility) and never run; its shared C# steps (PickleTools/CoatSteps) have never run either
+  - unverified: Pickle pass with purpleyam's original (ticket 8644) and the rerun of features 01 and 03 (c9a2) have not returned yet. The minimal pass returned 21 passed, 28 failed, 2 skipped: every failure on the suite's wording, fixed in 1ed4ab5
 session:      local_aa123338-053f-4ea8-a01d-068bdd74a18c
-updated:      2026-09-28, held by the mod's own thread
+updated:      2026-09-28, held by the mod's own thread; tickets 8644 and c9a2 pending
 ---
 
 # Colorful Coats - Megafauna! Renew (unofficial) — status
