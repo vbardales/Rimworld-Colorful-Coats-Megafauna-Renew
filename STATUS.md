@@ -34,9 +34,10 @@ remaining:
   - unverified: scenarios C, E, F and I by hand, and the English and French presentation; E and F (existing save) cannot be automated, G is the game's own behaviour and not ours to test
   - unverified: no person has looked at an image of the coats in game. Pickle asserted that they are drawn, with their own texture (run 79e5); its @review capture failed on a test-side error and is queued again
   - unverified: redistribution permission for original assets not established
-  - unverified: Pickle pass with purpleyam's original (ticket 8644) and the rerun of features 01 and 03 (c9a2) have not returned yet. The minimal pass returned 21 passed, 28 failed, 2 skipped: every failure on the suite's wording, fixed in 1ed4ab5
+  - unverified: rerun of the incompatibility pass (5630) has not returned yet. Ticket 8644 confirmed both mods patch
+    together but ran on a pre-fix tree; c9a2 (minimal, features 01+03) has not returned yet either
 session:      local_aa123338-053f-4ea8-a01d-068bdd74a18c
-updated:      2026-09-28, held by the mod's own thread; tickets 8644 and c9a2 pending
+updated:      2026-09-28, held by the mod's own thread; tickets c9a2 and 5630 pending
 ---
 
 # Colorful Coats - Megafauna! Renew (unofficial) — status
