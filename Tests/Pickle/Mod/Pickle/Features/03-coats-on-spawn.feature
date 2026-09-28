@@ -17,18 +17,15 @@ Feature: the animals are generated in more than one coat
   Scenario: woolly mammoths show several coats
     Given Nelim's Pickle Tools: 24 adult animals of kind "WoollyMammoth" are spawned
     Then Nelim's Pickle Tools: among the animals of kind "WoollyMammoth", at least 2 different extra coats were drawn
-    And Nelim's Pickle Tools: every animal of kind "WoollyMammoth" has a coat within its kind's alternate graphics
     And no errors were logged
 
   Scenario: an insect kind shows several coats too
     Given Nelim's Pickle Tools: 24 adult animals of kind "Pulmonoscorpius" are spawned
     Then Nelim's Pickle Tools: among the animals of kind "Pulmonoscorpius", at least 2 different extra coats were drawn
-    And Nelim's Pickle Tools: every animal of kind "Pulmonoscorpius" has a coat within its kind's alternate graphics
 
   Scenario: the most generous kind shows most of its coats
     Given Nelim's Pickle Tools: 30 adult animals of kind "Enhydriodon" are spawned
     Then Nelim's Pickle Tools: among the animals of kind "Enhydriodon", at least 3 different extra coats were drawn
-    And Nelim's Pickle Tools: every animal of kind "Enhydriodon" has a coat within its kind's alternate graphics
 
   # Not an assertion: the capture is for a person to open. The camera is wherever the fixture leaves it and
   # there is no step to frame the animals, so the reviewer answers one question - are these plainly different

@@ -5,5 +5,5 @@ Feature: the mod loads without a message of its own
   # files run in name order.
 
   Scenario: nothing in the log belongs to this mod
-    Then the load of the mod "nelim.colorfulcoats.megafauna" is clean
+    Then Nelim's Pickle Tools: the load of the mod "nelim.colorfulcoats.megafauna" is clean
     And no errors were logged

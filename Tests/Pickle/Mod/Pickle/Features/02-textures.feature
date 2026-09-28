@@ -8,7 +8,7 @@ Feature: a sample of the coat textures is served by this mod
   # Zygolophodon is the last animal in the patch file. West is not shipped: the game mirrors east.
 
   Scenario Outline: <path> facing <rotation> is answered by this mod
-    Then the texture "Things/Pawn/Animal/<path>_<rotation>" is answered by the mod "nelim.colorfulcoats.megafauna"
+    Then Nelim's Pickle Tools: the texture "Things/Pawn/Animal/<path>_<rotation>" is answered by the mod "nelim.colorfulcoats.megafauna"
 
     Examples:
       | path | rotation |

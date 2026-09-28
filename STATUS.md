@@ -467,5 +467,11 @@ that repository has them.
 Scenarios E and F (add or remove the mod in an existing save) cannot be automated: the harness
 stages one mod set per launch. They stay manual. G (no Megafauna) and I (the mod list entry) are
 not Pickle material, for the reasons in `Tests/Pickle/README.md`. The three unknowns only a first run
-answers, room for large animals in the test colony, when `overrideGraphicIndex` is set, and whether
-the original logs an error of its own on 1.6, are listed there.
+answers, room for large animals in the test colony and whether the original logs an error of its own
+on 1.6, are listed there.
+
+Found the same day, by decompiling 1.6: the coat is derived on demand by `PawnGraphicUtils.TryGetAlternate`
+(Rand seeded with `thingIDNumber ^ 0xB415`), not stored, and `Pawn.overrideGraphicIndex`, which the shared
+`CoatSteps` reads, is declared on `Thing` and stays null for ordinary animals. Every "different extra coats"
+step would fail on it. The owner of `CoatSteps` has been told; this suite does not run until it reads
+`GetGraphicIndex`. `TESTING.md` scenario D had repeated the same wrong mechanism and is corrected.

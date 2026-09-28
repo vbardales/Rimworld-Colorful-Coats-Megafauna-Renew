@@ -35,6 +35,15 @@ that is missing, which `AUDIT.md` says is not ours to test: the mod answers for 
 `06-original-alongside.feature` is skipped by its `@requires` tag in the minimal pass, because the original is
 not staged there. A skip is not a pass: the incompatibility pass is the one that plays it.
 
+## Offline check
+
+`Check-Steps.ps1` compiles every step phrase of the features against the steps Pickle and the staged tools
+really declare, and checks the pass maps, without a game. It found two undefined steps here before any run
+(a missing `Nelim's Pickle Tools: ` prefix). Copied from `ColorfulCoatsCatsAndDogsRenew` and changed once: a
+features-only suite has no `Source` folder, so it no longer throws on zero local patterns.
+
+    powershell -NoProfile -ExecutionPolicy Bypass -File Tests/Pickle/Check-Steps.ps1
+
 ## Run
 
 Through the shared harness only, never by hand (`AUDIT.md`): deposit the request with `Submit-PickleRun.ps1`,
@@ -43,7 +52,9 @@ Through the shared harness only, never by hand (`AUDIT.md`): deposit the request
 
 ## First-run questions the features cannot answer yet
 
-- Whether `Pawn.overrideGraphicIndex` is set at spawn or at first draw. `CoatSteps` reads it after 30 frames.
+- Nothing about `overrideGraphicIndex` any more: decompiling 1.6 shows the coat is derived on demand by
+  `PawnGraphicUtils.TryGetAlternate` and that field is not the mechanism. The shared `CoatSteps` read it
+  when this suite was written; the Dodos session, its owner, has been told and this suite waits for the fix.
 - Whether `test-colony` has room for 24 to 30 adult animals of a large kind. The spawn step names how many could
   not be placed; that count measures the fixture, not the mod.
 - Whether purpleyam's original logs an error of its own on 1.6. `06-` asserts a silent load and will be adjusted to

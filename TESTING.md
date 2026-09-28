@@ -166,12 +166,19 @@ no `_west` exists, so an animal walking west showing its far side reversed is co
 
 ## D — the coat is per-animal and survives a reload
 
-`Verse.Pawn.overrideGraphicIndex` records which entry of `alternateGraphics` a pawn drew, and it
-goes into the save under that same name. The label is present in 1.6's assembly.
+The coat is **not stored**. Decompiling 1.6's `Verse.PawnGraphicUtils.TryGetAlternate`, which every
+draw path of the animal renderer calls, shows it derived on demand: `Rand` is seeded with
+`pawn.thingIDNumber ^ 0xB415`, then `alternateGraphicChance` decides whether an extra coat is drawn
+and a weighted pick chooses which. `Verse.Thing.overrideGraphicIndex` exists but the pawn renderer
+does not read it, and it stays null for an animal generated normally. (An earlier version of this
+section said the index went into the save under that name; that was a guess and it was wrong.)
 
 - Save with several coloured animals in view, quit to the menu, load again.
-- Each animal keeps **its own** coat. A coat that jumps to a different animal means the index is
-  being re-rolled rather than read back, which would also mean every reload reshuffles the herd.
+- Each animal keeps **its own** coat. That holds because `thingIDNumber` is saved and the coat is a
+  pure function of it and of the `alternateGraphics` list, so a coat that changes on reload means
+  the id changed or the list did, not that a stored value was lost. This scenario therefore also
+  guards the list: reordering or adding a coat in a later version would reshuffle every coat
+  already seen in existing saves, and this is how that would be noticed.
 
 ## E — added to a save in progress
 
@@ -192,7 +199,9 @@ a list the def no longer has.
 
 - Remove the mod, load the same save.
 - The animals go back to their original coats, and nothing in the log names
-  `overrideGraphicIndex`, `alternateGraphics`, or any of the 26 defNames.
+  `alternateGraphics`, or any of the 26 defNames. No coat was ever written into the save, so there
+  is nothing for the game to find missing; that is the expectation from the code, and this
+  scenario is what would prove it.
 
 ## G — the mod alone, with no Megafauna at all
 
