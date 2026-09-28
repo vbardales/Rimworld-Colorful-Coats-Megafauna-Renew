@@ -1,0 +1,5 @@
+# Minimal pass: the mod and its one hard dependency, Megafauna, which the staging copies from the
+# mod's own modDependencies. Megafauna needs nothing else, and this mod has no optional integration.
+nelim.pickletools.textureowner path:PickleTools/TextureOwner/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+nelim.pickletools.coatsteps path:PickleTools/CoatSteps/Mod

@@ -1,0 +1,7 @@
+# Declared-incompatibility pass: the minimal set plus purpleyam's original, which About.xml names in
+# <incompatibleWith>. Both mods load and both patch the same 26 animals. 06-original-alongside.feature
+# asserts the documented outcome: nothing logged, coats still drawn.
+purpleyam.colorfulcoats.spinomegafauna 2560113727
+nelim.pickletools.textureowner path:PickleTools/TextureOwner/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+nelim.pickletools.coatsteps path:PickleTools/CoatSteps/Mod

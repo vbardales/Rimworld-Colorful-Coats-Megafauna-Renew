@@ -23,6 +23,24 @@ No settings page or MainButtons shortcut is expected from this mod.
 
 Execution status: not run. These instructions are scenarios, not successful test results.
 
+## Which scenarios have a Pickle feature
+
+Written 2026-09-28 in `Tests/Pickle/`, see its `README.md` for scope and pass matrix. Written is not
+run: nothing below has been played, and the three shared steps in `PickleTools/CoatSteps` have never run either.
+
+| Scenario | In Pickle | Feature |
+|---|---|---|
+| A — the coats appear | yes | `03-coats-on-spawn` (mammoth, scorpion, Enhydriodon) |
+| B — the far end of the sequence | yes | `01-patch-applied` for all 26, `04-sequence-ends` for the first and the last |
+| C — the 67 coats and the three rotations | a sample | `02-textures` for 13 files, the rest is `Check-Coats.ps1` |
+| D — per animal, survives a reload | yes | `05-coat-survives-reload` |
+| E, F — added to or removed from a save | no | two launches of one save; stays manual |
+| G — no Megafauna at all | no | the game's reaction to a missing hard dependency, not ours to test |
+| H — the original alongside | yes | `06-original-alongside`, incompatibility pass only |
+| I — the mod list entry | no | a look at a screen |
+
+The `@review` capture in `03` is for a person to open; its green says the steps ran, not that the animals look different.
+
 ## What is settled before the game starts
 
 `_tools/Check-Coats.ps1` answers the three questions that do not need RimWorld running: every

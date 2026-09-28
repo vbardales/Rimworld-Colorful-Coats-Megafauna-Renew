@@ -34,7 +34,7 @@ remaining:
   - unverified: execute scenarios A-I, inspect logs and presentation in English and French, including new game and existing save
   - unverified: no coat has ever been seen to appear in game
   - unverified: redistribution permission for original assets not established
-  - unverified: no Pickle suite written yet; two-pass plan (no optional mods; one pass against purpleyam's original, its declared incompatibility) still to design
+  - unverified: Pickle suite written 2026-09-28 (Tests/Pickle, two passes: minimal and the declared incompatibility) and never run; its shared C# steps (PickleTools/CoatSteps) have never run either
 session:      local_aa123338-053f-4ea8-a01d-068bdd74a18c
 updated:      2026-09-28, held by the mod's own thread
 ---
@@ -444,10 +444,28 @@ Checked whether purpleyam's original has a git repository to file pull requests 
 none. `ATTRIBUTION.md` already recorded no linked repository in the inspected material, and
 this only confirms it — there is nothing to PR upstream, ever.
 
-No Pickle suite exists for this mod yet. Per `AUDIT.md`, `done -> tested` needs at minimum a
-pass with no optional mods (this mod declares none — Megafauna is a hard dependency, not
-optional) and one pass per declared incompatibility, which here is exactly one: purpleyam's
-original, named in `<incompatibleWith>`. Designing that suite is unstarted work, not a defect.
+At the time of this entry no Pickle suite existed; one was written later the same day, see the
+section at the end. Per `AUDIT.md`, `done -> tested` needs at minimum a pass with no optional mods
+(this mod declares none — Megafauna is a hard dependency, not optional) and one pass per declared
+incompatibility, which here is exactly one: purpleyam's original, named in `<incompatibleWith>`.
 
 Documentation read this session, and at which commit, is kept in `.claude/docs-read.md`
 (gitignored, local only) rather than repeated here.
+
+## Pickle suite written — 2026-09-28
+
+`Tests/Pickle/` now holds the companion mod, seven feature files and two pass maps (minimal, and
+the declared incompatibility with purpleyam's original). This is what `AUDIT.md` asks of `done`:
+justified Pickle scenarios **written**, not run. Running them, and opening the `@review` capture,
+belongs to `done -> tested`. Nothing has been played.
+
+The spawn and reload steps are not this repository's: they come from `PickleTools/CoatSteps`,
+written by the Dodos session for the four Colorful Coats ports and committed locally in
+PickleTools, not yet pushed. They compile and have never run. This suite does not work until
+that repository has them.
+
+Scenarios E and F (add or remove the mod in an existing save) cannot be automated: the harness
+stages one mod set per launch. They stay manual. G (no Megafauna) and I (the mod list entry) are
+not Pickle material, for the reasons in `Tests/Pickle/README.md`. The three unknowns only a first run
+answers, room for large animals in the test colony, when `overrideGraphicIndex` is set, and whether
+the original logs an error of its own on 1.6, are listed there.
