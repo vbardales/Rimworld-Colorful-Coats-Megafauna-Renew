@@ -57,6 +57,9 @@ Through the shared harness only, never by hand (`AUDIT.md`): deposit the request
   when this suite was written; the Dodos session, its owner, has been told and this suite waits for the fix.
 - Whether `test-colony` has room for 24 to 30 adult animals of a large kind. The spawn step names how many could
   not be placed; that count measures the fixture, not the mod.
+- Whether the Body render node is the one that carries the animal graphic. The deterministic step
+  "is drawn with that coat's own texture" reads the path from `PawnRenderer.BodyGraphic`; that the node is the
+  right one is decompiled, not seen, and the first run says. A red there points at the step before the mod.
 - Whether purpleyam's original logs an error of its own on 1.6. `06-` asserts a silent load and will be adjusted to
   name the message if there is one, not loosened.
 

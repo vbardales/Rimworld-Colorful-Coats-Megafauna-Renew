@@ -20,4 +20,5 @@ Feature: with purpleyam's original running too, the coats still appear and nothi
   Scenario: the animals still draw coats
     Given Nelim's Pickle Tools: 24 adult animals of kind "WoollyMammoth" are spawned
     Then Nelim's Pickle Tools: among the animals of kind "WoollyMammoth", at least 2 different extra coats were drawn
+    And Nelim's Pickle Tools: each animal of kind "WoollyMammoth" that carries an extra coat is drawn with that coat's own texture
     And no errors were logged
