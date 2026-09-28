@@ -24,7 +24,7 @@
 
 Coat variations for 26 of Megafauna's prehistoric animals, so a mammoth herd is a herd of individuals rather than 12 copies of one mammoth. Between two and five extra coats each, 67 in all, and between 60% and 80% of animals get one - the rest keep the coat Spino drew.
 
-Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a single XML patch and 201 textures. Adding or removing it on an existing save and coat persistence remain unverified in game; use a backup when testing.
+Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a single XML patch and 201 textures. A coat is worked out from each animal's saved id when it is drawn and stored nowhere, so animals already in a save should change coat when this is added and change back when it is removed. That follows from the game's code and has not been seen in game; use a backup when testing.
 
 WHAT IS COVERED
 

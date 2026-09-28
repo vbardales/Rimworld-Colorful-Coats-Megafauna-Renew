@@ -182,26 +182,26 @@ section said the index went into the save under that name; that was a guess and 
 
 ## E — added to a save in progress
 
-The README leaves existing-save compatibility unverified. Test a backup: the expected behavior
-is that an animal generated before this mod was added retains its original coat, while newly
-generated animals can receive alternate coats. Record any difference from that expectation.
+The coat is computed on every draw from the animal's saved id, so it is stored nowhere (see D). Adding
+the mod therefore recolours the animals **already in the save**, deterministically: each keeps the same
+id, and the chance at which it now draws an extra coat is 0.6 to 0.8. This is the expectation from the
+code, not something anyone has seen. The README and About say only that adding it is unverified.
 
-- Add the mod to a running colony that already has Megafauna animals.
-- Expect the animals already in the save to stay exactly as they were, and **new** ones — spawned,
-  born, or arriving with a caravan or a raid — to draw from the coats.
-- If animals already on the map change colour on load, that is still not a fault, but it
-  contradicts what was just written above and is worth reporting.
+- Test a backup. Add the mod to a running colony that already has Megafauna animals.
+- Expect a share of the animals already in the save, roughly the chance of their kind, to appear in an
+  extra coat, and the rest to keep the original. **New** animals, spawned, born or arriving, behave the
+  same way. Nothing is logged about it.
+- The same animal must show the same coat on every later load. If it changes between loads, D failed.
+- A herd that looks different the first time the save is opened with the mod is the mod working, not a
+  fault, and is worth saying to players in the description.
 
 ## F — removed from a save in progress
 
-The other half of the same claim, and the half no checker can reach. Saved indices now point into
-a list the def no longer has.
+The other half. No index was ever written, so nothing in the save points into a list that has gone.
 
 - Remove the mod, load the same save.
-- The animals go back to their original coats, and nothing in the log names
-  `alternateGraphics`, or any of the 26 defNames. No coat was ever written into the save, so there
-  is nothing for the game to find missing; that is the expectation from the code, and this
-  scenario is what would prove it.
+- Every animal goes back to its original coat, and nothing in the log names `alternateGraphics` or any
+  of the 26 defNames. That is the expectation from the code; this scenario is what would prove it.
 
 ## G — the mod alone, with no Megafauna at all
 

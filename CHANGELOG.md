@@ -4,6 +4,12 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased] — 2026-09-28
 
+- README and the About description now say what the game's code implies about existing saves: a coat is
+  derived on every draw from the animal's saved id and stored nowhere, so animals already in a save should
+  change coat when the mod is added and change back when it is removed. Decompiled from 1.6, not seen in
+  game. This replaces an unverified-only wording, and TESTING.md scenarios D, E and F were rewritten
+  around it: E had expected existing animals to stay exactly as they were, which the code contradicts.
+  `Mod/About/About.xml` changed after the `0.1.0` send, so `Mod/` no longer equals that send.
 - `packageId` changed from `nelim.colorfulcoats.megafaunarenew` to
   `nelim.colorfulcoats.megafauna`, dropping the suffix the 2026-09-11 rename had added. Checked
   first that nothing depends on the old value: no `ModsConfig.xml` on this machine names it, and

@@ -19,7 +19,7 @@ foreach ($file in $files) {
 [xml]$about = Get-Content -Raw (Join-Path $ModPath 'Mod/About/About.xml')
 $meta = $about.ModMetaData
 $url = 'https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew'
-Assert-Valid ($meta.packageId -ceq 'nelim.colorfulcoats.megafaunarenew') 'Unexpected packageId.'
+Assert-Valid ($meta.packageId -ceq 'nelim.colorfulcoats.megafauna') 'Unexpected packageId.'
 Assert-Valid ($meta.name -ceq 'Colorful Coats - Megafauna! Renew (unofficial)') 'Unexpected mod title.'
 Assert-Valid ($meta.url -ceq $url) 'Wrong source URL.'
 Assert-Valid ($meta.description.Contains($url)) 'Description lacks the GitHub URL.'

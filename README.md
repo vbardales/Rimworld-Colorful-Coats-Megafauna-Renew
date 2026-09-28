@@ -19,8 +19,10 @@ each, with a 60% to 80% chance of an animal getting one. A mammoth herd becomes 
 individuals rather than twelve copies of one mammoth.
 
 One patch file, 201 textures, no `Defs`, no assembly, no Harmony, no DLC. It changes animal
-graphics. Adding or removing it on an existing save and coat persistence remain unverified
-in game; use a backup when running the scenarios in TESTING.md.
+graphics. A coat is worked out from each animal's saved id every time it is drawn, and stored nowhere, so
+animals already in a save will change coat when the mod is added and change back when it is removed. That
+is what the game's code implies; nobody has seen it in game yet, and it, like coat persistence, stays
+unverified. Use a backup when running the scenarios in TESTING.md.
 
 ## What it needs
 

@@ -26,8 +26,8 @@ licence_at:   installed original files, live Steam description, all 15 item comm
 dependencies: declared
 showcase:     complete
 tested_on:
-automated_tests: passed, 2026-09-13, PowerShell 7.6.5
-xml_tests: passed, 2026-09-13, Check-Xml.ps1
+automated_tests: passed, 2026-09-28, Windows PowerShell 5.1 (Check-Coats.ps1; Tests/Pickle/Check-Steps.ps1 for the Pickle step phrases)
+xml_tests: passed, 2026-09-28, Check-Xml.ps1, Windows PowerShell 5.1 (failed for a while after the 2026-09-28 packageId rename, which the script had hardcoded; fixed)
 manual_tests: nine scenarios documented in TESTING.md, not executed
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
