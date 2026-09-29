@@ -33,10 +33,14 @@ manual_tests: nine scenarios documented in TESTING.md, not executed by hand; Pic
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
   - unverified: scenarios C, E, F and I by hand, and the English and French presentation; E and F (existing save) cannot be automated, G is the game's own behaviour and not ours to test
-  - unverified: no person has looked at an image of the coats in game. Pickle asserted that they are drawn, with their own texture (run 79e5); its @review capture failed on a test-side error and is queued again
+  - unverified: no person has looked at an image of the coats in game. All 4 scenarios in 03-coats-on-spawn, review capture included, now fail before any assertion runs (see below)
   - unverified: redistribution permission for original assets not established
-  - unverified: rerun of the incompatibility pass (5630) has not returned yet. Ticket 8644 confirmed both mods patch
-    together but ran on a pre-fix tree; c9a2 (minimal, features 01+03) has not returned yet either
+  - unverified: rerun of the incompatibility pass (5630) has not returned yet
+  - defect: c9a2 (minimal rerun on 1ed4ab5) failed all 4 scenarios of 03-coats-on-spawn on
+    "Accessing map pawns off main thread", thrown by PawnGenerator inside CoatSteps' Spawn step, at
+    the first spawn call right after 01's last (async) scenario. Not seen at 79e5 on the pre-fix
+    CoatSteps. Not this repository's code to fix; reported to colorfulcoats.dodosrenew, CoatSteps'
+    owner. See docs/runs/2026-09-28-c9a2-minimal-rerun.txt
 session:      local_aa123338-053f-4ea8-a01d-068bdd74a18c
 updated:      2026-09-28, held by the mod's own thread; tickets c9a2 and 5630 pending
 ---
