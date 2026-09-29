@@ -29,20 +29,22 @@ showcase:     complete
 tested_on:
 automated_tests: passed, 2026-09-28, Windows PowerShell 5.1 (Check-Coats.ps1; Tests/Pickle/Check-Steps.ps1 for the Pickle step phrases)
 xml_tests: passed, 2026-09-28, Check-Xml.ps1, Windows PowerShell 5.1 (failed for a while after the 2026-09-28 packageId rename, which the script had hardcoded; fixed)
-manual_tests: nine scenarios documented in TESTING.md, not executed by hand; Pickle run 79e5 (2026-09-28, minimal pass) covered A, B and D in game, see docs/runs/2026-09-28-79e5-minimal.txt
+manual_tests: nine scenarios documented in TESTING.md, not executed by hand; Pickle covered A, B, D and H in game (79e5, 5630), see docs/runs/2026-09-28-*.txt
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
   - unverified: scenarios C, E, F and I by hand, and the English and French presentation; E and F (existing save) cannot be automated, G is the game's own behaviour and not ours to test
-  - unverified: no person has looked at an image of the coats in game. All 4 scenarios in 03-coats-on-spawn, review capture included, now fail before any assertion runs (see below)
+  - unverified: no person has looked at an image of the coats in game. The @review capture (03)
+    passed structurally at 5630 (2 of 3 close-spawned mammoths placed, a documented fixture limit,
+    not a defect) but its screenshot has not been opened by anyone
   - unverified: redistribution permission for original assets not established
-  - unverified: rerun of the incompatibility pass (5630) has not returned yet
-  - defect: c9a2 (minimal rerun on 1ed4ab5) failed all 4 scenarios of 03-coats-on-spawn on
-    "Accessing map pawns off main thread", thrown by PawnGenerator inside CoatSteps' Spawn step, at
-    the first spawn call right after 01's last (async) scenario. Not seen at 79e5 on the pre-fix
-    CoatSteps. Not this repository's code to fix; reported to colorfulcoats.dodosrenew, CoatSteps'
-    owner. See docs/runs/2026-09-28-c9a2-minimal-rerun.txt
+  - defect (flaky, unresolved, not this repository's code): CoatSteps' Spawn threw "Accessing map
+    pawns off main thread" at c9a2 (1ed4ab5), failing all 4 of 03-coats-on-spawn. Did not reproduce
+    at 5630 on the same CoatSteps build, so it is intermittent. Reported to colorfulcoats.dodosrenew
+    via TicketDispatcher; no live session for either at the time of reporting. See
+    docs/runs/2026-09-28-c9a2-minimal-rerun.txt
 session:      local_aa123338-053f-4ea8-a01d-068bdd74a18c
-updated:      2026-09-28, held by the mod's own thread; tickets c9a2 and 5630 pending
+updated:      2026-09-29, held by the mod's own thread; minimal (79e5/c9a2) and incompatibility
+  (8644/5630) passes both returned, all real findings fixed or documented as expected
 ---
 
 # Colorful Coats - Megafauna! Renew (unofficial) — status

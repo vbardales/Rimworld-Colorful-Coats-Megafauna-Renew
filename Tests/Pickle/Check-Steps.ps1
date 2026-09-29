@@ -18,7 +18,8 @@ param(
     # The Workshop build is what the WSL stages (copy_steam rimworks.pickle). Pickle-local is a newer
     # development build: checking against it accepted a step ("the language is ...") that the staged
     # Pickle does not have, and the first run failed on it.
-    [string]$Pickle = 'C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3791648678\Assemblies',
+    # Path moved under 1.6/Assemblies in a Pickle Workshop update after this default was first written.
+    [string]$Pickle = 'C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3791648678\1.6\Assemblies',
     [string]$Managed = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed'
 )
 
@@ -112,7 +113,9 @@ foreach ($g in ($patterns | Where-Object Origin -eq 'local' | Group-Object Patte
 function Normalize([string]$s) { ($s -replace '"[^"]*"', '{string}') -replace '\b\d+(\.\d+)?\b', '{int}' }
 $engine = New-Object System.Collections.Generic.HashSet[string]
 $engineUsed = @()
-$pickleRoot = Split-Path $Pickle -Parent
+# The item's own root, not $Pickle's parent: a 2026-09 Workshop update moved the DLLs under
+# 1.6\Assemblies while Pickle\Features stayed at the item's top level, one level up from there.
+$pickleRoot = (Get-Item $Pickle).Parent.Parent.FullName
 foreach ($f in Get-ChildItem (Join-Path $pickleRoot 'Pickle\Features') -Filter *.feature -ErrorAction SilentlyContinue) {
     foreach ($raw in [IO.File]::ReadAllLines($f.FullName)) {
         if ($raw.Trim() -match '^(Given|When|Then|And|But)\s+(.+)$') { [void]$engine.Add((Normalize $Matches[2].Trim())) }

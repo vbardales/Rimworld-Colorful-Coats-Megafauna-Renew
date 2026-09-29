@@ -216,9 +216,12 @@ The other half. No index was ever written, so nothing in the save points into a 
 - Try to enable purpleyam's `purpleyam.colorfulcoats.spinomegafauna` at the same time as this one.
 - `<incompatibleWith>` should refuse the pair, and that refusal is the whole of the protection.
 - If both somehow load, **nothing is logged and nothing visibly breaks**. Neither mod declares a
-  def; both add an `<alternateGraphics>` element to the same `PawnKindDef`, and a field written
-  twice is simply read twice, the last one winning. The animals get coats either way, which is
-  exactly why this scenario cannot be judged from the screen.
+  def; both add an `<alternateGraphics>` element to the same `PawnKindDef`. Confirmed by Pickle
+  (e824ec2, incompat pass): the mammoth's list grew from 3 entries to 6, not "the last one wins" —
+  `alternateGraphics` is a `List<T>`, and two `PatchOperationAdd` both append an `<li>` to it rather
+  than overwriting it. The scalar `alternateGraphicChance` field *is* overwritten, and stayed `0.7`,
+  the value this mod's own patch sets, since it loads after purpleyam's. The animals get coats
+  either way, which is exactly why this scenario cannot be judged from the screen.
 
 ## I — the mod list entry itself
 
