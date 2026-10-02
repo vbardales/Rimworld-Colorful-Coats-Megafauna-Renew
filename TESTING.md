@@ -154,15 +154,28 @@ every animal listed after it. The flag is now on each operation.
 
 ## C — the 67 coats and the three rotations
 
-201 textures: 67 coats, three rotations each. West is not shipped; RimWorld mirrors `_east` when
-no `_west` exists, so an animal walking west showing its far side reversed is correct.
+Manual. Pickle (`02-textures`) samples 13 files; `Check-Coats.ps1` proves every file exists. Neither shows what a
+coat looks like walking. West is not shipped: RimWorld mirrors `_east` when no `_west` exists, so an animal walking
+west with its far side reversed is correct.
 
-- The three generous ones are worth the spawn on their own: **Chalicotherium** at five extra
-  coats, **Enhydriodon** and **Purussaurus** at four. Spawn a dozen of each and look for all of
-  them.
-- Watch a few walk in each direction, and check the north view in particular: it is the one that
-  hides the head, so a wrong file there is easy to miss.
-- Any missing file shows up in the log with its path, per the table above.
+**Preconditions**
+- New colony, Core + Megafauna + this mod, original Colorful Coats off, developer mode on. Scenario A passed.
+- Pause the game, and keep the log open (see "What to search the log for").
+
+**Actions**
+1. Debug-spawn 12 **Chalicotherium** (five extra coats), 12 **Enhydriodon** and 12 **Purussaurus** (four each).
+2. Count the distinct extra coats on screen per species. Spawn more of a species if one coat is still missing:
+   at chance 0.8 a coat can simply not have come up yet; that is not a defect until about 40 animals.
+3. Draft or move a few animals of each species so they face **north**, **south** and **east**, then **west**.
+4. For the other 23 species: spawn 8 of each, one batch at a time, and look at every extra coat once.
+
+**Expected**
+- Every one of the 67 coats appears at least once across the whole pass, in all four facings.
+- North shows a body with no head turned wrong, no missing or flipped piece, no white or pink fallback square.
+- West shows the mirrored east view, never a missing texture.
+- The log has no `in any active mod or in base resources` and no `Failed to find any textures at`.
+
+**Record**: game build, Megafauna date, revision, language, species checked, any coat never seen (name it), log lines.
 
 ## D — the coat is per-animal and survives a reload
 
@@ -182,26 +195,49 @@ section said the index went into the save under that name; that was a guess and 
 
 ## E — added to a save in progress
 
-The coat is computed on every draw from the animal's saved id, so it is stored nowhere (see D). Adding
-the mod therefore recolours the animals **already in the save**, deterministically: each keeps the same
-id, and the chance at which it now draws an extra coat is 0.6 to 0.8. This is the expectation from the
-code, not something anyone has seen. The README and About say only that adding it is unverified.
+Manual, and not automatable: it needs one save opened twice with different mod sets, and the harness stages one set per
+launch. The coat is computed on every draw from the animal's saved id and stored nowhere (see D), so adding the mod
+should recolour the animals **already in the save**, deterministically. That is the expectation from the code,
+decompiled from 1.6, not something anyone has seen: README and About say so.
 
-- Test a backup. Add the mod to a running colony that already has Megafauna animals.
-- Expect a share of the animals already in the save, roughly the chance of their kind, to appear in an
-  extra coat, and the rest to keep the original. **New** animals, spawned, born or arriving, behave the
-  same way. Nothing is logged about it.
-- The same animal must show the same coat on every later load. If it changes between loads, D failed.
-- A herd that looks different the first time the save is opened with the mod is the mod working, not a
-  fault, and is worth saying to players in the description.
+**Preconditions**
+- A **backup copy** of a save made with Core + Megafauna and **without** this mod, holding at least 10 animals of
+  covered species (mammoths are the easy case, chance 0.7) already spawned, plus a few born or tamed.
+- Original Colorful Coats off. Developer mode on. Note the colony's animals: species, and a screenshot of each.
+
+**Actions**
+1. Enable this mod after Megafauna, restart, load the backup.
+2. Look at every animal that was in the save. Screenshot each against its earlier picture.
+3. Save, quit to the menu, load again, look again.
+4. Spawn 10 more animals of a covered species and let one be born or arrive, if the colony allows.
+
+**Expected**
+- Roughly the chance of each kind (0.6 to 0.8) of the **existing** animals now wear an extra coat; the rest keep the original.
+- Each animal shows the **same** coat after the reload of step 3. A coat that changes between loads means D failed.
+- New animals behave the same as existing ones.
+- Nothing is logged about it, no red error at load.
+
+**Record**: per animal, before and after; share recoloured against the expected chance; log lines; language.
+If no existing animal changes, say so plainly: it contradicts the code, and the README and About must change.
 
 ## F — removed from a save in progress
 
-The other half. No index was ever written, so nothing in the save points into a list that has gone.
+Manual, same reason as E. No index was ever written into the save, so nothing in it points into a list that has gone.
 
-- Remove the mod, load the same save.
-- Every animal goes back to its original coat, and nothing in the log names `alternateGraphics` or any
-  of the 26 defNames. That is the expectation from the code; this scenario is what would prove it.
+**Preconditions**
+- The save from the end of E, with this mod enabled and some animals visibly in extra coats, plus a screenshot of each.
+
+**Actions**
+1. Disable this mod (keep Megafauna), restart, load the save.
+2. Look at every animal screenshotted in E and compare with its original picture.
+3. Save, quit, load again.
+
+**Expected**
+- Every animal is back in its original coat, with no red error on load or on save.
+- The log names neither `alternateGraphics` nor any of the 26 defNames.
+- The save loads and runs normally for a few in-game days.
+
+**Record**: animals that did not go back (name them), log lines, language. Restore the baseline mod list afterwards.
 
 ## G — the mod alone, with no Megafauna at all
 
@@ -225,13 +261,28 @@ The other half. No index was ever written, so nothing in the save points into a 
 
 ## I — the mod list entry itself
 
+Manual: a look at a screen, not a scenario Pickle can answer. Do it once in English and once in French.
+
+**Preconditions**
+- Core + Megafauna + this mod enabled, nothing else of this family. Open Mods from the main menu.
+
+**Actions**
+1. Select this mod in the list. Read the name, the author line, the description and the version line.
+2. Read the Workshop-style preview shown in the details pane.
+3. Look at the icon in the list at the size the game draws it (about 32 px).
+4. Switch the game language (restart), repeat 1 to 3.
+
+**Expected**
 - The name reads `Colorful Coats - Megafauna! Renew (unofficial)`.
-- The Workshop banner is `About/Preview.png`, 896x504, and says `Renew` rather than `1.6`.
-- The icon is drawn at about 32 px in the mod list, and at that size `About/ModIcon.png` does not
-  resolve into anything: it is a mascot ringed by six animals, and the mammoth's tusks are gone.
-  **This is known and kept**, so it is not a finding. The alternative was a 64% crop keeping the
-  mascot and cutting the animals, which is what the Dodos icon of this family went through; the
-  full-frame picture was preferred here. Nothing to report on this line.
+- The author line reads `purpleyam - 1.6 adapted by Nelim`.
+- The description opens with the UNOFFICIAL notice and ends with the GitHub source link.
+- The preview is `About/Preview.png` (896x504), with the title, `Renew (unofficial)` and the `1.6` badge visible.
+- The icon is `About/ModIcon.png`. At 32 px only the central smiley reads; the owner kept this icon, so it is a
+  recorded limit and not a finding. A **missing** or generic placeholder icon would be a finding.
+- No settings entry appears under Mod options for this mod, and no MainButtons shortcut exists (none is expected).
+- The description is in English in both game languages: that is by design, the mod has no translated text.
+
+**Record**: screenshot of the list entry and the details pane per language, and anything that differs from the above.
 
 ## What no check offline can catch
 
