@@ -51,31 +51,31 @@ See ATTRIBUTION.md and LICENSE in the source repository for what was taken and w
 [Source code on GitHub](https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew)
 ```
 
-The block above is generated from Mod/About/About.xml (BBCode there, Markdown here) and must stay in step with it. It ends, after the
-credits, with the Source code on GitHub link to the repository, which is also the <url> field.
+The block above is generated from `Mod/About/`About.xml` (BBCode there, Markdown here) and must stay in step with it. It ends, after the
+credits, with the `Source code on GitHub` link to the repository, which is also the `<url>` field.
 
 ## Gallery order
 
 Steam shows the first image large, so the most telling goes first, not the prettiest. All four are staged captures of one story
-(*The keeper's evening*, Tests/Pickle/gallery-draft.md) taken by Tests/Pickle/Mod/Pickle/Features/08-gallery.feature in the minimal pass
-(-Filter '@gallery'). **None has been taken yet, and none has been opened and looked at.** Order, once they exist:
+(*The keeper's evening*, `Tests/Pickle/gallery-draft.md`) taken by `Tests/Pickle/Mod/Pickle/Features/08-gallery.feature` in the minimal pass
+(`-Filter '@gallery'`). **None has been taken yet, and none has been opened and looked at.** Order, once they exist:
 
 1. `gallery-1-mammoths`: two mammoths in two coats, the animal everyone knows and the one the original shows.
 2. `gallery-2-enhydriodon`: three Enhydriodon, the small kind with the most variety.
 3. `gallery-3-scorpions`: three giant scorpions, not a mammal.
 4. `gallery-4-chalicotherium`: two Chalicotherium, the kind with the most coats.
 
-Art/Gallery/0-preview.png (a byte-identical copy of Mod/About/Preview.png) stays first in the folder; the captures follow as 1-, 2-...
+`Art/Gallery/0-preview.png` (a byte-identical copy of `Mod/About/Preview.png`) stays first in the folder; the captures follow as `1-, 2-...`
 Each image is to be opened by a person before upload: a green capture scenario does not prove the picture shows anything.
 
 ## Dependencies and DLC
 
-- Required: **Megafauna** (Spino.Megafauna, 1055485938). The patch targets 26 of its animals and carries no guard, so a player without it gets
-  nothing; a hard dependency is right (modDependencies in About.xml, checked in the sources, not in the game's reaction to it).
-- loadAfter: Megafauna only. No optional integration, no DLC referenced, no Harmony, no assembly.
-- Incompatible: purpleyam's original (purpleyam.colorfulcoats.spinomegafauna, 2560113727), declared in incompatibleWith. With both loaded the
+- Required: **Megafauna** (`Spino.Megafauna`, 1055485938). The patch targets 26 of its animals and carries no guard, so a player without it gets
+  nothing; a hard dependency is right (`modDependencies` in `About.xml`, checked in the sources, not in the game's reaction to it).
+- `loadAfter`: Megafauna only. No optional integration, no DLC referenced, no Harmony, no assembly.
+- Incompatible: purpleyam's original (`purpleyam.colorfulcoats.spinomegafauna`, 2560113727), declared in `incompatibleWith`. With both loaded the
   coat lists add up (6 alternate graphics on the mammoth, confirmed by Pickle at e824ec2), nothing is logged.
-- supportedVersions: 1.6. No LoadFolders.xml.
+- `supportedVersions`: 1.6. No `LoadFolders.xml`.
 
 ## Adult content
 
@@ -85,41 +85,39 @@ None. No textures of a body, no text, nothing to declare. The answers on the Wor
 
 The first line carries only the version.
 
-```
+``
 [b]0.1.0[/b]
 First send, to create the item. Not tested by a person yet; private until switched by hand.
-```
+``
 
-For 1.0.0: the ## [1.0.0] section of CHANGELOG.md once it is renumbered by the owner (the file already carries a [1.0.0] of 2026-09-05
+For 1.0.0: the `## `[1.0.0]` section of `CHANGELOG.md` once it is renumbered by the owner (the file already carries a `[1.0.0]` of 2026-09-05
 from before this workflow).
 
 ## Thank-you comments (one per page, after the item is public)
 
-Register: WORKSHOP_COMMENTS.md, keyed by the recipient's Workshop id. Harmony (2009463077), RimLogging (3733484696) and Pickle are already
-posted: only this mod is added to their Covers column, nothing is posted. PickleTools (3806142401) is the owner's own project:
-
-ot_applicable. **Missing, to draft and post by the owner under her own account, after reading the last comments of each page:**
+Register: `WORKSHOP_COMMENTS.md`, keyed by the recipient's Workshop id. Harmony (2009463077), RimLogging (3733484696) and Pickle are already
+`posted`: only this mod is added to their `Covers` column, nothing is `posted`. PickleTools (3806142401) is the owner's own project: `not_applicable`. **Missing, to draft and post by the owner under her own account, after reading the last comments of each page:**
 
 | Recipient | Id | State |
 |---|---|---|
-| Megafauna | 1055485938 | drafted, not posted |
-| Colorful Coats - Megafauna! (purpleyam's original) | 2560113727 | drafted, not posted |
+| Megafauna | 1055485938 | drafted, not `posted` |
+| Colorful Coats - Megafauna! (purpleyam's original) | 2560113727 | drafted, not `posted` |
 
 Megafauna's page is the author's reach for the base textures; the original's page is the only way purpleyam can reach the owner. The original's
 page also says the mod declares 1.4 and nothing further, and credits Spino. **To verify on the pages before posting:** who maintains Megafauna for
-1.6 today (the 1.6 source is juanosarg/Megafauna), because a mod that was taken over credits both people (PUBLISHING.md).
+1.6 today (the 1.6 source is `juanosarg/Megafauna`), because a mod that was taken over credits both people (`PUBLISHING.md`).
 
 Draft, Megafauna (voice to adjust by the owner):
 
-```
+``
 Megafauna's mammoths always came in one coat, so a herd looked like twelve copies of one animal :) I patched in purpleyam's old coats for 26 of your animals, with a link back here: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. Thanks for the animals and the textures xD
-```
+``
 
 Draft, purpleyam's original:
 
-```
+``
 Your coats for the Megafauna animals still look good on 1.6, so I ported them (mammoth to Zygolophodon, 67 coats): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. It says in big letters it's not yours, credits you first, and comes down the day you ask. Thank you for the idea :)
-```
+``
 
 The two drafts differ in opening, ending and joke; each is under 1,000 characters and carries one hidden link. Re-read side by side before posting.
 
