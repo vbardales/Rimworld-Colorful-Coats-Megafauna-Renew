@@ -75,6 +75,10 @@ of this mod in `pickle-reports-archive/`. Upstream: purpleyam's original has no 
 PR to); Megafauna is a dependency, not a source, its repository is juanosarg/Megafauna.
 Protocol documents read, versions and usefulness: `.claude/docs-read.md` (local).
 
+Folder icon, 2026-10-02: `Art/ModIcon.ico` is one 256 px frame from `scripts/Set-ModFolderIcons.ps1`, like
+the sibling repositories (a six-size ico rendered small). The stale look came from Windows' thumbnail cache,
+cleared with an Explorer restart; owner confirmed it renders correctly.
+
 Not tested remains: C, E, F, I by hand, `@review` capture unopened, flaky off-thread bug unresolved.
 
 Read by a sweep across every mod, rather than by asking each thread in turn. It lives at the
