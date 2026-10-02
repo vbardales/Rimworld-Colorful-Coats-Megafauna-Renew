@@ -48,3 +48,6 @@ desktop.ini
 # instead, one text line per run, and that is what STATUS.md cites.
 Tests/Pickle/Evidence/
 evidence/
+
+# Reproducible Preview diagnostics generated locally by the shared renderer.
+Art/.render/

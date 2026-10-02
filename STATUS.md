@@ -2,7 +2,7 @@
 settings_audit: not_applicable
 workflow_audit: complete_through_done
 rights_audit: complete
-audit_revision: e59c2ed (working tree: Art/preview-268.png, Art/preview-background.png, Art/render-preview.cjs modified, not mine, left as found)
+audit_revision: e59c2ed (audited 2026-10-02; later commits: icon, gallery, publication, Preview source migration)
 audit_date: 2026-10-02
 localization: not_applicable
 translation_en: not_applicable
@@ -515,3 +515,10 @@ Found the same day, by decompiling 1.6: the coat is derived on demand by `PawnGr
 `CoatSteps` reads, is declared on `Thing` and stays null for ordinary animals. Every "different extra coats"
 step would fail on it. The owner of `CoatSteps` has been told; this suite does not run until it reads
 `GetGraphicIndex`. `TESTING.md` scenario D had repeated the same wrong mechanism and is corrected.
+
+
+## Preview source migration — 2026-10-02
+
+Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
+
+The older sections above that name `Art/preview.html`, `Art/render-preview.cjs`, `Art/preview-palette.json`, `Art/preview-qa.json`, `Art/preview-background.png`, `Art/preview-268.png` or `Art/Preview.png` describe files removed by this migration; they are history, kept as written. The delivered `Mod/About/Preview.png` and `Art/Gallery/0-preview.png` are unchanged.
