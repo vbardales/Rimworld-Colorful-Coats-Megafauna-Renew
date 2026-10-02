@@ -46,7 +46,7 @@ Feature: the patch reached every animal it aims at
       | WoollyMammoth |
       | Zygolophodon |
 
-  @requires:nelim.pickletools.coatsteps
+  @requires:nelim.pickletools.coatsteps @minimal-only
   Scenario: the documented chances and coat counts applied
     # "WoollyMammoth" is a ThingDef and a PawnKindDef, so Pickle's own field step refuses it as ambiguous:
     # the CoatSteps step names the kind, and checks the number of coats along with the chance.
@@ -54,10 +54,10 @@ Feature: the patch reached every animal it aims at
     # This counts, not just detects: 6ced571's incompat run found it wrong under that pass, 6 not 3.
     # Two PatchOperationAdd from two mods do not overwrite alternateGraphics, a List<T>, they both append
     # an <li> to it - the list is cumulative, the scalar alternateGraphicChance field is not (0.7 held).
-    # This scenario is only true when purpleyam's original is absent, and this suite has no tag for
-    # "not staged": the guard below turns that into a labelled, expected red under the incompat pass
-    # rather than a bare 6-vs-3 mismatch. See 06-original-alongside.feature for the documented symptom
-    # this scenario cannot cover: 6 alternate graphics once both mods have patched.
+    # This scenario is only true when purpleyam's original is absent, and a suite cannot tag "not staged", so it is
+    # tagged @minimal-only and the incompatibility pass excludes it: -Filter '01-patch-applied,06-original-alongside,!@minimal-only'.
+    # A red that is expected is not a result (run 35a1ae9 showed it: 30 of 31, the one red being this guard). The
+    # symptom with both mods, 6 alternate graphics, is asserted in 06-original-alongside.feature.
     Then mod "purpleyam.colorfulcoats.spinomegafauna" is not loaded
     And Nelim's Pickle Tools: the pawn kind "WoollyMammoth" keeps 3 alternate graphics at a chance of "0.7"
     And Nelim's Pickle Tools: the pawn kind "Zygolophodon" keeps 2 alternate graphics at a chance of "0.6"
