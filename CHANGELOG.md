@@ -2,6 +2,12 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased] — 2026-10-02
+
+- About description and README no longer say the in-game scenarios were not executed: an automated suite has
+  played them; what remains unchecked by a person is said instead. `Mod/` changed again after the `0.1.0` send.
+- Added `Mod/About/ModIcon32.png`, a 32 px copy of the ModIcon.
+
 ## [Unreleased] — 2026-09-28
 
 - README and the About description now say what the game's code implies about existing saves: a coat is

@@ -100,4 +100,5 @@ what was taken and what was changed, [LICENSE](LICENSE) for what the MIT grant d
 cover, and [CHANGELOG.md](CHANGELOG.md).
 
 The port work was done with the help of an AI assistant (Claude, by Anthropic), under human
-direction. Static checks pass; the in-game scenarios have not been executed.
+direction. Static checks pass and an automated in-game suite has played most scenarios; no person has yet checked
+how the coats look, nor tried adding or removing the mod on an existing save.
