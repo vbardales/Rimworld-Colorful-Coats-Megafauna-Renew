@@ -49,9 +49,18 @@ CREDIT AND REMOVAL
 
 The source audit of 2026-09-12 found no explicit licence, redistribution permission or prohibition in the inspected original files, Steam description and comments, or author profile. No source repository was linked in that material. The original does not declare RimWorld 1.6 support, which meets this project's definition of abandoned and supports its public/silent classification. Redistribution permission remains unverified; credit and removal on request do not grant permission. If purpleyam would rather this port did not exist, say so and it comes down: no argument, no delay.
 
-The port work was done with the help of an AI assistant (Claude, by Anthropic), under human direction. Static checks pass and an automated in-game suite has played most scenarios; no person has yet checked how the coats look, nor tried adding or removing the mod on an existing save. Thanks to purpleyam for the coats and to Spino for the animals and base textures.
+IF I GO QUIET
 
 If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved. This offer covers my contributions only and does not grant rights to third-party material.
 
+AI-GENERATED
+
+The port work was done with AI assistants, under human direction: Claude (by Anthropic) and Codex (by OpenAI) wrote and checked the patch, the test scripts and the documents; I directed and reviewed them. Static checks pass and an automated in-game suite has played most scenarios; no person has yet checked how the coats look in game, nor tried adding or removing the mod on an existing save.
+
+THANKS
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727]purpleyam[/url] for the coats and the whole idea. Spino for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1055485938]Megafauna[/url], the animals and their base textures. For development only, never a dependency of this mod: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678]Pickle[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696]RimLogging[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] (which Pickle needs) and PickleTools.
+
+See ATTRIBUTION.md and LICENSE in the source repository for what was taken and what the MIT grant covers.
 [url=https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew]Source code on GitHub[/url]</description>
 </ModMetaData>
