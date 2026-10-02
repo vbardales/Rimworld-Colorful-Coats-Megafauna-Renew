@@ -1,10 +1,9 @@
-# Gallery, staged: story and draft scenarios (not yet playable)
+# Gallery, staged: the story behind 08-gallery.feature
 
 Rule of 2026-10-02: every gallery capture is a staged photograph, never a default scene. The first gallery written here
 (`08-gallery.feature`, run 746b) only spawned animals around the map centre and was withdrawn: it staged nothing, and it
-could place only 2 large animals within the fixed four-cell radius. This draft replaces it. It stays a draft, not a
-`.feature`, because four steps it needs do not exist yet (asked of Nelim's Pickle Tools, listed at the end); `Check-Steps.ps1`
-would reject it, and an `@wip` would not be a passed scenario.
+could place only 2 large animals within the fixed four-cell radius. This replaces it.
+
 
 ## The story
 
@@ -46,41 +45,6 @@ Order is the order they are shown on the Workshop page. The first is the most te
 Counts are what the close-spawn step could place (2 large, 3 small within four cells); no coat assertion on purpose, because 2 or
 3 animals at a chance of 0.6 to 0.8 can show no extra coat, and the reviewer says so on the image instead.
 
-## What the scenarios look like (steps marked NEW do not exist yet)
+## Where it lives now
 
-```gherkin
-Background:
-  Given the save "test-colony" is loaded
-
-@review @gallery
-Scenario: gallery 1, two mammoths in the lamplight
-  Given Nelim's Pickle Tools: I lay the floor "PackedDirt" from (24, 24) to (38, 34)
-  And Nelim's Pickle Tools: I place the decor "Campfire" at (24, 29)
-  And Nelim's Pickle Tools: I place the decor "TorchLamp" at (25, 25)
-  And Nelim's Pickle Tools: I place the decor "TorchLamp" at (37, 25)
-  And Nelim's Pickle Tools: I place the decor "PlantPot" at (26, 33)
-  And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (36, 33)
-  And Nelim's Pickle Tools: I place the decor "Shelf" at (30, 34)
-  And Nelim's Pickle Tools: a colonist "keeper" of kind "Colonist" exists
-  And Nelim's Pickle Tools: "keeper" body type is Thin
-  And Nelim's Pickle Tools: "keeper" hair colour is rgb (40, 32, 28)
-  And Nelim's Pickle Tools: "keeper" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)          # NEW
-  And Nelim's Pickle Tools: "keeper" stands at (25, 31)                                          # NEW
-  And Nelim's Pickle Tools: 2 adult animals of kind "WoollyMammoth" are spawned around (31, 29)  # NEW
-  When Nelim's Pickle Tools: developer mode is turned off for the capture
-  And Nelim's Pickle Tools: I frame the cell (30, 30) at zoom 9                                  # NEW
-  And I take a screenshot "gallery-1-mammoths"
-  And Nelim's Pickle Tools: the decor is removed
-```
-
-Images 2 to 4 are the same set with their own animals and file names.
-
-## Asked of Nelim's Pickle Tools
-
-1. `{int} adult animals of kind {string} are spawned around ({int}, {int})`: the close-spawn step, centred on a cell instead of the
-   map centre, with room for large animals (the fixed four-cell radius around the map centre placed 2 of 3 mammoths).
-2. `I frame the cell ({int}, {int}) at zoom {int}`: the frame step knows only the kind's own animals, and a staged shot has to
-   include the set.
-3. `{string} wears {string}`, or a variant that also dyes it: `the {string} worn by {string} is dyed` fails if the colonist
-   does not wear the garment, and nothing gives her one.
-4. `{string} stands at ({int}, {int})`: a colonist moved to a cell, so the keeper is where the story needs her.
+Playable since 2026-10-02: `Tests/Pickle/Mod/Pickle/Features/08-gallery.feature` (the four steps asked of Nelim's Pickle Tools were written the same day, compiled and not yet played when this suite first used them). The set coordinates, the keeper and the four images above are what that file builds. Open points for the first run: the `Apparel_CollarShirt` and `Apparel_Pants` defNames, the hour (18) and the clearing at (24, 24) to (38, 34).
