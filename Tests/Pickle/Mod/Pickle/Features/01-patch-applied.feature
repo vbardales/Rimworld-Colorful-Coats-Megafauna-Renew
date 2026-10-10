@@ -1,6 +1,6 @@
 Feature: the patch reached every animal it aims at
 
-  # TESTING.md scenario B, the half a definition can answer. The 26 operations sit in one
+  # TEST_SCENARIOS.md scenario B, the half a definition can answer. The 26 operations sit in one
   # PatchOperationSequence and a sequence stops at its first operation that returns false, so a
   # renamed animal would cost its coats to every animal listed after it, with nothing in the log.
   # Each operation carries <success>Always</success>, which is exactly what hides that failure:

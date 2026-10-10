@@ -1,7 +1,7 @@
 @requires:nelim.pickletools.coatsteps
 Feature: a mammoth keeps its own coat across a save and reload
 
-  # TESTING.md scenario D. The coat is not stored: PawnGraphicUtils.TryGetAlternate derives it on
+  # TEST_SCENARIOS.md scenario D. The coat is not stored: PawnGraphicUtils.TryGetAlternate derives it on
   # every draw from Rand seeded with thingIDNumber ^ 0xB415, then the chance and a weighted pick over
   # the kind's alternateGraphics. It survives a reload because the id is saved and the list is the
   # same, and this scenario is what would notice either changing. The coat must be read through

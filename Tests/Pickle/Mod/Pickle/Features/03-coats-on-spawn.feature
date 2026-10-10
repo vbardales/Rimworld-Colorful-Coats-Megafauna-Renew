@@ -1,7 +1,7 @@
 @requires:nelim.pickletools.coatsteps
 Feature: the animals are generated in more than one coat
 
-  # TESTING.md scenario A. Each animal rolls once and the chance is the chance of getting ANY extra
+  # TEST_SCENARIOS.md scenario A. Each animal rolls once and the chance is the chance of getting ANY extra
   # coat, so each single coat is rarer than it. Two kinds of assertion, on purpose:
   #   - "different extra coats were drawn" is chance-based. The odds are worked out, and the failure
   #     message prints N, K and the coats seen, so a red from bad luck reads differently from a red

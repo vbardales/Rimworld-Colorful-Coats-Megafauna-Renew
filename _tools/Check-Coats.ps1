@@ -19,7 +19,7 @@
     3. Every defName the patch aims at still exists in Megafauna, and none of them already carries
        alternateGraphics of its own. This is the check that expires: Megafauna is alive, and a
        renamed animal costs it its coats in complete silence, since every operation in the patch
-       carries <success>Always</success>. See scenario A in TESTING.md.
+       carries <success>Always</success>. See scenario A in TEST_SCENARIOS.md.
 
   Check 3 is skipped rather than failed when Megafauna is not installed: the mod is not in this
   repository and its absence says nothing about this one.
@@ -126,4 +126,4 @@ if (-not (Test-Path $Megafauna)) {
 
 Write-Host ''
 if ($problems) { Write-Host "$problems check(s) failed."; exit 1 }
-Write-Host 'All checks passed. What is left is scenario A in TESTING.md, which needs the game.'
+Write-Host 'All checks passed. What is left is scenario A in TEST_SCENARIOS.md, which needs the game.'

@@ -1,7 +1,7 @@
 @requires:nelim.pickletools.coatsteps
 Feature: the first and the last animal in the patch both got coats
 
-  # TESTING.md scenario B, the one the port exists for. If the first animal has coats and the last
+  # TEST_SCENARIOS.md scenario B, the one the port exists for. If the first animal has coats and the last
   # does not, something between them stopped the sequence. Both roll 0.6 with two coats, so among
   # 20 adults the chance that none draws an extra coat is 0.4^20, about one in 90 billion.
 

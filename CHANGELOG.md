@@ -2,6 +2,10 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased] — 2026-10-10
+
+- `TESTING.md` renamed `TEST_SCENARIOS.md` (the name AUDIT.md gives it); references updated.
+
 ## [Unreleased] — 2026-10-02
 
 - About description and README no longer say the in-game scenarios were not executed: an automated suite has
@@ -13,7 +17,7 @@ All notable changes to this mod are documented here.
 - README and the About description now say what the game's code implies about existing saves: a coat is
   derived on every draw from the animal's saved id and stored nowhere, so animals already in a save should
   change coat when the mod is added and change back when it is removed. Decompiled from 1.6, not seen in
-  game. This replaces an unverified-only wording, and TESTING.md scenarios D, E and F were rewritten
+  game. This replaces an unverified-only wording, and TEST_SCENARIOS.md scenarios D, E and F were rewritten
   around it: E had expected existing animals to stay exactly as they were, which the code contradicts.
   `Mod/About/About.xml` changed after the `0.1.0` send, so `Mod/` no longer equals that send.
 - `packageId` changed from `nelim.colorfulcoats.megafaunarenew` to
@@ -63,9 +67,9 @@ Nothing in this mod was broken by 1.6. The one change to the patch is hardening,
 - `About/Preview.png`, drawn for this port and engraved at final size by `Art/preview.html`, with
   the full-resolution source kept in `Art/` rather than in `About/`.
 - `About/ModIcon.png`, the full frame rather than a crop of it. It does not resolve at the 32 px
-  the mod list draws it at, which is known and kept; `TESTING.md` says so on the line where
+  the mod list draws it at, which is known and kept; `TEST_SCENARIOS.md` says so on the line where
   someone would otherwise report it.
-- `TESTING.md`, nine in-game scenarios, and `_tools/Check-Coats.ps1` for the three questions that
+- `TEST_SCENARIOS.md`, nine in-game scenarios, and `_tools/Check-Coats.ps1` for the three questions that
   can be answered without starting the game.
 - All of the above is port work and is listed in `LICENSE` among what the MIT grant covers.
   purpleyam's coats and textures stay outside it, as they always were.

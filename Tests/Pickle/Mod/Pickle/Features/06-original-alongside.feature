@@ -1,7 +1,7 @@
 @requires:purpleyam.colorfulcoats.spinomegafauna
 Feature: with purpleyam's original running too, the coats still appear and nothing is logged
 
-  # TESTING.md scenario H. Only the incompatibility pass stages the original, so this feature is
+  # TEST_SCENARIOS.md scenario H. Only the incompatibility pass stages the original, so this feature is
   # skipped by its tag in the minimal pass, which is not a pass. <incompatibleWith> is the
   # protection; this asserts what happens when it does not hold. Neither mod declares a def: both
   # add an alternateGraphics element to the same PawnKindDef. Confirmed at e824ec2's incompat run,

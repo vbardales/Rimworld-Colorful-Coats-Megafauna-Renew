@@ -22,7 +22,7 @@ One patch file, 201 textures, no `Defs`, no assembly, no Harmony, no DLC. It cha
 graphics. A coat is worked out from each animal's saved id every time it is drawn, and stored nowhere, so
 animals already in a save will change coat when the mod is added and change back when it is removed. That
 is what the game's code implies; nobody has seen it in game yet, and it, like coat persistence, stays
-unverified. Use a backup when running the scenarios in TESTING.md.
+unverified. Use a backup when running the scenarios in TEST_SCENARIOS.md.
 
 ## What it needs
 
@@ -95,7 +95,7 @@ the absence of declared 1.6 support establishes the `silent` classification for 
 Credit and removal on request do not grant redistribution rights. If purpleyam would rather
 this did not exist, say so and it comes down.
 
-See [TESTING.md](TESTING.md) for what the game has to settle, [ATTRIBUTION.md](ATTRIBUTION.md) for
+See [TEST_SCENARIOS.md](TEST_SCENARIOS.md) for what the game has to settle, [ATTRIBUTION.md](ATTRIBUTION.md) for
 what was taken and what was changed, [LICENSE](LICENSE) for what the MIT grant does and does not
 cover, and [CHANGELOG.md](CHANGELOG.md).
 
