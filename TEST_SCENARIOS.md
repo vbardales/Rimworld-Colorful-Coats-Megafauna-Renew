@@ -43,14 +43,14 @@ The `@review` capture in `03` is for a person to open; its green says the steps 
 
 ## What is settled before the game starts
 
-`_tools/Check-Coats.ps1` answers the three questions that do not need RimWorld running: every
+`scripts/Check-Coats.ps1` answers the three questions that do not need RimWorld running: every
 `texPath` has its three rotation files shipped, every shipped texture is referenced by some
 `texPath`, and the 26 defNames still exist in Megafauna with no `alternateGraphics` of their own
 already. It exits non-zero and names the file when one is missing.
 
 ```
-pwsh -NoProfile -File _tools/Check-Coats.ps1
-pwsh -NoProfile -File _tools/Check-Xml.ps1
+pwsh -NoProfile -File scripts/Check-Coats.ps1
+pwsh -NoProfile -File scripts/Check-Xml.ps1
 ```
 
 `Check-Xml.ps1` parses all shipped XML, checks metadata, dependency and incompatibility declarations,

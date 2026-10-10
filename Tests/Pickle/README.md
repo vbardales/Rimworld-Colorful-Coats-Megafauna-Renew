@@ -9,7 +9,7 @@ Kept in Gherkin because only a running game answers it: that the patch was appli
 (a sequence that stops at its first failure hides this, and every operation carries `<success>Always</success>`),
 that the game's content holders serve a sample of the textures and no other mod took the path, that animals
 are generated in more than one coat, that a coat survives a save and reload, and that the load is clean.
-Everything a file can prove stays in `_tools/Check-Coats.ps1`: the 201 textures, the 26 defNames, no orphan file.
+Everything a file can prove stays in `scripts/Check-Coats.ps1`: the 201 textures, the 26 defNames, no orphan file.
 
 **Spawn and reload** (`03-`, `04-`, `05-`, `06-`) use `PickleTools/CoatSteps`, written by the Dodos session and
 shared by the four Colorful Coats ports. Those steps compile but have never run.

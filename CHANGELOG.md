@@ -4,6 +4,7 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased] — 2026-10-10
 
+- `_tools/` moved to `scripts/` (no `_` folder at the mod root, STYLE_RIMWORLD.md); references updated.
 - `TESTING.md` renamed `TEST_SCENARIOS.md` (the name AUDIT.md gives it); references updated.
 
 ## [Unreleased] — 2026-10-02
