@@ -38,7 +38,7 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
 updated:      2026-10-10, migrated from the old vocabulary (done -> playTests), TESTING.md renamed TEST_SCENARIOS.md
-protocols_read_sha: b4a73cf0998fa5914b1d5e52b0817a8fe77abab3
+protocols_read_sha: a5c7cf48b349ae00e7d28fd643e852dc860dfaf2
 ---
 
 # Colorful Coats - Megafauna! Renew (unofficial): status
@@ -68,3 +68,17 @@ pass for the one declared incompatibility, purpleyam's original. The mod adds no
 - Preview inputs: `Art/Preview.config.json`, `Art/Preview-source.png`, `Art/echo.png`, `Art/ModIcon-source.png`.
 - Upstream: purpleyam's original has no git repository (nothing to PR to). Megafauna (juanosarg/Megafauna) is a dependency.
 - Licence: the original coats, chances and textures carry no declared licence (`silent`); port additions are MIT (`LICENSE`).
+
+## Audit record, 2026-10-10 (39cf697 working tree, protocols read at AUDIT.md/PUBLISHING.md current)
+
+- Dependencies (4.g): `Spino.Megafauna` (1055485938), the only one, hard (`modDependencies`) and `loadAfter`; checked against
+  its 1.6 Defs by `scripts/Check-Coats.ps1` (26 targets). No optional integration, no DLC, no Harmony, no assembly, no
+  `LoadFolders.xml`, `supportedVersions` 1.6. `incompatibleWith`: purpleyam's original. `ANIMALS.md` integrations do not
+  apply: the mod adds no animal, only coats on Megafauna's.
+- Settings audit (5.g): `not_applicable`. The behaviour is a fixed cosmetic expansion (26 chances, 67 `texPath`); no Mod
+  subclass, settings page or MainButtonDef in the tree, so no empty page or shortcut is exposed. No integration tested.
+- Translation audit (6.h): all three fields `not_applicable`. The patch adds only probabilities, texture paths, XPath
+  selectors and success flags; no label, description or key. `FRENCH_REVIEW.md` generated (ships no French, says so);
+  `Check-DefInjected.ps1` not applicable. Nothing for Virginie to review.
+- Tests (7.b to 7.d): `Check-Coats.ps1`, `Check-Xml.ps1`, `Tests/Pickle/Check-Steps.ps1` green at 39cf697. Pass
+  declaration in `TEST_SCENARIOS.md`. Pickle suites written, not run at this revision.

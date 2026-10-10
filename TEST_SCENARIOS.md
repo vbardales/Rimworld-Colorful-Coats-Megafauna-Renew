@@ -290,3 +290,21 @@ The patch is a bare `PatchOperationSequence` with no `PatchOperationFindMod` gua
 operation is now flagged to succeed. Taken together, those two facts mean **a renamed animal
 produces no log line, no failed operation and no visible error** — only an animal that quietly
 stopped having coats. Scenarios A and B exist because nothing else would ever tell us.
+
+## Pickle passes required (AUDIT.md, "Passes Pickle")
+
+Two passes, one per family that applies. The report names which is which (`-DepMap`).
+
+| Family | Count | Map | Covers |
+|---|---|---|---|
+| Without the optional mods | 1 | `wsl-deps.sans-facultatifs.map` | Core, DLC, Harmony, RimLogging, Pickle, Megafauna and this mod. The only pass where a capture is clean: 01 to 05 |
+| With the optional mods, one per exclusive combination | 0 | none | The mod declares no optional mod: `loadAfter` names Megafauna only, which is a hard dependency |
+| One per declared incompatibility | 1 | `wsl-deps.incompat-spinomegafauna.map` | purpleyam's original alongside (`purpleyam.colorfulcoats.spinomegafauna`): 06. Replayed when the original changes, not at each release |
+
+One language: the mod ships no text, so there is no English or French pass.
+
+Order: what never ran and what is red goes first, one small ticket each (`-Filter`). The initial ticket plays every
+scenario once. Full passes that replay what is already green are filed together after the commit and deployment, on
+the published revision. A scenario is in non-regression once it has a green run on the current logic; a change to the mod
+or to a step it uses makes it new again. Currently every scenario is new: none has had a green run since the 2026-09-28
+step fixes, except the ones recorded in `docs/runs/`.

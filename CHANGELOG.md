@@ -4,6 +4,7 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased] — 2026-10-10
 
+- Added `FRENCH_REVIEW.md` (generated; the mod ships no French) and the Pickle pass declaration in `TEST_SCENARIOS.md`.
 - `_tools/` moved to `scripts/` (no `_` folder at the mod root, STYLE_RIMWORLD.md); references updated.
 - `TESTING.md` renamed `TEST_SCENARIOS.md` (the name AUDIT.md gives it); references updated.
 
