@@ -1,0 +1,21 @@
+{
+  "templateStamp": "ba64b0c1b25d",
+  "workshopId": "3806766441",
+  "packageId": "nelim.colorfulcoats.megafauna",
+  "releaseTitle": "Colorful Coats - Megafauna! Renew (unofficial) {version}",
+  "requirePaths": [
+    "Patches",
+    "Textures"
+  ],
+  "forbidPaths": [
+    "Assemblies"
+  ],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/Gallery",
+  "aboutFromDescription": true,
+  "description": {
+    "file": "PUBLICATION.md",
+    "format": "markdown",
+    "heading": "^## Steam description$"
+  }
+}
