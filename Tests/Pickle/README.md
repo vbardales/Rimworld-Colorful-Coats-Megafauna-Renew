@@ -37,12 +37,12 @@ not staged there. A skip is not a pass: the incompatibility pass is the one that
 
 ## Offline check
 
-`Check-Steps.ps1` compiles every step phrase of the features against the steps Pickle and the staged tools
+The shared `scripts/Check-Steps.ps1` (protocols repository) compiles every step phrase of the features against the steps Pickle and the staged tools
 really declare, and checks the pass maps, without a game. It found two undefined steps here before any run
 (a missing `Nelim's Pickle Tools: ` prefix). Copied from `ColorfulCoatsCatsAndDogsRenew` and changed once: a
 features-only suite has no `Source` folder, so it no longer throws on zero local patterns.
 
-    powershell -NoProfile -ExecutionPolicy Bypass -File Tests/Pickle/Check-Steps.ps1
+    powershell -NoProfile -ExecutionPolicy Bypass -File ..scriptsCheck-Steps.ps1 -ModRoot .
 
 ## Run
 

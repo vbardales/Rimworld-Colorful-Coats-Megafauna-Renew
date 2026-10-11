@@ -27,7 +27,7 @@ upstream_mod_remotes: N/A
 dependencies: declared
 showcase:     complete
 tested_on:
-automated_tests: passed, 2026-10-10, 0034011 (Check-Coats.ps1; Tests/Pickle/Check-Steps.ps1, 55 scenarios across passes)
+automated_tests: passed, 2026-10-10, 0034011 (Check-Coats.ps1; shared scripts/Check-Steps.ps1 of the protocols repository, 55 scenarios across passes)
 xml_tests: passed, 2026-10-10, 0034011 (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (79e5, 5630), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
@@ -49,7 +49,7 @@ Check it with `scripts/Check-Status.ps1 -Mod ColorfulCoatsMegafaunaRenew` (no ER
 ## State
 
 `playTests[0.1.0]`. Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
-67 coats, 201 textures), `Check-Xml.ps1` and `Tests/Pickle/Check-Steps.ps1` (55 scenarios across passes) all PASS.
+67 coats, 201 textures), `Check-Xml.ps1` and `shared scripts/Check-Steps.ps1 of the protocols repository` (55 scenarios across passes) all PASS.
 Functional scenarios A-I are in `TEST_SCENARIOS.md`. Pickle suites are in `Tests/Pickle/`: the minimal pass and the
 pass for the one declared incompatibility, purpleyam's original. The mod adds no setting and no player-facing text.
 
@@ -80,5 +80,5 @@ pass for the one declared incompatibility, purpleyam's original. The mod adds no
 - Translation audit (6.h): all three fields `not_applicable`. The patch adds only probabilities, texture paths, XPath
   selectors and success flags; no label, description or key. `FRENCH_REVIEW.md` generated (ships no French, says so);
   `Check-DefInjected.ps1` not applicable. Nothing for Virginie to review.
-- Tests (7.b to 7.d): `Check-Coats.ps1`, `Check-Xml.ps1`, `Tests/Pickle/Check-Steps.ps1` green at 39cf697. Pass
+- Tests (7.b to 7.d): `Check-Coats.ps1`, `Check-Xml.ps1`, `shared scripts/Check-Steps.ps1 of the protocols repository` green at 39cf697. Pass
   declaration in `TEST_SCENARIOS.md`. Pickle suites written, not run at this revision.
