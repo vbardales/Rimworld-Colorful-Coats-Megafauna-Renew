@@ -18,6 +18,7 @@ Feature: Workshop gallery captures
     Given the save "test-colony" is loaded
     And I set the weather to "Clear"
     And I set the hour to 18
+    And Nelim's Pickle Tools: the area from (24, 24) to (38, 34) is cleared
     And Nelim's Pickle Tools: I lay the floor "PackedDirt" from (24, 24) to (38, 34)
     And Nelim's Pickle Tools: I place the decor "Campfire" at (24, 29)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (25, 25)
