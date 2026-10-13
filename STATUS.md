@@ -38,7 +38,7 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
 updated:      2026-10-10, migrated from the old vocabulary (done -> playTests), TESTING.md renamed TEST_SCENARIOS.md
-protocols_read_sha: a5c7cf48b349ae00e7d28fd643e852dc860dfaf2
+protocols_read_sha: 9a33932f3cb73920e93184ca044f1744422e0025
 ---
 
 # Colorful Coats - Megafauna! Renew (unofficial): status

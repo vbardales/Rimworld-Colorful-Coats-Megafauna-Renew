@@ -18,13 +18,13 @@ Andrewsarchus, Arthropleura, Castoroides, Chalicotherium, Daeodon, Deinotherium,
 
 The most generous are the Chalicotherium with five extra coats, and the Enhydriodon and the Purussaurus with four.
 
-I am not the author of this mod. The textures and the whole idea are purpleyam's - all I did was the work needed to run it on 1.6. Credit goes to them; mistakes in the port are mine.
+I am not the author of this mod. The textures and the whole idea are purpleyam's - all I did was the work needed to run it on the latest RimWorld version. Credit goes to them; mistakes in the port are mine.
 
 Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 - declares 1.4 and nothing further.
 
 ## WHAT CHANGED IN THE PORT
 
-The recorded compatibility inspection found alternateGraphics and alternateGraphicChance on PawnKindDef in RimWorld 1.6. Static checks confirm all 26 targets in the installed Megafauna 1.6 definitions and all texture paths. Actual coat appearance still needs validation in game. Two packaging and patch changes were made:
+The recorded compatibility inspection found alternateGraphics and alternateGraphicChance on PawnKindDef in the latest RimWorld version. Static checks confirm all 26 targets in the installed Megafauna definitions and all texture paths. Actual coat appearance still needs validation in game. Two packaging and patch changes were made:
 
 - Each of the 26 operations now reports success whether or not it found its animal. They sit in one PatchOperationSequence, and a sequence stops at the first operation that fails - so if a future release of Megafauna ever renamed one animal, every animal listed after it would have quietly lost its coats too. purpleyam already wrote it this way in the Vanilla Animals Expanded mod; this brings this one into line.
 - The four large screenshots left in the About folder were removed. RimWorld reads Preview.png and ModIcon.png and nothing else in there, and those four were 7.6 MB of the mod's 13.
@@ -33,7 +33,7 @@ The colours, the chances and the 201 textures are untouched.
 
 ## CREDIT AND REMOVAL
 
-The source audit of 2026-09-12 found no explicit licence, redistribution permission or prohibition in the inspected original files, Steam description and comments, or author profile. No source repository was linked in that material. The original does not declare RimWorld 1.6 support, which meets this project's definition of abandoned and supports its public/silent classification. Redistribution permission remains unverified; credit and removal on request do not grant permission. If purpleyam would rather this port did not exist, say so and it comes down: no argument, no delay.
+The source audit of 2026-09-12 found no explicit licence, redistribution permission or prohibition in the inspected original files, Steam description and comments, or author profile. No source repository was linked in that material. The original does not declare support for the latest RimWorld version, which meets this project's definition of abandoned and supports its public/silent classification. Redistribution permission remains unverified; credit and removal on request do not grant permission. If purpleyam would rather this port did not exist, say so and it comes down: no argument, no delay.
 
 ## IF I GO QUIET
 
