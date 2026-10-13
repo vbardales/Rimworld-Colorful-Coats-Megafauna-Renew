@@ -32,7 +32,7 @@ xml_tests: passed, 2026-10-10, 0034011 (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (79e5, 5630), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
-  - "2026-10-12: initial tickets played at dd0240a: minimal 48 passed, 4 gallery failed (Slate wall at the campfire cell, fixed by clearing the area), 3 skipped (incompat-only); incompat 50 passed, 1 failed (the @minimal-only guard, filed without the filter). Replays filed: fix-gallery-clear (@gallery), fix-incompat-filter. Then: @review captures opened by a person"
+  - "2026-10-13: gallery replay ed64 green (4/4, framing 50 percent after the zoom bound found with NPT and SB); incompat replay green (30/30). The 4 captures are weak (test-colony dirt room, HUD on, small animals): recompose the series in the Sanctuary before any candidate. Then: @review capture 03 opened by a person"
   - "2026-10-10: unverified: scenarios C, E, F and I by hand, and the English and French mod-list presentation (E and F need an existing save, G is the game's own behaviour)"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
