@@ -44,7 +44,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
     When Nelim's Pickle Tools: developer mode is turned off for the capture
-    And Nelim's Pickle Tools: I frame the cells (24, 24) to (38, 34) filling 80 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (24, 24) to (38, 34) filling 50 percent of the screen
     And I take a screenshot "gallery-1-mammoths"
 
   # Image 2: the most generous small kind, four extra coats at 0.8. The point is the variety.
@@ -55,7 +55,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 3
     When Nelim's Pickle Tools: developer mode is turned off for the capture
-    And Nelim's Pickle Tools: I frame the cells (24, 24) to (38, 34) filling 80 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (24, 24) to (38, 34) filling 50 percent of the screen
     And I take a screenshot "gallery-2-enhydriodon"
 
   # Image 3: not a mammal, so the pack is not only mammals.
@@ -66,7 +66,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 1
     When Nelim's Pickle Tools: developer mode is turned off for the capture
-    And Nelim's Pickle Tools: I frame the cells (24, 24) to (38, 34) filling 80 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (24, 24) to (38, 34) filling 50 percent of the screen
     And I take a screenshot "gallery-3-scorpions"
 
   # Image 4: the kind with the most coats, five extra.
@@ -76,5 +76,5 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 4
     When Nelim's Pickle Tools: developer mode is turned off for the capture
-    And Nelim's Pickle Tools: I frame the cells (24, 24) to (38, 34) filling 80 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (24, 24) to (38, 34) filling 50 percent of the screen
     And I take a screenshot "gallery-4-chalicotherium"
