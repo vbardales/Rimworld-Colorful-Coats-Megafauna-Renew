@@ -36,6 +36,7 @@ remaining:
   - "2026-10-10: unverified: scenarios C, E, F and I by hand, and the English and French mod-list presentation (E and F need an existing save, G is the game's own behaviour)"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
+code_review_sha: cc2703dd3e026665616b1d6fd4ca8f4cf23c20b9
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
 updated:      2026-10-10, migrated from the old vocabulary (done -> playTests), TESTING.md renamed TEST_SCENARIOS.md
 protocols_read_sha: 9a33932f3cb73920e93184ca044f1744422e0025
@@ -82,3 +83,11 @@ pass for the one declared incompatibility, purpleyam's original. The mod adds no
   `Check-DefInjected.ps1` not applicable. Nothing for Virginie to review.
 - Tests (7.b to 7.d): `Check-Coats.ps1`, `Check-Xml.ps1`, `shared scripts/Check-Steps.ps1 of the protocols repository` green at 39cf697. Pass
   declaration in `TEST_SCENARIOS.md`. Pickle suites written, not run at this revision.
+
+## Code review, 2026-10-13 (b1e4e2a..cc2703d, no Source/)
+
+Read: `Mod/Patches/ColorfulCoats_Megafauna.xml` (26 operations, 26 distinct defNames, 67 texPaths, chances 0.6 x16, 0.7 x7, 0.8 x3, all inside
+the 0.6 to 0.8 the description states), `Mod/About/About.xml` (packageId, hard dependency, loadAfter, incompatibleWith, supportedVersions), and
+`scripts/Check-Coats.ps1`, `scripts/Check-Xml.ps1`. No defect. Residual risk, already recorded: every operation carries `<success>Always</success>`, so a
+renamed Megafauna animal loses its coats silently; `Check-Coats.ps1` (check 3) and the Pickle 01 scenarios are the guard. The `<author>` field still says
+"1.6 adapted by Nelim" (the no-version rule covers the descriptions, not this field). The coat-per-id behaviour in saves (E, F) is still unseen in game.
