@@ -57,8 +57,8 @@ credits, with the `Source code on GitHub` link to the repository, which is also 
 ## Gallery order
 
 Steam shows the first image large, so the most telling goes first, not the prettiest. All four are staged captures of one story
-(*The keeper's evening*, `Tests/Pickle/gallery-draft.md`) taken by `Tests/Pickle/Mod/Pickle/Features/08-gallery.feature` in the minimal pass
-(`-Filter '@gallery'`). **None has been taken yet, and none has been opened and looked at.** Order, once they exist:
+(*The keeper's evening*, told in the header of `Tests/Pickle/Mod/Pickle/Features/08-gallery.feature`), taken in the Sanctuary pass
+(`-DepMap wsl-deps.gallery.map -Filter '@gallery'`). **None has been taken yet, and none has been opened and looked at.** Order, once they exist:
 
 1. `gallery-1-mammoths`: two mammoths in two coats, the animal everyone knows and the one the original shows.
 2. `gallery-2-enhydriodon`: three Enhydriodon, the small kind with the most variety.
