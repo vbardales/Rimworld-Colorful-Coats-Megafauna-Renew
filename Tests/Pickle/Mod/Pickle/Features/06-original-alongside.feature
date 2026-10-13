@@ -1,3 +1,4 @@
+@requires:nelim.pickletools.coatsteps
 @requires:purpleyam.colorfulcoats.spinomegafauna
 Feature: with purpleyam's original running too, the coats still appear and nothing is logged
 

@@ -27,6 +27,7 @@ that is missing, which `AUDIT.md` says is not ours to test: the mod answers for 
 | Pass | Map | Status |
 |---|---|---|
 | Minimal | `wsl-deps.sans-facultatifs.map` | written, not run |
+| Gallery (Sanctuary, @gallery) | `wsl-deps.gallery.map` | written, run once at ec2779e in test-colony, recomposed 2026-10-13, not run |
 | Optional integration | none: the mod has no optional integration and Megafauna, its only dependency, is a hard one | not applicable |
 | Declared incompatibility `purpleyam.colorfulcoats.spinomegafauna` (Workshop 2560113727) | `wsl-deps.incompat-spinomegafauna.map` | written, not run |
 | DLC absent | none: no DLC is referenced | not applicable |
