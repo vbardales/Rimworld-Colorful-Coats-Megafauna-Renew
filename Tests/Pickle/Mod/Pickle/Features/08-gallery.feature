@@ -50,6 +50,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: 2 adult animals of kind "WoollyMammoth" are spawned around (196, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-1" stands at (195, 150) facing West
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (199, 154) facing West
     And Nelim's Pickle Tools: time is paused for the capture
     When Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "gallery-1-mammoths"
@@ -127,6 +129,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: 2 adult animals of kind "Chalicotherium" are spawned around (196, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 4
+    And Nelim's Pickle Tools: the animal "coat-1" stands at (194, 149) facing West
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (199, 154) facing West
     And Nelim's Pickle Tools: time is paused for the capture
     When Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "gallery-4-chalicotherium"
