@@ -68,6 +68,21 @@ Steam shows the first image large, so the most telling goes first, not the prett
 `Art/Gallery/0-preview.png` (a byte-identical copy of `Mod/About/Preview.png`) stays first in the folder; the captures follow as `1-, 2-...`
 Each image is to be opened by a person before upload: a green capture scenario does not prove the picture shows anything.
 
+## Gallery subtitles
+
+One line of English at the bottom of each scene without an interface window, laid over the image like a film subtitle
+(`GALLERY.md`, "Sous-titres"). The story is the keeper's evening: Nelim lights a fire, the herd of the dry plains comes in
+from the east, species by species. `0-preview.png` (the Preview) has no subtitle. The files are the planned names: the clean
+original goes in `Art/Gallery-clean/`, the subtitled image in `Art/Gallery/`, both under 2 MB. A line changes here first,
+then the tool is replayed on the clean original. **None of them is laid yet: the captures have not been accepted.**
+
+| Index | File | Line |
+|---|---|---|
+| 1 | `1-mammoths.png` | The first of the herd to reach her fire: two mammoths, two different coats. |
+| 2 | `2-enhydriodon.png` | Behind them, the Enhydriodon, no two coats alike. |
+| 3 | `3-scorpions.png` | Not only mammals: the giant scorpions come to the light too. |
+| 4 | `4-chalicotherium.png` | The last to arrive: two Chalicotherium, the kind with the most coats. |
+
 ## Dependencies and DLC
 
 - Required: **Megafauna** (`Spino.Megafauna`, 1055485938). The patch targets 26 of its animals and carries no guard, so a player without it gets
