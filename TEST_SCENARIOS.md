@@ -308,3 +308,6 @@ scenario once. Full passes that replay what is already green are filed together 
 the published revision. A scenario is in non-regression once it has a green run on the current logic; a change to the mod
 or to a step it uses makes it new again. Currently every scenario is new: none has had a green run since the 2026-09-28
 step fixes, except the ones recorded in `docs/runs/`.
+
+A third pass exists for the Workshop gallery only (`@gallery`): `wsl-deps.gallery.map`, the Sanctuary Backlot fixture plus
+this mod's own staging. It proves no behaviour of the mod: it produces the images a person judges. It is not a validation pass.
