@@ -35,13 +35,11 @@
     "file": "echo-source.png",
     "preSized": true,
     "color": "var(--accent)",
-    "width": 260,
-    "height": 260,
     "opacity": 1,
     "veil": false,
-    "panelTop": 24,
-    "panelRight": -1,
-    "panelWidth": 35
+    "panelTop": 5,
+    "panelRight": -2,
+    "panelWidth": 48
   },
   "iconBadge": {
     "file": "ModIcon-source.png",
