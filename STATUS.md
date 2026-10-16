@@ -2,8 +2,8 @@
 settings_audit: not_applicable
 workflow_audit: complete_through_writeTests
 rights_audit: complete
-audit_revision: e57955d (audited 2026-10-15 against the current AUDIT.md, protocols 9a33932f..HEAD re-read)
-audit_date: 2026-10-15
+audit_revision: 576bf42 (audited 2026-10-16 against the current AUDIT.md, protocols 1397cf36..005d9b27 re-read: titles, pastilles, dormant[x.y.z]; no criterion changed)
+audit_date: 2026-10-16
 localization: not_applicable
 translation_en: not_applicable
 translation_fr: not_applicable
