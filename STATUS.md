@@ -32,13 +32,13 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
-  - "2026-10-15: unverified: the gallery captures (Sanctuary pass, 2026-10-14 and 15) opened and judged by a person; @review capture 03 likewise"
+  - "2026-10-16: gallery: first candidates refused (Nelim sweat); replay 20261016-230301-475-19db queued (SB face recipe, bun, map 18 degrees); subtitles laid on the next accepted lot; coat sheet 09 (9ab1) green, its 9 captures not yet read"
   - "2026-10-10: unverified: scenarios C, E, F and I by hand, and the English and French mod-list presentation (E and F need an existing save, G is the game's own behaviour)"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: cc2703dd3e026665616b1d6fd4ca8f4cf23c20b9
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
-updated: 2026-10-16, target version set to 1.0.0; old gallery candidates 2 and 3 refused (animals seen from behind, far from the fire, scorpion coats near identical) and deleted; recomposed replay still queued
+updated: 2026-10-16, echo-source.png mounted in the Preview (standard panel values), gallery replay queued
 protocols_read_sha: 005d9b2720a85d62a3a31b02c265f3133621ee72
 ---
 
