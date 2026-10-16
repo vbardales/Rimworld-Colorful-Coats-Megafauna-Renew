@@ -58,7 +58,7 @@ credits, with the `Source code on GitHub` link to the repository, which is also 
 
 Steam shows the first image large, so the most telling goes first, not the prettiest. All four are staged captures of one story
 (*The keeper's evening*, told in the header of `Tests/Pickle/Mod/Pickle/Features/08-gallery.feature`), taken in the Sanctuary pass
-(`-DepMap wsl-deps.gallery.map -Filter '@gallery'`). **Two earlier passes (2026-10-14 and 15) were recomposed because they did not tell the story; the replay is queued (ticket `20261016-123502-784-8fcb`, tighter framing; the earlier ticket `20261015-222853-540-9dbf` left no trace in the queue), and none has been opened and accepted yet.** Order:
+(`-DepMap wsl-deps.gallery.map -Filter '@gallery'`). **Two earlier passes (2026-10-14 and 15) were recomposed because they did not tell the story; the replay is queued (ticket `20261016-175354-490-527c`, tighter framing and an explicit bun (the ticket `20261016-123502-784-8fcb` was cancelled before it started); the earlier ticket `20261015-222853-540-9dbf` left no trace in the queue), and none has been opened and accepted yet.** Order:
 
 1. `gallery-1-mammoths`: two mammoths in two coats, the animal everyone knows and the one the original shows.
 2. `gallery-2-enhydriodon`: three Enhydriodon, the small kind with the most variety.
