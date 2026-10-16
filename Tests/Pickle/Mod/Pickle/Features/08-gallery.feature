@@ -7,7 +7,7 @@
 # (PUBLISHING.md, GALERIE.md): each scenario reloads the save, sets 19 h once, waits the elapsed game time, then poses the
 # animals (setup 60 ticks, then +5 game minutes per picture, 208 ticks): 19:00, 19:05, 19:10, 19:15.
 #
-# Shot plan (one image per scenario, same corner of `bare-clearing`, 17 x 11 cells framed at 90 percent, bare earth, the
+# Shot plan (one image per scenario, same corner of `bare-clearing`, 14 x 9 cells framed at 90 percent (tighter, 2026-10-16: Nelim and the herd read larger), bare earth, the
 # fire at the west, every animal turned to it):
 #   1 two mammoths in two coats, the best known animal, the first of the herd to reach the fire;
 #   2 three Enhydriodon in three coats, the most generous small kind, the herd spread across the clearing;
@@ -60,9 +60,9 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
     And Nelim's Pickle Tools: the animal "coat-1" stands at (198, 150) facing West
-    And Nelim's Pickle Tools: the animal "coat-2" stands at (202, 154) facing West
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (200, 154) facing West
     And Nelim's Pickle Tools: time is paused for the capture
-    When Nelim's Pickle Tools: I frame the cells (189, 147) to (205, 157) filling 90 percent of the screen
+    When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "gallery-1-mammoths"
 
@@ -95,7 +95,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-2" stands at (200, 153) facing West
     And Nelim's Pickle Tools: the animal "coat-3" stands at (197, 155) facing West
     And Nelim's Pickle Tools: time is paused for the capture
-    When Nelim's Pickle Tools: I frame the cells (189, 147) to (205, 157) filling 90 percent of the screen
+    When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "gallery-2-enhydriodon"
 
@@ -128,7 +128,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-2" stands at (200, 153) facing West
     And Nelim's Pickle Tools: the animal "coat-3" stands at (197, 155) facing West
     And Nelim's Pickle Tools: time is paused for the capture
-    When Nelim's Pickle Tools: I frame the cells (189, 147) to (205, 157) filling 90 percent of the screen
+    When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "gallery-3-scorpions"
 
@@ -157,8 +157,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 4
     And Nelim's Pickle Tools: the animal "coat-1" stands at (198, 149) facing West
-    And Nelim's Pickle Tools: the animal "coat-2" stands at (203, 154) facing West
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (201, 154) facing West
     And Nelim's Pickle Tools: time is paused for the capture
-    When Nelim's Pickle Tools: I frame the cells (189, 147) to (205, 157) filling 90 percent of the screen
+    When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And I take a screenshot "gallery-4-chalicotherium"
