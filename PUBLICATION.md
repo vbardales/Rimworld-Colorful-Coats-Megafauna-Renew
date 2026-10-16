@@ -96,18 +96,17 @@ then the tool is replayed on the clean original. **None of them is laid yet: the
 
 None. No textures of a body, no text, nothing to declare. The answers on the Workshop form: not adult.
 
-## Release notes (Steam, 0.1.0 creation; 1.0.0 to come)
+## Release notes (Steam)
 
-The first line carries only the version.
+The first line carries only the version (`[b]x.y.z[/b]`): the CI refuses a note whose first line does not. Sent before: `[b]0.1.0[/b]`, the
+creation of the item (first send, private). Next, drafted from the `[1.0.0]` section of `CHANGELOG.md`, to be sent with the release (the date is set at the dry-run):
 
-``
-[b]0.1.0[/b]
-First send, to create the item. Not tested by a person yet; private until switched by hand.
-``
-
-For 1.0.0: the `## `[1.0.0]` section of `CHANGELOG.md` once it is renumbered by the owner (the file already carries a `[1.0.0]` of 2026-09-05
-from before this workflow).
-
+```
+[b]1.0.0[/b]
+First release. Coat variations for 26 of Megafauna's animals, 67 coats in all, ported from purpleyam's Colorful Coats - Megafauna! to the latest RimWorld version.
+Each of the 26 patch operations now reports success even if its animal is missing, so one renamed animal can no longer cost the others their coats.
+Checked by static scripts and an automated in-game suite; how the coats look on an existing save has not been seen in game yet.
+```
 ## Thank-you comments (one per page, after the item is public)
 
 Register: `WORKSHOP_COMMENTS.md`, keyed by the recipient's Workshop id. Harmony (2009463077), RimLogging (3733484696) and Pickle are already
