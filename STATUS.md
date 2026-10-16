@@ -19,7 +19,7 @@ redistribution_permission: not found in sources checked 2026-09-12
 source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the project definition of no declared 1.6 support
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-workflow_stage: playTests[0.1.0]
+workflow_stage: playTests[1.0.0]
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
@@ -38,7 +38,7 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: cc2703dd3e026665616b1d6fd4ca8f4cf23c20b9
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
-updated: 2026-10-15, audit replayed to playTests, Pickle passes and gallery runs recorded
+updated: 2026-10-16, target version set to 1.0.0; old gallery candidates 2 and 3 refused (animals seen from behind, far from the fire, scorpion coats near identical) and deleted; recomposed replay still queued
 protocols_read_sha: 005d9b2720a85d62a3a31b02c265f3133621ee72
 ---
 
@@ -49,7 +49,7 @@ Check it with `scripts/Check-Status.ps1 -Mod ColorfulCoatsMegafaunaRenew` (no ER
 
 ## State
 
-`playTests[0.1.0]`. Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
+`playTests[1.0.0]`. Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
 67 coats, 201 textures), `Check-Xml.ps1` and `shared scripts/Check-Steps.ps1 of the protocols repository` (55 scenarios across passes) all PASS.
 Functional scenarios A-I are in `TEST_SCENARIOS.md`. Pickle suites are in `Tests/Pickle/`: the minimal pass and the
 pass for the one declared incompatibility, purpleyam's original. The mod adds no setting and no player-facing text.
@@ -60,7 +60,7 @@ pass for the one declared incompatibility, purpleyam's original. The mod adds no
   (`docs/runs/2026-10-15-gallery-sanctuary.txt`); a person still has to judge the captures (`@review`, 8.d).
 - By hand: C, E, F, I and the EN/FR mod-list presentation (8.g, 8.k).
 - Flaky `CoatSteps` spawn error: `docs/runs/2026-09-28-c9a2-minimal-rerun.txt`.
-- `CHANGELOG.md` keeps an old `[1.0.0]` entry dated 2026-09-05, flagged for the owner to renumber.
+- Target version 1.0.0 (owner, 2026-10-16). `CHANGELOG.md` `[1.0.0]` (2026-09-05) is its base; date it at the release.
 - `Mod/` changed after the `0.1.0` send (About text, `ModIcon32.png`).
 - Untracked, not mine to commit: `Art/Gallery/2-candidate-enhydriodon.png`, `Art/Gallery/3-candidate-scorpions.png`, `Art/echo-source.png`.
 

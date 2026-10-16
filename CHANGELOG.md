@@ -52,12 +52,7 @@ This does not mean the mod is public or tested; the item stays private until swi
 `Mod/` as sent matches commit `7f868a9`, unchanged since. This entry adds nothing beyond what
 the `[Unreleased]` notes above already describe.
 
-> **Note left for whoever settles this file's numbering:** the section below is headed
-> `[1.0.0]`, dated 2026-09-05, from before this repository's publishing workflow existed and
-> before any Workshop item had been created. Under the current rule, `1.0.0` is reserved for the
-> `published` state (a public item, tagged `v1.0.0`), which has not happened yet. Left as
-> written rather than renumbered unilaterally: renaming a released-looking entry is a call for
-> the person who owns this mod, not a session passing through.
+> Numbering settled by the owner, 2026-10-16: the target version is `1.0.0`. The section below is the base of its entry; its date is set at the release.
 
 ## [1.0.0] — 2026-09-05
 
