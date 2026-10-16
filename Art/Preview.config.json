@@ -39,9 +39,9 @@
     "height": 260,
     "opacity": 1,
     "veil": false,
-    "panelTop": 5,
-    "panelRight": -2,
-    "panelWidth": 27
+    "panelTop": 0,
+    "panelRight": -9,
+    "panelWidth": 38
   },
   "iconBadge": {
     "file": "ModIcon-source.png",
