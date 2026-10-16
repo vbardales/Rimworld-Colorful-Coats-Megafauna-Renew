@@ -19,7 +19,7 @@
 # Each scenario is @review: a green run proves a picture was taken, not that it is worth uploading. The session opens every
 # capture and judges it before anything goes to Art/Gallery/. Run under wsl-deps.gallery.map (the minimal pass has no
 # Sanctuary and skips these by their @requires): Submit-PickleRun.ps1 ... -DepMap wsl-deps.gallery.map -Filter '@gallery'.
-# The map is held at 18 degrees: at the Sanctuary's own temperature Nelim sweats in big drops (owner refused the first candidates, 2026-10-16).
+# Nelim's face (owner refused sweat drops, 2026-10-16; SB, GALERIE.md "Visage propre"): temperature alone does not clear the sweat. The face steps come LAST, after the frame and the map shown alone: kit neutral, own face, hair, then ONE expression call "normal+blink", 5 frames, capture, no tick between.
 # The subtitles of the four images are in PUBLICATION.md, "Gallery subtitles".
 # Steps: the places, Nelim's face and their cleaning are Nelim's Sanctuary: steps (SanctuaryBacklot); the generic tools
 # (presentation mode, decor, ticks, pause, framing, clothes) are Nelim's Pickle Tools: steps; the spawn and coat steps are
@@ -57,9 +57,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 2 adult animals of kind "WoollyMammoth" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
@@ -69,6 +66,12 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: time is paused for the capture
     When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
+    And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
+    And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-1-mammoths"
 
   # Image 2, 19:05: the most generous small kind, four extra coats at 0.8. The point is the variety.
@@ -91,9 +94,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 3 adult animals of kind "Enhydriodon" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
@@ -105,6 +105,12 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: time is paused for the capture
     When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
+    And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
+    And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-2-enhydriodon"
 
   # Image 3, 19:10: not a mammal, so the pack is not only mammals.
@@ -127,9 +133,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 3 adult animals of kind "Pulmonoscorpius" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
@@ -141,6 +144,12 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: time is paused for the capture
     When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
+    And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
+    And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-3-scorpions"
 
   # Image 4, 19:15: the kind with the most coats, five extra.
@@ -163,9 +172,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 2 adult animals of kind "Chalicotherium" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
@@ -175,4 +181,10 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: time is paused for the capture
     When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
+    And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
+    And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-4-chalicotherium"
