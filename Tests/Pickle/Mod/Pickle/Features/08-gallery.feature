@@ -2,7 +2,7 @@
 #
 # The story: the keeper's evening. At dusk Nelim (Virginie, the one colonist of the Sanctuary) lights a fire in the bare
 # clearing. The herd of the dry plains comes in from the east, drawn by the light, and each picture is one species stepping
-# into the firelight while Nelim watches them come: dark hair in a bun, a teal shirt and trousers that stand out against the
+# into the firelight while Nelim watches them come: dark hair in a bun (RI_HairStyle_FemaleBun from RimImmortal, set after her own face so it stays; the save's bun is not trusted), a teal shirt and trousers that stand out against the
 # warm browns of the coats and of the earth, her own face (two brows, a smirk, a blink). Time unfolds in the series
 # (PUBLISHING.md, GALERIE.md): each scenario reloads the save, sets 19 h once, waits the elapsed game time, then poses the
 # animals (setup 60 ticks, then +5 game minutes per picture, 208 ticks): 19:00, 19:05, 19:10, 19:15.
@@ -29,6 +29,7 @@
 @requires:nelim.pickletools.screenshotstudio
 @requires:nelim.pickletools.camerazoom
 @requires:nelim.pickletools.colonistrace
+@requires:RI.RimImmortals.Hairstyle
 @requires:nelim.sanctuarybacklot
 Feature: Workshop gallery captures
 
@@ -55,6 +56,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 2 adult animals of kind "WoollyMammoth" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
@@ -86,6 +89,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 3 adult animals of kind "Enhydriodon" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
@@ -119,6 +124,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 3 adult animals of kind "Pulmonoscorpius" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
@@ -152,6 +159,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 2 adult animals of kind "Chalicotherium" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
