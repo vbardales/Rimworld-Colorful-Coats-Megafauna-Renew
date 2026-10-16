@@ -39,7 +39,7 @@ remaining:
 code_review_sha: cc2703dd3e026665616b1d6fd4ca8f4cf23c20b9
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
 updated: 2026-10-16, echo-source.png mounted in the Preview (standard panel values), gallery replay queued
-protocols_read_sha: 005d9b2720a85d62a3a31b02c265f3133621ee72
+protocols_read_sha: 7693bc9c57044ef5e155ba5216069f8320290a55
 ---
 
 # Colorful Coats - Megafauna! Renew (unofficial): status
