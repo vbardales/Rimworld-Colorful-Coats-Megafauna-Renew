@@ -19,6 +19,7 @@
 # Each scenario is @review: a green run proves a picture was taken, not that it is worth uploading. The session opens every
 # capture and judges it before anything goes to Art/Gallery/. Run under wsl-deps.gallery.map (the minimal pass has no
 # Sanctuary and skips these by their @requires): Submit-PickleRun.ps1 ... -DepMap wsl-deps.gallery.map -Filter '@gallery'.
+# The map is held at 18 degrees: at the Sanctuary's own temperature Nelim sweats in big drops (owner refused the first candidates, 2026-10-16).
 # The subtitles of the four images are in PUBLICATION.md, "Gallery subtitles".
 # Steps: the places, Nelim's face and their cleaning are Nelim's Sanctuary: steps (SanctuaryBacklot); the generic tools
 # (presentation mode, decor, ticks, pause, framing, clothes) are Nelim's Pickle Tools: steps; the spawn and coat steps are
@@ -45,6 +46,7 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: the floor of the sanctuary "bare-clearing" is bared
     And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the temperature of the map is 18 degrees
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 152)
@@ -78,6 +80,7 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: the floor of the sanctuary "bare-clearing" is bared
     And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the temperature of the map is 18 degrees
     And Nelim's Pickle Tools: I let 268 ticks pass
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 152)
@@ -113,6 +116,7 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: the floor of the sanctuary "bare-clearing" is bared
     And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the temperature of the map is 18 degrees
     And Nelim's Pickle Tools: I let 476 ticks pass
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 152)
@@ -148,6 +152,7 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: the floor of the sanctuary "bare-clearing" is bared
     And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the temperature of the map is 18 degrees
     And Nelim's Pickle Tools: I let 684 ticks pass
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 152)
