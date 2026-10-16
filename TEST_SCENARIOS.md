@@ -32,7 +32,7 @@ run: nothing below has been played, and the three shared steps in `PickleTools/C
 |---|---|---|
 | A — the coats appear | yes | `03-coats-on-spawn` (mammoth, scorpion, Enhydriodon) |
 | B — the far end of the sequence | yes | `01-patch-applied` for all 26, `04-sequence-ends` for the first and the last |
-| C — the 67 coats and the three rotations | a sample | `02-textures` for 13 files, the rest is `Check-Coats.ps1` |
+| C — the 67 coats and the three rotations | partly | `02-textures` for 13 files, `09-coat-sheet` (Sanctuary pass, `@coatsheet`, written 2026-10-16, not played): every coat of Chalicotherium, Enhydriodon and Purussaurus in North, South and East, with 9 `@review` captures; the other 23 kinds are `Check-Coats.ps1` and a person |
 | D — per animal, survives a reload | yes | `05-coat-survives-reload` |
 | E, F — added to or removed from a save | no | two launches of one save; stays manual |
 | G — no Megafauna at all | no | the game's reaction to a missing hard dependency, not ours to test |

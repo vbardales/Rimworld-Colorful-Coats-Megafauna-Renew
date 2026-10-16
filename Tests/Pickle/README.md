@@ -27,7 +27,7 @@ that is missing, which `AUDIT.md` says is not ours to test: the mod answers for 
 | Pass | Map | Status |
 |---|---|---|
 | Minimal | `wsl-deps.sans-facultatifs.map` | played 2026-10-12 (initial ticket 48 of 55 green, the 4 reds were the gallery, since moved to its own pass), replays green |
-| Gallery (Sanctuary, @gallery) | `wsl-deps.gallery.map` | played 2026-10-14 12:07 (4 of 4) and 2026-10-15 09:41 (gallery 1 and 4, 2 of 2, after the animals were turned to the fire); captures to be judged |
+| Gallery (Sanctuary, @gallery, @coatsheet) | `wsl-deps.gallery.map` | played 2026-10-14 12:07 (4 of 4) and 2026-10-15 09:41 (gallery 1 and 4, 2 of 2, after the animals were turned to the fire); captures to be judged |
 | Optional integration | none: the mod has no optional integration and Megafauna, its only dependency, is a hard one | not applicable |
 | Declared incompatibility `purpleyam.colorfulcoats.spinomegafauna` (Workshop 2560113727) | `wsl-deps.incompat-spinomegafauna.map` | played 2026-10-12, replay green (30/30, filter 01 and 06, `!@minimal-only`) |
 | DLC absent | none: no DLC is referenced | not applicable |
