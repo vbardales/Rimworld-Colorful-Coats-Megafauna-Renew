@@ -34,7 +34,7 @@ workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 
 remaining:
   - "2026-10-17: gallery left for shootGallery (owner): replay 20261016-230301-475-19db stays queued (map 18 degrees, SB face recipe); no sweat unless the scene explains it; judge the 4 captures when RUN_DONE arrives, if sweat remains send the path to SB (local_9922b4f6) who relays to NPT; subtitles via Art/Gallery-clean + scripts/Add-Subtitle.ps1"
   - "2026-10-17: coat sheet 09 (9ab1) read, no flipped or missing piece; echo_review_sha and social_preview_sha256 not due until mountPreview and writeDocs; no grep in any form (AGENTS.md)"
-  - "2026-10-17: automated at af830bc (owner: no hand play): C by 10-all-coats and 11-all-textures (ticket 869f), F by 12-removed-from-save as -Then/-ThenWithout (ticket 0c2e), E covered by every scenario; I (mod list entry, EN/FR look) not automated, no step shows that screen; G is the game's own behaviour"
+  - "2026-10-17: automated at af830bc (owner: no hand play): C by 10-all-coats and 11-all-textures (ticket 869f), F by 12-removed-from-save as -Then/-ThenWithout (ticket 0c2e), E covered by every scenario; I (mod list entry, EN/FR look) and G are the game's own behaviour, not applicable (owner, 2026-10-17); About.xml checked offline"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: cc2703dd3e026665616b1d6fd4ca8f4cf23c20b9

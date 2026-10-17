@@ -24,7 +24,7 @@ Written 2026-09-28 in `Tests/Pickle/`, see its `README.md` for scope and pass ma
 | F — removed from a save | yes (written 2026-10-17, not played) | `12-removed-from-save`, sequence `-Then` + `-ThenWithout nelim.colorfulcoats.megafauna`: coats saved with the mod, save handed to the test companion, loaded without the mod, 16 mammoths exist, none with an extra coat, no error |
 | G — no Megafauna at all | no | game's reaction to missing hard dependency, not ours to test |
 | H — the original alongside | yes | `06-original-alongside`, incompatibility pass only |
-| I — the mod list entry | no | a look at a screen |
+| I — the mod list entry | not applicable | the game's own display (`AUDIT.md`, "On ne teste pas le jeu"); what the mod owns is `About.xml` and its images, checked offline by `Check-Xml.ps1` and `Check-Status.ps1` |
 
 `@review` capture in `03` is for person to open; green says steps ran, not that animals look different.
 
