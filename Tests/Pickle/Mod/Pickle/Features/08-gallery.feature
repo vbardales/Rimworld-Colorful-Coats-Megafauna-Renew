@@ -13,7 +13,7 @@
 #   2 three Enhydriodon in three coats, the most generous small kind, the herd spread across the clearing;
 #   3 three giant scorpions, a pack that is not only mammals, one in the original colour for contrast;
 #   4 two Chalicotherium, the kind with the most coats, the last of the herd to reach the fire.
-# Coats are chosen, not left to chance (each animal is given a named coat, -1 is the original): that is staging. The
+# Mammoths: coats B (taupe) and C (red), A is too dark to tell from C in firelight (2026-10-17). Coats are chosen, not left to chance (each animal is given a named coat, -1 is the original): that is staging. The
 # 24-animal scenarios of 03-coats-on-spawn.feature are what prove that coats occur.
 #
 # Each scenario is @review: a green run proves a picture was taken, not that it is worth uploading. The session opens every
@@ -59,7 +59,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
     And Nelim's Pickle Tools: 2 adult animals of kind "WoollyMammoth" are spawned around (199, 152)
-    And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
     And Nelim's Pickle Tools: the animal "coat-1" stands at (198, 150) facing West
     And Nelim's Pickle Tools: the animal "coat-2" stands at (200, 154) facing West
