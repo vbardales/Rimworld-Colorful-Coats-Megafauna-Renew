@@ -14,9 +14,11 @@ Everything a file can prove stays in `scripts/Check-Coats.ps1`: the 201 textures
 **Spawn and reload** (`03-`, `04-`, `05-`, `06-`) use `PickleTools/CoatSteps`, written by the Dodos session and
 shared by the four Colorful Coats ports. Those steps compile but have never run.
 
-**Not automatable here:** E and F (add or remove the mod in a save that already exists). They need two launches of
-one save with different mod sets, and the harness stages one set per launch. They stay unverified, and the About and
-README claim "safe to add or remove" stays a claim until someone plays them.
+**All coats and textures** (`10-`, `11-`, 2026-10-17, not played): `10-all-coats` gives one animal each extra coat of each
+of the 26 kinds and compares the graphic drawn with the `texPath` listed; `11-all-textures` asks the content holders for
+all 201 files. **Removal from a save** (`12-`, not played): `-Filter '::coats are saved with the mod' -Then '::the save
+loads without the mod' -ThenWithout nelim.colorfulcoats.megafauna`, a sequence, never alone. Adding the mod to a save (E)
+has no test of its own: every scenario loads the mod into a colony that never had it (`WELCOME.md`).
 
 **Not written, on purpose:** G, the mod with no Megafauna at all. That is the game's reaction to a hard dependency
 that is missing, which `AUDIT.md` says is not ours to test: the mod answers for what it declares, and

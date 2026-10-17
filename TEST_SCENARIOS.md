@@ -18,9 +18,10 @@ Written 2026-09-28 in `Tests/Pickle/`, see its `README.md` for scope and pass ma
 |---|---|---|
 | A — the coats appear | yes | `03-coats-on-spawn` (mammoth, scorpion, Enhydriodon) |
 | B — the far end of the sequence | yes | `01-patch-applied` for all 26, `04-sequence-ends` for first and last |
-| C — the 67 coats and the three rotations | partly | `02-textures` for 13 files, `09-coat-sheet` (Sanctuary pass, `@coatsheet`, written 2026-10-16, not played): every coat of Chalicotherium, Enhydriodon, Purussaurus in North, South, East, with 9 `@review` captures; other 23 kinds are `Check-Coats.ps1` and a person |
+| C — the 67 coats and the three rotations | yes (written 2026-10-17, not played) | `10-all-coats`: one animal per extra coat, 26 kinds, 67 coats, drawn with its own texture; `11-all-textures`: all 201 files answered by the mod; `02-textures` sample; `09-coat-sheet` (Sanctuary pass, `@coatsheet`, played, read 2026-10-17): Chalicotherium, Enhydriodon, Purussaurus in North, South, East, 9 captures, no flipped or missing piece. How the other 23 kinds look in each facing stays unseen: no step shows pixels |
 | D — per animal, survives a reload | yes | `05-coat-survives-reload` |
-| E, F — added to or removed from a save | no | two launches of one save; stays manual |
+| E — added to a save | by `03`, `05` | every scenario loads the mod into `test-colony`, which never had it (`WELCOME.md`: adding has no test of its own) |
+| F — removed from a save | yes (written 2026-10-17, not played) | `12-removed-from-save`, sequence `-Then` + `-ThenWithout nelim.colorfulcoats.megafauna`: coats saved with the mod, save handed to the test companion, loaded without the mod, 16 mammoths exist, none with an extra coat, no error |
 | G — no Megafauna at all | no | game's reaction to missing hard dependency, not ours to test |
 | H — the original alongside | yes | `06-original-alongside`, incompatibility pass only |
 | I — the mod list entry | no | a look at a screen |
