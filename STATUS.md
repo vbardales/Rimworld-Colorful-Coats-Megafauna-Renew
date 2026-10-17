@@ -33,12 +33,14 @@ manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle 
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
   - "2026-10-16: gallery: first candidates refused (Nelim sweat); replay 20261016-230301-475-19db queued (SB face recipe, bun, map 18 degrees); subtitles laid on the next accepted lot; coat sheet 09 (9ab1) green, its 9 captures not yet read"
+  - "2026-10-17: gallery 19db (map 18 degrees, SB face recipe: kit neutral, own face, RimImmortal bun, one normal+blink call last) waits in the queue behind EdenGarden: when RUN_DONE arrives, open the 4 captures, judge, send to Virginie, then lay subtitles (Art/Gallery-clean + scripts/Add-Subtitle.ps1, lines in PUBLICATION.md); if sweat remains send the capture path to SB (local_9922b4f6), who relays to NPT"
+  - "2026-10-17: coat sheet 09 (9ab1, exit 0): read the 9 coatsheet-* captures in Tests/Pickle/Evidence/coatsheet-1/screenshots (flipped or missing piece); echo_review_sha and social_preview_sha256 not due until mountPreview and writeDocs; no grep in any form (AGENTS.md)"
   - "2026-10-10: unverified: scenarios C, E, F and I by hand, and the English and French mod-list presentation (E and F need an existing save, G is the game's own behaviour)"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: cc2703dd3e026665616b1d6fd4ca8f4cf23c20b9
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
-updated: 2026-10-16, echo-source.png mounted in the Preview (standard panel values), gallery replay queued
+updated: 2026-10-17, gallery replay 19db queued, echo-preview.png removed, protocols read at 7693bc9c
 protocols_read_sha: 7693bc9c57044ef5e155ba5216069f8320290a55
 ---
 
