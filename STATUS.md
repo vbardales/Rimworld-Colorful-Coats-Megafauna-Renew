@@ -32,9 +32,8 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
-  - "2026-10-16: gallery: first candidates refused (Nelim sweat); replay 20261016-230301-475-19db queued (SB face recipe, bun, map 18 degrees); subtitles laid on the next accepted lot; coat sheet 09 (9ab1) green, its 9 captures not yet read"
-  - "2026-10-17: gallery 19db (map 18 degrees, SB face recipe: kit neutral, own face, RimImmortal bun, one normal+blink call last) waits in the queue behind EdenGarden: when RUN_DONE arrives, open the 4 captures, judge, send to Virginie, then lay subtitles (Art/Gallery-clean + scripts/Add-Subtitle.ps1, lines in PUBLICATION.md); if sweat remains send the capture path to SB (local_9922b4f6), who relays to NPT"
-  - "2026-10-17: coat sheet 09 (9ab1, exit 0) read: 9 coatsheet-* captures (chalicotherium 6 coats, enhydriodon 5, purussaurus 5, east/north/south) show no flipped or missing piece; purussaurus overlap is its size only; echo_review_sha and social_preview_sha256 not due until mountPreview and writeDocs; no grep in any form (AGENTS.md)"
+  - "2026-10-17: gallery left for shootGallery (owner): replay 20261016-230301-475-19db stays queued (map 18 degrees, SB face recipe); no sweat unless the scene explains it; judge the 4 captures when RUN_DONE arrives, if sweat remains send the path to SB (local_9922b4f6) who relays to NPT; subtitles via Art/Gallery-clean + scripts/Add-Subtitle.ps1"
+  - "2026-10-17: coat sheet 09 (9ab1) read, no flipped or missing piece; echo_review_sha and social_preview_sha256 not due until mountPreview and writeDocs; no grep in any form (AGENTS.md)"
   - "2026-10-10: unverified: scenarios C, E, F and I by hand, and the English and French mod-list presentation (E and F need an existing save, G is the game's own behaviour)"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
@@ -56,8 +55,7 @@ Functional scenarios A-I in `TEST_SCENARIOS.md`. Pickle suites in `Tests/Pickle/
 
 ## Left for playTests
 
-- Minimal pass and incompatibility pass played, green (2026-10-12 initial tickets, replays green). Gallery pass played in Sanctuary
-  (`docs/runs/2026-10-15-gallery-sanctuary.txt`); person still must judge captures (`@review`, 8.d).
+- Minimal pass and incompatibility pass played, green (2026-10-12 initial tickets, replays green). Gallery pass (`docs/runs/2026-10-15-gallery-sanctuary.txt`) judged at `shootGallery`, not here.
 - By hand: C, E, F, I, EN/FR mod-list presentation (8.g, 8.k).
 - Flaky `CoatSteps` spawn error: `docs/runs/2026-09-28-c9a2-minimal-rerun.txt`.
 - Target version 1.0.0 (owner, 2026-10-16). `CHANGELOG.md` `[1.0.0]` (2026-09-05) is base; date it at release.
