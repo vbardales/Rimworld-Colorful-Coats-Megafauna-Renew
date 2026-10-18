@@ -55,9 +55,14 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 148) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (193, 156)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 148)
+    And Nelim's Pickle Tools: the plants from (201, 148) to (201, 148) are fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 156)
+    And Nelim's Pickle Tools: the plants from (201, 156) to (201, 156) are fully grown
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
+    And Nelim's Pickle Tools: "Nelim" carries the item "WoodLog"
     And Nelim's Pickle Tools: 2 adult animals of kind "WoollyMammoth" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
@@ -92,16 +97,21 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 148) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (193, 156)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 148)
+    And Nelim's Pickle Tools: the plants from (201, 148) to (201, 148) are fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 156)
+    And Nelim's Pickle Tools: the plants from (201, 156) to (201, 156) are fully grown
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
+    And Nelim's Pickle Tools: "Nelim" carries the item "WoodLog"
     And Nelim's Pickle Tools: 3 adult animals of kind "Enhydriodon" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 3
     And Nelim's Pickle Tools: the animal "coat-1" stands at (197, 150) facing West
     And Nelim's Pickle Tools: the animal "coat-2" stands at (200, 153) facing West
-    And Nelim's Pickle Tools: the animal "coat-3" stands at (197, 155) facing West
+    And Nelim's Pickle Tools: the animal "coat-3" stands at (197, 155) facing South
     And Nelim's Pickle Tools: time is paused for the capture
     When Nelim's Pickle Tools: I frame the cells (189, 148) to (202, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
@@ -131,9 +141,14 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 148) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (193, 156)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 148)
+    And Nelim's Pickle Tools: the plants from (201, 148) to (201, 148) are fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 156)
+    And Nelim's Pickle Tools: the plants from (201, 156) to (201, 156) are fully grown
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
+    And Nelim's Pickle Tools: "Nelim" carries the item "WoodLog"
     And Nelim's Pickle Tools: 3 adult animals of kind "Pulmonoscorpius" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 0
@@ -170,9 +185,14 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 148) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (193, 156)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 148)
+    And Nelim's Pickle Tools: the plants from (201, 148) to (201, 148) are fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 156)
+    And Nelim's Pickle Tools: the plants from (201, 156) to (201, 156) are fully grown
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" stands at (191, 154) facing East
+    And Nelim's Pickle Tools: "Nelim" carries the item "WoodLog"
     And Nelim's Pickle Tools: 2 adult animals of kind "Chalicotherium" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 4
