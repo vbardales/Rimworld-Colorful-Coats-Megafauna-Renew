@@ -33,7 +33,8 @@ manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle 
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
   - "2026-10-18: Audit (via TM) asked gallery prep polish: 08-gallery.feature now has dry tall grass at (201,148) and (201,156), Nelim carries WoodLog, scorpion coat-3 faces South (front view); no tattoo (own face rule), no weapon (calm story), no third-party mod needed; Check-Steps green; queued f70f (d3ba mammoths) predates this edit, relaunch mammoths; plants step never played, read capture"
-  - "2026-10-18: f70f (and d3ba) ended exit 3 without capture: game wrote nothing for 5 min, killed (startup hang, not the edit); mammoths refiled as fe32 (ece52a5, evidence gallery-mammoths-4), judge capture at RUN_DONE; if it hangs again report staging to TM. 2026-10-18: f70f and fe32 both exit 3, no capture (Evidence/gallery-mammoths-3 and -4 hold only no-report.txt); third hang in a row, reported to TM, mammoth ticket blocked until TM/NPT clear the startup hang; refiled 2026-10-18 as fd0f (e82a246, evidence gallery-mammoths-5, mammoths only), judge capture at RUN_DONE; hang is machine-wide and intermittent (about 25 other exit 3 in 24 h), second hang of fd0f means TM/NPT; no gallery scene played below 4/5 (GALLERY.md, criteria a to k), shotlist due at shootGallery (AUDIT 9.0)"
+  - "2026-10-19: mammoth gallery tickets d3ba, f70f, fe32, fd0f all exit 3 with no capture (startup hang, machine-wide, not the edit; TM cannot confirm a fix, NPT informed); evidence folders deleted (no report, nothing to prove); do not refile mammoths until NPT or Virginie confirms the hang is cleared; when refiled use -EvidenceDir Tests/Pickle/Inbox/<run>, judge capture at RUN_DONE; 08-gallery.feature gallery prep (dry tall grass, WoodLog, scorpion front view) unplayed; shotlist due at shootGallery (AUDIT 9.0)"
+
   - "2026-10-17: FRENCH_REVIEW.md (39cf697, no French string shipped) read and validated by Virginie; ChatGPT review of the French texts found nothing; gallery replay f70f (mammoths B and C, d3ba exit 3 had no capture) queued"
   - "2026-10-17: gallery 19db played green (4 of 4, Evidence/gallery-sanctuary-5, exit 0): opened by the session, no sweat, bun kept, coats plainly different; 4 candidates (palette PNG, 1.3 MB each) left in Art/Gallery, parked for shootGallery (not playTests); mammoths replayed with coats B and C, ticket d3ba (a804684) queued, owner asked for it 2026-10-17, judge the capture at RUN_DONE: session verdict accept 4, 3, 2, redo 1 (mammoth coats too close, force two with "is given coat"); Virginie decides then; drop candidate from names, reindex, subtitles via Art/Gallery-clean + scripts/Add-Subtitle.ps1; if sweat ever returns send the path to SB (local_9922b4f6) who relays to NPT"
   - "2026-10-17: coat sheet 09 (9ab1) read, no flipped or missing piece; echo_review_sha and social_preview_sha256 not due until mountPreview and writeDocs; no grep in any form (AGENTS.md)"
@@ -43,7 +44,7 @@ remaining:
 code_review_sha: cc2703dd3e026665616b1d6fd4ca8f4cf23c20b9
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
 updated: 2026-10-17, gallery replay 19db queued, echo-preview.png removed, protocols read at 7693bc9c
-protocols_read_sha: d6fb9fab25c8a5f6db73f5603f047ea46fd4f266
+protocols_read_sha: b4c2c58a55479ef3e5fb3f98d333e541cb105462
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
