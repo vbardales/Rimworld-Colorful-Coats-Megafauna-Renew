@@ -1,0 +1,12 @@
+# A/B pack pass (1.7, owner 2026-10-17): the minimal pass plus the baked pack of the mod (Assets.zip next to the loose textures) overlaid under the mod's own packageId.
+nelim.colorfulcoats.megafauna path:../../../../../../home/nelim/pt17/pack/ColorfulCoatsMegafaunaRenew
+# Minimal pass: the mod and its one hard dependency, Megafauna, which the staging copies from the
+# mod's own modDependencies. Megafauna needs nothing else, and this mod has no optional integration.
+nelim.pickletools.textureowner path:PickleTools/TextureOwner/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+nelim.pickletools.coatsteps path:PickleTools/CoatSteps/Mod
+nelim.pickletools.screenshotmode path:PickleTools/ScreenshotMode/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
+nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
+nelim.pickletools.savesteps path:PickleTools/SaveSteps/Mod
