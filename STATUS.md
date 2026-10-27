@@ -61,6 +61,7 @@ Functional scenarios A-I in `TEST_SCENARIOS.md`. Pickle suites in `Tests/Pickle/
 
 - Minimal pass and incompatibility pass played, green (2026-10-12 initial tickets, replays green). Gallery pass (`docs/runs/2026-10-15-gallery-sanctuary.txt`) judged at `shootGallery`, not here.
 - No manual test left (8.k): C, E, F automated, G and I not applicable (2026-10-17 line in remaining).
+- 8.e (2026-10-27): the 12 feature files read whole at 4d14f04, no `@wip`; tags in use: `@requires`, `@minimal-only`, `@review`, `@gallery`, `@coatsheet`. Logs (8.i): `07-clean-load` plus `no errors were logged` in 10-all-coats (227 of 227, all-coats-1) and 12-removed-from-save; no UI text shipped.
 - Code review 8.m (2026-10-27): diff cc2703d..4d14f04 of `Mod/` is `About/Preview.png` only, so reviewed as images only, no code change.
 - Flaky `CoatSteps` spawn error: `docs/runs/2026-09-28-c9a2-minimal-rerun.txt`.
 - Target version 1.0.0 (owner, 2026-10-16). `CHANGELOG.md` `[1.0.0]` (2026-09-05) is base; date it at release.
