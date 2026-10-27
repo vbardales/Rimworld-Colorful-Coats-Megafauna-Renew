@@ -19,7 +19,7 @@ redistribution_permission: not found in sources checked 2026-09-12
 source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the project definition of no declared 1.6 support
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-workflow_stage: playTests[1.0.0]
+workflow_stage: shootGallery[1.0.0]
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
@@ -43,7 +43,7 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
-updated: 2026-10-17, gallery replay 19db queued, echo-preview.png removed, protocols read at 7693bc9c
+updated: 2026-10-27, playTests closed (8.a to 8.m), moved to shootGallery
 protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
@@ -53,7 +53,7 @@ Check with `scripts/Check-Status.ps1 -Mod ColorfulCoatsMegafaunaRenew` (no ERROR
 
 ## State
 
-`playTests[1.0.0]`. Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
+`shootGallery[1.0.0]` (from playTests, 2026-10-27). Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
 67 coats, 201 textures), `Check-Xml.ps1`, `shared scripts/Check-Steps.ps1 of the protocols repository` (55 scenarios across passes) all PASS.
 Functional scenarios A-I in `TEST_SCENARIOS.md`. Pickle suites in `Tests/Pickle/`: minimal pass, and pass for the one declared incompatibility, purpleyam's original. Mod adds no setting, no player-facing text.
 
