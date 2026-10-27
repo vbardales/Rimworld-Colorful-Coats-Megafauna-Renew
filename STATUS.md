@@ -26,7 +26,7 @@ licence_at:   installed original files, live Steam description, all 15 item comm
 upstream_mod_remotes: N/A
 dependencies: declared
 showcase:     complete
-tested_on:
+tested_on: 4d14f04 (Mod/ unchanged since cc2703d except About/Preview.png; green Pickle minimal, incompat, all-coats 869f, removal 0c2e, 2026-10-12 to 2026-10-17)
 automated_tests: passed, 2026-10-15, e57955d (Check-Coats.ps1; shared scripts/Check-Steps.ps1, 195 step lines resolve, 8 feature files)
 xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
@@ -41,7 +41,7 @@ remaining:
   - "2026-10-17: automated at af830bc (owner: no hand play): C by 10-all-coats and 11-all-textures (ticket 869f green 2026-10-17, 227 of 227, Evidence/all-coats-1), F by 12-removed-from-save as -Then/-ThenWithout (ticket 0c2e green 2026-10-17), E covered by every scenario; I (mod list entry, EN/FR look) and G are the game's own behaviour, not applicable (owner, 2026-10-17); About.xml checked offline"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
-code_review_sha: cc2703dd3e026665616b1d6fd4ca8f4cf23c20b9
+code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
 updated: 2026-10-17, gallery replay 19db queued, echo-preview.png removed, protocols read at 7693bc9c
 protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
@@ -60,7 +60,8 @@ Functional scenarios A-I in `TEST_SCENARIOS.md`. Pickle suites in `Tests/Pickle/
 ## Left for playTests
 
 - Minimal pass and incompatibility pass played, green (2026-10-12 initial tickets, replays green). Gallery pass (`docs/runs/2026-10-15-gallery-sanctuary.txt`) judged at `shootGallery`, not here.
-- By hand: C, E, F, I, EN/FR mod-list presentation (8.g, 8.k).
+- No manual test left (8.k): C, E, F automated, G and I not applicable (2026-10-17 line in remaining).
+- Code review 8.m (2026-10-27): diff cc2703d..4d14f04 of `Mod/` is `About/Preview.png` only, so reviewed as images only, no code change.
 - Flaky `CoatSteps` spawn error: `docs/runs/2026-09-28-c9a2-minimal-rerun.txt`.
 - Target version 1.0.0 (owner, 2026-10-16). `CHANGELOG.md` `[1.0.0]` (2026-09-05) is base; date it at release.
 - `Mod/` changed after `0.1.0` send (About text, `ModIcon32.png`).
