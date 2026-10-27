@@ -113,6 +113,6 @@ Story: the keeper's evening walk, Nelim (NSB, only colonist) feeds and settles t
 | 1 | wide, opening | bare-clearing 18:00 | ok | TorchLamp, Hay | 2 mammoths, 1 eating | teal, bun, smile | hauls log mid-stride | (186,146)-(205,158) | 2 coats, herd arrives | 4.5 | Hay ingest never played |
 | 2 | medium | water-garden bank 18:20 | ok | Meat_Muffalo | 3 Enhydriodon, 1 lying facing South | same, smile | hauls meat | (143,166)-(158,178) | 3 distinct hues | 4 | bank cells unseen |
 | 3 | tight | bare-clearing 18:40 | ok | TorchLamp, meat | 3 scorpions, 1 facing South | same, wary | steps back after throw | (195,149)-(202,155) | black, orange, lilac | 4.5 | none |
-| 4 | medium-wide, closing | bare-clearing 19:00 night | ok | Campfire, 2 TorchLamp | 3 Chalicotherium, 2 lying | same, smile | eats MealSimple | (187,147)-(204,157) | most coats of the set | 3.5 | eating pose unproven |
+| 4 | medium-wide, closing | bare-clearing 19:00 night | ok | Campfire, 2 TorchLamp | 3 Chalicotherium, 2 lying | same, smile | sits on a Stool by the fire | (187,147)-(204,157) | most coats of the set | 4 | Stool seat pose unplayed |
 
-Self-score of the series: 4 (variety, opening and closing now written); scene 4 below 4, no ticket for it until NPT answers. Scenes 1 to 3 need their scenarios rewritten from this plan before any ticket.
+Self-score of the series: 4. NPT answered 2026-10-27: ground sit refused (vanilla draws none), Stool substitute accepted; fire stays pre-lit decor; mammoth Hay ingest and Enhydriodon lies-at never played, so a small ticket plays them first and the failure text goes to NPT. Every scenario is rewritten from this plan before any ticket.
