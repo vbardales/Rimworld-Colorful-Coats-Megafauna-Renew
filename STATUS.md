@@ -104,3 +104,15 @@ Replayed 1 to 7 against protocols changed since 9a33932f (AGENTS, AUDIT, CICD, G
 `Check-Coats`, `Check-Xml`, shared `Check-Steps` green at HEAD. `Mod/` unchanged since `code_review_sha` (cc2703d), so 8.m stands. Local scripts: both rows validated
 (2026-10-11), `Inventory-LocalScripts -Check` clean. ModIcon.png 41 KB: under 100 KB guard (2.c). Art holds no `Gallery-clean/` yet (no subtitle posed; due at `writeDocs`).
 Not due yet: `echo_review_sha` (`prepareRelease`), `social_preview_sha256` (`writeDocs`). Echo still provisional `echo-preview.png`: finished gallery invalidates it at `mountPreview`.
+## Shotlist (2026-10-27, AUDIT 9.0; full lines in the header of `08-gallery.feature`)
+
+Story: the keeper's evening walk, Nelim (NSB, only colonist) feeds and settles the herd; 18:00, 18:20, 18:40, 19:00, Clear then night. Director pass by Opus kept: new arc with varied plans (wide, medium, tight, medium-wide), forced jobs plus paused-tick gesture, lit TorchLamp so animals sit in light, grass dropped, smile on default scenes. Steps asked to NPT (eating or sitting pose, lighting the fire, mammoth Hay and Enhydriodon lying), answer pending; if NPT refuses the owner arbitrates. Only NSB colonists.
+
+| # | plan | place, hour | a time | b decor | c living | d pawn | e action | f frame | g/j subject | est | risk |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | wide, opening | bare-clearing 18:00 | ok | TorchLamp, Hay | 2 mammoths, 1 eating | teal, bun, smile | hauls log mid-stride | (186,146)-(205,158) | 2 coats, herd arrives | 4.5 | Hay ingest never played |
+| 2 | medium | water-garden bank 18:20 | ok | Meat_Muffalo | 3 Enhydriodon, 1 lying facing South | same, smile | hauls meat | (143,166)-(158,178) | 3 distinct hues | 4 | bank cells unseen |
+| 3 | tight | bare-clearing 18:40 | ok | TorchLamp, meat | 3 scorpions, 1 facing South | same, wary | steps back after throw | (195,149)-(202,155) | black, orange, lilac | 4.5 | none |
+| 4 | medium-wide, closing | bare-clearing 19:00 night | ok | Campfire, 2 TorchLamp | 3 Chalicotherium, 2 lying | same, smile | eats MealSimple | (187,147)-(204,157) | most coats of the set | 3.5 | eating pose unproven |
+
+Self-score of the series: 4 (variety, opening and closing now written); scene 4 below 4, no ticket for it until NPT answers. Scenes 1 to 3 need their scenarios rewritten from this plan before any ticket.
