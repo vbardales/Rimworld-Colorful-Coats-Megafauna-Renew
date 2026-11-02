@@ -30,14 +30,14 @@ Written 2026-09-28 in `Tests/Pickle/`, see its `README.md` for scope and pass ma
 
 ## What is settled before the game starts
 
-`scripts/Check-Coats.ps1` answers three questions needing no RimWorld: every `texPath` has its three rotation files shipped, every shipped texture referenced by some `texPath`, and the 26 defNames still exist in Megafauna with no `alternateGraphics` of their own already. Exits non-zero and names file when one missing.
+`Tests/Check-Coats.ps1` answers three questions needing no RimWorld: every `texPath` has its three rotation files shipped, every shipped texture referenced by some `texPath`, and the 26 defNames still exist in Megafauna with no `alternateGraphics` of their own already. Exits non-zero and names file when one missing.
 
 ```
-pwsh -NoProfile -File scripts/Check-Coats.ps1
-pwsh -NoProfile -File scripts/Check-Xml.ps1
+pwsh -NoProfile -File Tests/Check-Coats.ps1
+pwsh -NoProfile -File Tests/Check-Xml.ps1
 ```
 
-`Check-Xml.ps1` parses all shipped XML, checks metadata, dependency and incompatibility declarations, GitHub link, 26 operations and success flags, XPath selection on minimal fixtures, field names, probability bounds, 67 unique coat paths. Both scripts local to this repository. Former monorepo's four shared checkers are historical verification, not available local tests. Static checks do not execute RimWorld's patch engine or validate types against its assembly. Verified with PowerShell 7.6.5 on 2026-09-12. Windows PowerShell (`powershell.exe`) blocked by machine's script execution policy; policy not changed.
+`Check-Xml.ps1` checks metadata, dependency and incompatibility declarations, GitHub link, 26 operations and success flags, XPath selection on minimal fixtures, field names, probability bounds, 67 unique coat paths. Both scripts local to this repository (Tests/); XML parsing and duplicate defs are left to the shared Check-ModBasics. Former monorepo's four shared checkers are historical verification, not available local tests. Static checks do not execute RimWorld's patch engine or validate types against its assembly. Verified with PowerShell 7.6.5 on 2026-09-12. Windows PowerShell (`powershell.exe`) blocked by machine's script execution policy; policy not changed.
 
 None of that says coats appear. That is what scenarios below are for.
 
