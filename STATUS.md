@@ -32,6 +32,7 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
+  - "2026-11-02 NPT relay via TM: Stool fixed in 2aa6f93 (`sits on the building \"Stool\" at (x, z)` now starts a Wait job facing the stool; vanilla 1.6 has no sitting pose, seated = standing on the seat cell), test ticket 65b3 (priority 500) not green yet; Ingest: after `forced into the job \"Ingest\"` add `When I wait 300..900 ticks`, Hay reachable and not forbidden, else send NPT the log line `[stage] ... job now <name>`. Apply to 08-gallery.feature (scenes 1 and 4) only after RUN_DONE of f67d and a green 65b3, then replay"
   - "2026-11-02 replay-audit --force: 7.b and 7.c closed (Check-Coats and Check-Xml restored under Tests/, validated by Audit, green), back to shootGallery; first open 9.a (scenes 2 and 3 to redo)"
   - "2026-11-02 shootGallery: ticket 20261102-211811-905-f67d (scenes 2 and 3 only, 0ea330c, wsl-deps.gallery.map, Inbox gallery-keeper-2) queued: scene 2 reworked (two Plant_Daylily fully grown, lit TorchLamp, walker, lying at right third, frame (145,167)-(157,176)), scene 3 spacing (scorpions 4 to 5 cells apart, frame (192,146)-(206,158), Nelim forced to walk back). Keep tree frozen until RUN_DONE. At RUN_DONE read summary.json then junit.xml, open both captures, verdict next to est 4.5 and 4; NPT asked via TM (Stool sit and Hay Ingest not obtained in a631). Then accept or refuse, drop candidate from names, reindex, Art/Gallery-clean + Add-Subtitle.ps1, update Gallery subtitles table in PUBLICATION.md (lines still the old story), 9.c order justified. a631 verdicts: 1 mammoths 3.5 keep, 2 3 redo, 3 2.5 redo, 4 4 accept; candidates 1 and 4 replaced in Art/Gallery; only NSB colonists"
   - "2026-10-18: Audit (via TM) asked gallery prep polish (dry tall grass, WoodLog, scorpion front view, no tattoo, no weapon): played in a631 2026-11-02, read in the captures"
@@ -44,7 +45,7 @@ remaining:
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
 updated: 2026-11-02, replay-audit --force: back to shootGallery, 7.b/7.c closed; session CCMf
-protocols_read_sha: 498bc9f9c09890466b2339f36a5419e3827a978b
+protocols_read_sha: 03b77c24c710e619610b09f8b764e8d317254600
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
