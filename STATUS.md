@@ -19,7 +19,7 @@ redistribution_permission: not found in sources checked 2026-09-12
 source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the project definition of no declared 1.6 support
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-workflow_stage: shootGallery[1.0.0]
+workflow_stage: writeTests[1.0.0]
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
@@ -32,6 +32,7 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
+  - "2026-11-02 replay-audit: 7.b and 7.c open, regressed from shootGallery: scripts/Check-Coats.ps1 and scripts/Check-Xml.ps1 were deleted in 77da506 (not moved), so automated and XML tests cannot be replayed green now and TESTING.md still tells to run them; restore them under Tests/ (git show 77da506^:scripts/<name>), run, declare in scripts/LOCAL_SCRIPTS.md, fix TESTING.md paths; weak proofs 6 (4.g, 5.g, 6.h, 2.x, 1.x on STATUS.md only); gallery work below resumes after"
   - "2026-11-02 shootGallery: ticket a631 GREEN 4 of 4 (exit 0, evidence Evidence/gallery-keeper-1, minified). Verdicts (est): 1 mammoths 3.5 (4.5) keep, two close browns, Nelim at left edge, nobody eating; 2 Enhydriodon 3 (4) redo, dark and murky, old scene, rework not applied; 3 scorpions 2.5 (4) refuse, one orange scorpion overlaps a grey and black one so they read as one creature, Nelim far from frame; 4 Chalicotherium 4 (4) accept, three clear coats two lying, stool placed but Nelim stands beside it. Candidates 1 and 4 replaced in Art/Gallery (new plan); 2 and 3 still previous-plan. Next: apply scene 2 rework (Shotlist section) and fix scene 3 spacing in 08-gallery.feature, replay 2 and 3 as one small ticket, ask NPT why sit on Stool not obtained (stands beside), then accept or refuse, drop candidate from names, reindex, Art/Gallery-clean + Add-Subtitle.ps1, update Gallery subtitles table in PUBLICATION.md (lines still the old story); only NSB colonists"
   - "2026-10-18: Audit (via TM) asked gallery prep polish (dry tall grass, WoodLog, scorpion front view, no tattoo, no weapon): played in a631 2026-11-02, read in the captures"
   - "2026-10-19: evidence sorted (Tests/Pickle/Evidence, 0.6 MB). p17-assetpack-ab-B-1017 (1.7 A/B pack pass) trimmed to one scenario, its per-animal proof deleted: tested_1_7 has no proof, replay the 1.7 pass after a green 1.6 playTests"
@@ -42,8 +43,8 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_58f83149-f7e3-4f22-872a-edec4ef75a9b
-updated: 2026-11-02, a631 gallery judged (candidates 1 and 4 replaced), scenes 2 and 3 to redo; session CCMf
-protocols_read_sha: d91e85f598167d3582a81de52113c63a1b293e26
+updated: 2026-11-02, replay-audit: 7.b/7.c open (check scripts deleted), back to writeTests; gallery scenes 2 and 3 to redo; session CCMf
+protocols_read_sha: e7d9577872a83cf05614c13c5b55814b65a387d6
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
