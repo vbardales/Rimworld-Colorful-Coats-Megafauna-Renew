@@ -44,8 +44,8 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-02, replay-audit --force: back to shootGallery, 7.b/7.c closed; session CCMf
-protocols_read_sha: 5ebdd5bf0854413626432a9873694bffaed51495
+updated: 2026-11-03, resume: protocols_read_sha e9e3fda; Preview re-rendered, Preview.png byte-identical (no commit; render rewrites ModIcon.png and ModIcon.ico, reverted)
+protocols_read_sha: e9e3fdafc25dfa5049d5ba3e3d1d3fd3806a6c53
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
