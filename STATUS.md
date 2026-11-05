@@ -44,8 +44,8 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-03, resume: protocols_read_sha e9e3fda; Preview re-rendered, Preview.png byte-identical (no commit; render rewrites ModIcon.png and ModIcon.ico, reverted)
-protocols_read_sha: e9e3fdafc25dfa5049d5ba3e3d1d3fd3806a6c53
+updated: 2026-11-06, resume: protocols_read_sha 4e6d7b6; Preview re-rendered with migrated Preview.config.json (panel.description, suffix part, background), echo and title checked, committed
+protocols_read_sha: 4e6d7b694f3ae899b26ec15b743228a30a7dd519
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 

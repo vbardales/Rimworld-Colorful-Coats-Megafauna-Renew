@@ -1,39 +1,15 @@
 {
   "panel": {
     "title": "Colorful Coats - Megafauna! Renew (unofficial)",
-    "titleSize": 40,
     "titleParts": [
-      {
-        "text": "Colorful Coats",
-        "scale": 1
-      },
-      {
-        "break": true
-      },
-      {
-        "text": "Megafauna!",
-        "scale": 1
-      },
-      {
-        "text": "Renew",
-        "scale": 0.65,
-        "font": "ui",
-        "color": "secondary"
-      }
+      { "text": "Colorful Coats - Megafauna!" },
+      { "text": "Renew (unofficial)", "suffix": true }
     ],
-    "tag": "(unofficial)",
-    "tagInline": true,
-    "copyLines": [
-      "Coat variations for 26 prehistoric animals, so a mammoth herd is a herd of individuals."
-    ]
+    "description": "Coat variations for 26 prehistoric animals, so a mammoth herd is a herd of individuals."
   },
-  "backgroundFile": "Preview-source.png",
-  "echo": {
-    "file": "echo-source.png"
-  },
-  "icon": {
-    "file": "ModIcon-source.png"
-  },
+  "background": { "file": "Preview-source.png" },
+  "echo": { "file": "echo-source.png" },
+  "icon": { "file": "ModIcon-source.png" },
   "palette": {
     "veil": "#343838",
     "inkPrimary": "#F2ECE1",
