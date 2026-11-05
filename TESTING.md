@@ -24,20 +24,19 @@ Written 2026-09-28 in `Tests/Pickle/`, see its `README.md` for scope and pass ma
 | F — removed from a save | yes (written 2026-10-17, not played) | `12-removed-from-save`, sequence `-Then` + `-ThenWithout nelim.colorfulcoats.megafauna`: coats saved with the mod, save handed to the test companion, loaded without the mod, 16 mammoths exist, none with an extra coat, no error |
 | G — no Megafauna at all | no | game's reaction to missing hard dependency, not ours to test |
 | H — the original alongside | yes | `06-original-alongside`, incompatibility pass only |
-| I — the mod list entry | not applicable | the game's own display (`AUDIT.md`, "On ne teste pas le jeu"); what the mod owns is `About.xml` and its images, checked offline by `Check-Xml.ps1` and `Check-Status.ps1` |
+| I — the mod list entry | not applicable | the game's own display (`AUDIT.md`, "On ne teste pas le jeu"); what the mod owns is `About.xml` and its images, checked offline by `Tests/Rule-OwnValues.ps1` and `Check-Status.ps1` |
 
 `@review` capture in `03` is for person to open; green says steps ran, not that animals look different.
 
 ## What is settled before the game starts
 
-`Tests/Check-Coats.ps1` answers three questions needing no RimWorld: every `texPath` has its three rotation files shipped, every shipped texture referenced by some `texPath`, and the 26 defNames still exist in Megafauna with no `alternateGraphics` of their own already. Exits non-zero and names file when one missing.
+The shared checks answer the three questions needing no RimWorld: `Check-Textures` (every `texPath` has its three rotation files shipped, no shipped texture unreferenced), `Check-PatchTargets` (the 26 defNames still exist in Megafauna) and `Check-AlternateGraphics` (list structure, no `alternateGraphics` of its own already). Each exits non-zero and names the file when one is missing.
 
 ```
-pwsh -NoProfile -File Tests/Check-Coats.ps1
-pwsh -NoProfile -File Tests/Check-Xml.ps1
+pwsh -NoProfile -File Tests/Test-Mod.ps1
 ```
 
-`Check-Xml.ps1` checks metadata, dependency and incompatibility declarations, GitHub link, 26 operations and success flags, XPath selection on minimal fixtures, field names, probability bounds, 67 unique coat paths. Both scripts local to this repository (Tests/); XML parsing and duplicate defs are left to the shared Check-ModBasics. Former monorepo's four shared checkers are historical verification, not available local tests. Static checks do not execute RimWorld's patch engine or validate types against its assembly. Verified with PowerShell 7.6.5 on 2026-09-12. Windows PowerShell (`powershell.exe`) blocked by machine's script execution policy; policy not changed.
+`Tests/Rule-OwnValues.ps1` (run by the generated `Tests/Test-Mod.ps1` after the shared checks) checks metadata, dependency and incompatibility declarations, GitHub link, 26 operations and success flags, XPath selection on minimal fixtures, field names, probability bounds, 67 unique coat paths. The rule is local to this repository (Tests/); XML parsing and duplicate defs are left to the shared Check-ModBasics. Former monorepo's four shared checkers are historical verification, not available local tests. Static checks do not execute RimWorld's patch engine or validate types against its assembly. Verified with PowerShell 7.6.5 on 2026-09-12. Windows PowerShell (`powershell.exe`) blocked by machine's script execution policy; policy not changed.
 
 None of that says coats appear. That is what scenarios below are for.
 
@@ -112,7 +111,7 @@ Scenario the port exists for, only one testing the change it made.
 
 ## C — the 67 coats and the three rotations
 
-Manual. Pickle (`02-textures`) samples 13 files; `Check-Coats.ps1` proves every file exists. Neither shows what coat looks like walking. West not shipped: RimWorld mirrors `_east` when no `_west` exists, so animal walking west with far side reversed is correct.
+Manual. Pickle (`02-textures`) samples 13 files; `Check-Textures` proves every file exists. Neither shows what coat looks like walking. West not shipped: RimWorld mirrors `_east` when no `_west` exists, so animal walking west with far side reversed is correct.
 
 **Preconditions**
 - New colony, Core + Megafauna + this mod, original Colorful Coats off, developer mode on. Scenario A passed.
