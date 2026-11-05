@@ -44,7 +44,7 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-06, resume: protocols_read_sha 4e6d7b6; Preview re-rendered with migrated Preview.config.json (panel.description, suffix part, background), echo and title checked, committed
+updated: 2026-11-06, Preview validated by Virginie; tests converted to Rule-OwnValues.ps1 (840aae6), generated Test-Mod.ps1 and .github asked of CI/CD
 protocols_read_sha: 4e6d7b694f3ae899b26ec15b743228a30a7dd519
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
