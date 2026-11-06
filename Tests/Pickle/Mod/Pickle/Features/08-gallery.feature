@@ -43,8 +43,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (203, 148) is lit
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Pickle Tools: "Nelim" stands at (186, 150) facing East
-    And Nelim's Pickle Tools: 5 of the item "WoodLog" are spawned at (186, 149)
+    And Nelim's Pickle Tools: "Nelim" stands at (188, 151) facing East
+    And Nelim's Pickle Tools: 5 of the item "WoodLog" are spawned at (189, 151)
     And Nelim's Pickle Tools: 10 of the item "Hay" are spawned at (199, 153)
     And Nelim's Pickle Tools: 3 adult animals of kind "WoollyMammoth" are spawned around (200, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
