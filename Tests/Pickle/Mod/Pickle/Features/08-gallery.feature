@@ -8,7 +8,7 @@
 # Expression: smile on default scenes (own face, MouthSmile + LidCheerful, then normal+blink last; check on the capture), normal in scene 3 (wary). Plants_YellowTallGrass dropped (invisible). Gesture obtained by forced jobs, then "I advance the paused game by exactly N ticks" (30 to 60), then "time is paused for the capture".
 # Steps used: the places, the face and the cleaning are Nelim's Sanctuary: steps; the jobs, the lying and sitting poses, the decor, the framing and the
 # face are Nelim's Pickle Tools: steps (NPT answered 2026-10-27: sitting on a Stool, Campfire pre-lit decor); the spawn and coat steps are CoatSteps.
-# Not played yet: the animal Ingest, "lies at" and "sits on the building" steps. The first run of these scenarios is the probe: a failure text goes to NPT.
+# Scene 1 Ingest: wait 300..900 ticks after the forced job (NPT, via TM 2026-11-02); Stool seat pose played green in 65b3. The first run of these scenarios is the probe: a failure text goes to NPT.
 # Each scenario is @review: a green run proves a picture was taken, not that it is worth uploading. The session opens every capture.
 # Run: Submit-PickleRun.ps1 -Mod ColorfulCoatsMegafaunaRenew -DepMap wsl-deps.gallery.map -Filter '@gallery'. Subtitles: PUBLICATION.md, "Gallery subtitles".
 @requires:nelim.pickletools.coatsteps
@@ -49,6 +49,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" stands at (198, 153) facing West
     And Nelim's Pickle Tools: the animal "coat-2" stands at (204, 150) facing West
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (199, 153)
+    When I wait 300..900 ticks
     And Nelim's Pickle Tools: "coat-2" is forced to walk to (200, 151)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "WoodLog" to (192, 152)
     And Nelim's Pickle Tools: time is paused for the capture
