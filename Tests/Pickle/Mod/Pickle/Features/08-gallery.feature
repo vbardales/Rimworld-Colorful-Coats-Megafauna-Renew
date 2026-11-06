@@ -1,4 +1,4 @@
-# SHOTLIST v3 2026-11-06 (shootGallery 9.0, director pass by Opus kept in part; owner chose the ponytail 2026-11-06). Supersedes v2 of 2026-10-27. The scenario bodies below still play v2: rewrite them from this plan before the next ticket.
+# SHOTLIST v3 2026-11-06 (shootGallery 9.0, director pass by Opus kept in part; owner chose the ponytail 2026-11-06). Supersedes v2 of 2026-10-27. Scenario bodies rewritten from v3 (2026-11-06).
 # Story: the keeper's evening walk. Nelim (NSB, only colonist) crosses her land at dusk, feeds and settles the herd of the dry plains, species by species; the fire is lit at 18:00 and she sits by it at 19:00 (the loop).
 # Time: start 18 h, cumulative waits 60, 893, 1727, 2560 ticks = 18:00, 18:20, 18:40, 19:00, Clear. Outfit continuity: teal Apparel_CollarShirt (24,74,84), Apparel_Pants (16,52,60), canon hair Roo_HD_Hair_Highpony (ponytail), own face, smile except scene 3.
 # Framing rule (v3): the camera takes the closest zoom, the frame is a CROP of the 1920x1080 capture, never below 1280x720 (no upscaling beyond 1.5x). Nelim must be 20 px or more per cell tall so her face reads at 268 px: she faces South where the job allows. Animals at least 2 cells apart, three hues of clearly different brightness (pale, mid, dark).
@@ -38,24 +38,26 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (193, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 150)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 150) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (203, 148)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (203, 148) is lit
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Pickle Tools: "Nelim" stands at (188, 152) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (191, 148) facing South
     And Nelim's Pickle Tools: 10 of the item "Hay" are spawned at (199, 153)
-    And Nelim's Pickle Tools: 2 adult animals of kind "WoollyMammoth" are spawned around (200, 152)
-    And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
-    And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
+    And Nelim's Pickle Tools: 3 adult animals of kind "WoollyMammoth" are spawned around (200, 152)
+    And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
+    And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-1" stands at (198, 153) facing West
-    And Nelim's Pickle Tools: the animal "coat-2" stands at (204, 150) facing West
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (202, 148) facing South
+    And Nelim's Pickle Tools: the animal "coat-3" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-3" stands at (204, 155) facing West
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (199, 153)
     When I wait 300..900 ticks
-    And Nelim's Pickle Tools: "coat-2" is forced to walk to (200, 151)
+    And Nelim's Pickle Tools: "coat-2" is forced to walk to (202, 152)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "WoodLog" to (192, 152)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
-    When Nelim's Pickle Tools: I frame the cells (186, 146) to (205, 158) filling 90 percent of the screen
+    When Nelim's Pickle Tools: I frame the cells (182, 146) to (206, 159) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face
@@ -80,21 +82,25 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the plants from (148, 170) to (156, 172) are fully grown
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (147, 168)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (147, 168) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (153, 168)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (153, 168) is lit
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Pickle Tools: "Nelim" stands at (146, 170) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (150, 166) facing South
     And Nelim's Pickle Tools: 3 adult animals of kind "Enhydriodon" are spawned around (152, 171)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 2
-    And Nelim's Pickle Tools: the animal "coat-1" lies at (155, 171) facing South
-    And Nelim's Pickle Tools: the animal "coat-2" stands at (152, 172) facing West
-    And Nelim's Pickle Tools: the animal "coat-3" stands at (150, 174) facing East
-    And Nelim's Pickle Tools: "coat-3" is forced to walk to (151, 175)
+    And Nelim's Pickle Tools: the animal "coat-1" stands at (152, 172) facing West
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (150, 174) facing East
+    And Nelim's Pickle Tools: the animal "coat-3" lies at (155, 171) facing South
+    And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (152, 172)
+    And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Meat_Muffalo" at (152, 172)
+    And Nelim's Pickle Tools: "coat-2" is forced to walk to (151, 175)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "Meat_Muffalo" to (150, 170)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
-    When Nelim's Pickle Tools: I frame the cells (145, 167) to (157, 176) filling 90 percent of the screen
+    When Nelim's Pickle Tools: I frame the cells (143, 167) to (163, 178) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face
@@ -118,26 +124,25 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (193, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (196, 147)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (196, 147) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (197, 149)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (197, 149) is lit
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Pickle Tools: "Nelim" stands at (196, 153) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (197, 154) facing South
     And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (199, 152)
     And Nelim's Pickle Tools: 3 adult animals of kind "Pulmonoscorpius" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-1" stands at (203, 151) facing West
-    And Nelim's Pickle Tools: the animal "coat-2" stands at (199, 155) facing South
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (200, 155) facing South
     And Nelim's Pickle Tools: the animal "coat-3" stands at (199, 148) facing North
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Meat_Muffalo" at (199, 152)
     And Nelim's Pickle Tools: "coat-2" is forced into the job "Ingest" on the item "Meat_Muffalo" at (199, 152)
     And Nelim's Pickle Tools: "coat-3" is forced into the job "Ingest" on the item "Meat_Muffalo" at (199, 152)
-    And Nelim's Pickle Tools: "Nelim" is forced to walk to (194, 154)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
-    When Nelim's Pickle Tools: I frame the cells (192, 146) to (206, 158) filling 90 percent of the screen
+    When Nelim's Pickle Tools: I frame the cells (190, 145) to (210, 156) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face
@@ -159,10 +164,10 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 152)
     And Nelim's Pickle Tools: the decor "Campfire" at (193, 152) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (193, 148)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 148) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (193, 156)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 156) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (190, 148)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (190, 148) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (190, 156)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (190, 156) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" at (191, 153)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
@@ -177,7 +182,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" sits on the building "Stool" at (191, 153)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
-    When Nelim's Pickle Tools: I frame the cells (187, 147) to (204, 157) filling 90 percent of the screen
+    When Nelim's Pickle Tools: I frame the cells (186, 146) to (208, 158) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face
