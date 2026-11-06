@@ -107,20 +107,18 @@ Replayed 1 to 7 against protocols changed since 9a33932f (AGENTS, AUDIT, CICD, G
 `Check-Coats`, `Check-Xml`, shared `Check-Steps` green at HEAD. `Mod/` unchanged since `code_review_sha` (cc2703d), so 8.m stands. Local scripts: both rows validated
 (2026-10-11), `Inventory-LocalScripts -Check` clean. ModIcon.png 41 KB: under 100 KB guard (2.c). Art holds no `Gallery-clean/` yet (no subtitle posed; due at `writeDocs`).
 Not due yet: `echo_review_sha` (`prepareRelease`), `social_preview_sha256` (`writeDocs`). Echo still provisional `echo-preview.png`: finished gallery invalidates it at `mountPreview`.
-## Shotlist (2026-10-27, AUDIT 9.0; full lines in the header of `08-gallery.feature`)
+## Shotlist v3 (2026-11-06, AUDIT 9.0; full lines in the header of `08-gallery.feature`)
 
-Story: the keeper's evening walk, Nelim (NSB, only colonist) feeds and settles the herd; 18:00, 18:20, 18:40, 19:00, Clear then night. Director pass by Opus kept: new arc with varied plans (wide, medium, tight, medium-wide), forced jobs plus paused-tick gesture, lit TorchLamp so animals sit in light, grass dropped, smile on default scenes. Steps asked to NPT (eating or sitting pose, lighting the fire, mammoth Hay and Enhydriodon lying), answer pending; if NPT refuses the owner arbitrates. Only NSB colonists.
+Story: the keeper's evening walk, Nelim (NSB, only colonist), 18:00 to 19:00, feeds and settles the herd; fire lit at 18:00, she sits by it at 19:00. Wide, medium, medium-tight, medium-wide. Series k: ok. Director pass by Opus kept in part (see header). Framing: closest camera zoom, frame = crop of the 1920x1080 capture, never below 1280x720; Nelim 20 px or more per cell. The scenario bodies still play v2: rewrite before the next ticket (ticket 66d7 plays v2 and is obsolete).
 
-| # | plan | place, hour | a time | b decor | c living | d pawn | e action | f frame | g/j subject | est | risk |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | wide, opening | bare-clearing 18:00 | ok | TorchLamp, Hay | 2 mammoths, 1 eating | teal, ponytail, smile | hauls log mid-stride | (186,146)-(205,158) | 2 coats, herd arrives | 4.5 | Hay ingest never played |
-| 2 | medium | water-garden bank 18:20 | ok | Meat_Muffalo | 3 Enhydriodon, 1 lying facing South | same, smile | hauls meat | (143,166)-(158,178) | 3 distinct hues | 4 | bank cells unseen |
-| 3 | tight | bare-clearing 18:40 | ok | TorchLamp, meat | 3 scorpions, 1 facing South | same, wary | steps back after throw | (195,149)-(202,155) | black, orange, lilac | 4.5 | none |
-| 4 | medium-wide, closing | bare-clearing 19:00 night | ok | Campfire, 2 TorchLamp | 3 Chalicotherium, 2 lying | same, smile | sits on a Stool by the fire | (187,147)-(204,157) | most coats of the set | 4 | Stool seat pose unplayed |
+| # | a time | b decor | c living | d pawn | e action and instant | f frame | g subject | j mod | est | risk |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | bare-clearing 18:00 Clear | lit Campfire (193,152), TorchLamp (203,148), Hay, WoodLog | 3 mammoths 3 coats, one walks South (front view) | teal shirt, pants, ponytail, smile | hauls 5 WoodLog (191,148) to (192,152) facing South; "the last log for the fire" | crop x182-206 z146-159, Nelim lower-left third | "She brings wood to the fire." | 3 coats, herd arrives | 3 mammoth coats | 4.5 | Hay ingest |
+| 2 | water-garden bank 18:20 | Plant_Daylily (148,172), 2 lit TorchLamp, Meat_Muffalo | 3 Enhydriodon 3 hues, eat, walk, lie | same, smile, empty hands facing South | dropped the meat, "otters have reached it" | crop x143-163 z167-178, daylily foreground left, warm light left | "She feeds the otters." | 3 distinct hues | 4.5 | dark water side |
+| 3 | bare-clearing 18:40 | TorchLamp (197,149), Meat_Muffalo | 3 scorpions 3 hues, 2 cells apart | same, normal (wary, written) at (197,154) facing South | "just after she threw the meat" | crop x190-210 z145-156, scorpions 60 percent | "She feeds the scorpions." | pale, mid, dark coats | 4.5 | scorpion pause |
+| 4 | bare-clearing 19:00 night | Campfire, 2 TorchLamp, Stool (191,153) | 3 Chalicotherium, 2 lying, 1 walking | same, smile, on the Stool | "the herd settles" | crop x186-208 z146-158, fire left | "She sits by the fire while the herd settles." | 3 coats lit by fire | 4.5 | Stool reads as standing |
 
-Self-score of the series: 4. NPT answered 2026-10-27: ground sit refused (vanilla draws none), Stool substitute accepted; fire stays pre-lit decor; mammoth Hay ingest and Enhydriodon lies-at never played, so a small ticket plays them first and the failure text goes to NPT. Every scenario is rewritten from this plan before any ticket.
-
-Scene 2 rework (2026-10-27, rate 3, to apply to `08-gallery.feature` after RUN_DONE of ticket a631, the tree stays frozen until then): decor Plant_Daylily at (148,172) and (156,170) fully grown (foreground left), TorchLamp (147,168) lit (warm light on the bank at 18:20), Meat_Muffalo, the pond and bank of water-garden behind; coat-3 forced to walk to (151,175) toward the meat so nobody only stands; instant "just before the meat lands, the otters turn toward her"; lying Enhydriodon at the right third facing South; frame (145,167)-(157,176) at 90 percent (3 animals fill about a third of the width, readable at 268 px); light warm left, dusk. Re-score 4.5 (risk: bank cells and the daylily readability unseen). Prop reference: GALLERY-PROPS.md, Plant_Daylily reads at zoom 4 to 6 beside a creature.
+Self-score of the series: 4.5. NPT answered 2026-10-27: ground sit refused (vanilla draws none), Stool substitute accepted. Verdict of ticket f67d (2026-11-06): scenes 2 and 3 refused, 3.5 each (estimate was 4.5 and 4, gap: dark water, otter facing East, Nelim hidden, wide not tight, small face). Verdict of a631: scene 1 3.5 keep, 4 accepted at 4 with the bun.
 
 ## NSB
 
