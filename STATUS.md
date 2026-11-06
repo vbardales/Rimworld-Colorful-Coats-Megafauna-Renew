@@ -119,3 +119,22 @@ Story: the keeper's evening walk, Nelim (NSB, only colonist) feeds and settles t
 Self-score of the series: 4. NPT answered 2026-10-27: ground sit refused (vanilla draws none), Stool substitute accepted; fire stays pre-lit decor; mammoth Hay ingest and Enhydriodon lies-at never played, so a small ticket plays them first and the failure text goes to NPT. Every scenario is rewritten from this plan before any ticket.
 
 Scene 2 rework (2026-10-27, rate 3, to apply to `08-gallery.feature` after RUN_DONE of ticket a631, the tree stays frozen until then): decor Plant_Daylily at (148,172) and (156,170) fully grown (foreground left), TorchLamp (147,168) lit (warm light on the bank at 18:20), Meat_Muffalo, the pond and bank of water-garden behind; coat-3 forced to walk to (151,175) toward the meat so nobody only stands; instant "just before the meat lands, the otters turn toward her"; lying Enhydriodon at the right third facing South; frame (145,167)-(157,176) at 90 percent (3 animals fill about a third of the width, readable at 268 px); light warm left, dusk. Re-score 4.5 (risk: bank cells and the daylily readability unseen). Prop reference: GALLERY-PROPS.md, Plant_Daylily reads at zoom 4 to 6 beside a creature.
+
+## NSB
+
+Synced 2026-11-06 (sync-nsb). NSB `Docs/` unchanged since the 2026-10-27 shotlist (no commit on `Docs/` since then). Places, shots and frames still match `SANCTUAIRE-LIEUX.md` (bare-clearing x 186-204, z 147-157; water-garden bank x 143-158, z 168-176, hole at (149,173)). One owner question open: Nelim's hair (rule 3).
+
+Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim only).
+
+| Place | Shots | Changes made for the gallery | Last read |
+|---|---|---|---|
+| bare-clearing | 1, 3, 4 | floor bared, vanometric cell hidden, Campfire, TorchLamp x1 to x2, Hay and Meat_Muffalo | 2026-11-06 |
+| water-garden (west bank) | 2 | two Plant_Daylily, lit TorchLamp, Meat_Muffalo | 2026-11-06 |
+
+| Colonist | Shots | Outfit per shot (why) | Last read | Exceptions |
+|---|---|---|---|---|
+| Nelim | 1 to 4 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all four (outfits free; one colour for continuity of the walk); smile (MouthSmile + LidCheerful) on default scenes, normal in 3 (wary), override allowed by GALLERY.md | 2026-11-06 | hair: the shotlist plays a RimImmortal bun, the roster fixes `Roo_HD_Hair_Highpony` (bun never under headwear, owner 2026-10-21): PENDING owner validation (rule 3), no quoted validation found |
+
+| Animal | Shots | Outfit | Last read | Exceptions |
+|---|---|---|---|---|
+| none from NSB (Megafauna animals are the subject, spawned as decor: mammoths, Enhydriodon, Pulmonoscorpius, Chalicotherium) | 1 to 4 | none | not opened (no NSB animal used) | none |
