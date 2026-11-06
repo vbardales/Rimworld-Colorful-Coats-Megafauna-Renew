@@ -52,7 +52,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 2
     And Nelim's Pickle Tools: the animal "coat-3" stands at (204, 155) facing West
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (199, 153)
-    When I wait 300..900 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     And Nelim's Pickle Tools: "coat-2" is forced to walk to (202, 152)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "WoodLog" to (192, 152)
     And Nelim's Pickle Tools: time is paused for the capture
