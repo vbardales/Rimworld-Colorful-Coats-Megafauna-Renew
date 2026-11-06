@@ -53,13 +53,12 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I let 600 ticks pass
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Pickle Tools: "Nelim" stands at (188, 151) facing East
-    And Nelim's Pickle Tools: 5 of the item "WoodLog" are spawned at (189, 151)
+    And Nelim's Pickle Tools: "Nelim" stands at (189, 152) facing East
     And Nelim's Pickle Tools: "coat-2" is forced to walk to (202, 152)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "WoodLog" to (192, 152)
     And Nelim's Pickle Tools: time is paused for the capture
-    And Nelim's Pickle Tools: I advance the paused game by exactly 50 ticks
-    When Nelim's Pickle Tools: I frame the cells (184, 146) to (204, 157) filling 90 percent of the screen
+    And Nelim's Pickle Tools: I advance the paused game by exactly 25 ticks
+    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (184, 146) to (204, 157) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face
@@ -103,11 +102,11 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (152, 172)
     And Nelim's Pickle Tools: 1 of the item "Meat_Muffalo" are spawned at (153, 176)
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Meat_Muffalo" at (152, 172)
-    And Nelim's Pickle Tools: "coat-2" is forced to walk to (151, 175)
-    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (151, 172)
+    And Nelim's Pickle Tools: "coat-2" is forced to walk to (151, 172)
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (150, 175)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
-    When Nelim's Pickle Tools: I frame the cells (143, 167) to (163, 178) filling 90 percent of the screen
+    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (146, 169) to (160, 177) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face
