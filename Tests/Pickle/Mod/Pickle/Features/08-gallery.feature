@@ -137,7 +137,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" stands at (195, 156) facing East
     And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (199, 152)
-    And Nelim's Pickle Tools: 1 of the item "Meat_Muffalo" are spawned at (195, 157)
+    And Nelim's Pickle Tools: 1 of the item "Meat_Muffalo" are spawned at (196, 156)
     And Nelim's Pickle Tools: I place the decor "WoodLog" at (191, 156)
     And Nelim's Pickle Tools: I place the decor "WoodLog" at (192, 157)
     And Nelim's Pickle Tools: 3 adult animals of kind "Pulmonoscorpius" are spawned around (199, 152)
