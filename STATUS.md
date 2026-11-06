@@ -123,19 +123,19 @@ Scene 2 rework (2026-10-27, rate 3, to apply to `08-gallery.feature` after RUN_D
 
 ## NSB
 
-Synced 2026-11-06 (sync-nsb). NSB `Docs/` unchanged since the 2026-10-27 shotlist (no commit on `Docs/` since then). Places, shots and frames still match `SANCTUAIRE-LIEUX.md` (bare-clearing x 186-204, z 147-157; water-garden bank x 143-158, z 168-176, hole at (149,173)). No owner question open (hair: ponytail, owner 2026-11-06).
+Synced 2026-11-06 (second pass of the day, after the owner chose the ponytail). Committed NSB `Docs/` unchanged since 2026-10-27 (some NSB docs are untracked: read from the working tree; `NELIM-PROFIL.md` dated 2026-11-05, wardrobe only). Rules in force (owner, 2026-11-05): NSB places, colonists, domestic animals free; outside NSB needs express validation; a colonist's properties change only with express validation; every outfit free. No owner question open.
 
-Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim only).
+Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim, `LOOKS-VALIDATION.md`, `GALERIE-COLONS.md`; no other profile opened).
 
 | Place | Shots | Changes made for the gallery | Last read |
 |---|---|---|---|
-| bare-clearing | 1, 3, 4 | floor bared, vanometric cell hidden, Campfire, TorchLamp x1 to x2, Hay and Meat_Muffalo | 2026-11-06 |
-| water-garden (west bank) | 2 | two Plant_Daylily, lit TorchLamp, Meat_Muffalo | 2026-11-06 |
+| bare-clearing | 1, 3, 4 | floor bared, vanometric cell hidden, Campfire, TorchLamp x1 to x2, Hay, Meat_Muffalo | 2026-11-06 |
+| water-garden (west bank) | 2 | Plant_Daylily x2, lit TorchLamp, Meat_Muffalo; avoid (149,173) and (150,173) | 2026-11-06 |
 
 | Colonist | Shots | Outfit per shot (why) | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim | 1 to 4 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all four (outfits free; one colour for continuity of the walk); smile (MouthSmile + LidCheerful) on default scenes, normal in 3 (wary), override allowed by GALLERY.md | 2026-11-06 | none: hair is the roster canon `Roo_HD_Hair_Highpony` (ponytail). Owner 2026-11-06: "Ponytail", chosen over the bun, so no property is changed |
+| Nelim | 1 to 4 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all four (outfits free; one colour for continuity of the walk); smile on default scenes, normal in 3 (wary), mouth override allowed by GALLERY.md; hair = roster canon `Roo_HD_Hair_Highpony` (owner confirmed 2026-10-21, `LOOKS-VALIDATION.md`) | 2026-11-06 | none: owner 2026-11-06 "Ponytail", chosen over the bun; the bun override and RimImmortal removed (32a6855), `wsl-deps.gallery.map` now loads `rooboid.hdhair.continued` |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
-| none from NSB (Megafauna animals are the subject, spawned as decor: mammoths, Enhydriodon, Pulmonoscorpius, Chalicotherium) | 1 to 4 | none | not opened (no NSB animal used) | none |
+| no NSB animal (the subject animals are Megafauna creatures spawned as decor) | 1 to 4 | none | not opened | none |
