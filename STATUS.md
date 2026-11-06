@@ -34,6 +34,7 @@ workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 
 remaining:
   - "2026-11-02 NPT relay via TM: Stool fixed in 2aa6f93 (`sits on the building \"Stool\" at (x, z)` now starts a Wait job facing the stool; vanilla 1.6 has no sitting pose, seated = standing on the seat cell), test ticket 65b3 green 2026-11-02 (TM relay); Ingest: after `forced into the job \"Ingest\"` add `When I wait 300..900 ticks`, Hay reachable and not forbidden, else send NPT the log line `[stage] ... job now <name>`. Apply to 08-gallery.feature (scenes 1 and 4) only after RUN_DONE of f67d and a green 65b3, then replay"
   - "2026-11-02 replay-audit --force: 7.b and 7.c closed (Check-Coats and Check-Xml restored under Tests/, validated by Audit, green), back to shootGallery; first open 9.a (scenes 2 and 3 to redo)"
+  - "2026-11-06 f67d read (exit 0, 2 of 2): scene 2 est 3.5 refuse (dark and murky, otter lying faces East not South, Nelim hidden by the meat, face unreadable, daylily not readable as a plant); scene 3 est 3.5 refuse (wide not tight, Nelim small and far, expression unreadable, scorpions three hues ok). Hair changed to the ponytail (owner 2026-11-06), bun lines removed from 08-gallery.feature and RimImmortal replaced by rooboid.hdhair.continued in wsl-deps.gallery.map, so every scene replays: file one 4-scene ticket after applying Stool and Ingest steps (65b3 green) to scenes 1 and 4"
   - "2026-11-02 shootGallery: ticket 20261102-211811-905-f67d (scenes 2 and 3 only, 0ea330c, wsl-deps.gallery.map, Inbox gallery-keeper-2) queued: scene 2 reworked (two Plant_Daylily fully grown, lit TorchLamp, walker, lying at right third, frame (145,167)-(157,176)), scene 3 spacing (scorpions 4 to 5 cells apart, frame (192,146)-(206,158), Nelim forced to walk back). Keep tree frozen until RUN_DONE. At RUN_DONE read summary.json then junit.xml, open both captures, verdict next to est 4.5 and 4; NPT asked via TM (Stool sit and Hay Ingest not obtained in a631). Then accept or refuse, drop candidate from names, reindex, Art/Gallery-clean + Add-Subtitle.ps1, update Gallery subtitles table in PUBLICATION.md (lines still the old story), 9.c order justified. a631 verdicts: 1 mammoths 3.5 keep, 2 3 redo, 3 2.5 redo, 4 4 accept; candidates 1 and 4 replaced in Art/Gallery; only NSB colonists"
   - "2026-10-18: Audit (via TM) asked gallery prep polish (dry tall grass, WoodLog, scorpion front view, no tattoo, no weapon): played in a631 2026-11-02, read in the captures"
   - "2026-10-19: evidence sorted (Tests/Pickle/Evidence, 0.6 MB). p17-assetpack-ab-B-1017 (1.7 A/B pack pass) trimmed to one scenario, its per-animal proof deleted: tested_1_7 has no proof, replay the 1.7 pass after a green 1.6 playTests"
@@ -44,7 +45,7 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-06, Preview validated by Virginie; tests converted to Rule-OwnValues.ps1 (840aae6), generated Test-Mod.ps1 and .github asked of CI/CD
+updated: 2026-11-06, Preview validated, tests converted, NSB synced, hair = ponytail (owner), f67d read: scenes 2 and 3 refused (3.5 each), full 4-scene replay to file
 protocols_read_sha: 4e6d7b694f3ae899b26ec15b743228a30a7dd519
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
@@ -111,7 +112,7 @@ Story: the keeper's evening walk, Nelim (NSB, only colonist) feeds and settles t
 
 | # | plan | place, hour | a time | b decor | c living | d pawn | e action | f frame | g/j subject | est | risk |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | wide, opening | bare-clearing 18:00 | ok | TorchLamp, Hay | 2 mammoths, 1 eating | teal, bun, smile | hauls log mid-stride | (186,146)-(205,158) | 2 coats, herd arrives | 4.5 | Hay ingest never played |
+| 1 | wide, opening | bare-clearing 18:00 | ok | TorchLamp, Hay | 2 mammoths, 1 eating | teal, ponytail, smile | hauls log mid-stride | (186,146)-(205,158) | 2 coats, herd arrives | 4.5 | Hay ingest never played |
 | 2 | medium | water-garden bank 18:20 | ok | Meat_Muffalo | 3 Enhydriodon, 1 lying facing South | same, smile | hauls meat | (143,166)-(158,178) | 3 distinct hues | 4 | bank cells unseen |
 | 3 | tight | bare-clearing 18:40 | ok | TorchLamp, meat | 3 scorpions, 1 facing South | same, wary | steps back after throw | (195,149)-(202,155) | black, orange, lilac | 4.5 | none |
 | 4 | medium-wide, closing | bare-clearing 19:00 night | ok | Campfire, 2 TorchLamp | 3 Chalicotherium, 2 lying | same, smile | sits on a Stool by the fire | (187,147)-(204,157) | most coats of the set | 4 | Stool seat pose unplayed |
@@ -122,7 +123,7 @@ Scene 2 rework (2026-10-27, rate 3, to apply to `08-gallery.feature` after RUN_D
 
 ## NSB
 
-Synced 2026-11-06 (sync-nsb). NSB `Docs/` unchanged since the 2026-10-27 shotlist (no commit on `Docs/` since then). Places, shots and frames still match `SANCTUAIRE-LIEUX.md` (bare-clearing x 186-204, z 147-157; water-garden bank x 143-158, z 168-176, hole at (149,173)). One owner question open: Nelim's hair (rule 3).
+Synced 2026-11-06 (sync-nsb). NSB `Docs/` unchanged since the 2026-10-27 shotlist (no commit on `Docs/` since then). Places, shots and frames still match `SANCTUAIRE-LIEUX.md` (bare-clearing x 186-204, z 147-157; water-garden bank x 143-158, z 168-176, hole at (149,173)). No owner question open (hair: ponytail, owner 2026-11-06).
 
 Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim only).
 
@@ -133,7 +134,7 @@ Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim only).
 
 | Colonist | Shots | Outfit per shot (why) | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim | 1 to 4 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all four (outfits free; one colour for continuity of the walk); smile (MouthSmile + LidCheerful) on default scenes, normal in 3 (wary), override allowed by GALLERY.md | 2026-11-06 | hair: the shotlist plays a RimImmortal bun, the roster fixes `Roo_HD_Hair_Highpony` (bun never under headwear, owner 2026-10-21): PENDING owner validation (rule 3), no quoted validation found |
+| Nelim | 1 to 4 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all four (outfits free; one colour for continuity of the walk); smile (MouthSmile + LidCheerful) on default scenes, normal in 3 (wary), override allowed by GALLERY.md | 2026-11-06 | none: hair is the roster canon `Roo_HD_Hair_Highpony` (ponytail). Owner 2026-11-06: "Ponytail", chosen over the bun, so no property is changed |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|

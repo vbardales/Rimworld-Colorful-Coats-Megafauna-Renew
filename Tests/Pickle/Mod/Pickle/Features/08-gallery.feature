@@ -1,6 +1,6 @@
 # SHOTLIST 2026-10-27 (shootGallery 9.0, director pass by Opus kept in part). Supersedes the shot plan below; scenarios are rewritten from it, none played before every scene is at 4 or more.
 # Story: the keeper's evening walk. Nelim (only colonist, NSB) crosses her land at dusk, feeds and settles the herd of the dry plains, species by species.
-# Time: start 18 h, cumulative waits 60, 893, 1727, 2560 ticks = 18:00, 18:20, 18:40, 19:00, Clear. Outfit continuity: teal Apparel_CollarShirt (24,74,84), Apparel_Pants (16,52,60), bun, own face.
+# Time: start 18 h, cumulative waits 60, 893, 1727, 2560 ticks = 18:00, 18:20, 18:40, 19:00, Clear. Outfit continuity: teal Apparel_CollarShirt (24,74,84), Apparel_Pants (16,52,60), own face and canon hair (Roo_HD_Hair_Highpony, ponytail; owner 2026-11-06 chose the ponytail over the bun).
 # 1 opening, WIDE, bare-clearing 18:00: Nelim forced to haul WoodLog to (192,152) mid-stride (instant: the last log for the fire, which is already lit decor); 2 WoollyMammoth, one ingests Hay at (199,153) head down, one walks in; TorchLamp (198,150); frame (186,146)-(205,158). est 4.5, risk: Hay ingest by a mammoth never played.
 # 2 MEDIUM, water-garden bank 18:20 (cells x143-158 z168-176, avoid (149,173) and (150,173)): 3 Enhydriodon in 3 hues that read apart, one lying facing South (front view), one walking to the water; Nelim hauls Meat_Muffalo to (150,170); frame (143,166)-(158,178). est 4, risk: bank cells never photographed, "lies at" unseen.
 # 3 TIGHT, bare-clearing 18:40: 3 Pulmonoscorpius (coats -1, 0, 1) ingest Meat_Muffalo at (199,152) from 3 sides, the northern one faces South; Nelim wary (expression normal) at the west edge facing East, just after she threw the meat; TorchLamp (197,149); frame (195,149)-(202,155). est 4.5.
@@ -17,7 +17,6 @@
 @requires:nelim.pickletools.screenshotstudio
 @requires:nelim.pickletools.camerazoom
 @requires:nelim.pickletools.colonistrace
-@requires:RI.RimImmortals.Hairstyle
 @requires:nelim.sanctuarybacklot
 Feature: Workshop gallery captures
 
@@ -60,8 +59,6 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
     And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-1-mammoths"
@@ -101,8 +98,6 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
     And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-2-enhydriodon"
@@ -144,8 +139,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
     And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-3-scorpions"
@@ -188,8 +181,6 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "RI_HairStyle_FemaleBun"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (58, 36, 28)
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
     And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-4-chalicotherium"

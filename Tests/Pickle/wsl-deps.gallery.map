@@ -25,8 +25,5 @@ astryl.FacialAnimationPerformancePatch 3790129900
 sd.fa.movingvanillaeyes 3753978140
 nelim.sanctuarybacklot path:SanctuaryBacklot/Mod
 nelim.pickletools.screenshotmode path:PickleTools/ScreenshotMode/Mod
-# Nelim's hair (owner, 2026-10-16: any mod that serves the theme): RimImmortal (Core is the base of Hairstyle; same three lines as
-# AncientChineseBeastAndGeneExpandedRenew/Tests/Pickle/wsl-deps.sanctuary.map) for the bun RI_HairStyle_FemaleBun.
-RI.RimImmortal.Core 3296476341
-RI.RimImmortal.Living 3326145525
-RI.RimImmortals.Hairstyle 3265157569
+# Nelim hair (owner, 2026-11-06: ponytail, the roster canon Roo_HD_Hair_Highpony, no override): Rooboid HD Hair, as NSB (DEPENDANCES-SANCTUAIRE.md).
+rooboid.hdhair.continued 3559870636
