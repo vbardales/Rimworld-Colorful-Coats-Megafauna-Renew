@@ -139,3 +139,9 @@ Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim, `LOOKS-VALIDATION.md`, `
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
 | no NSB animal (the subject animals are Megafauna creatures spawned as decor) | 1 to 4 | none | not opened | none |
+
+### Included animals (rule 5, sync-nsb 2026-11-06, third pass)
+
+NSB changed since the last pass only in `SOREN-PROFIL.md`, `MIEL-PROFIL.md`, `AVANCEMENT.md`, `VALIDE.md` (none used here); place docs, roster, looks, `NELIM-PROFIL.md` untouched since 2026-11-05, so no shotlist line moves. Not re-opened: last-read dates above stay.
+
+The mod patches 26 Megafauna `PawnKindDef` (67 coats). Shown today: WoollyMammoth (1), Enhydriodon (2), Pulmonoscorpius (3), Chalicotherium (4). MISSING, no shot: Andrewsarchus, Arthropleura, Castoroides, Daeodon, Deinotherium, Dinocrocuta, Diprotodon, Doedicurus, Elasmotherium, Gomphotaria, Josephoartigasia, Macrauchenia, Megalania, Paraceratherium, Platybelodon, Procoptodon, Purussaurus, Sivatherium, Smilodon, Titanis, Uintatherium, Zygolophodon (22). `09-coat-sheet.feature` covers the Chalicotherium only. Shotlist gap to close at shootGallery: owner choice pending (extra grouped shots, or a stated justification).
