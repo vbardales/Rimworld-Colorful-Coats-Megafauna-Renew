@@ -48,7 +48,7 @@ remaining:
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
 updated: 2026-11-06, Preview validated, tests converted, NSB synced, hair = ponytail (owner), f67d read: scenes 2 and 3 refused (3.5 each), full 4-scene replay to file
-protocols_read_sha: f1c2b7d1eb7889301ad12ba9659d6543ff5d2944
+protocols_read_sha: 21e22cbde6212aacdb1eed5aae2acb8450480451
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
