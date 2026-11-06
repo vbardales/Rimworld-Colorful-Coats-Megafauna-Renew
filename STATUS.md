@@ -32,6 +32,7 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
+  - "2026-11-06 a062 read (exit 1, 3 of 4): scenes 2 to 4 captured (not yet read), scene 1 failed on undefined step `I wait {int}..{int} ticks`; fixed in 41c48cb (`I let 600 ticks pass`), ticket 20261106-085522-845-0f35 queued (scene 1 only, Inbox gallery-keeper-4). Keep tree frozen until RUN_DONE; then read 4 captures, rate-gallery, crop in Art"
   - "2026-11-02 NPT relay via TM: Stool fixed in 2aa6f93 (`sits on the building \"Stool\" at (x, z)` now starts a Wait job facing the stool; vanilla 1.6 has no sitting pose, seated = standing on the seat cell), test ticket 65b3 green 2026-11-02 (TM relay); Ingest: after `forced into the job \"Ingest\"` add `When I wait 300..900 ticks`, Hay reachable and not forbidden, else send NPT the log line `[stage] ... job now <name>`. Apply to 08-gallery.feature (scenes 1 and 4) only after RUN_DONE of f67d and a green 65b3, then replay"
   - "2026-11-02 replay-audit --force: 7.b and 7.c closed (Check-Coats and Check-Xml restored under Tests/, validated by Audit, green), back to shootGallery; first open 9.a (scenes 2 and 3 to redo)"
   - "2026-11-06 shotlist v3 (crops, Nelim readable) written, scenario bodies rewritten (c04514c); 66d7 cancelled, ticket 20261106-043442-879-a062 queued (4 gallery scenes, wsl-deps.gallery.map, Inbox gallery-keeper-3). Only NSB places and Nelim, Megafauna animals as decor: nothing outside NSB. Keep tree frozen until RUN_DONE; then summary.json, junit.xml, open 4 captures, rate-gallery, crop in Art/Gallery-clean"
@@ -47,7 +48,7 @@ remaining:
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
 updated: 2026-11-06, Preview validated, tests converted, NSB synced, hair = ponytail (owner), f67d read: scenes 2 and 3 refused (3.5 each), full 4-scene replay to file
-protocols_read_sha: 4e6d7b694f3ae899b26ec15b743228a30a7dd519
+protocols_read_sha: f1c2b7d1eb7889301ad12ba9659d6543ff5d2944
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
