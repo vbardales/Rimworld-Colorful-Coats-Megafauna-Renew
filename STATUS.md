@@ -33,11 +33,7 @@ manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle 
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
   - "2026-11-06 a062 (scenes 2 to 4, Inbox gallery-keeper-3) and 09cb (scene 1, gallery-keeper-5; 0f35 died on infra exit 6, tunnel port 27750) read, all four plays passed. Est vs read: 1 mammoths 2.5 refuse (Nelim absent from frame, third mammoth missing, coats alike); 2 otters 3 refuse (murky, Nelim cut at bottom edge, daylily small); 3 scorpions 3.5 (3 hues clear, Nelim tiny at top, crop to include her); 4 Chalicotherium 4 accept (3 coats, Nelim on Stool, fire). Next: fix scenes 1 and 2 in 08-gallery.feature, delete their old captures in the same commit (GALLERY.md), one small ticket, then rate-gallery and crop in Art/Gallery-clean. Inbox gallery-keeper-4 holds another mod's poodle/panda/bengal captures: check origin before prune"
-  - "2026-11-02 NPT relay via TM: Stool fixed in 2aa6f93 (`sits on the building \"Stool\" at (x, z)` now starts a Wait job facing the stool; vanilla 1.6 has no sitting pose, seated = standing on the seat cell), test ticket 65b3 green 2026-11-02 (TM relay); Ingest: after `forced into the job \"Ingest\"` add `When I wait 300..900 ticks`, Hay reachable and not forbidden, else send NPT the log line `[stage] ... job now <name>`. Apply to 08-gallery.feature (scenes 1 and 4) only after RUN_DONE of f67d and a green 65b3, then replay"
   - "2026-11-02 replay-audit --force: 7.b and 7.c closed (Check-Coats and Check-Xml restored under Tests/, validated by Audit, green), back to shootGallery; first open 9.a (scenes 2 and 3 to redo)"
-  - "2026-11-06 shotlist v3 (crops, Nelim readable) written, scenario bodies rewritten (c04514c); 66d7 cancelled, ticket 20261106-043442-879-a062 queued (4 gallery scenes, wsl-deps.gallery.map, Inbox gallery-keeper-3). Only NSB places and Nelim, Megafauna animals as decor: nothing outside NSB. Keep tree frozen until RUN_DONE; then summary.json, junit.xml, open 4 captures, rate-gallery, crop in Art/Gallery-clean"
-  - "2026-11-06 f67d read (exit 0, 2 of 2): scene 2 est 3.5 refuse (dark and murky, otter lying faces East not South, Nelim hidden by the meat, face unreadable, daylily not readable as a plant); scene 3 est 3.5 refuse (wide not tight, Nelim small and far, expression unreadable, scorpions three hues ok). Hair changed to the ponytail (owner 2026-11-06), bun lines removed from 08-gallery.feature and RimImmortal replaced by rooboid.hdhair.continued in wsl-deps.gallery.map, so every scene replays: file one 4-scene ticket after applying Stool and Ingest steps (65b3 green) to scenes 1 and 4"
-  - "2026-11-02 shootGallery: ticket 20261102-211811-905-f67d (scenes 2 and 3 only, 0ea330c, wsl-deps.gallery.map, Inbox gallery-keeper-2) queued: scene 2 reworked (two Plant_Daylily fully grown, lit TorchLamp, walker, lying at right third, frame (145,167)-(157,176)), scene 3 spacing (scorpions 4 to 5 cells apart, frame (192,146)-(206,158), Nelim forced to walk back). Keep tree frozen until RUN_DONE. At RUN_DONE read summary.json then junit.xml, open both captures, verdict next to est 4.5 and 4; NPT asked via TM (Stool sit and Hay Ingest not obtained in a631). Then accept or refuse, drop candidate from names, reindex, Art/Gallery-clean + Add-Subtitle.ps1, update Gallery subtitles table in PUBLICATION.md (lines still the old story), 9.c order justified. a631 verdicts: 1 mammoths 3.5 keep, 2 3 redo, 3 2.5 redo, 4 4 accept; candidates 1 and 4 replaced in Art/Gallery; only NSB colonists"
   - "2026-10-18: Audit (via TM) asked gallery prep polish (dry tall grass, WoodLog, scorpion front view, no tattoo, no weapon): played in a631 2026-11-02, read in the captures"
   - "2026-10-19: evidence sorted (Tests/Pickle/Evidence, 0.6 MB). p17-assetpack-ab-B-1017 (1.7 A/B pack pass) trimmed to one scenario, its per-animal proof deleted: tested_1_7 has no proof, replay the 1.7 pass after a green 1.6 playTests"
   - "2026-10-17: FRENCH_REVIEW.md (39cf697, no French string shipped) read and validated by Virginie; ChatGPT review of the French texts found nothing; gallery replay f70f (mammoths B and C, d3ba exit 3 had no capture) queued"
@@ -123,7 +119,7 @@ Self-score of the series: 4.5. NPT answered 2026-10-27: ground sit refused (vani
 
 ## NSB
 
-Synced 2026-11-06 (fourth pass of the day, after shots 5 to 7 were added). NSB `Docs/` since the last pass: `NELIM-PROFIL.md` (wardrobe, hair canon `Roo_HD_Hair_Highpony` unchanged), `AVANCEMENT.md`, `VALIDE.md` (not used here). Rules in force (owner, 2026-11-05): NSB places, colonists, domestic animals free; outside NSB needs express validation; a colonist's properties change only with express validation; every outfit free; rule 5 (2026-11-06): every included animal has a shot. Fauna of the save not named by NSB is decor, free (`SANCTUAIRE-LIEUX.md`, "Qui une galerie peut utiliser"); the Megafauna creatures are not NSB animals, so decor. No owner question open (rule 5 settled by the owner, "c'est toi qui voit, réalisatrice", 2026-11-06).
+Synced 2026-11-06 (fourth pass of the day, after shots 5 to 8 replaced 5 to 7). NSB `Docs/` since the last pass: `NELIM-PROFIL.md` (wardrobe, hair canon `Roo_HD_Hair_Highpony` unchanged), `AVANCEMENT.md`, `VALIDE.md` (not used here). Rules in force (owner, 2026-11-05): NSB places, colonists, domestic animals free; outside NSB needs express validation; a colonist's properties change only with express validation; every outfit free; rule 5 (2026-11-06): every included animal has a shot. Fauna of the save not named by NSB is decor, free (`SANCTUAIRE-LIEUX.md`, "Qui une galerie peut utiliser"); the Megafauna creatures are not NSB animals, so decor. No owner question open (rule 5 settled by the owner, "c'est toi qui voit, réalisatrice", 2026-11-06).
 
 Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim only; `NELIM-PROFIL.md` hair line re-read in this pass).
 
@@ -131,21 +127,22 @@ Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim only; `NELIM-PROFIL.md` h
 |---|---|---|---|
 | bare-clearing | 1, 3, 4 | floor bared, vanometric cell hidden, Campfire, TorchLamp x2, Hay, WoodLog, Meat_Muffalo | 2026-11-06 |
 | water-garden (west bank) | 2 | Plant_Daylily x4, 3 lit TorchLamp, Meat_Muffalo; avoid (149,173) and (150,173) | 2026-11-06 |
-| enclosure-north (x144-187, z224-245) | 5 | none planned; cells and crop fixed when the scenario is written; decor docs not opened | 2026-11-06 (name and cells only) |
-| exhibition-zone (shooting zone, left free) | 6 | none planned; cells fixed at scenario writing; decor docs not opened | 2026-11-06 (name and cells only) |
-| rice-paddy (right rice zone, brown ground, forest edge) | 7 | none planned; cells fixed at scenario writing; decor docs not opened | 2026-11-06 (name and cells only) |
+| enclosure-north (x144-187, z224-245) | 5 (06:30) | none planned; cells and crop fixed when the scenario is written; decor docs not opened | 2026-11-06 (name and cells only) |
+| exhibition-zone (shooting zone, left free) | 6 (07:30) | none planned; cells fixed at scenario writing; decor docs not opened | 2026-11-06 (name and cells only) |
+| rice-paddy (right rice zone, brown ground, forest edge) | 7 (08:30) | none planned; cells fixed at scenario writing; decor docs not opened | 2026-11-06 (name and cells only) |
+| calm-zone (cream square, shooting zone left free) | 8 (09:30) | none planned (2 unlit TorchLamp, Plant_Daylily x3); decor docs not opened | 2026-11-06 (name only) |
 
 | Colonist | Shots | Outfit per shot (why) | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim | 1 to 7 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all shots (outfits free; one colour for continuity of the walk, the morning count is the next day of the same tour, outfit kept on purpose); smile, normal in 3 (wary); hair = roster canon `Roo_HD_Hair_Highpony` | 2026-11-06 | none |
+| Nelim | 1 to 8 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all shots (outfits free; one colour for continuity of the walk, the morning count is the next day of the same tour, outfit kept on purpose); smile, normal in 3 (wary); hair = roster canon `Roo_HD_Hair_Highpony` | 2026-11-06 | none |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
-| no NSB animal (the subject animals are Megafauna creatures spawned as decor) | 1 to 7 | none | not opened | none |
+| no NSB animal (the subject animals are Megafauna creatures spawned as decor) | 1 to 8 | none | not opened | none |
 
 ### Included animals (rule 5)
 
-26 patched Megafauna `PawnKindDef` (67 coats), from `ColorfulCoats_Megafauna.xml`. Shots 5 to 7 draw one coat per animal, chosen for contrast (the other coats are not drawn: 67 coats cannot read at 268 px).
+26 patched Megafauna `PawnKindDef` (67 coats), from `ColorfulCoats_Megafauna.xml`. Shots 5 to 8 draw one coat per animal, chosen for contrast (the other coats are not drawn: 67 coats cannot read at 268 px).
 
 | Animal | Shot |
 |---|---|
@@ -153,22 +150,24 @@ Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim only; `NELIM-PROFIL.md` h
 | Enhydriodon | 2 (3 coats) |
 | Pulmonoscorpius | 3 (3 coats) |
 | Chalicotherium | 4 (3 coats) |
-| Deinotherium, Gomphotaria, Platybelodon, Zygolophodon, Paraceratherium, Elasmotherium, Sivatherium, Uintatherium | 5 |
-| Macrauchenia, Diprotodon, Doedicurus, Procoptodon, Daeodon, Castoroides, Josephoartigasia | 6 |
-| Andrewsarchus, Smilodon, Dinocrocuta, Megalania, Purussaurus, Titanis, Arthropleura | 7 |
+| Deinotherium, Platybelodon, Uintatherium, Macrauchenia, Castoroides, Josephoartigasia | 5 |
+| Paraceratherium, Gomphotaria, Diprotodon, Doedicurus, Procoptodon, Daeodon | 6 |
+| Andrewsarchus, Smilodon, Megalania, Purussaurus, Titanis | 7 |
+| Elasmotherium, Zygolophodon, Sivatherium, Dinocrocuta, Arthropleura | 8 |
 
-No row MISSING. Not yet written: scenarios of 1 to 3 (v3.1) and 5 to 7.
+No row MISSING. Not yet written: scenarios of 1 to 3 (v3.1) and 5 to 8.
 
 Shotlist v3.1 (2026-11-06, shots 1 to 3 only, after the rating of 09cb and a062: plan 5, image 3.5, adequacy 2.5). Cause per shot: 1 no WoodLog spawned so the haul did nothing, third mammoth out of frame; 2 Nelim cut at the bottom edge still holding the meat; 3 forced walk sent her north. Opus director pass kept: log carried in the hands and paused mid-stride, Nelim in profile toward the fire, 16:9 crop (z146-157), more torches and 4 daylilies, otters in three stages, coats checked at 268 px, spare logs in shot 3, light getting darker 1 to 3. Refused: Nelim looking back in shot 2 (no proven step), Nelim facing NE in shot 3 (face toward the camera rule, and its z reading was wrong: (197,155) is low in z147-158). Shot 4 untouched (accepted at 4). Scenario bodies of 1 to 3 still play v3: rewrite, delete their old captures in the same commit (GALLERY.md), then one small ticket.
 
-### Shotlist v3.2 (2026-11-06): rule 5 closed on paper, shots 5 to 7 added (owner: "c'est toi qui voit, réalisatrice")
+### Shotlist v3.3 (2026-11-06): rule 5 closed on paper, shots 5 to 8 (4 morning-count shots of 5 to 6 animals after the Opus pass: 8 per image blurs at 268 px; shots 2 and 3 now haul a Meat_Muffalo for a gesture) (owner: "c'est toi qui voit, réalisatrice")
 
 Story continues next morning, 06:00, 07:00, 08:00, Clear: "morning count", Nelim (same outfit, smile) walks the herds. One coat per animal, chosen for contrast (the 67 coats cannot read at 268 px; the others are not drawn, said in the header). 22 animals over 3 group shots, none missing.
 
-| # | place | family | animals (count) | caption | est | risk |
-|---|---|---|---|---|---|---|
-| 5 | enclosure-north 06:00 | proboscideans and big browsers | Deinotherium, Gomphotaria, Platybelodon, Zygolophodon, Paraceratherium, Elasmotherium, Sivatherium, Uintatherium (8) | She counts the great browsers. | 4 | crowd, overlap |
-| 6 | exhibition-zone 07:00 | odd-ungulates, marsupials, rodents | Macrauchenia, Diprotodon, Doedicurus, Procoptodon, Daeodon, Castoroides, Josephoartigasia (7) | She counts the strange grazers. | 4 | crowd, overlap |
-| 7 | rice-paddy 08:00 | predators and reptiles | Andrewsarchus, Smilodon, Dinocrocuta, Megalania, Purussaurus, Titanis, Arthropleura (7) | She counts the hunters. | 4 | predators near prey: forced Wait job |
+| # | place | decor | animals | pawn | action | frame | caption | j | est | risk |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 5 | enclosure-north 06:30 dawn | TorchLamp lit (159,238), Hay x10 (168,236) | 6 animals, foreground Deinotherium (eats), Platybelodon (walks), Uintatherium (front view); background Macrauchenia, Castoroides, Josephoartigasia lying | same, smile, forced walk toward the hay, back three-quarter | the count begins, paused 30 ticks | crop x156-180 z230-243.5, Nelim lower-left, herd upper-right | "She counts the great browsers." | 6 coats chosen for contrast | 4 | dark dawn, overlap |
+| 6 | exhibition-zone 07:30 | Plant_Daylily x3 on the carpet edge | 6: foreground Paraceratherium, Diprotodon, Doedicurus; background Gomphotaria, Procoptodon, Daeodon; dark coats on carpet, warm on grass | same, smile, hauls Hay | item in her hands, paused mid-stride | crop on the carpet edge, half carpet half grass | "She counts the strange grazers." | 6 coats, contrast with the orange | 4 | carpet swallows rufous coats |
+| 7 | rice-paddy 08:30 | WoodLog pile east (forest edge) | 5: foreground Smilodon (eats), Titanis (walks), Megalania (lies); Purussaurus lies, Andrewsarchus stands back; pale or dark coats | same, smile, hauls Meat_Muffalo, paused 2 cells from Smilodon | she brings the meat, the cat reaches it | crop 24x13.5 on the clearing, forest edge background | "She counts the hunters." | 5 coats, no tawny on brown | 4 | predators near prey: forced Wait or lie |
+| 8 | calm-zone 09:30 | 2 TorchLamp unlit, Plant_Daylily x3, cream carpet | 5: Elasmotherium, Zygolophodon, Sivatherium, Dinocrocuta, Arthropleura around her | same, smile, stands at the centre | the count is done | crop 24x13.5, Nelim centre, herd around (closing image) | "The count is done." | 5 coats on cream | 4 | crowd, Dinocrocuta near browsers: forced Wait |
 
-Crops, cells, Nelim position fixed when the scenario bodies are written. Not yet written: no scenario, no ticket for 5 to 7. Included-animals table now: every animal has a shot (1 to 4 as before, 5 to 7 for the 22). NSB places used: enclosure-north, exhibition-zone, rice-paddy, all read in SANCTUAIRE-LIEUX.md 2026-11-06 (names and cells only, not their decor docs).
+Crops, cells, Nelim position fixed when the scenario bodies are written. Not yet written: no scenario, no ticket for 5 to 8. Included-animals table now: every animal has a shot (1 to 4 as before, 5 to 7 for the 22). NSB places used: enclosure-north, exhibition-zone, rice-paddy, all read in SANCTUAIRE-LIEUX.md 2026-11-06 (names and cells only, not their decor docs).
