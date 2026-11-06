@@ -41,10 +41,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "Campfire" at (193, 152) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (203, 148)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (203, 148) is lit
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Pickle Tools: "Nelim" stands at (188, 151) facing East
-    And Nelim's Pickle Tools: 5 of the item "WoodLog" are spawned at (189, 151)
     And Nelim's Pickle Tools: 10 of the item "Hay" are spawned at (199, 153)
     And Nelim's Pickle Tools: 3 adult animals of kind "WoollyMammoth" are spawned around (200, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
@@ -52,9 +48,13 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" stands at (198, 153) facing West
     And Nelim's Pickle Tools: the animal "coat-2" stands at (202, 148) facing South
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 2
-    And Nelim's Pickle Tools: the animal "coat-3" stands at (197, 150) facing West
+    And Nelim's Pickle Tools: the animal "coat-3" stands at (196, 147) facing West
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (199, 153)
     And Nelim's Pickle Tools: I let 600 ticks pass
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
+    And Nelim's Pickle Tools: "Nelim" stands at (188, 151) facing East
+    And Nelim's Pickle Tools: 5 of the item "WoodLog" are spawned at (189, 151)
     And Nelim's Pickle Tools: "coat-2" is forced to walk to (202, 152)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "WoodLog" to (192, 152)
     And Nelim's Pickle Tools: time is paused for the capture
