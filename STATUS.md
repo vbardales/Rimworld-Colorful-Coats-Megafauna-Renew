@@ -122,26 +122,26 @@ Self-score of the series: 4.5. NPT answered 2026-10-27: ground sit refused (vani
 
 ## NSB
 
-Synced 2026-11-06 (fourth pass of the day, after shots 5 to 8 replaced 5 to 7). NSB `Docs/` since the last pass: `NELIM-PROFIL.md` (wardrobe, hair canon `Roo_HD_Hair_Highpony` unchanged), `AVANCEMENT.md`, `VALIDE.md` (not used here). Rules in force (owner, 2026-11-05): NSB places, colonists, domestic animals free; outside NSB needs express validation; a colonist's properties change only with express validation; every outfit free; rule 5 (2026-11-06): every included animal has a shot. Fauna of the save not named by NSB is decor, free (`SANCTUAIRE-LIEUX.md`, "Qui une galerie peut utiliser"); the Megafauna creatures are not NSB animals, so decor. No owner question open (rule 5 settled by the owner, "c'est toi qui voit, réalisatrice", 2026-11-06).
+Synced 2026-11-07 (after the TM WARN `nsb-sync`). NSB `Docs/` changed since the 2026-11-06 pass: `NELIM-PROFIL.md` (1.7 body hair only; hair canon `Roo_HD_Hair_Highpony` and outfits unchanged), `SANCTUAIRE-LIEUX.md` (play-area frame only, not a place used here), `VALIDE.md` and `AVANCEMENT.md` (side and back views of Ottawa, Ursule, Wrille, not used here). `NSB-ROSTER.md`, `APPARENCES-CANON.md`, `CATALOGUE-ANIMAUX.md`, `LOOKS-VALIDATION.md` unchanged. Nothing to update in shotlist or scenarios. Rules in force (owner, 2026-11-05): NSB places, colonists, domestic animals free; outside NSB needs express validation; a colonist's properties change only with express validation; every outfit free; rule 5 (2026-11-06): every included animal has a shot. Fauna of the save not named by NSB is decor, free (`SANCTUAIRE-LIEUX.md`, "Qui une galerie peut utiliser"); the Megafauna creatures are not NSB animals, so decor. No owner question open (rule 5 settled by the owner, "c'est toi qui voit, réalisatrice", 2026-11-06).
 
-Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim only; `NELIM-PROFIL.md` hair line re-read in this pass).
+Places read: 2026-11-07. Tribe read: 2026-11-07 (Nelim only; `NELIM-PROFIL.md` re-read in full; `CATALOGUE-ANIMAUX.md` has no Megafauna animal).
 
 | Place | Shots | Changes made to it for the gallery | Last read |
 |---|---|---|---|
 | bare-clearing | 1, 3, 4 | floor bared, vanometric cell hidden, Campfire, TorchLamp x2, Hay, WoodLog, Meat_Muffalo | 2026-11-06 |
 | water-garden (west bank) | 2 | Plant_Daylily x4, 3 lit TorchLamp, Meat_Muffalo; avoid (149,173) and (150,173) | 2026-11-06 |
-| enclosure-north (x144-187, z224-245) | 5 (06:30) | none planned; cells and crop fixed when the scenario is written; decor docs not opened | 2026-11-06 (name and cells only) |
-| exhibition-zone (shooting zone, left free) | 6 (07:30) | none planned; cells fixed at scenario writing; decor docs not opened | 2026-11-06 (name and cells only) |
-| rice-paddy (right rice zone, brown ground, forest edge) | 7 (08:30) | none planned; cells fixed at scenario writing; decor docs not opened | 2026-11-06 (name and cells only) |
+| enclosure-north (x144-187, z224-245) | 5 (06:30) | TorchLamp lit (159,239), Hay x13; scenario written 2026-11-07, ticket d711 | 2026-11-07 (name and cells only) |
+| exhibition-zone (shooting zone, left free) | 6 (07:30) | Plant_Daylily x3, Hay x5; scenario written 2026-11-07, carpet edge cell guessed, ticket d711 | 2026-11-07 (name and cells only) |
+| rice-paddy (right rice zone, brown ground, forest edge) | 7 (08:30) | WoodLog x2, Meat_Muffalo x3; scenario written 2026-11-07, cells guessed from the place centre, ticket d711 | 2026-11-07 (name and cells only) |
 | calm-zone (cream square, shooting zone left free) | 8 (09:30) | none planned (2 unlit TorchLamp, Plant_Daylily x3); decor docs not opened | 2026-11-06 (name only) |
 
 | Colonist | Shots | Outfit per shot (why) | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim | 1 to 8 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all shots (outfits free; one colour for continuity of the walk, the morning count is the next day of the same tour, outfit kept on purpose); smile, normal in 3 (wary); hair = roster canon `Roo_HD_Hair_Highpony` | 2026-11-06 | none |
+| Nelim | 1 to 8 | teal `Apparel_CollarShirt` (24,74,84) + `Apparel_Pants` (16,52,60), same in all shots (outfits free; one colour for continuity of the walk, the morning count is the next day of the same tour, outfit kept on purpose); smile, normal in 3 (wary); hair = roster canon `Roo_HD_Hair_Highpony` | 2026-11-07 | none |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
-| no NSB animal (the subject animals are Megafauna creatures spawned as decor) | 1 to 8 | none | not opened | none |
+| no NSB animal (the subject animals are Megafauna creatures spawned as decor) | 1 to 8 | none | catalogue 2026-11-07 (none of ours) | none |
 
 ### Included animals (rule 5)
 
