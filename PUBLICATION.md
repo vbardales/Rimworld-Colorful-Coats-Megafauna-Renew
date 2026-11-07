@@ -71,10 +71,10 @@ Each image is to be opened by a person before upload: a green capture scenario d
 ## Gallery subtitles
 
 One line of English at the bottom of each scene without an interface window, laid over the image like a film subtitle
-(`GALLERY.md`, "Sous-titres"). The story (shotlist v3.4): Nelim's evening walk (18:00 to 19:00), then the count of the herd the
+(`GALLERY.md`, "Sous-titres"). The story (shotlist v4): Nelim's evening walk (18:00 to 19:00), then the breakfast round of the herd the
 next morning (06:30 to 09:30). `0-preview.png` (the Preview) has no subtitle. The clean original is in `Art/Gallery-clean/`, the
 subtitled image goes in `Art/Gallery/`, both under 2 MB. A line changes here first, then the tool is replayed on the clean original.
-**None is laid yet: 1 to 4 and 8 are accepted clean originals, 5 to 7 await ticket 024b (2026-11-07); subtitles are burned after reindex.**
+**None is laid yet: all 8 shots are replayed under shotlist v4 (2026-11-07); subtitles are burned after the captures are accepted.**
 
 | Index | File | Line |
 |---|---|---|
@@ -82,10 +82,10 @@ subtitled image goes in `Art/Gallery/`, both under 2 MB. A line changes here fir
 | 2 | `2-enhydriodon.jpg` | She feeds the otters. |
 | 3 | `3-scorpions.jpg` | She feeds the scorpions. |
 | 4 | `4-chalicotherium.jpg` | She sits by the fire while the herd settles. |
-| 5 | `5-enclosure.jpg` | She counts the great browsers. |
-| 6 | `6-exhibition.jpg` | She counts the strange grazers. |
-| 7 | `7-rice-paddy.jpg` | She counts the hunters. |
-| 8 | `8-calm-zone.jpg` | The count is done. |
+| 5 | `5-enclosure.jpg` | Breakfast for the great browsers. |
+| 6 | `6-exhibition.jpg` | Breakfast for the strange grazers. |
+| 7 | `7-rice-paddy.jpg` | Breakfast for the hunters. |
+| 8 | `8-calm-zone.jpg` | Breakfast is over; the herd rests around her. |
 
 ## Dependencies and DLC
 
