@@ -205,6 +205,155 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-4-chalicotherium"
 
+  # Image 5, 06:30, MEDIUM, enclosure-north dawn (v3.4): Nelim hauls 3 Hay East toward the 10 Hay at (168,236), paused, back three-quarter; TorchLamp (159,239) lit; foreground Deinotherium (coat 1) ingests the hay at (169,236), Platybelodon (coat 2) walks to (172,240), Uintatherium (coat 0) stands facing South at (166,240); background Macrauchenia (coat 1), Castoroides (coat 2), Josephoartigasia (coat 0) lie. Cells (156,230)-(180,243). Caption: "She counts the great browsers."
+  @review @gallery
+  Scenario: the count begins at the north enclosure
+    Given I set the hour to 6
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-north"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the temperature of the map is 18 degrees
+    And Nelim's Pickle Tools: I let 1250 ticks pass
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (159, 239)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (159, 239) is lit
+    And Nelim's Pickle Tools: 10 of the item "Hay" are spawned at (168, 236)
+    And Nelim's Pickle Tools: 3 of the item "Hay" are spawned at (162, 237)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Deinotherium" are spawned around (169, 236)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Platybelodon" are spawned around (174, 238)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Uintatherium" are spawned around (166, 240)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Macrauchenia" are spawned around (174, 232)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Castoroides" are spawned around (178, 235)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Josephoartigasia" are spawned around (170, 231)
+    And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
+    And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-3" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-4" is given coat 1
+    And Nelim's Pickle Tools: the animal "coat-5" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-6" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-1" stands at (169, 236) facing West
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (174, 238) facing East
+    And Nelim's Pickle Tools: the animal "coat-3" stands at (166, 240) facing South
+    And Nelim's Pickle Tools: the animal "coat-4" lies at (174, 232) facing South
+    And Nelim's Pickle Tools: the animal "coat-5" lies at (178, 235) facing West
+    And Nelim's Pickle Tools: the animal "coat-6" lies at (170, 231) facing South
+    And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (168, 236)
+    And Nelim's Pickle Tools: "coat-2" is forced to walk to (172, 240)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
+    And Nelim's Pickle Tools: "Nelim" stands at (161, 237) facing East
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 3 of the item "Hay" to (164, 236)
+    And Nelim's Pickle Tools: time is paused for the capture
+    And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
+    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (156, 230) to (180, 243) filling 90 percent of the screen
+    And Nelim's Pickle Tools: the map is shown alone for a capture
+    And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
+    And Nelim's Pickle Tools: I let 5 frames pass
+    And I take a screenshot "gallery-5-enclosure"
+
+  # Image 6, 07:30, MEDIUM, exhibition-zone west carpet edge (v3.4): Nelim hauls 5 Hay East from (204,165) to (208,165), paused; foreground Paraceratherium (coat 1) at (212,163), Diprotodon (coat 2) at (210,168), Doedicurus (coat 0) at (214,166); background Gomphotaria (coat 1) at (202,161), Procoptodon (coat 2) at (201,169), Daeodon (coat 0) at (214,160); three Plant_Daylily on the edge. Cells (200,159)-(215,171). Risk: the carpet edge cell is a guess, check on capture. Caption: "She counts the strange grazers."
+  @review @gallery
+  Scenario: the count goes on at the exhibition zone
+    Given I set the hour to 7
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Sanctuary: I am at the sanctuary "exhibition-zone"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the temperature of the map is 18 degrees
+    And Nelim's Pickle Tools: I let 1250 ticks pass
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (205, 170)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (205, 162)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (203, 166)
+    And Nelim's Pickle Tools: the plants from (200, 159) to (215, 171) are fully grown
+    And Nelim's Pickle Tools: 5 of the item "Hay" are spawned at (205, 165)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Paraceratherium" are spawned around (212, 163)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Diprotodon" are spawned around (210, 168)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Doedicurus" are spawned around (214, 166)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Gomphotaria" are spawned around (202, 161)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Procoptodon" are spawned around (201, 169)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Daeodon" are spawned around (214, 160)
+    And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
+    And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-3" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-4" is given coat 1
+    And Nelim's Pickle Tools: the animal "coat-5" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-6" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-1" stands at (212, 163) facing South
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (210, 168) facing South
+    And Nelim's Pickle Tools: the animal "coat-3" stands at (214, 166) facing West
+    And Nelim's Pickle Tools: the animal "coat-4" stands at (202, 161) facing East
+    And Nelim's Pickle Tools: the animal "coat-5" stands at (201, 169) facing East
+    And Nelim's Pickle Tools: the animal "coat-6" stands at (214, 160) facing West
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
+    And Nelim's Pickle Tools: "Nelim" stands at (204, 165) facing East
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "Hay" to (208, 165)
+    And Nelim's Pickle Tools: time is paused for the capture
+    And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
+    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (200, 159) to (215, 171) filling 90 percent of the screen
+    And Nelim's Pickle Tools: the map is shown alone for a capture
+    And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
+    And Nelim's Pickle Tools: I let 5 frames pass
+    And I take a screenshot "gallery-6-exhibition"
+
+  # Image 7, 08:30, MEDIUM, rice-paddy forest edge (v3.4): Nelim hauls 1 Meat_Muffalo East from (226,121) to (228,121), paused 2 cells from Smilodon (coat 2) which eats the meat at (230,121); Titanis (coat 0) walks to (233,124); Megalania (coat 1) lies at (233,118); Purussaurus (coat 0) lies at (225,117); Andrewsarchus (coat 1) stands at (236,120); WoodLog at (238,122) and (238,125) mark the forest edge. Cells (222,115)-(238,127). Risk: coats on brown ground, predators near prey (forced lie), cells guessed from the place centre. Caption: "She counts the hunters."
+  @review @gallery
+  Scenario: the count ends at the rice paddy
+    Given I set the hour to 8
+    And I set the weather to "Clear"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Sanctuary: I am at the sanctuary "rice-paddy"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the temperature of the map is 18 degrees
+    And Nelim's Pickle Tools: I let 1250 ticks pass
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Pickle Tools: I place the decor "WoodLog" near (238, 122)
+    And Nelim's Pickle Tools: I place the decor "WoodLog" near (238, 125)
+    And Nelim's Pickle Tools: 2 of the item "Meat_Muffalo" are spawned at (230, 121)
+    And Nelim's Pickle Tools: 1 of the item "Meat_Muffalo" are spawned at (226, 122)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Smilodon" are spawned around (231, 121)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Titanis" are spawned around (232, 125)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Megalania" are spawned around (233, 118)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Purussaurus" are spawned around (225, 117)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Andrewsarchus" are spawned around (236, 120)
+    And Nelim's Pickle Tools: the animal "coat-1" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-2" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-3" is given coat 1
+    And Nelim's Pickle Tools: the animal "coat-4" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-5" is given coat 1
+    And Nelim's Pickle Tools: the animal "coat-1" stands at (231, 121) facing West
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (232, 125) facing East
+    And Nelim's Pickle Tools: the animal "coat-3" lies at (233, 118) facing West
+    And Nelim's Pickle Tools: the animal "coat-4" lies at (225, 117) facing East
+    And Nelim's Pickle Tools: the animal "coat-5" stands at (236, 120) facing West
+    And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Meat_Muffalo" at (230, 121)
+    And Nelim's Pickle Tools: "coat-2" is forced to walk to (233, 124)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
+    And Nelim's Pickle Tools: "Nelim" stands at (225, 122) facing East
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (228, 121)
+    And Nelim's Pickle Tools: time is paused for the capture
+    And Nelim's Pickle Tools: I advance the paused game by exactly 20 ticks
+    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (222, 115) to (238, 127) filling 90 percent of the screen
+    And Nelim's Pickle Tools: the map is shown alone for a capture
+    And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
+    And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+blink"
+    And Nelim's Pickle Tools: I let 5 frames pass
+    And I take a screenshot "gallery-7-rice-paddy"
+
   # Image 8, 09:30, MEDIUM, closing (v3.4): calm-zone, the count is done. Nelim walks South toward the camera with the last 10 Hay, paused one cell before the drop at (200,186); five animals around her, one coat each (indices in the steps): Elasmotherium (coat 2) eats the hay at (202,186), Zygolophodon (coat 1) stands South at (197,188), Sivatherium (coat 0) stands at (204,189), Dinocrocuta (coat 1) lies far at (206,184), Arthropleura (coat 2) stands at (196,184). Cells (193,182)-(207,191) with Nelim centre. Instant: the last bale of the morning count. Caption: "The count is done."
   @review @gallery
   Scenario: the count is done at the calm zone
