@@ -114,9 +114,10 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" stands at (152, 172) facing West
     And Nelim's Pickle Tools: the animal "coat-2" stands at (150, 174) facing East
     And Nelim's Pickle Tools: the animal "coat-3" lies at (155, 171) facing South
-    And Nelim's Pickle Tools: 8 of the item "Meat_Muffalo" are spawned at (152, 172)
+    And Nelim's Pickle Tools: 4 of the item "Meat_Muffalo" are spawned at (152, 172)
+    And Nelim's Pickle Tools: 4 of the item "Meat_Muffalo" are spawned at (151, 174)
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Meat_Muffalo" at (152, 172)
-    And Nelim's Pickle Tools: "coat-2" is forced into the job "Ingest" on the item "Meat_Muffalo" at (152, 172)
+    And Nelim's Pickle Tools: "coat-2" is forced into the job "Ingest" on the item "Meat_Muffalo" at (151, 174)
     And Nelim's Pickle Tools: "Nelim" carries 1 of the item "Meat_Muffalo"
     And Nelim's Pickle Tools: "Nelim" waits in place
     And Nelim's Pickle Tools: time is paused for the capture
@@ -273,7 +274,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: 1 adult animals of kind "Platybelodon" are spawned around (174, 238)
     And Nelim's Pickle Tools: 1 adult animals of kind "Uintatherium" are spawned around (166, 240)
     And Nelim's Pickle Tools: 1 adult animals of kind "Macrauchenia" are spawned around (174, 232)
-    And Nelim's Pickle Tools: 1 adult animals of kind "Castoroides" are spawned around (178, 235)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Castoroides" are spawned around (176, 235)
     And Nelim's Pickle Tools: 1 adult animals of kind "Josephoartigasia" are spawned around (170, 231)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
@@ -285,7 +286,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-2" stands at (174, 238) facing East
     And Nelim's Pickle Tools: the animal "coat-3" stands at (166, 240) facing South
     And Nelim's Pickle Tools: the animal "coat-4" lies at (174, 232) facing South
-    And Nelim's Pickle Tools: the animal "coat-5" lies at (178, 235) facing West
+    And Nelim's Pickle Tools: the animal "coat-5" lies at (176, 235) facing West
     And Nelim's Pickle Tools: the animal "coat-6" lies at (170, 231) facing South
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (168, 236)
     And Nelim's Pickle Tools: "coat-2" is forced to walk to (172, 240)
