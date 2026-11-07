@@ -1,14 +1,14 @@
-# SHOTLIST v4 2026-11-07 (shootGallery 9.0; rate-gallery of v3.4 under the 2026-11-07 rules: decor sparse, story not readable in 5 to 8, captures 1 2 3 4 8 REDO; Opus director pass, kept in part, see STATUS.md). Supersedes v3.4.
+# SHOTLIST v4.1 2026-11-07 (shots 3, 6, 7 recomposed after 319c and 5eee: overlap, carpet void, tiny Nelim); v4 2026-11-07 (shootGallery 9.0; rate-gallery of v3.4 under the 2026-11-07 rules: decor sparse, story not readable in 5 to 8, captures 1 2 3 4 8 REDO; Opus director pass, kept in part, see STATUS.md). Supersedes v3.4.
 # Story: the keeper's day with the Megafauna herd. Evening round on the clearing and at the pond (18h to 19h: she brings wood, feeds the otters and the scorpions, sits by the fire as the herd settles), then NEXT MORNING breakfast round over four places (06h30 to 09h30: she feeds browsers, grazers, hunters, then sits among the resting herd). Nelim (NSB, only colonist) keeps teal Apparel_CollarShirt rgb (24, 74, 84) and Apparel_Pants rgb (16, 52, 60), own face, smile in every shot (MouthSmile), ponytail canon.
 # Time: Clear every shot. Evening start 18h, cumulative waits 60, 893, 1727, 2350 ticks (18:00, 18:20, 18:40, 19:00); morning hours 6, 7, 8, 9 plus 1250 ticks.
 # Frame rule: crop of the 1920x1080 capture, never below 1280x720; evening shots 96 px per cell (20x11), morning shots 80 px per cell (24x13.5), Nelim faces South where the job allows. Animals 2 cells apart, three hues of different brightness. Decor grouped around the subject, ground not bare, a light source in frame; nothing on the cell south of a pawn (hides legs), no hay or meat under a body. One Ingest job running in every shot.
 #   1. mammoths-fire. 18h bare-clearing, WIDE opener, crop (184, 146) to (204, 157). Campfire (193, 152) lit, TorchLamp (203, 148) lit, Brazier (187, 155) lit, woodpile 4 WoodLog (190, 150), Stool (191, 155), Hay scatter (195, 149) (196, 156) (188, 149), Plant_Daylily (188, 147) (188, 157) (195, 147) (202, 156). 3 WoollyMammoth: one ingests Hay (199, 153) at (198, 153), one at (203, 149) walks South (front view), one at (200, 155). Nelim at (189, 152) hauls WoodLog to (192, 152), paused 25 ticks mid-stride, smile (MouthSmile). Instant: the last logs for the fire. Says: "She brings wood to the fire."
 #   2. otters-bank. 18h water-garden, crop (146, 169) to (160, 177). 3 lit TorchLamp (147, 170) (158, 173) (156, 169), lit Brazier (146, 176), PlantPot_Bonsai (147, 172), Stool (146, 173), Plant_Daylily (148, 172) (156, 170) (146, 175) (157, 175). 8 Meat_Muffalo at (152, 172): 2 Enhydriodon ingest it, third lies at (155, 171), 3 hues. Nelim at (152, 170) carries Meat_Muffalo, faces South toward them, smile. Instant: she set the meat down, the otters have reached it. Says: "She feeds the otters."
-#   3. scorpions-meat. 18h bare-clearing, crop (192, 148) to (203, 156). Campfire (193, 152) lit, TorchLamp (197, 149) lit, Brazier (202, 155) lit, woodpile 9 WoodLog (193, 148) (4 plus the 5 hauled in shot 1), Hay (195, 148) (195, 155) (202, 153), Plant_Daylily (192, 149) (192, 155) (196, 148) (202, 148). Meat_Muffalo (199, 152); 3 Pulmonoscorpius ingest it from (203, 151) (200, 155) (199, 148), 3 hues. Nelim at (196, 152) hauls Meat_Muffalo to (198, 152), paused 60 ticks, smile. Instant: she has just set the meat down. Says: "She feeds the scorpions."
+#   3. scorpions-meat. 18h bare-clearing, crop (192, 148) to (203, 156). Campfire (193, 152) lit, TorchLamp (197, 149) lit, Brazier (202, 155) lit, woodpile 9 WoodLog (193, 148) (4 plus the 5 hauled in shot 1), Hay (195, 148) (195, 155) (202, 153), Plant_Daylily (192, 149) (192, 155) (196, 148) (202, 148). v4.1: ONE Meat_Muffalo stack of 3 per scorpion, each 3 cells from the others (stacks at (202, 151) (200, 154) (199, 149); bodies ingest on their own stack and no longer converge, no overlap), 3 Pulmonoscorpius, 3 hues. Nelim at (196, 152) hauls Meat_Muffalo to (197, 152), 3 cells from the nearest scorpion and not touching it, paused 60 ticks, smile. Instant: she has just set the meat down. Says: "She feeds the scorpions."
 #   4. herd-settles. 18h bare-clearing, closer, crop (187, 148) to (201, 156). Campfire (193, 152) lit, TorchLamp (190, 148) (190, 156) lit, Brazier (200, 149) lit, Stool (191, 153) with Nelim seated, smile, woodpile 9 WoodLog (190, 150), Hay (196, 153) (194, 148) (194, 155) (199, 148), Plant_Daylily (188, 149) (188, 155) (199, 156) (194, 156). 3 Chalicotherium: two lie at (196, 150) and (198, 154), one at (203, 152) ingests Hay (196, 153). Instant: the herd settles. Says: "She sits by the fire while the herd settles."
-#   5. browsers-breakfast. 6h enclosure-north, crop (156, 230) to (180, 243). TorchLamp (159, 239) lit, Brazier (177, 240) lit, Hay (168, 236) (162, 237) (164, 236) (166, 239) (171, 237) (172, 234), WoodLog (161, 232), Stool (158, 236), Plant_Daylily (158, 233) (158, 241) (176, 242) (178, 232). Nelim at (161, 237) hauls Hay to (164, 236), back three-quarter, smile. Deinotherium ingests at (169, 236), Platybelodon walks to (172, 240), Uintatherium ingests at (166, 239); background Macrauchenia (174, 232), Castoroides (178, 235), Josephoartigasia (170, 231) lie. Instant: the first hay reaches the browsers. Says: "Breakfast for the great browsers."
-#   6. grazers-breakfast. 7h exhibition-zone carpet edge, crop (200, 159) to (215, 171). Brazier (208, 169) lit, Stool (203, 164), Hay (205, 165) (211, 164) (209, 167), Plant_Daylily (205, 170) (205, 162) (203, 166) (213, 170). Nelim at (204, 165) hauls Hay to (208, 165), smile. Paraceratherium (212, 163) and Diprotodon (210, 168) ingest, Doedicurus (214, 166); background Gomphotaria (202, 161), Procoptodon (201, 169), Daeodon (214, 160) (6 animals kept: rule 5). Instant: she sets the hay down, the grazers lean in. Says: "Breakfast for the strange grazers."
-#   7. hunters-breakfast. 8h rice-paddy forest edge, crop (222, 115) to (238, 127). Brazier (224, 120) lit, WoodLog (238, 122) (238, 125) (237, 123), Meat_Muffalo (230, 121) (226, 122) (234, 121), Plant_Daylily (223, 126) (227, 116) (236, 126). Nelim at (225, 122) hauls Meat_Muffalo to (228, 121), smile. Smilodon (231, 121) and Andrewsarchus (236, 120) ingest, Titanis (232, 125) walks, Megalania (233, 118) and Purussaurus (225, 117) lie. Instant: the meat lands, the cat reaches it. Says: "Breakfast for the hunters."
+#   5. browsers-breakfast. 6h enclosure-north, crop (156, 230) to (180, 243). TorchLamp (159, 239) lit, Brazier (177, 240) lit, Hay (168, 236) (162, 237) (164, 236) (166, 239) (171, 237) (172, 234), WoodLog (161, 232), Stool (158, 236), Plant_Daylily (158, 233) (158, 241) (176, 242) (178, 232). Nelim at (161, 237) hauls Hay to (164, 236), back three-quarter, smile. Deinotherium ingests at (169, 236), Platybelodon walks to (172, 240), Uintatherium ingests at (166, 239); background Macrauchenia (174, 232), Castoroides (176, 235), Josephoartigasia (170, 231) lie. Instant: the first hay reaches the browsers. Says: "Breakfast for the great browsers."
+#   6. grazers-breakfast. 7h exhibition-zone, v4.1 moved 10 cells West onto the grass so the frame holds no carpet edge and no dark void squares, crop (190, 162) to (205, 172) (z 162 and up: water at the south-west corner is out of frame). Brazier (198, 170) lit, Stool (193, 165), Hay (195, 166) (201, 165) (199, 168), Plant_Daylily (195, 171) (195, 163) (193, 167) (203, 171). Nelim at (194, 166) hauls Hay to (198, 166), smile. Paraceratherium (202, 164) and Diprotodon (200, 169) ingest, Doedicurus (204, 167); background Gomphotaria (192, 163), Procoptodon (191, 170), Daeodon (204, 162) (6 animals kept: rule 5). Cells guessed from the first capture (grass x 200 to 209), read on the capture. Instant: she sets the hay down, the grazers lean in. Says: "Breakfast for the strange grazers."
+#   7. hunters-breakfast. 8h rice-paddy forest edge, crop (224, 116) to (238, 126) (v4.1: tighter, 96 px per cell, Nelim at least 100 px tall). Brazier (224, 120) lit, WoodLog (238, 122) (238, 125) (237, 123), Meat_Muffalo stacks of 3 on bare ground, one per ingester, none under a body: (230, 121) (235, 121) and a third at (228, 121) that Nelim hauls to. Nelim at (226, 122), 3 cells from Smilodon, smile. Smilodon (231, 121) and Andrewsarchus (236, 120) ingest, Titanis (232, 125) walks, Megalania (233, 118) and Purussaurus (226, 117) lie. Instant: the meat lands, the cat reaches it. Says: "Breakfast for the hunters."
 #   8. herd-rests. 9h calm-zone, closing, crop (193, 182) to (207, 191). Brazier (200, 184) lit, Stool (200, 187) with Nelim seated facing South, smile, TorchLamp (195, 190) (205, 190) lit, PlantPot_Bonsai (207, 187), Plant_Daylily (194, 186) (206, 187) (199, 183), 3 Hay at (202, 186). Elasmotherium ingests the last Hay, Zygolophodon (197, 188) front view, Sivatherium (204, 189), Dinocrocuta lies (206, 184), Arthropleura (196, 184). Instant: the last hay is eaten, she sits down. Says: "Breakfast is over; the herd rests around her."
 # Steps used: the places, the face and the cleaning are Nelim's Sanctuary: steps; the jobs, the lying and sitting poses, the decor, the framing and the face are Nelim's Pickle Tools: steps; the spawn and coat steps are CoatSteps. The crop is a tool step after the run (Art/Gallery-clean).
 # Each scenario is @review: a green run proves a picture was taken, not that it is worth uploading. The session opens every capture. Run: Submit-PickleRun.ps1 -DepMap wsl-deps.gallery.map -Filter '@gallery'. Subtitles: PUBLICATION.md, "Gallery subtitles".
@@ -162,7 +162,9 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" stands at (196, 152) facing East
-    And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (199, 152)
+    And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (202, 151)
+    And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (200, 154)
+    And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (199, 149)
     And Nelim's Pickle Tools: 3 adult animals of kind "Pulmonoscorpius" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 0
@@ -170,10 +172,10 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" stands at (203, 151) facing West
     And Nelim's Pickle Tools: the animal "coat-2" stands at (200, 155) facing South
     And Nelim's Pickle Tools: the animal "coat-3" stands at (199, 148) facing North
-    And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Meat_Muffalo" at (199, 152)
-    And Nelim's Pickle Tools: "coat-2" is forced into the job "Ingest" on the item "Meat_Muffalo" at (199, 152)
-    And Nelim's Pickle Tools: "coat-3" is forced into the job "Ingest" on the item "Meat_Muffalo" at (199, 152)
-    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (198, 152)
+    And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Meat_Muffalo" at (202, 151)
+    And Nelim's Pickle Tools: "coat-2" is forced into the job "Ingest" on the item "Meat_Muffalo" at (200, 154)
+    And Nelim's Pickle Tools: "coat-3" is forced into the job "Ingest" on the item "Meat_Muffalo" at (199, 149)
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (197, 152)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 60 ticks
     When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (192, 148) to (203, 156) filling 90 percent of the screen
@@ -318,44 +320,44 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the temperature of the map is 18 degrees
     And Nelim's Pickle Tools: I let 1250 ticks pass
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I place the decor "Brazier" at (208, 169)
-    And Nelim's Pickle Tools: the decor "Brazier" at (208, 169) is lit
-    And Nelim's Pickle Tools: I place the decor "Stool" at (203, 164)
-    And Nelim's Pickle Tools: 4 of the item "Hay" are spawned at (211, 164)
-    And Nelim's Pickle Tools: 4 of the item "Hay" are spawned at (209, 167)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (213, 170)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (205, 170)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (205, 162)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (203, 166)
-    And Nelim's Pickle Tools: the plants from (200, 159) to (215, 171) are fully grown
-    And Nelim's Pickle Tools: 5 of the item "Hay" are spawned at (205, 165)
-    And Nelim's Pickle Tools: 1 adult animals of kind "Paraceratherium" are spawned around (212, 163)
-    And Nelim's Pickle Tools: 1 adult animals of kind "Diprotodon" are spawned around (210, 168)
-    And Nelim's Pickle Tools: 1 adult animals of kind "Doedicurus" are spawned around (214, 166)
-    And Nelim's Pickle Tools: 1 adult animals of kind "Gomphotaria" are spawned around (202, 161)
-    And Nelim's Pickle Tools: 1 adult animals of kind "Procoptodon" are spawned around (201, 169)
-    And Nelim's Pickle Tools: 1 adult animals of kind "Daeodon" are spawned around (214, 160)
+    And Nelim's Pickle Tools: I place the decor "Brazier" at (198, 170)
+    And Nelim's Pickle Tools: the decor "Brazier" at (198, 170) is lit
+    And Nelim's Pickle Tools: I place the decor "Stool" at (193, 165)
+    And Nelim's Pickle Tools: 4 of the item "Hay" are spawned at (201, 165)
+    And Nelim's Pickle Tools: 4 of the item "Hay" are spawned at (199, 168)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (203, 171)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (195, 171)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (195, 163)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (193, 167)
+    And Nelim's Pickle Tools: the plants from (190, 162) to (205, 172) are fully grown
+    And Nelim's Pickle Tools: 5 of the item "Hay" are spawned at (195, 166)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Paraceratherium" are spawned around (202, 164)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Diprotodon" are spawned around (200, 169)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Doedicurus" are spawned around (204, 167)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Gomphotaria" are spawned around (192, 163)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Procoptodon" are spawned around (191, 170)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Daeodon" are spawned around (204, 162)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-4" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-5" is given coat 2
     And Nelim's Pickle Tools: the animal "coat-6" is given coat 0
-    And Nelim's Pickle Tools: the animal "coat-1" stands at (212, 163) facing South
-    And Nelim's Pickle Tools: the animal "coat-2" stands at (210, 168) facing South
-    And Nelim's Pickle Tools: the animal "coat-3" stands at (214, 166) facing West
-    And Nelim's Pickle Tools: the animal "coat-4" stands at (202, 161) facing East
-    And Nelim's Pickle Tools: the animal "coat-5" stands at (201, 169) facing East
-    And Nelim's Pickle Tools: the animal "coat-6" stands at (214, 160) facing West
+    And Nelim's Pickle Tools: the animal "coat-1" stands at (202, 164) facing South
+    And Nelim's Pickle Tools: the animal "coat-2" stands at (200, 169) facing South
+    And Nelim's Pickle Tools: the animal "coat-3" stands at (204, 167) facing West
+    And Nelim's Pickle Tools: the animal "coat-4" stands at (192, 163) facing East
+    And Nelim's Pickle Tools: the animal "coat-5" stands at (191, 170) facing East
+    And Nelim's Pickle Tools: the animal "coat-6" stands at (204, 162) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Pickle Tools: "Nelim" stands at (204, 165) facing East
-    And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "Hay" to (208, 165)
-    And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (211, 164)
-    And Nelim's Pickle Tools: "coat-2" is forced into the job "Ingest" on the item "Hay" at (209, 167)
+    And Nelim's Pickle Tools: "Nelim" stands at (194, 166) facing East
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "Hay" to (198, 166)
+    And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (201, 165)
+    And Nelim's Pickle Tools: "coat-2" is forced into the job "Ingest" on the item "Hay" at (199, 168)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
-    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (200, 159) to (215, 171) filling 90 percent of the screen
+    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (190, 162) to (205, 172) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face
@@ -378,20 +380,21 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I place the decor "Brazier" at (224, 120)
     And Nelim's Pickle Tools: the decor "Brazier" at (224, 120) is lit
-    And Nelim's Pickle Tools: 2 of the item "Meat_Muffalo" are spawned at (234, 121)
+    And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (235, 121)
     And Nelim's Pickle Tools: 4 of the item "WoodLog" are spawned at (237, 123)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (223, 126)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (227, 116)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (236, 126)
-    And Nelim's Pickle Tools: the plants from (222, 115) to (238, 127) are fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (225, 125)
+    And Nelim's Pickle Tools: the plants from (224, 116) to (238, 126) are fully grown
     And Nelim's Pickle Tools: I place the decor "WoodLog" at (238, 122)
     And Nelim's Pickle Tools: I place the decor "WoodLog" at (238, 125)
-    And Nelim's Pickle Tools: 2 of the item "Meat_Muffalo" are spawned at (230, 121)
-    And Nelim's Pickle Tools: 1 of the item "Meat_Muffalo" are spawned at (226, 122)
+    And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (230, 121)
+    And Nelim's Pickle Tools: 1 of the item "Meat_Muffalo" are spawned at (227, 122)
     And Nelim's Pickle Tools: 1 adult animals of kind "Smilodon" are spawned around (231, 121)
     And Nelim's Pickle Tools: 1 adult animals of kind "Titanis" are spawned around (232, 125)
     And Nelim's Pickle Tools: 1 adult animals of kind "Megalania" are spawned around (233, 118)
-    And Nelim's Pickle Tools: 1 adult animals of kind "Purussaurus" are spawned around (225, 117)
+    And Nelim's Pickle Tools: 1 adult animals of kind "Purussaurus" are spawned around (226, 117)
     And Nelim's Pickle Tools: 1 adult animals of kind "Andrewsarchus" are spawned around (236, 120)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 0
@@ -401,18 +404,18 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "coat-1" stands at (231, 121) facing West
     And Nelim's Pickle Tools: the animal "coat-2" stands at (232, 125) facing East
     And Nelim's Pickle Tools: the animal "coat-3" lies at (233, 118) facing West
-    And Nelim's Pickle Tools: the animal "coat-4" lies at (225, 117) facing East
+    And Nelim's Pickle Tools: the animal "coat-4" lies at (226, 117) facing East
     And Nelim's Pickle Tools: the animal "coat-5" stands at (236, 120) facing West
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Meat_Muffalo" at (230, 121)
     And Nelim's Pickle Tools: "coat-2" is forced to walk to (233, 124)
-    And Nelim's Pickle Tools: "coat-5" is forced into the job "Ingest" on the item "Meat_Muffalo" at (234, 121)
+    And Nelim's Pickle Tools: "coat-5" is forced into the job "Ingest" on the item "Meat_Muffalo" at (235, 121)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
-    And Nelim's Pickle Tools: "Nelim" stands at (225, 122) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (226, 122) facing East
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (228, 121)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 20 ticks
-    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (222, 115) to (238, 127) filling 90 percent of the screen
+    When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (224, 116) to (238, 126) filling 90 percent of the screen
     And Nelim's Pickle Tools: the map is shown alone for a capture
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Sanctuary: Nelim has her own face

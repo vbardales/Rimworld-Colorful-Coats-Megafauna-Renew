@@ -166,3 +166,7 @@ Story: evening round 18h to 19h, next morning breakfast round 06h30 to 09h30; Ne
 | 8 | calm-zone 09h, closing | Brazier, 2 TorchLamp, Stool, bonsai, 3 Daylily, 3 hay | 5 animals, one eats the last hay | sits on Stool, South | Breakfast is over; the herd rests around her. | 5 |
 
 Plan 5 on every shot (all criteria written, instant per shot), k ok (opening 1, variety wide 1 and medium, closing 8). Risks, to read on the captures: mammoth coats read alike at 268 px (coat indices -1, 1, 2), cells of 5 to 8 guessed from place centres, woodpile haul source in shot 1, crowded frame in 6 and 7, Brazier placement near animals. Verdict of v3.4 captures (REDO) is the gap this list learns from.
+
+### v4.1 (2026-11-07, after RUN_DONE 319c and 5eee)
+
+Shots 1, 4, 8 read and accepted (4, 4.5, 4.5). Shots 3, 6, 7 recomposed (full lines in the feature header, drift check OK): 3 one Meat_Muffalo stack of 3 per scorpion (bodies no longer converge), Nelim 3 cells away; 6 moved 10 cells West onto the grass, crop (190, 162) to (205, 172), no carpet edge, no dark void squares (cells guessed from the first capture, grass x 200 to 209: read on the capture); 7 crop (224, 116) to (238, 126), three meat stacks on bare ground, Daylily (225, 125) added, Nelim at (226, 122). Plan stays 5 on the mechanical criteria (b decor 3 or more named objects in frame, g story readable: she hauls to animals that eat); the gap v4 plan 5 vs capture 3.5 or less on 3, 6, 7 is the lesson: frame and crowding are judged on the capture, not the plan. Risk: cells of 6 and 7 guessed.
