@@ -227,11 +227,11 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: 1 adult animals of kind "Castoroides" are spawned around (178, 235)
     And Nelim's Pickle Tools: 1 adult animals of kind "Josephoartigasia" are spawned around (170, 231)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
-    And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-4" is given coat 1
-    And Nelim's Pickle Tools: the animal "coat-5" is given coat 2
-    And Nelim's Pickle Tools: the animal "coat-6" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-5" is given coat 0
+    And Nelim's Pickle Tools: the animal "coat-6" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-1" stands at (169, 236) facing West
     And Nelim's Pickle Tools: the animal "coat-2" stands at (174, 238) facing East
     And Nelim's Pickle Tools: the animal "coat-3" stands at (166, 240) facing South
@@ -279,7 +279,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: 1 adult animals of kind "Procoptodon" are spawned around (201, 169)
     And Nelim's Pickle Tools: 1 adult animals of kind "Daeodon" are spawned around (214, 160)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
-    And Nelim's Pickle Tools: the animal "coat-2" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-4" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-5" is given coat 2
@@ -306,7 +306,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "gallery-6-exhibition"
 
-  # Image 7, 08:30, MEDIUM, rice-paddy forest edge (v3.4): Nelim hauls 1 Meat_Muffalo East from (226,121) to (228,121), paused 2 cells from Smilodon (coat 2) which eats the meat at (230,121); Titanis (coat 0) walks to (233,124); Megalania (coat 1) lies at (233,118); Purussaurus (coat 0) lies at (225,117); Andrewsarchus (coat 1) stands at (236,120); WoodLog at (238,122) and (238,125) mark the forest edge. Cells (222,115)-(238,127). Risk: coats on brown ground, predators near prey (forced lie), cells guessed from the place centre. Caption: "She counts the hunters."
+  # Image 7, 08:30, MEDIUM, rice-paddy forest edge (v3.4): Nelim hauls 1 Meat_Muffalo East from (226,121) to (228,121), paused 2 cells from Smilodon (coat 1) which eats the meat at (230,121); Titanis (coat 0) walks to (233,124); Megalania (coat 1) lies at (233,118); Purussaurus (coat 0) lies at (225,117); Andrewsarchus (coat 1) stands at (236,120); WoodLog at (238,122) and (238,125) mark the forest edge. Cells (222,115)-(238,127). Risk: coats on brown ground, predators near prey (forced lie), cells guessed from the place centre. Caption: "She counts the hunters."
   @review @gallery
   Scenario: the count ends at the rice paddy
     Given I set the hour to 8
@@ -317,8 +317,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the temperature of the map is 18 degrees
     And Nelim's Pickle Tools: I let 1250 ticks pass
     And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Pickle Tools: I place the decor "WoodLog" near (238, 122)
-    And Nelim's Pickle Tools: I place the decor "WoodLog" near (238, 125)
+    And Nelim's Pickle Tools: I place the decor "WoodLog" at (238, 122)
+    And Nelim's Pickle Tools: I place the decor "WoodLog" at (238, 125)
     And Nelim's Pickle Tools: 2 of the item "Meat_Muffalo" are spawned at (230, 121)
     And Nelim's Pickle Tools: 1 of the item "Meat_Muffalo" are spawned at (226, 122)
     And Nelim's Pickle Tools: 1 adult animals of kind "Smilodon" are spawned around (231, 121)
@@ -326,7 +326,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: 1 adult animals of kind "Megalania" are spawned around (233, 118)
     And Nelim's Pickle Tools: 1 adult animals of kind "Purussaurus" are spawned around (225, 117)
     And Nelim's Pickle Tools: 1 adult animals of kind "Andrewsarchus" are spawned around (236, 120)
-    And Nelim's Pickle Tools: the animal "coat-1" is given coat 2
+    And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 0
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-4" is given coat 0
