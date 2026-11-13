@@ -24,7 +24,7 @@ Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 
 
 ## WHAT CHANGED IN THE PORT
 
-The recorded compatibility inspection found alternateGraphics and alternateGraphicChance on PawnKindDef in the latest RimWorld version. Static checks confirm that all 26 targets in the installed Megafauna definitions and all texture paths. Actual coat appearance still needs validation in game. Two packaging and patch changes were made:
+The recorded compatibility inspection found alternateGraphics and alternateGraphicChance on PawnKindDef in the latest RimWorld version. Static checks confirm that all 26 targets in the installed Megafauna definitions exist and that all texture paths resolve. Actual coat appearance still needs validation in game. Two packaging and patch changes were made:
 
 - Each of the 26 operations now reports success whether or not it found its animal. They sit in one PatchOperationSequence, and a sequence stops at the first operation that fails - so if a future release of Megafauna ever renamed one animal, every animal listed after it would have quietly lost its coats too. purpleyam already wrote it this way in the Vanilla Animals Expanded mod; this brings this one into line.
 - The four large screenshots left in the About folder were removed. RimWorld reads Preview.png and ModIcon.png and nothing else in there, and those four were 7.6 MB of the mod's 13 MB.
@@ -51,7 +51,7 @@ See ATTRIBUTION.md and LICENSE in the source repository for what was taken and w
 [Source code on GitHub](https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew)
 ```
 
-The block above is generated from `Mod/About/`About.xml` (BBCode there, Markdown here) and must stay in step with it. It ends, after the
+The block above is generated from `Mod/About/About.xml` (BBCode there, Markdown here) and must stay in step with it. It ends, after the
 credits, with the `Source code on GitHub` link to the repository, which is also the `<url>` field.
 
 ## Gallery order
@@ -127,15 +127,15 @@ page also says the mod declares 1.4 and nothing further, and credits Spino. **To
 
 Draft, Megafauna (voice to adjust by the owner):
 
-``
+```text
 Megafauna's mammoths always came in one coat, so a herd looked like twelve copies of one animal :) I patched in purpleyam's old coats for 26 of your animals, with a link back here: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. Thanks for the animals and the textures xD
-``
+```
 
 Draft, purpleyam's original:
 
-``
+```text
 Your coats for the Megafauna animals still look good on 1.6, so I ported them (mammoth to Zygolophodon, 67 coats): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. It says in big letters it's not yours, credits you first, and comes down the day you ask. Thank you for the idea :)
-``
+```
 
 The two drafts differ in opening, ending and joke; each is under 1,000 characters and carries one hidden link. Re-read side by side before posting.
 
