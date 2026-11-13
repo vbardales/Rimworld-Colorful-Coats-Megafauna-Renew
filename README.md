@@ -4,10 +4,10 @@ UNOFFICIAL. This mod is published without the original author's explicit consent
 
 Port of **purpleyam's Colorful Coats - Megafauna!** to RimWorld 1.6.
 
-**I am not the author of this mod.** The coats and the whole idea are purpleyam's — all I did was
+**I am not the author of this mod.** The coats and the whole idea are purpleyam's, all I did was
 the work needed to run it on 1.6. Credit goes to them; mistakes in the port are mine.
 
-Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 — declares 1.4 and
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727, declares 1.4 and
 nothing further in the installed source copy. The source audit of 2026-09-12 recorded
 its last Workshop update as 2022-10-26. It qualifies as abandoned under this project's
 workflow because it does not declare RimWorld 1.6 support.
@@ -26,7 +26,7 @@ unverified. Use a backup when running the scenarios in TEST_SCENARIOS.md.
 
 ## What it needs
 
-**Megafauna**, by Spino — https://steamcommunity.com/workshop/filedetails/?id=1055485938 —
+**Megafauna**, by Spino, https://steamcommunity.com/workshop/filedetails/?id=1055485938,
 declared as a dependency, and alive on 1.6.
 
 ## What was checked, and what it found
@@ -34,7 +34,7 @@ declared as a dependency, and alive on 1.6.
 The recorded compatibility inspection and current static checks found no field, target or
 texture-path mismatch. In-game behavior has not yet been validated.
 
-**The two fields still exist under those names.** Verified by reflection against the 1.6
+**These three members still exist under those names.** Verified by reflection against the 1.6
 `Assembly-CSharp.dll`:
 
 ```
@@ -44,7 +44,7 @@ Verse.AlternateGraphic.texPath           string
 ```
 
 This is the failure mode that kills ported XML quietly. RimWorld does not stop for an element that
-matches no field — it logs one line and loads with the field unset. A renamed field here would
+matches no field, it logs one line and loads with the field unset. A renamed field here would
 have left every animal loading, walking and simply being the wrong colour.
 
 **The patch is not name-guarded**, unlike the other mods in this family. It is a bare
@@ -59,7 +59,7 @@ texture is unreferenced, and Megafauna does not already define `alternateGraphic
 
 Each of the 26 operations now carries `<success>Always</success>`.
 
-`PatchOperationSequence` **stops at the first operation that returns false** — it does not skip and
+`PatchOperationSequence` **stops at the first operation that returns false**, it does not skip and
 carry on. The flag was on the sequence, which silences the error but does not resume the run. So a
 single renamed animal would have cost that animal and **every animal listed after it** their
 coats, with nothing in the log to say so.
@@ -68,20 +68,20 @@ purpleyam already wrote the Vanilla Animals Expanded mod this way, one flag per 
 brings this one into line. It changes nothing about what happens today.
 
 The four large screenshots left in `About/` were also dropped. RimWorld reads `Preview.png` and
-`ModIcon.png` from that folder and nothing else, and those four were **7.6 MB of the mod's 13** —
+`ModIcon.png` from that folder and nothing else, and those four were **7.6 MB of the mod's 13**,
 more than the textures.
 
 ## Layout
 
 ```
-Mod/          published — the junction into RimWorld/Mods points here
+Mod/          published: the junction into RimWorld/Mods points here
   About/
   Patches/
   Textures/
 ```
 
-Everything outside `Mod/` — this file, the changelog, the attribution, the test scenarios and the
-full-resolution art under `Art/` — stays out of the Steam upload by construction.
+Everything outside `Mod/`, this file, the changelog, the attribution, the test scenarios and the
+full-resolution art under `Art/`, stays out of the Steam upload by construction.
 `SteamUGC.SetItemContent` takes the junction's target directory as it stands on disk, with no
 filtering.
 

@@ -1,4 +1,4 @@
-# Publication — Colorful Coats - Megafauna! Renew (unofficial)
+# Publication: Colorful Coats - Megafauna! Renew (unofficial)
 
 What the Workshop page asks for and the repository holds nowhere else. Item **3806766441** (created as private by the 0.1.0 send,
 2026-09-28). Nothing here has been sent.
@@ -56,14 +56,19 @@ credits, with the `Source code on GitHub` link to the repository, which is also 
 
 ## Gallery order
 
-Steam shows the first image large, so the most telling goes first, not the prettiest. All four are staged captures of one story
-(*The keeper's evening*, told in the header of `Tests/Pickle/Mod/Pickle/Features/08-gallery.feature`), taken in the Sanctuary pass
-(`-DepMap wsl-deps.gallery.map -Filter '@gallery'`). **Two earlier passes (2026-10-14 and 15) were recomposed because they did not tell the story; the replay is queued (ticket `20261016-175354-490-527c`, tighter framing and an explicit bun (the ticket `20261016-123502-784-8fcb` was cancelled before it started); the earlier ticket `20261015-222853-540-9dbf` left no trace in the queue), the four candidates were opened by the session (verdict: all four were serious) and wait for the owner.** Order:
+Steam shows the first image large, so the most telling goes first, not the prettiest. All eight are staged captures of one story
+(shotlist v4: Nelim's evening walk, then the breakfast round of the herd the next morning, told in the header of
+`Tests/Pickle/Mod/Pickle/Features/08-gallery.feature`), taken in the Sanctuary pass (`-DepMap wsl-deps.gallery.map -Filter '@gallery'`).
+Each capture is opened by the session and scored before it is kept; the last one (shot 5) is still being replayed. Order:
 
-1. `gallery-1-mammoths`: two mammoths in two coats, the animal everyone knows and the one the original shows.
-2. `gallery-2-enhydriodon`: three Enhydriodon, the small kind with the most variety.
-3. `gallery-3-scorpions`: three giant scorpions, not a mammal.
-4. `gallery-4-chalicotherium`: two Chalicotherium, the kind with the most coats.
+1. `1-mammoths`: three mammoths in three coats, the animal everyone knows and the one the original shows.
+2. `2-enhydriodon`: three Enhydriodon, the small kind with the most variety.
+3. `3-scorpions`: three giant scorpions, not a mammal.
+4. `4-chalicotherium`: three Chalicotherium, the kind with the most coats.
+5. `5-enclosure`: six great browsers at the enclosure, one coat each.
+6. `6-exhibition`: six strange grazers on the grass.
+7. `7-rice-paddy`: five predators at the rice paddy.
+8. `8-calm-zone`: five animals resting at the calm zone, the closing image.
 
 `Art/Gallery/0-preview.png` (a byte-identical copy of `Mod/About/Preview.png`) stays first in the folder; the captures follow as `1-, 2-...`
 Each image is to be opened by a person before upload: a green capture scenario does not prove the picture shows anything.
