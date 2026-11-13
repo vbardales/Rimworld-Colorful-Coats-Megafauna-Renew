@@ -1,6 +1,6 @@
 # Publication — Colorful Coats - Megafauna! Renew (unofficial)
 
-What the Workshop page asks for and the repository holds nowhere else. Item **3806766441** (created private by the 0.1.0 send,
+What the Workshop page asks for and the repository holds nowhere else. Item **3806766441** (created as private by the 0.1.0 send,
 2026-09-28). Nothing here has been sent.
 
 ## Steam description
@@ -24,10 +24,10 @@ Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 
 
 ## WHAT CHANGED IN THE PORT
 
-The recorded compatibility inspection found alternateGraphics and alternateGraphicChance on PawnKindDef in the latest RimWorld version. Static checks confirm all 26 targets in the installed Megafauna definitions and all texture paths. Actual coat appearance still needs validation in game. Two packaging and patch changes were made:
+The recorded compatibility inspection found alternateGraphics and alternateGraphicChance on PawnKindDef in the latest RimWorld version. Static checks confirm that all 26 targets in the installed Megafauna definitions and all texture paths. Actual coat appearance still needs validation in game. Two packaging and patch changes were made:
 
 - Each of the 26 operations now reports success whether or not it found its animal. They sit in one PatchOperationSequence, and a sequence stops at the first operation that fails - so if a future release of Megafauna ever renamed one animal, every animal listed after it would have quietly lost its coats too. purpleyam already wrote it this way in the Vanilla Animals Expanded mod; this brings this one into line.
-- The four large screenshots left in the About folder were removed. RimWorld reads Preview.png and ModIcon.png and nothing else in there, and those four were 7.6 MB of the mod's 13.
+- The four large screenshots left in the About folder were removed. RimWorld reads Preview.png and ModIcon.png and nothing else in there, and those four were 7.6 MB of the mod's 13 MB.
 
 The colours, the chances and the 201 textures are untouched.
 
@@ -58,7 +58,7 @@ credits, with the `Source code on GitHub` link to the repository, which is also 
 
 Steam shows the first image large, so the most telling goes first, not the prettiest. All four are staged captures of one story
 (*The keeper's evening*, told in the header of `Tests/Pickle/Mod/Pickle/Features/08-gallery.feature`), taken in the Sanctuary pass
-(`-DepMap wsl-deps.gallery.map -Filter '@gallery'`). **Two earlier passes (2026-10-14 and 15) were recomposed because they did not tell the story; the replay is queued (ticket `20261016-175354-490-527c`, tighter framing and an explicit bun (the ticket `20261016-123502-784-8fcb` was cancelled before it started); the earlier ticket `20261015-222853-540-9dbf` left no trace in the queue), the four candidates were opened by the session (verdict: all four serious) and wait for the owner.** Order:
+(`-DepMap wsl-deps.gallery.map -Filter '@gallery'`). **Two earlier passes (2026-10-14 and 15) were recomposed because they did not tell the story; the replay is queued (ticket `20261016-175354-490-527c`, tighter framing and an explicit bun (the ticket `20261016-123502-784-8fcb` was cancelled before it started); the earlier ticket `20261015-222853-540-9dbf` left no trace in the queue), the four candidates were opened by the session (verdict: all four were serious) and wait for the owner.** Order:
 
 1. `gallery-1-mammoths`: two mammoths in two coats, the animal everyone knows and the one the original shows.
 2. `gallery-2-enhydriodon`: three Enhydriodon, the small kind with the most variety.
