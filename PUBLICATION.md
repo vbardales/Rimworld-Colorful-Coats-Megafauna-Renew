@@ -1,7 +1,7 @@
 # Publication: Colorful Coats - Megafauna! Renew (unofficial)
 
 What the Workshop page asks for and the repository holds nowhere else. Item **3806766441** (created as private by the 0.1.0 send,
-2026-09-28). Nothing here has been sent.
+2026-09-28). No public release has been sent.
 
 ## Steam description
 
