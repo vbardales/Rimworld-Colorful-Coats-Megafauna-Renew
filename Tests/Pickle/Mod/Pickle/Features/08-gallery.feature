@@ -283,6 +283,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: 1 adult animals of kind "Macrauchenia" are spawned around (160, 213)
     And Nelim's Pickle Tools: 1 adult animals of kind "Castoroides" are spawned around (159, 214)
     And Nelim's Pickle Tools: 1 adult animals of kind "Josephoartigasia" are spawned around (153, 210)
+    And Nelim's Pickle Tools: the animals of kind "Uintatherium" have food at 20 percent
+    And Nelim's Pickle Tools: the animals of kind "Deinotherium" have food at 20 percent
     And Nelim's Pickle Tools: the animal "coat-1" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
     And Nelim's Pickle Tools: the animal "coat-3" is given coat 0
