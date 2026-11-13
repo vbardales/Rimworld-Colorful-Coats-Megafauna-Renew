@@ -83,14 +83,14 @@ subtitled image goes in `Art/Gallery/`, both under 2 MB. A line changes here fir
 
 | Index | File | Line |
 |---|---|---|
-| 1 | `1-mammoths.jpg` | She brings wood to the fire. |
-| 2 | `2-enhydriodon.jpg` | She feeds the otters. |
-| 3 | `3-scorpions.jpg` | She feeds the scorpions. |
-| 4 | `4-chalicotherium.jpg` | She sits by the fire while the herd settles. |
+| 1 | `1-mammoths.jpg` | Nelim brings wood to the fire. |
+| 2 | `2-enhydriodon.jpg` | Nelim feeds the otters. |
+| 3 | `3-scorpions.jpg` | Nelim feeds the scorpions. |
+| 4 | `4-chalicotherium.jpg` | Nelim sits by the fire while the herd settles. |
 | 5 | `5-enclosure.jpg` | Breakfast for the great browsers. |
 | 6 | `6-exhibition.jpg` | Breakfast for the strange grazers. |
 | 7 | `7-rice-paddy.jpg` | Breakfast for the hunters. |
-| 8 | `8-calm-zone.jpg` | Breakfast is over; the herd rests around her. |
+| 8 | `8-calm-zone.jpg` | Breakfast is over; the herd rests around Nelim. |
 
 ## Dependencies and DLC
 
