@@ -66,6 +66,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
     And Nelim's Pickle Tools: "Nelim" stands at (189, 152) facing East
     And Nelim's Pickle Tools: "coat-2" is forced to walk to (203, 152)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "WoodLog" to (192, 152)
@@ -110,6 +111,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
     And Nelim's Pickle Tools: "Nelim" stands at (152, 170) facing South
     And Nelim's Pickle Tools: 3 adult animals of kind "Enhydriodon" are spawned around (152, 171)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
@@ -168,6 +170,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
     And Nelim's Pickle Tools: "Nelim" stands at (196, 152) facing East
     And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (202, 151)
     And Nelim's Pickle Tools: 3 of the item "Meat_Muffalo" are spawned at (200, 154)
@@ -230,6 +233,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
     And Nelim's Pickle Tools: 3 adult animals of kind "Chalicotherium" are spawned around (199, 152)
     And Nelim's Pickle Tools: the animal "coat-1" is given coat -1
     And Nelim's Pickle Tools: the animal "coat-2" is given coat 1
@@ -312,6 +316,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
     And Nelim's Pickle Tools: "Nelim" stands at (150, 215) facing East
     And Nelim's Pickle Tools: "Nelim" is forced to haul 3 of the item "Hay" to (155, 213)
     And Nelim's Pickle Tools: time is paused for the capture
@@ -370,6 +375,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
     And Nelim's Pickle Tools: "Nelim" stands at (194, 166) facing East
     And Nelim's Pickle Tools: "Nelim" is forced to haul 5 of the item "Hay" to (198, 166)
     And Nelim's Pickle Tools: "coat-1" is forced into the job "Ingest" on the item "Hay" at (201, 165)
@@ -437,6 +443,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
     And Nelim's Pickle Tools: "Nelim" stands at (226, 122) facing East
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (228, 121)
     And Nelim's Pickle Tools: time is paused for the capture
@@ -494,6 +501,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
+    And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
     And Nelim's Pickle Tools: "Nelim" sits on the building "Stool" at (200, 187)
     And Nelim's Pickle Tools: "Nelim" faces South
     And Nelim's Pickle Tools: time is paused for the capture
