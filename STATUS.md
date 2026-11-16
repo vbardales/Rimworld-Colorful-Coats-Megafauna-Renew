@@ -25,6 +25,7 @@ port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
 upstream_mod_remotes: N/A
 dependencies: declared
+workshop_required_items: n/a, not released yet (item 3806766441 private, 0.1.0 prepublication only; hard dependency Spino.Megafauna 1055485938 to be set by hand on the Steam page at the end of writeReleaseDocs, AUDIT 4.g)
 showcase:     complete
 tested_on: 4d14f04 (Mod/ unchanged since cc2703d except About/Preview.png; green Pickle minimal, incompat, all-coats 869f, removal 0c2e, 2026-10-12 to 2026-10-17)
 automated_tests: passed, 2026-10-15, e57955d (Check-Coats.ps1; shared scripts/Check-Steps.ps1, 195 step lines resolve, 8 feature files)
@@ -58,7 +59,7 @@ remaining:
   - "2026-10-10: unverified: redistribution permission for the original assets"
 code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-17, resume: protocols read (be44237), b699 and 0662 read, shots 3 5 6 fixed (v5.2), refiled one ticket
+updated: 2026-11-17, replay-audit: sections 1 to 8 done, 4.g field workshop_required_items added, first open 9.a (ticket 4466 for shots 3 5 6)
 protocols_read_sha: be4423754614e7195f84d0b9bc32eb62820f3cfb
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
