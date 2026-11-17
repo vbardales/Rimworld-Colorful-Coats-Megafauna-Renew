@@ -19,7 +19,7 @@ redistribution_permission: not found in sources checked 2026-09-12
 source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the project definition of no declared 1.6 support
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-workflow_stage: startWatch[1.0.0]
+workflow_stage: postOnSteam[1.0.0]
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
@@ -48,7 +48,7 @@ publication_changelog_review_sha: 1538ad35eded912d1478cc0593fd51d6fb832c1b
 echo_review_sha: 1413c50fa3d6bb63de43c776f108d15ac8c558a3
 social_preview_sha256: 9420de29c82572a7d8614bdc20c983dd42a92c4560d46dcfa04384445403af64
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-17, 1.0.0 published and public, startWatch
+updated: 2026-11-17, startWatch done (watch, collection, subscribe test), postOnSteam
 protocols_read_sha: f02fd1d74e36b6e471861bd056a0a628e1caf396
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
@@ -58,7 +58,7 @@ Check with `scripts/Check-Status.ps1 -Mod ColorfulCoatsMegafaunaRenew` (no ERROR
 
 ## State
 
-`startWatch[1.0.0]` (was publish, writeReleaseDocs, from mountPreview, 2026-11-17; gallery validated, Preview validated and uploaded as the GitHub social preview, Steam 1.0.0 note in BBCode, Gallery set credited, closing pass and compress-docs done; open: dry-run note read, publish steps). Earlier: playTests 2026-10-27. Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
+`postOnSteam[1.0.0]` (was startWatch, publish, writeReleaseDocs, from mountPreview, 2026-11-17; gallery validated, Preview validated and uploaded as the GitHub social preview, Steam 1.0.0 note in BBCode, Gallery set credited, closing pass and compress-docs done; open: dry-run note read, publish steps). Earlier: playTests 2026-10-27. Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
 67 coats, 201 textures), `Check-Xml.ps1`, `shared scripts/Check-Steps.ps1 of the protocols repository` (55 scenarios across passes) all PASS.
 Functional scenarios A-I in `TEST_SCENARIOS.md`. Pickle suites in `Tests/Pickle/`: minimal pass, and pass for the one declared incompatibility, purpleyam's original. Mod adds no setting, no player-facing text.
 
