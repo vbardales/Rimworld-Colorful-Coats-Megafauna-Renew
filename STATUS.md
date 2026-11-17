@@ -56,7 +56,7 @@ Check with `scripts/Check-Status.ps1 -Mod ColorfulCoatsMegafaunaRenew` (no ERROR
 
 ## State
 
-`shootGallery[1.0.0]` (from playTests, 2026-10-27). Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
+`writeReleaseDocs[1.0.0]` (from mountPreview, 2026-11-17; gallery validated, Preview validated and uploaded as the GitHub social preview, Steam 1.0.0 note in BBCode, Gallery set credited, closing pass and compress-docs done; open: dry-run note read, publish steps). Earlier: playTests 2026-10-27. Exit criteria of `writeTests` re-run 2026-10-10 at 0034011: `Check-Coats.ps1` (26 animals,
 67 coats, 201 textures), `Check-Xml.ps1`, `shared scripts/Check-Steps.ps1 of the protocols repository` (55 scenarios across passes) all PASS.
 Functional scenarios A-I in `TEST_SCENARIOS.md`. Pickle suites in `Tests/Pickle/`: minimal pass, and pass for the one declared incompatibility, purpleyam's original. Mod adds no setting, no player-facing text.
 
@@ -69,7 +69,6 @@ Functional scenarios A-I in `TEST_SCENARIOS.md`. Pickle suites in `Tests/Pickle/
 - Flaky `CoatSteps` spawn error: `docs/runs/2026-09-28-c9a2-minimal-rerun.txt`.
 - Target version 1.0.0 (owner, 2026-10-16). `CHANGELOG.md` `[1.0.0]` (2026-09-05) is base; date it at release.
 - `Mod/` changed after `0.1.0` send (About text, `ModIcon32.png`).
-- Untracked, not mine to commit: `Art/Gallery/2-candidate-enhydriodon.png`, `Art/Gallery/3-candidate-scorpions.png`, `Art/echo-source.png`.
 
 ## Notes
 
