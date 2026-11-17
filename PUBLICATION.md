@@ -157,6 +157,14 @@ No Version Warning already carries purpleyam's old Colorful Coats - Megafauna! (
 
 The three drafts differ in opening, ending and joke; each is under 1,000 characters and carries one hidden link. Re-read side by side before posting.
 
+## Use This Instead
+
+One comment on the [Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) page (Mlie), so players of the original are told about the Renew (`docs/USE_THIS_INSTEAD.md`):
+
+```text
+Colorful Coats - Megafauna! by purpleyam (2560113727, package purpleyam.colorfulcoats.spinomegafauna, RimWorld 1.2 to 1.4) can be replaced by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew (unofficial)[/url] (3806766441, package nelim.colorfulcoats.megafauna, RimWorld 1.6), by Nelim. Same 26 animals and 67 coats, ported to the latest RimWorld version. The two cannot be loaded together. Original: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727]Colorful Coats - Megafauna![/url]. Thank you for the mod xD
+```
+
 ## After the send
 
 - Commit About/PublishedFileId.txt immediately (already in the repository for the 0.1.0 item). Steam creates every item private and RimWorld never calls
