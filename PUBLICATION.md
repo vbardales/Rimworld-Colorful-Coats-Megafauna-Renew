@@ -1,7 +1,7 @@
 # Publication: Colorful Coats - Megafauna! Renew (unofficial)
 
 What the Workshop page asks for and the repository holds nowhere else. Item **3806766441** (created privately during the 0.1.0 send,
-2026-09-28). No public release has been sent.
+2026-09-28). Version 1.0.0 was sent on 2026-11-17 and the item is public.
 
 ## Steam description
 
@@ -108,7 +108,7 @@ None. No textures of a body, no text, nothing to declare. The answers on the Wor
 ## Release notes (Steam)
 
 The first line carries only the version (`[b]x.y.z[/b]`): the CI refuses a note whose first line does not. Sent before: `[b]0.1.0[/b]`, the
-creation of the item (first send, private). Next, a BBCode note drafted from the `[1.0.0]` section of `CHANGELOG.md` (`[b]version[/b]`, a `[list]`, a `[url]` to the changelog; AUDIT.md 11.i), to be sent with the release (read it in the dry-run log before `publish`):
+creation of the item (first send, private). Then `[b]1.0.0[/b]`, sent on 2026-11-17 (CI run 44085718942), the first public release; the note that went out (a BBCode note drafted from the `[1.0.0]` section of `CHANGELOG.md`: `[b]version[/b]`, a `[list]`, a `[url]` to the changelog; AUDIT.md 11.i):
 
 ### 1.0.0
 
