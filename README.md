@@ -2,15 +2,15 @@
 
 UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-Port of **purpleyam's Colorful Coats - Megafauna!** to RimWorld 1.6.
+Port of **purpleyam's Colorful Coats - Megafauna!** to the latest RimWorld version.
 
 **I am not the author of this mod.** The coats and the whole idea are purpleyam's, all I did was
-the work needed to run it on 1.6. Credit goes to them; mistakes in the port are mine.
+the work needed to run it on the latest RimWorld version. Credit goes to them; mistakes in the port are mine.
 
 Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727, declares 1.4 and
 nothing further in the installed source copy. The source audit of 2026-09-12 recorded
 its last Workshop update as 2022-10-26. It qualifies as abandoned under this project's
-workflow because it does not declare RimWorld 1.6 support.
+workflow because it does not declare support for the latest RimWorld version.
 
 ## What the mod does
 
@@ -27,14 +27,14 @@ unverified. Use a backup when running the scenarios in TEST_SCENARIOS.md.
 ## What it needs
 
 **Megafauna**, by Spino, https://steamcommunity.com/workshop/filedetails/?id=1055485938,
-declared as a dependency, and alive on 1.6.
+declared as a dependency, and alive on the latest RimWorld version.
 
 ## What was checked, and what it found
 
 The recorded compatibility inspection and current static checks found no field, target or
 texture-path mismatch. In-game behavior has not yet been validated.
 
-**These three members still exist under those names.** Verified by reflection against the 1.6
+**These three members still exist under those names.** Verified by reflection against the latest
 `Assembly-CSharp.dll`:
 
 ```
@@ -50,7 +50,7 @@ have left every animal loading, walking and simply being the wrong colour.
 **The patch is not name-guarded**, unlike the other mods in this family. It is a bare
 `PatchOperationSequence`, so it applies wherever the defs are and stays quiet where they are not.
 That is why the rename that broke the Dodos mod could not touch this one. Megafauna is in any case
-still called `Megafauna`, still `Spino.Megafauna`, and declares 1.6.
+still called `Megafauna`, still `Spino.Megafauna`, and declares the latest RimWorld version.
 
 **All 26 `defName`s still exist**, all 67 `texPath`s resolve to shipped textures, no shipped
 texture is unreferenced, and Megafauna does not already define `alternateGraphics` on any of them.
@@ -91,7 +91,7 @@ The source audit of 2026-09-12 found no explicit licence, redistribution permiss
 prohibition in the installed original, its Steam description and comments, or the author's
 public profile. No source repository was linked in the inspected material. This is a bounded
 finding, not proof of permission. Under the publishing definition clarified on 2026-09-13,
-the absence of declared 1.6 support establishes the `silent` classification for this source.
+the absence of declared support for the latest RimWorld version establishes the `silent` classification for this source.
 Credit and removal on request do not grant redistribution rights. If purpleyam would rather
 this did not exist, say so and it comes down.
 

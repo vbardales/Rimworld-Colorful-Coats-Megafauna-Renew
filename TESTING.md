@@ -16,15 +16,15 @@ Written 2026-09-28 in `Tests/Pickle/`, see its `README.md` for scope and pass ma
 
 | Scenario | In Pickle | Feature |
 |---|---|---|
-| A — the coats appear | yes | `03-coats-on-spawn` (mammoth, scorpion, Enhydriodon) |
-| B — the far end of the sequence | yes | `01-patch-applied` for all 26, `04-sequence-ends` for first and last |
-| C — the 67 coats and the three rotations | yes (written 2026-10-17, not played) | `10-all-coats`: one animal per extra coat, 26 kinds, 67 coats, drawn with its own texture; `11-all-textures`: all 201 files answered by the mod; `02-textures` sample; `09-coat-sheet` (Sanctuary pass, `@coatsheet`, played, read 2026-10-17): Chalicotherium, Enhydriodon, Purussaurus in North, South, East, 9 captures, no flipped or missing piece. How the other 23 kinds look in each facing stays unseen: no step shows pixels |
-| D — per animal, survives a reload | yes | `05-coat-survives-reload` |
-| E — added to a save | by `03`, `05` | every scenario loads the mod into `test-colony`, which never had it (`WELCOME.md`: adding has no test of its own) |
-| F — removed from a save | yes (written 2026-10-17, not played) | `12-removed-from-save`, sequence `-Then` + `-ThenWithout nelim.colorfulcoats.megafauna`: coats saved with the mod, save handed to the test companion, loaded without the mod, 16 mammoths exist, none with an extra coat, no error |
-| G — no Megafauna at all | no | game's reaction to missing hard dependency, not ours to test |
-| H — the original alongside | yes | `06-original-alongside`, incompatibility pass only |
-| I — the mod list entry | not applicable | the game's own display (`AUDIT.md`, "On ne teste pas le jeu"); what the mod owns is `About.xml` and its images, checked offline by `Tests/Rule-OwnValues.ps1` and `Check-Status.ps1` |
+| A - the coats appear | yes | `03-coats-on-spawn` (mammoth, scorpion, Enhydriodon) |
+| B - the far end of the sequence | yes | `01-patch-applied` for all 26, `04-sequence-ends` for first and last |
+| C - the 67 coats and the three rotations | yes (written 2026-10-17, not played) | `10-all-coats`: one animal per extra coat, 26 kinds, 67 coats, drawn with its own texture; `11-all-textures`: all 201 files answered by the mod; `02-textures` sample; `09-coat-sheet` (Sanctuary pass, `@coatsheet`, played, read 2026-10-17): Chalicotherium, Enhydriodon, Purussaurus in North, South, East, 9 captures, no flipped or missing piece. How the other 23 kinds look in each facing stays unseen: no step shows pixels |
+| D - per animal, survives a reload | yes | `05-coat-survives-reload` |
+| E - added to a save | by `03`, `05` | every scenario loads the mod into `test-colony`, which never had it (`WELCOME.md`: adding has no test of its own) |
+| F - removed from a save | yes (written 2026-10-17, not played) | `12-removed-from-save`, sequence `-Then` + `-ThenWithout nelim.colorfulcoats.megafauna`: coats saved with the mod, save handed to the test companion, loaded without the mod, 16 mammoths exist, none with an extra coat, no error |
+| G - no Megafauna at all | no | game's reaction to missing hard dependency, not ours to test |
+| H - the original alongside | yes | `06-original-alongside`, incompatibility pass only |
+| I - the mod list entry | not applicable | the game's own display (`AUDIT.md`, "On ne teste pas le jeu"); what the mod owns is `About.xml` and its images, checked offline by `Tests/Rule-OwnValues.ps1` and `Check-Status.ps1` |
 
 `@review` capture in `03` is for person to open; green says steps ran, not that animals look different.
 
@@ -49,7 +49,7 @@ nelim.colorfulcoats.megafauna  this mod                          after it
 
 Megafauna **is** declared dependency here, unlike Dodos mod of same family: patch carries no `PatchOperationFindMod` guard, so only dependency tells player mod pointless without it.
 
-`purpleyam.colorfulcoats.spinomegafauna` — the original — named in `<incompatibleWith>`, must stay off.
+`purpleyam.colorfulcoats.spinomegafauna` - the original - named in `<incompatibleWith>`, must stay off.
 
 ## What the patch aims at
 
@@ -68,7 +68,7 @@ Animals sit in patch alphabetical order, Andrewsarchus first, Zygolophodon last.
 `Player.log` sits in
 `%USERPROFILE%\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Player.log`.
 
-Every string below read out of 1.6's own `Assembly-CSharp.dll`, not remembered. Messages are UTF-16 there, so ASCII `grep` finds none — and decoding file as Unicode from byte 0 finds only ones starting on even byte. Search **both** alignments, or half the table comes back absent:
+Every string below read out of 1.6's own `Assembly-CSharp.dll`, not remembered. Messages are UTF-16 there, so ASCII `grep` finds none - and decoding file as Unicode from byte 0 finds only ones starting on even byte. Search **both** alignments, or half the table comes back absent:
 
 ```powershell
 $b = [IO.File]::ReadAllBytes($dll)
@@ -83,14 +83,14 @@ String in assembly not same as code path reaching it. `Adding duplicate` row bel
 | `Failed to find any textures at` | `Graphic_Multi.Init` | Same fault one level up: no rotation at all found for a coat. |
 | `doesn't correspond to any field in type` | `DirectXmlToObject` | Failure the port was checked against. Would name `alternateGraphics` or `alternateGraphicChance`, mean 1.6 renamed field under us. Animals still load, walk, simply wrong colour. |
 | `Patch operation` … `failed` | `PatchOperation.Complete` | Expected count from this mod: **zero**, and here zero says nothing at all. Every operation carries `<success>Always</success>`. |
-| `Adding duplicate` | `DefDatabase.Add` | **Never this mod.** String in assembly, but nothing here reaches it: mod declares no def of its own, and between two mods message unreachable anyway — `DefDatabase.AddAllInMods` removes previous entry before adding, so defName declared twice overwritten in silence, last mod loaded winning. |
+| `Adding duplicate` | `DefDatabase.Add` | **Never this mod.** String in assembly, but nothing here reaches it: mod declares no def of its own, and between two mods message unreachable anyway - `DefDatabase.AddAllInMods` removes previous entry before adding, so defName declared twice overwritten in silence, last mod loaded winning. |
 | `Could not find type named` | `DirectXmlToObject.ClassTypeOf` | Only two `Class=` values used here, both `Verse` patch operations. Would mean 1.6 renamed one. |
 
 Lines naming other mods not ours to fix, worth leaving in whatever gets pasted back.
 
 ---
 
-## A — the coats appear at all
+## A - the coats appear at all
 
 The one scenario that matters. Everything else assumes this one passed.
 
@@ -99,7 +99,7 @@ The one scenario that matters. Everything else assumes this one passed.
 - **All 20 in original coat fails appearance check.** At `0.7` that sample has probability `0.3^20` (about one in 29 billion) if expected independent rolls occur. Investigate target names, mod activation, patch loading; this result alone does not identify cause.
 - If all come out original, open Megafauna's own defs, read `defName` on its mammoth as it stands today, compare against xpath in `Mod/Patches/ColorfulCoats_Megafauna.xml`. Nothing in log will have said a word.
 
-## B — the far end of the sequence
+## B - the far end of the sequence
 
 Scenario the port exists for, only one testing the change it made.
 
@@ -107,9 +107,9 @@ Scenario the port exists for, only one testing the change it made.
 
 - Spawn handful of **Zygolophodon**, last animal in file, and handful of **Andrewsarchus**, first.
 - Both must show extra coats. Zygolophodon rolls at `0.6` with two coats, so spawn about 15: all 15 in original coat about one run in a million.
-- If first animal has coats and last does not, something between them failing and sequence stopping there — would mean flag lost, since no operation in this file allowed to fail any more.
+- If first animal has coats and last does not, something between them failing and sequence stopping there - would mean flag lost, since no operation in this file allowed to fail any more.
 
-## C — the 67 coats and the three rotations
+## C - the 67 coats and the three rotations
 
 Manual. Pickle (`02-textures`) samples 13 files; `Check-Textures` proves every file exists. Neither shows what coat looks like walking. West not shipped: RimWorld mirrors `_east` when no `_west` exists, so animal walking west with far side reversed is correct.
 
@@ -131,14 +131,14 @@ Manual. Pickle (`02-textures`) samples 13 files; `Check-Textures` proves every f
 
 **Record**: game build, Megafauna date, revision, language, species checked, any coat never seen (name it), log lines.
 
-## D — the coat is per-animal and survives a reload
+## D - the coat is per-animal and survives a reload
 
 Coat **not stored**. Decompiling 1.6's `Verse.PawnGraphicUtils.TryGetAlternate`, called by every draw path of animal renderer, shows it derived on demand: `Rand` seeded with `pawn.thingIDNumber ^ 0xB415`, then `alternateGraphicChance` decides whether extra coat drawn and weighted pick chooses which. `Verse.Thing.overrideGraphicIndex` exists but pawn renderer does not read it, stays null for animal generated normally. (Earlier version of this section said index went into save under that name; guess, wrong.)
 
 - Save with several coloured animals in view, quit to menu, load again.
 - Each animal keeps **its own** coat. Holds because `thingIDNumber` saved and coat is pure function of it and of `alternateGraphics` list, so coat changing on reload means id changed or list did, not that stored value lost. Scenario therefore also guards list: reordering or adding coat in later version would reshuffle every coat already seen in existing saves, and this is how that would be noticed.
 
-## E — added to a save in progress
+## E - added to a save in progress
 
 Manual, not automatable: needs one save opened twice with different mod sets, harness stages one set per launch. Coat computed on every draw from animal's saved id and stored nowhere (see D), so adding mod should recolour animals **already in save**, deterministically. Expectation from code, decompiled from 1.6, not something anyone has seen: README and About say so.
 
@@ -161,7 +161,7 @@ Manual, not automatable: needs one save opened twice with different mod sets, ha
 **Record**: per animal, before and after; share recoloured against expected chance; log lines; language.
 If no existing animal changes, say so plainly: contradicts code, README and About must change.
 
-## F — removed from a save in progress
+## F - removed from a save in progress
 
 Manual, same reason as E. No index ever written into save, so nothing in it points into list that has gone.
 
@@ -180,19 +180,19 @@ Manual, same reason as E. No index ever written into save, so nothing in it poin
 
 **Record**: animals that did not go back (name them), log lines, language. Restore baseline mod list afterwards.
 
-## G — the mod alone, with no Megafauna at all
+## G - the mod alone, with no Megafauna at all
 
 - Enable this mod with Megafauna switched off.
 - RimWorld flags missing dependency in mod list. That is `<modDependencies>` doing its job, not fault, and only warning player gets: patch itself unguarded, so simply finds nothing, says nothing.
 - Game must still load, log must stay clean.
 
-## H — the original enabled alongside
+## H - the original enabled alongside
 
 - Try enabling purpleyam's `purpleyam.colorfulcoats.spinomegafauna` at same time as this one.
 - `<incompatibleWith>` should refuse pair, refusal is whole of protection.
-- If both somehow load, **nothing logged, nothing visibly breaks**. Neither mod declares def; both add `<alternateGraphics>` element to same `PawnKindDef`. Confirmed by Pickle (e824ec2, incompat pass): mammoth's list grew from 3 entries to 6, not "last one wins" — `alternateGraphics` is `List<T>`, two `PatchOperationAdd` both append `<li>` rather than overwrite. Scalar `alternateGraphicChance` field *is* overwritten, stayed `0.7`, value this mod's own patch sets, since it loads after purpleyam's. Animals get coats either way, exactly why scenario cannot be judged from screen.
+- If both somehow load, **nothing logged, nothing visibly breaks**. Neither mod declares def; both add `<alternateGraphics>` element to same `PawnKindDef`. Confirmed by Pickle (e824ec2, incompat pass): mammoth's list grew from 3 entries to 6, not "last one wins" - `alternateGraphics` is `List<T>`, two `PatchOperationAdd` both append `<li>` rather than overwrite. Scalar `alternateGraphicChance` field *is* overwritten, stayed `0.7`, value this mod's own patch sets, since it loads after purpleyam's. Animals get coats either way, exactly why scenario cannot be judged from screen.
 
-## I — the mod list entry itself
+## I - the mod list entry itself
 
 Manual: look at screen, not scenario Pickle can answer. Do once in English, once in French.
 
@@ -218,7 +218,7 @@ Manual: look at screen, not scenario Pickle can answer. Do once in English, once
 
 ## What no check offline can catch
 
-Patch is bare `PatchOperationSequence` with no `PatchOperationFindMod` guard, every operation now flagged to succeed. Together, those two facts mean **renamed animal produces no log line, no failed operation, no visible error** — only animal quietly stopped having coats. Scenarios A and B exist because nothing else would ever tell us.
+Patch is bare `PatchOperationSequence` with no `PatchOperationFindMod` guard, every operation now flagged to succeed. Together, those two facts mean **renamed animal produces no log line, no failed operation, no visible error** - only animal quietly stopped having coats. Scenarios A and B exist because nothing else would ever tell us.
 
 ## Pickle passes required (AUDIT.md, "Passes Pickle")
 

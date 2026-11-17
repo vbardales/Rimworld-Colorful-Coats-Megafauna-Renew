@@ -132,7 +132,7 @@ Register: `WORKSHOP_COMMENTS.md`, keyed by the recipient's Workshop id. Harmony 
 
 Megafauna's page is the author's reach for the base textures; the original's page is the only way purpleyam can reach the owner. The original's
 page also says the mod declares 1.4 and nothing further, and credits Spino. **To verify on the pages before posting:** who maintains Megafauna for
-1.6 today (the 1.6 source is `juanosarg/Megafauna`), because a mod that was taken over credits both people (`PUBLISHING.md`).
+the latest RimWorld version today (the source for the latest RimWorld version is `juanosarg/Megafauna`), because a mod that was taken over credits both people (`PUBLISHING.md`).
 
 Draft, Megafauna (voice to adjust by the owner):
 
@@ -143,7 +143,7 @@ Megafauna's mammoths always came in one coat, so a herd looked like twelve copie
 Draft, purpleyam's original:
 
 ```text
-Your coats for the Megafauna animals still look good on 1.6, so I ported them (mammoth to Zygolophodon, 67 coats): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. It says in big letters it's not yours, credits you first, and comes down the day you ask. Thank you for the idea :)
+Your coats for the Megafauna animals still look good on the latest RimWorld version, so I ported them (mammoth to Zygolophodon, 67 coats): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. It says in big letters it's not yours, credits you first, and comes down the day you ask. Thank you for the idea :)
 ```
 
 The two drafts differ in opening, ending and joke; each is under 1,000 characters and carries one hidden link. Re-read side by side before posting.

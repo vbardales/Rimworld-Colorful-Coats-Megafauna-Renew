@@ -1,4 +1,4 @@
-# Colorful Coats - Megafauna! — attribution
+# Colorful Coats - Megafauna! - attribution
 
 A 1.6 port of **Colorful Coats - Megafauna!**, by **purpleyam**
 ([2560113727](https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727)).
@@ -31,7 +31,7 @@ repository; the fourth is not, for the reason given at the end of this file.
 ## What was carried over
 
 Everything the mod contained, which is one patch file and 201 textures. There is no `Defs`
-folder, no assembly and no C# — the mod does one thing and does it in XML.
+folder, no assembly and no C# - the mod does one thing and does it in XML.
 
 | | |
 |---|---|
@@ -54,7 +54,7 @@ The 26 animals, their 67 coats and every `alternateGraphicChance` are purpleyam'
 
 `About/Preview.png` was **not** carried over; the port has its own. purpleyam's four extra
 screenshots in `About/` were dropped: RimWorld reads `Preview.png` and `ModIcon.png` from that
-folder and nothing else, and those four were **7.6 MB of the mod's 13** — more than the textures
+folder and nothing else, and those four were **7.6 MB of the mod's 13** - more than the textures
 themselves.
 
 ## What the mod does
@@ -78,7 +78,7 @@ scope. They do not establish that the coats render correctly in game; that remai
 
 - **Both `PawnKindDef` fields still exist under those names.** This is the failure mode that
   kills ported XML quietly: RimWorld does not stop for an element that matches no field, it logs
-  one line and loads with the field unset — the animal would load, walk, and simply be the wrong
+  one line and loads with the field unset - the animal would load, walk, and simply be the wrong
   colour.
 - **The patch is not name-guarded**, unlike the other Colorful Coats mods. It is a bare
   `PatchOperationSequence` with `<success>Always</success>`, so it applies wherever the defs are
@@ -96,7 +96,7 @@ scope. They do not establish that the coats render correctly in game; that remai
 Each of the 26 operations now carries `<success>Always</success>`.
 
 They sit inside a single `PatchOperationSequence`, and a sequence **stops at the first operation
-that returns false** — it does not skip and carry on. `<success>Always</success>` was on the
+that returns false** - it does not skip and carry on. `<success>Always</success>` was on the
 sequence itself, which silences the error but does not resume the run. So if a future release of
 Megafauna renamed one animal, that animal and **every animal listed after it** would lose their
 coats, with nothing in the log to say so.
@@ -109,8 +109,8 @@ brings this one into line. Nothing about it changes what happens today.
 **Colorful Coats - Cats and Dogs!**
 ([2388932599](https://steamcommunity.com/sharedfiles/filedetails/?id=2388932599)) has nothing
 left to port: its 14 patched `PawnKindDef`s, their coat chances and its 78 textures are all
-already inside **Colorful Coats - Vanilla Animals Expanded!**, identical — the textures match
-byte for byte, only the folder names differ. It existed because *Vanilla Animals Expanded — Cats
+already inside **Colorful Coats - Vanilla Animals Expanded!**, identical - the textures match
+byte for byte, only the folder names differ. It existed because *Vanilla Animals Expanded - Cats
 and Dogs* used to be a module of its own; Vanilla Animals Expanded has since absorbed it. Its own
 target, `VanillaExpanded.VAECD`, stops at 1.3.
 

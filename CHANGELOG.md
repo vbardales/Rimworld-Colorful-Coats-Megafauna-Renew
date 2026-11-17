@@ -2,20 +2,20 @@
 
 All notable changes to this mod are documented here.
 
-## [Unreleased] — 2026-10-10
+## [Unreleased] - 2026-10-10
 
 - Added `FRENCH_REVIEW.md` (generated; the mod ships no French) and the Pickle pass declaration in `TEST_SCENARIOS.md`.
 - Local `Tests/Pickle/Check-Steps.ps1` removed: the shared `scripts/Check-Steps.ps1` of the protocols repository replaces it (green, 150 step lines resolve).
 - `_tools/` moved to `scripts/` (no `_` folder at the mod root, STYLE_RIMWORLD.md); references updated.
 - `TESTING.md` renamed `TEST_SCENARIOS.md` (the name AUDIT.md gives it); references updated.
 
-## [Unreleased] — 2026-10-02
+## [Unreleased] - 2026-10-02
 
 - About description and README no longer say the in-game scenarios were not executed: an automated suite has
   played them; what remains unchecked by a person is said instead. `Mod/` changed again after the `0.1.0` send.
 - Added `Mod/About/ModIcon32.png`, a 32 px copy of the ModIcon.
 
-## [Unreleased] — 2026-09-28
+## [Unreleased] - 2026-09-28
 
 - README and the About description now say what the game's code implies about existing saves: a coat is
   derived on every draw from the animal's saved id and stored nowhere, so animals already in a save should
@@ -27,10 +27,10 @@ All notable changes to this mod are documented here.
   `nelim.colorfulcoats.megafauna`, dropping the suffix the 2026-09-11 rename had added. Checked
   first that nothing depends on the old value: no `ModsConfig.xml` on this machine names it, and
   the Workshop item created for `0.1.0` is still private and unannounced. `<name>` keeps
-  ` Renew`; only the identifier drops it. `<incompatibleWith>` is unaffected — it has always
+  ` Renew`; only the identifier drops it. `<incompatibleWith>` is unaffected - it has always
   carried purpleyam's own packageId, never this mod's.
 
-## [Unreleased] — 2026-09-13
+## [Unreleased] - 2026-09-13
 
 - Applied the clarified publishing definition: an original without declared RimWorld 1.6
   support qualifies as abandoned for the workflow. Restored `done`; final game tests remain pending.
@@ -43,10 +43,10 @@ All notable changes to this mod are documented here.
 - No patch, texture, image, identifier or dependency changed. Historical release notes below
   are preserved; their broad compatibility claims are superseded by the current validation limits.
 
-## [0.1.0] — 2026-09-28
+## [0.1.0] - 2026-09-28
 
 Creation of a `PublishedFileId.txt` (`3806766441`). A first send whose only purpose is to
-create the Workshop item — private, as Steam creates every item — and obtain its identifier.
+create the Workshop item - private, as Steam creates every item - and obtain its identifier.
 This does not mean the mod is public or tested; the item stays private until switched by hand.
 
 `Mod/` as sent matches commit `7f868a9`, unchanged since. This entry adds nothing beyond what
@@ -54,7 +54,7 @@ the `[Unreleased]` notes above already describe.
 
 > Numbering settled by the owner, 2026-10-16: the target version is `1.0.0`. The section below is the base of its entry; its date is set at the release.
 
-## [1.0.0] — 2026-09-05
+## [1.0.0] - 2026-09-05
 
 First release. Port of purpleyam's **Colorful Coats - Megafauna!** to RimWorld 1.6.
 
@@ -75,7 +75,7 @@ Nothing in this mod was broken by 1.6. The one change to the patch is hardening,
 ### Changed
 
 - `<success>Always</success>` added to each of the 26 `PatchOperationAdd` operations.
-  `PatchOperationSequence` **stops at the first operation that returns false** — it does not skip
+  `PatchOperationSequence` **stops at the first operation that returns false** - it does not skip
   it and carry on. The flag was on the sequence itself, which silences the error but does not
   resume the run, so one renamed animal would have cost that animal and every animal listed after
   it their coats, with nothing in the log to say so. purpleyam already wrote the Vanilla Animals
@@ -92,7 +92,7 @@ Nothing in this mod was broken by 1.6. The one change to the patch is hardening,
 
 ### Removed
 
-- `About/colorfulmegafauna1.png` through `4.png`, **7.6 MB of the mod's 13** — more than the 4.6 MB
+- `About/colorfulmegafauna1.png` through `4.png`, **7.6 MB of the mod's 13** - more than the 4.6 MB
   of textures. RimWorld reads `Preview.png` and `ModIcon.png` from that folder and nothing else;
   those four were Workshop screenshots, which live on the Steam page and not in the download.
 - `About/Preview.png`, purpleyam's own. The port has its own showcase.
@@ -102,7 +102,7 @@ Nothing in this mod was broken by 1.6. The one change to the patch is hardening,
 - The 26 animals, their 67 coats, every `alternateGraphicChance`, and the 201 textures, byte for
   byte.
 - The absence of a `PatchOperationFindMod` guard. The patch is a bare sequence, so it applies
-  wherever the defs are found and stays silent where they are not — which is why the mod rename
+  wherever the defs are found and stays silent where they are not - which is why the mod rename
   that broke the Dodos mod in this family could not touch this one. Adding a name guard would only
   have narrowed it.
 - The `defName`s the patch aims at, which are not this mod's to choose.
@@ -110,7 +110,7 @@ Nothing in this mod was broken by 1.6. The one change to the patch is hardening,
 ### Verified
 
 - `Verse.PawnKindDef.alternateGraphics` and `alternateGraphicChance`, and
-  `Verse.AlternateGraphic.texPath`, all still exist under those names in 1.6 — checked by
+  `Verse.AlternateGraphic.texPath`, all still exist under those names in 1.6 - checked by
   reflection against `Assembly-CSharp.dll`. An XML element matching no field does not stop the
   game: it logs one line and loads with the field unset, so the animals would have loaded, walked,
   and simply been the wrong colour.
