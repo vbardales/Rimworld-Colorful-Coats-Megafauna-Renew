@@ -19,7 +19,7 @@ redistribution_permission: not found in sources checked 2026-09-12
 source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the project definition of no declared 1.6 support
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-workflow_stage: mountPreview[1.0.0]
+workflow_stage: writeReleaseDocs[1.0.0]
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
@@ -33,6 +33,7 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
+  - "2026-11-17 TM missions list items 0-39 read. For writeReleaseDocs: item 39 rewrite the 1.0.0 Steam note in PUBLICATION.md as BBCode ([b]1.0.0[/b], [list] of [*] changes from CHANGELOG, [url] to CHANGELOG.md; Check-Status steam-note), say in STATUS.md the dry-run note was read; gallery-credits INFO (ATTRIBUTION.md section Gallery set, Steam description only for mods tied to this one); compress-docs 12.c bis; prepare-release. Protocols root pull blocked by other sessions local edits (scripts/Tests/run-pickle-wsl.test.sh, scripts/docker/remote_known_hosts), not touched; origin not ahead. Items 36d not applied (held by TM)"
   - "Older entries (2026-11-15 and before) in docs/runs/2026-11-17-status-journal.txt"
   - "2026-11-17 VIRGINIE 'je valide' the Preview (Art/Preview-source.png new from the finished gallery, panelBare true, icon.corner bottom-left, palette re-detected: veil #5F371B, inkSecondary #EEB887, accent #F2A01C; config changes told to her). 10.a echo kept (echo-source.png, validated, echo_review_sha written), 10.b config ok, 10.c rendered 896x504 707960 bytes, 0-preview identical, desktop.ini present at root and in Mod/, 10.d contrast measured on the rendered pixels around the text (background about #61361A): primary 8.6, secondary 5.7, badge digits 8.7, all at or above 4.5; title, rule, 1.6 badge and echo readable at 896 and at 268 px. 10.f DONE 2026-11-17: Preview.png uploaded in GitHub Settings, Social preview, through Chrome on Virginie order, still shown after a reload, sha256 recorded (og:image tag not read). 10.e DONE 2026-11-17: Virginie said delete, Art/colorful-coats-megafauna-renew-key-art.png removed (untracked, never committed). OPEN before 10.g: WARN npt-sync; INFO gallery-credits (third-party mods of the gallery not credited, writeReleaseDocs); TM missions list not read"
   - "2026-11-17 VIRGINIE: 'je valide' on the whole gallery (1 to 8, subtitle 8 now `Breakfast is over. The herd rests around Nelim.`). All eight accepted, names final, indexes 1 to 8 contiguous in Art/Gallery and Art/Gallery-clean, 0-preview present. Gallery table: PUBLICATION.md (Gallery, Gallery subtitles). Stage moves to mountPreview[1.0.0]. First work there: redo the echo from the finished gallery (Art/echo-preview.png provisional is invalidated, echo_review_sha empty), then Preview via Render-Preview.cjs and the 0-preview copy. Open: TM missions list tm-missions-2026-11-12.md items 0-39 not yet read"
@@ -45,8 +46,8 @@ code_review_sha: 4d14f04c9f3f2d4bbbd92ad992610e1dbe271143
 echo_review_sha: 1413c50fa3d6bb63de43c776f108d15ac8c558a3
 social_preview_sha256: 9420de29c82572a7d8614bdc20c983dd42a92c4560d46dcfa04384445403af64
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-17, 10.e key-art file deleted, 10.f done
-protocols_read_sha: a337fd30f165132c76770f1102cb564c5a2ec46d
+updated: 2026-11-17, mountPreview done (10.a to 10.f), now writeReleaseDocs; TM missions read
+protocols_read_sha: a4e06962cb93706e34b442ce9c018f43d1e3c2dd
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
