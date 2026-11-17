@@ -108,13 +108,17 @@ None. No textures of a body, no text, nothing to declare. The answers on the Wor
 ## Release notes (Steam)
 
 The first line carries only the version (`[b]x.y.z[/b]`): the CI refuses a note whose first line does not. Sent before: `[b]0.1.0[/b]`, the
-creation of the item (first send, private). Next, drafted from the `[1.0.0]` section of `CHANGELOG.md`, to be sent with the release (the date is set at the dry-run):
+creation of the item (first send, private). Next, a BBCode note drafted from the `[1.0.0]` section of `CHANGELOG.md` (`[b]version[/b]`, a `[list]`, a `[url]` to the changelog; AUDIT.md 11.i), to be sent with the release (read it in the dry-run log before `publish`):
 
 ```
 [b]1.0.0[/b]
-First release. Coat variations for 26 of Megafauna's animals, 67 coats in all, ported from purpleyam's Colorful Coats - Megafauna! to the latest RimWorld version.
-Each of the 26 patch operations now reports success even if its animal is missing, so one renamed animal can no longer cost the others their coats.
-Checked by static scripts and an automated in-game suite; how the coats look on an existing save has not been seen in game yet.
+[list]
+[*] First release: a port of Colorful Coats - Megafauna! by purpleyam to the latest RimWorld version.
+[*] Coat variations for 26 of Megafauna's animals, 67 coats in all, 201 textures, unchanged from the original.
+[*] Each of the 26 patch operations now reports success even if its animal is missing, so one renamed animal can no longer cost the others their coats.
+[*] Checked by static scripts and an automated in-game suite; how the coats look on an existing save has not been seen in game yet.
+[/list]
+[url=https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew/blob/main/CHANGELOG.md]Full changelog on GitHub[/url]
 ```
 ## Thank-you comments (one per page, after the item is public)
 
