@@ -24,7 +24,7 @@
 
 Coat variations for 26 of Megafauna's prehistoric animals, so a mammoth herd is a herd of individuals rather than 12 copies of one mammoth. Between two and five extra coats each, 67 in all, and between 60% and 80% of animals get one - the rest keep the coat Spino drew.
 
-Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a single XML patch and 201 textures. A coat is worked out from each animal's saved id when it is drawn and stored nowhere, so animals already in a save should change coat when this is added and change back when it is removed. That follows from the game's code and has not been seen in game; use a backup when testing.
+Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a single XML patch and 201 textures. A coat is worked out from each animal's saved ID when it is drawn and stored nowhere, so animals already in a save should change coat when this is added and change back when it is removed. That follows from the game's code and has not been seen in game; use a backup when testing.
 
 WHAT IS COVERED
 
@@ -38,10 +38,10 @@ Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727 
 
 WHAT CHANGED IN THE PORT
 
-The recorded compatibility inspection found alternateGraphics and alternateGraphicChance on PawnKindDef in the latest RimWorld version. Static checks confirm all 26 targets in the installed Megafauna definitions and all texture paths. Actual coat appearance still needs validation in game. Two packaging and patch changes were made:
+The recorded compatibility inspection found alternateGraphics and alternateGraphicChance on PawnKindDef in the latest RimWorld version. Static checks confirm that all 26 targets in the installed Megafauna definitions exist and that all texture paths resolve. Actual coat appearance still needs validation in game. Two packaging and patch changes were made:
 
 - Each of the 26 operations now reports success whether or not it found its animal. They sit in one PatchOperationSequence, and a sequence stops at the first operation that fails - so if a future release of Megafauna ever renamed one animal, every animal listed after it would have quietly lost its coats too. purpleyam already wrote it this way in the Vanilla Animals Expanded mod; this brings this one into line.
-- The four large screenshots left in the About folder were removed. RimWorld reads Preview.png and ModIcon.png and nothing else in there, and those four were 7.6 MB of the mod's 13.
+- The four large screenshots left in the About folder were removed. RimWorld reads Preview.png and ModIcon.png and nothing else in there, and those four were 7.6 MB of the mod's 13 MB.
 
 The colours, the chances and the 201 textures are untouched.
 
