@@ -2,59 +2,7 @@
 
 All notable changes to this mod are documented here.
 
-## [Unreleased] - 2026-10-10
-
-- Added `FRENCH_REVIEW.md` (generated; the mod ships no French) and the Pickle pass declaration in `TEST_SCENARIOS.md`.
-- Local `Tests/Pickle/Check-Steps.ps1` removed: the shared `scripts/Check-Steps.ps1` of the protocols repository replaces it (green, 150 step lines resolve).
-- `_tools/` moved to `scripts/` (no `_` folder at the mod root, STYLE_RIMWORLD.md); references updated.
-- `TESTING.md` renamed `TEST_SCENARIOS.md` (the name AUDIT.md gives it); references updated.
-
-## [Unreleased] - 2026-10-02
-
-- About description and README no longer say the in-game scenarios were not executed: an automated suite has
-  played them; what remains unchecked by a person is said instead. `Mod/` changed again after the `0.1.0` send.
-- Added `Mod/About/ModIcon32.png`, a 32 px copy of the ModIcon.
-
-## [Unreleased] - 2026-09-28
-
-- README and the About description now say what the game's code implies about existing saves: a coat is
-  derived on every draw from the animal's saved id and stored nowhere, so animals already in a save should
-  change coat when the mod is added and change back when it is removed. Decompiled from 1.6, not seen in
-  game. This replaces an unverified-only wording, and TEST_SCENARIOS.md scenarios D, E and F were rewritten
-  around it: E had expected existing animals to stay exactly as they were, which the code contradicts.
-  `Mod/About/About.xml` changed after the `0.1.0` send, so `Mod/` no longer equals that send.
-- `packageId` changed from `nelim.colorfulcoats.megafaunarenew` to
-  `nelim.colorfulcoats.megafauna`, dropping the suffix the 2026-09-11 rename had added. Checked
-  first that nothing depends on the old value: no `ModsConfig.xml` on this machine names it, and
-  the Workshop item created for `0.1.0` is still private and unannounced. `<name>` keeps
-  ` Renew`; only the identifier drops it. `<incompatibleWith>` is unaffected - it has always
-  carried purpleyam's own packageId, never this mod's.
-
-## [Unreleased] - 2026-09-13
-
-- Applied the clarified publishing definition: an original without declared RimWorld 1.6
-  support qualifies as abandoned for the workflow. Restored `done`; final game tests remain pending.
-
-- Qualified source-maintenance and permission findings in README, attribution, licence scope
-  notes and About metadata; synchronized the distributed attribution and licence copies.
-- Removed unsupported claims of completed in-game testing and established save compatibility.
-- Put the required Steam-formatted GitHub source link at the end of the About description.
-- Clarified functional-test setup and the limits of the probabilistic appearance check.
-- No patch, texture, image, identifier or dependency changed. Historical release notes below
-  are preserved; their broad compatibility claims are superseded by the current validation limits.
-
-## [0.1.0] - 2026-09-28
-
-Creation of a `PublishedFileId.txt` (`3806766441`). A first send whose only purpose is to
-create the Workshop item - private, as Steam creates every item - and obtain its identifier.
-This does not mean the mod is public or tested; the item stays private until switched by hand.
-
-`Mod/` as sent matches commit `7f868a9`, unchanged since. This entry adds nothing beyond what
-the `[Unreleased]` notes above already describe.
-
-> Numbering settled by the owner, 2026-10-16: the target version is `1.0.0`. The section below is the base of its entry; its date is set at the release.
-
-## [1.0.0] - 2026-09-05
+## [1.0.0] - 2026-11-17
 
 First release. Port of purpleyam's **Colorful Coats - Megafauna!** to RimWorld 1.6.
 
@@ -118,3 +66,53 @@ Nothing in this mod was broken by 1.6. The one change to the patch is hardening,
   still `Spino.Megafauna`.
 - All 67 `texPath` values resolve to shipped textures; no shipped texture is unreferenced.
 - Megafauna does not already define `alternateGraphics` on any of the 26.
+
+## [0.1.0] - 2026-09-28
+
+Creation of a `PublishedFileId.txt` (`3806766441`). A first send whose only purpose is to
+create the Workshop item - private, as Steam creates every item - and obtain its identifier.
+This does not mean the mod is public or tested; the item stays private until switched by hand.
+
+`Mod/` as sent matches commit `7f868a9`, unchanged since. This entry adds nothing beyond what
+the `[Unreleased]` notes above already describe.
+
+## Notes before 1.0.0, 2026-10-10
+
+- Added `FRENCH_REVIEW.md` (generated; the mod ships no French) and the Pickle pass declaration in `TEST_SCENARIOS.md`.
+- Local `Tests/Pickle/Check-Steps.ps1` removed: the shared `scripts/Check-Steps.ps1` of the protocols repository replaces it (green, 150 step lines resolve).
+- `_tools/` moved to `scripts/` (no `_` folder at the mod root, STYLE_RIMWORLD.md); references updated.
+- `TESTING.md` renamed `TEST_SCENARIOS.md` (the name AUDIT.md gives it); references updated.
+
+## Notes before 1.0.0, 2026-10-02
+
+- About description and README no longer say the in-game scenarios were not executed: an automated suite has
+  played them; what remains unchecked by a person is said instead. `Mod/` changed again after the `0.1.0` send.
+- Added `Mod/About/ModIcon32.png`, a 32 px copy of the ModIcon.
+
+## Notes before 1.0.0, 2026-09-28
+
+- README and the About description now say what the game's code implies about existing saves: a coat is
+  derived on every draw from the animal's saved id and stored nowhere, so animals already in a save should
+  change coat when the mod is added and change back when it is removed. Decompiled from 1.6, not seen in
+  game. This replaces an unverified-only wording, and TEST_SCENARIOS.md scenarios D, E and F were rewritten
+  around it: E had expected existing animals to stay exactly as they were, which the code contradicts.
+  `Mod/About/About.xml` changed after the `0.1.0` send, so `Mod/` no longer equals that send.
+- `packageId` changed from `nelim.colorfulcoats.megafaunarenew` to
+  `nelim.colorfulcoats.megafauna`, dropping the suffix the 2026-09-11 rename had added. Checked
+  first that nothing depends on the old value: no `ModsConfig.xml` on this machine names it, and
+  the Workshop item created for `0.1.0` is still private and unannounced. `<name>` keeps
+  ` Renew`; only the identifier drops it. `<incompatibleWith>` is unaffected - it has always
+  carried purpleyam's own packageId, never this mod's.
+
+## Notes before 1.0.0, 2026-09-13
+
+- Applied the clarified publishing definition: an original without declared RimWorld 1.6
+  support qualifies as abandoned for the workflow. Restored `done`; final game tests remain pending.
+
+- Qualified source-maintenance and permission findings in README, attribution, licence scope
+  notes and About metadata; synchronized the distributed attribution and licence copies.
+- Removed unsupported claims of completed in-game testing and established save compatibility.
+- Put the required Steam-formatted GitHub source link at the end of the About description.
+- Clarified functional-test setup and the limits of the probabilistic appearance check.
+- No patch, texture, image, identifier or dependency changed. Historical release notes below
+  are preserved; their broad compatibility claims are superseded by the current validation limits.
