@@ -90,7 +90,7 @@ subtitled image goes in `Art/Gallery/`, both under 2 MB. A line changes here fir
 | 5 | `5-enclosure.jpg` | Breakfast for the great browsers. |
 | 6 | `6-exhibition.jpg` | Breakfast for the strange grazers. |
 | 7 | `7-rice-paddy.jpg` | Breakfast for the hunters. |
-| 8 | `8-calm-zone.jpg` | Breakfast is over; the herd rests around Nelim. |
+| 8 | `8-calm-zone.jpg` | Breakfast is over. The herd rests around Nelim. |
 
 ## Dependencies and DLC
 

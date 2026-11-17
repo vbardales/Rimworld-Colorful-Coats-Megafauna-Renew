@@ -180,7 +180,7 @@ Story: evening round 18h to 19h, next morning breakfast round 06h30 to 09h30; Ne
 | 5 | enclosure-north 06h | TorchLamp, Brazier, 6 hay piles, WoodLog, Stool, 4 Daylily | 6 browsers, 2 eat, 1 walks | hauls hay | Breakfast for the great browsers. | 5 |
 | 6 | exhibition-zone 07h | Brazier, Stool, 3 hay piles, 4 Daylily | 6 grazers, 2 eat | hauls hay | Breakfast for the strange grazers. | 5 |
 | 7 | rice-paddy 08h | Brazier, 3 WoodLog, 3 meat piles, 3 Daylily | 5 predators, 2 eat, 1 walks | hauls meat | Breakfast for the hunters. | 5 |
-| 8 | calm-zone 09h, closing | Brazier, 2 TorchLamp, Stool, bonsai, 3 Daylily, 3 hay | 5 animals, one eats the last hay | sits on Stool, South | Breakfast is over; the herd rests around Nelim. | 5 |
+| 8 | calm-zone 09h, closing | Brazier, 2 TorchLamp, Stool, bonsai, 3 Daylily, 3 hay | 5 animals, one eats the last hay | sits on Stool, South | Breakfast is over. The herd rests around Nelim. | 5 |
 
 Plan 5 on every shot (all criteria written, instant per shot), k ok (opening 1, variety wide 1 and medium, closing 8). Risks, to read on the captures: mammoth coats read alike at 268 px (coat indices -1, 1, 2), cells of 5 to 8 guessed from place centres, woodpile haul source in shot 1, crowded frame in 6 and 7, Brazier placement near animals. Verdict of v3.4 captures (REDO) is the gap this list learns from.
 
