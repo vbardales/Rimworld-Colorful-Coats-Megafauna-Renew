@@ -79,7 +79,7 @@ One line of English at the bottom of each scene without an interface window, lai
 (`GALLERY.md`, "Sous-titres"). The story (shotlist v4): Nelim's evening walk (18:00 to 19:00), then the breakfast round of the herd the
 next morning (06:30 to 09:30). `0-preview.png` (the Preview) has no subtitle. The clean original is in `Art/Gallery-clean/`, the
 subtitled image goes in `Art/Gallery/`, both under 2 MB. A line changes here first, then the tool is replayed on the clean original.
-**All 8 subtitles burned 2026-11-14 from the v5 captures (shotlist v4, Nelim hair and trousers canon); shot 6 is cropped to 1620x1080 (map edge on the right). Awaiting the owner verdict.**
+**Status 2026-11-17 (v5.2): subtitles of 1, 2, 4, 7 and 8 burned and accepted by the owner (2026-11-15); 3, 5 and 6 are being reshot (ticket in the queue) and get their subtitle when their captures come back. 6 is cropped to 1620x1080 (map edge on the right).**
 
 | Index | File | Line |
 |---|---|---|
