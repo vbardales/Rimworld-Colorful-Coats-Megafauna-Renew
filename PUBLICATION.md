@@ -110,6 +110,8 @@ None. No textures of a body, no text, nothing to declare. The answers on the Wor
 The first line carries only the version (`[b]x.y.z[/b]`): the CI refuses a note whose first line does not. Sent before: `[b]0.1.0[/b]`, the
 creation of the item (first send, private). Next, a BBCode note drafted from the `[1.0.0]` section of `CHANGELOG.md` (`[b]version[/b]`, a `[list]`, a `[url]` to the changelog; AUDIT.md 11.i), to be sent with the release (read it in the dry-run log before `publish`):
 
+### 1.0.0
+
 ```
 [b]1.0.0[/b]
 [list]
