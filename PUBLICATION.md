@@ -1,6 +1,6 @@
 # Publication: Colorful Coats - Megafauna! Renew (unofficial)
 
-What the Workshop page asks for and the repository holds nowhere else. Item **3806766441** (created as private by the 0.1.0 send,
+What the Workshop page asks for and the repository holds nowhere else. Item **3806766441** (created privately during the 0.1.0 send,
 2026-09-28). No public release has been sent.
 
 ## Steam description
@@ -59,7 +59,7 @@ credits, with the `Source code on GitHub` link to the repository, which is also 
 Steam shows the first image large, so the most telling goes first, not the prettiest. All eight are staged captures of one story
 (shotlist v4: Nelim's evening walk, then the breakfast round of the herd the next morning, told in the header of
 `Tests/Pickle/Mod/Pickle/Features/08-gallery.feature`), taken in the Sanctuary pass (`-DepMap wsl-deps.gallery.map -Filter '@gallery'`).
-Each capture is opened by the session and scored before it is kept; the last one (shot 5) is still being replayed. Order:
+Each capture is opened by the session and scored before it is kept; shots 3, 5 and 6 are being reshot (v5.2). Order:
 
 1. `1-mammoths`: three mammoths in three coats, the animal everyone knows and the one the original shows.
 2. `2-enhydriodon`: three Enhydriodon, the small kind with the most variety.
