@@ -131,6 +131,7 @@ Register: `WORKSHOP_COMMENTS.md`, keyed by the recipient's Workshop id. Harmony 
 |---|---|---|
 | Megafauna | 1055485938 | drafted, not `posted` |
 | Colorful Coats - Megafauna! (purpleyam's original) | 2560113727 | drafted, not `posted` |
+| No Version Warning (Mlie) | 2599504692 | drafted, not `posted` (owner order, 2026-11-17) |
 
 Megafauna's page is the author's reach for the base textures; the original's page is the only way purpleyam can reach the owner. The original's
 page also says the mod declares 1.4 and nothing further, and credits Spino. **To verify on the pages before posting:** who maintains Megafauna for
@@ -148,7 +149,13 @@ Draft, purpleyam's original:
 Your coats for the Megafauna animals still look good on the latest RimWorld version, so I ported them (mammoth to Zygolophodon, 67 coats): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. It says in big letters it's not yours, credits you first, and comes down the day you ask. Thank you for the idea :)
 ```
 
-The two drafts differ in opening, ending and joke; each is under 1,000 characters and carries one hidden link. Re-read side by side before posting.
+Draft, No Version Warning (its fix list already carries purpleyam's id 2560113727; our Renew declares its own version and needs nothing from it):
+
+```text
+No Version Warning already carries purpleyam's old Colorful Coats - Megafauna! (2560113727) in its fix list. I ported that mod to the latest RimWorld version as [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]; it declares its own version, so players of the Renew need nothing from you. If you ever clean up the list, that is why. Thank you for the mod xD
+```
+
+The three drafts differ in opening, ending and joke; each is under 1,000 characters and carries one hidden link. Re-read side by side before posting.
 
 ## After the send
 
