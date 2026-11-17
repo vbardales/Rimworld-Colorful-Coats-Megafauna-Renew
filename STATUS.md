@@ -25,7 +25,7 @@ port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
 upstream_mod_remotes: N/A
 dependencies: declared
-workshop_required_items: n/a, not released yet (item 3806766441 private, 0.1.0 prepublication only; hard dependency Spino.Megafauna 1055485938 to be set by hand on the Steam page at the end of writeReleaseDocs, AUDIT 4.g)
+workshop_required_items: done, 2026-11-17 (Megafauna 1055485938 set as Required item by Virginie)
 showcase:     complete
 tested_on: 4d14f04 (Mod/ unchanged since cc2703d except About/Preview.png; green Pickle minimal, incompat, all-coats 869f, removal 0c2e, 2026-10-12 to 2026-10-17)
 automated_tests: passed, 2026-10-15, e57955d (Check-Coats.ps1; shared scripts/Check-Steps.ps1, 195 step lines resolve, 8 feature files)
