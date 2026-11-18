@@ -49,7 +49,7 @@ echo_review_sha: 1413c50fa3d6bb63de43c776f108d15ac8c558a3
 social_preview_sha256: 9420de29c82572a7d8614bdc20c983dd42a92c4560d46dcfa04384445403af64
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
 updated: 2026-11-17, postOnSteam done (thanks on Megafauna and original posted, NVW not applicable, UTI posted), runNoRegression
-protocols_read_sha: 9338d8dcb0ab58bd06f914cc97073e4eb6c611c9
+protocols_read_sha: a644abeaf2d5d277f425731961b67997b576fb3e
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
