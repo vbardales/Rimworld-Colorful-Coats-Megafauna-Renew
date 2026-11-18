@@ -19,7 +19,7 @@ redistribution_permission: not found in sources checked 2026-09-12
 source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the project definition of no declared 1.6 support
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-workflow_stage: cleanUp[1.0.0]
+workflow_stage: dormant[1.0.0]
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
@@ -33,7 +33,7 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
-  - "cleanUp[1.0.0] (2026-11-18): PUBLICATION.md cleaned (NVW draft deleted, UTI text moved to docs/runs/2026-11-18-cleanup-1-0-0.txt), STATUS.md dated sections moved to docs/runs/2026-11-17-status-journal.txt. OPEN: WSL optional mods removal (14.c), then dormant[1.0.0] (14.e)"
+  - "cleanUp[1.0.0] (2026-11-18): PUBLICATION.md cleaned (NVW draft deleted, UTI text moved to docs/runs/2026-11-18-cleanup-1-0-0.txt), STATUS.md dated sections moved to docs/runs/2026-11-17-status-journal.txt. WSL 2026-11-18: nothing to remove (workshop-cache holds neither 2560113727 nor 1055485938; staged from the Windows Workshop folder; other ids shared by 46 to 62 other mods, kept). DONE: dormant[1.0.0] 2026-11-18"
   - "BACKLOG.md: ACG genes for every coat (owner, 2026-11-17), not started, not part of 1.0.0"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
@@ -43,7 +43,7 @@ publication_changelog_review_sha: 1538ad35eded912d1478cc0593fd51d6fb832c1b
 echo_review_sha: 1413c50fa3d6bb63de43c776f108d15ac8c558a3
 social_preview_sha256: 9420de29c82572a7d8614bdc20c983dd42a92c4560d46dcfa04384445403af64
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-18, cleanUp[1.0.0] started (PUBLICATION and STATUS cleaned)
+updated: 2026-11-18, dormant[1.0.0] (cleanUp done)
 protocols_read_sha: a644abeaf2d5d277f425731961b67997b576fb3e
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
@@ -53,7 +53,7 @@ Check with `scripts/Check-Status.ps1 -Mod ColorfulCoatsMegafaunaRenew` (no ERROR
 
 ## State
 
-`cleanUp[1.0.0]`. 1.0.0 published 2026-11-17 (item 3806766441, public, tag v1.0.0), non-regression green (aa77 276 of 277, 4789), postOnSteam done. `Mod/` unchanged since publish. Pickle suites in `Tests/Pickle/` (minimal, incompat, all-coats, removal, gallery); functional scenarios A-I in `TESTING.md`. Mod adds no setting, no player-facing text. Target version of the next change: 1.1.0.
+`dormant[1.0.0]` (cleanUp done 2026-11-18). 1.0.0 published 2026-11-17 (item 3806766441, public, tag v1.0.0), non-regression green (aa77 276 of 277, 4789), postOnSteam done. `Mod/` unchanged since publish. Pickle suites in `Tests/Pickle/` (minimal, incompat, all-coats, removal, gallery); functional scenarios A-I in `TESTING.md`. Mod adds no setting, no player-facing text. Target version of the next change: 1.1.0.
 
 ## Notes
 
