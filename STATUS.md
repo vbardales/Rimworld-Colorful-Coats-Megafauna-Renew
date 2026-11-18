@@ -33,7 +33,7 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
-  - "cleanUp[1.0.0] (2026-11-18): PUBLICATION.md cleaned (NVW draft deleted, UTI text moved to docs/runs/2026-11-18-cleanup-1-0-0.txt), STATUS.md dated sections moved to docs/runs/2026-11-17-status-journal.txt. WSL 2026-11-18: nothing to remove (workshop-cache holds neither 2560113727 nor 1055485938; staged from the Windows Workshop folder; other ids shared by 46 to 62 other mods, kept). DONE: dormant[1.0.0] 2026-11-18"
+  - "cleanUp[1.0.0] (2026-11-18): PUBLICATION.md cleaned (NVW draft deleted, UTI text moved to docs/runs/2026-11-18-cleanup-1-0-0.txt), STATUS.md dated sections moved to docs/runs/2026-11-17-status-journal.txt. WSL 2026-11-18: nothing to remove (workshop-cache holds neither 2560113727 nor 1055485938; staged from the Windows Workshop folder; other ids shared by 46 to 62 other mods, kept). DONE: dormant[1.0.0] 2026-11-18. Owner 2026-11-18: no unsubscribe from the original 2560113727, the incompat pass (wsl-deps.incompat-spinomegafauna.map, 06-original-alongside) stays"
   - "BACKLOG.md: ACG genes for every coat (owner, 2026-11-17), not started, not part of 1.0.0"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
   - "2026-10-10: unverified: redistribution permission for the original assets"
