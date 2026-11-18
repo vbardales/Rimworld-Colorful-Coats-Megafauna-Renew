@@ -122,47 +122,20 @@ creation of the item (first send, private). Then `[b]1.0.0[/b]`, sent on 2026-11
 [/list]
 [url=https://github.com/vbardales/Rimworld-Colorful-Coats-Megafauna-Renew/blob/main/CHANGELOG.md]Full changelog on GitHub[/url]
 ```
-## Thank-you comments (one per page, after the item is public)
+## Thank-you comments (posted)
 
-Register: `WORKSHOP_COMMENTS.md`, keyed by the recipient's Workshop id. Harmony (2009463077), RimLogging (3733484696) and Pickle are already
-`posted`: only this mod is added to their `Covers` column, nothing is `posted`. PickleTools (3806142401) is the owner's own project: `not_applicable`. **Missing, to draft and post by the owner under her own account, after reading the last comments of each page:**
+Register: `WORKSHOP_COMMENTS.md`, keyed by the recipient's Workshop id. Posted by the owner on 2026-11-17: Megafauna (1055485938) and purpleyam's original (2560113727), texts kept below as sent. Harmony, RimLogging and Pickle were already `posted` (this mod only joined their `Covers`). PickleTools (3806142401) is the owner's own project: `not_applicable`. No Version Warning (2599504692): `not_applicable`, owner decision 2026-11-17 (draft deleted at cleanUp).
 
-| Recipient | Id | State |
-|---|---|---|
-| Megafauna | 1055485938 | drafted, not `posted` |
-| Colorful Coats - Megafauna! (purpleyam's original) | 2560113727 | drafted, not `posted` |
-| No Version Warning (Mlie) | 2599504692 | drafted, not `posted` (owner order, 2026-11-17) |
-
-Megafauna's page is the author's reach for the base textures; the original's page is the only way purpleyam can reach the owner. The original's
-page also says the mod declares 1.4 and nothing further, and credits Spino. **To verify on the pages before posting:** who maintains Megafauna for
-the latest RimWorld version today (the source for the latest RimWorld version is `juanosarg/Megafauna`), because a mod that was taken over credits both people (`PUBLISHING.md`).
-
-Draft, Megafauna (voice to adjust by the owner):
+Megafauna:
 
 ```text
 Megafauna's mammoths always came in one coat, so a herd looked like twelve copies of one animal :) I patched in purpleyam's old coats for 26 of your animals, with a link back here: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. Thanks for the animals and the textures xD
 ```
 
-Draft, purpleyam's original:
+purpleyam's original:
 
 ```text
 Your coats for the Megafauna animals still look good on the latest RimWorld version, so I ported them (mammoth to Zygolophodon, 67 coats): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]. It says in big letters it's not yours, credits you first, and comes down the day you ask. Thank you for the idea :)
-```
-
-Draft, No Version Warning (its fix list already carries purpleyam's id 2560113727; our Renew declares its own version and needs nothing from it):
-
-```text
-No Version Warning already carries purpleyam's old Colorful Coats - Megafauna! (2560113727) in its fix list. I ported that mod to the latest RimWorld version as [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew[/url]; it declares its own version, so players of the Renew need nothing from you. If you ever clean up the list, that is why. Thank you for the mod xD
-```
-
-The three drafts differ in opening, ending and joke; each is under 1,000 characters and carries one hidden link. Re-read side by side before posting.
-
-## Use This Instead
-
-One comment on the [Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) page (Mlie), so players of the original are told about the Renew (`docs/USE_THIS_INSTEAD.md`):
-
-```text
-Colorful Coats - Megafauna! by purpleyam (2560113727, package purpleyam.colorfulcoats.spinomegafauna, RimWorld 1.2 to 1.4) can be replaced by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766441]Colorful Coats - Megafauna! Renew (unofficial)[/url] (3806766441, package nelim.colorfulcoats.megafauna, RimWorld 1.6), by Nelim. Same 26 animals and 67 coats, ported to the latest RimWorld version. The two cannot be loaded together. Original: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2560113727]Colorful Coats - Megafauna![/url]. Thank you for the mod xD
 ```
 
 ## After the send
