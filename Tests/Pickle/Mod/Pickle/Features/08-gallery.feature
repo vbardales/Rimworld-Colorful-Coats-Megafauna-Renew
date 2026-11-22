@@ -166,6 +166,17 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "Campfire" at (193, 152) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (197, 149)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (197, 149) is lit
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: I place the decor "Stool" near (194, 150)
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" near (194, 155)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (194, 156)
+    And Nelim's Pickle Tools: I place the decor "Brazier" near (198, 148)
+    And Nelim's Pickle Tools: the decor "Brazier" near (198, 148) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (200, 156)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (193, 153)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (198, 155)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" near (200, 148)
+    And Nelim's Pickle Tools: 4 of the item "WoodLog" are spawned near (200, 156)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" is undressed
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
@@ -316,8 +327,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (16, 52, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (24, 74, 84)
     And Nelim's Pickle Tools: the render nodes and layers of "Nelim" are logged
-    And Nelim's Pickle Tools: "Nelim" stands at (150, 215) facing East
-    And Nelim's Pickle Tools: "Nelim" is forced to haul 3 of the item "Hay" to (155, 213)
+    And Nelim's Pickle Tools: "Nelim" stands at (150, 213) facing East
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 3 of the item "Hay" to (151, 214)
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
     When Nelim's Pickle Tools: the camera frames "Nelim" together with the cells (147, 210) to (163, 221) filling 90 percent of the screen
