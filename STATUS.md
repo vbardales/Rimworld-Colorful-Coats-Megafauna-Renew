@@ -20,6 +20,7 @@ source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the proj
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
 workflow_stage: ecosystem[1.0.0]
+ecosystem_line: 1.0
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
 licence_at:   installed original files, live Steam description, all 15 item comments, public author profile (2026-09-12)
@@ -33,7 +34,7 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
-  - "2.h (replay 2026-11-22, was dormant[1.0.0]): ecosystem_line absent (rule of 2026-11-19); short DELTA search via PiI since 2026-11-13 (ECOSYSTEM? ... DELTA), then write ecosystem_line: 1.0. Later, known absent: gallery_validated_sha (9.f), preview_source_decision (10.a bis)"
+  - "2.h done 2026-11-22 (PiI delta, nothing new). Next: replay-audit; known absent later: gallery_validated_sha (9.f), preview_source_decision (10.a bis)"
   - "cleanUp[1.0.0] (2026-11-18): PUBLICATION.md cleaned (NVW draft deleted, UTI text moved to docs/runs/2026-11-18-cleanup-1-0-0.txt), STATUS.md dated sections moved to docs/runs/2026-11-17-status-journal.txt. WSL 2026-11-18: nothing to remove (workshop-cache holds neither 2560113727 nor 1055485938; staged from the Windows Workshop folder; other ids shared by 46 to 62 other mods, kept). DONE: dormant[1.0.0] 2026-11-18. Owner 2026-11-18: no unsubscribe from the original 2560113727, the incompat pass (wsl-deps.incompat-spinomegafauna.map, 06-original-alongside) stays"
   - "BACKLOG.md: ACG genes for every coat (owner, 2026-11-17), not started, not part of 1.0.0"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
@@ -65,6 +66,8 @@ Check with `scripts/Check-Status.ps1 -Mod ColorfulCoatsMegafaunaRenew` (no ERROR
 - Licence: original coats, chances, textures no declared licence (`silent`); port additions MIT (`LICENSE`).
 
 ## Ecosystem
+
+Delta 2026-11-22 (PiI, Steam): parent Colorful Coats - Megafauna! 2560113727, root Megafauna 1055485938; no new recolor, fork or patch since 2026-11-13. Block and hand marks untouched, no subscription made.
 
 Read by PiI on Steam Workshop (Chrome), 2026-11-13; full file `docs/inventory/ecosystem-steam/ColorfulCoatsMegafaunaRenew.md` of protocols repo. Original 2560113727, packageId `purpleyam.colorfulcoats.spinomegafauna`, versions 1.2 1.3 1.4, dead for 1.6. No duplicate/fork; corpus scan of package id finds only original, this Renew (3806766441), No Version Warning (link). No other Steam mod recolours Megafauna. Dependency Megafauna 1055485938 (Spino, 1.3–1.6) alive (a linked mod, not the parent; the parent is the original 2560113727); translations of Megafauna and the dead 2017 A Dog Said patch dropped from the ecosystem by Virginie 2026-11-17 (not useful); neighbour Mythic Ages: Megafauna Bestiary 3537788184. Patch-only, no defName scan. Nothing subscribed.
 
