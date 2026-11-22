@@ -19,7 +19,7 @@ redistribution_permission: not found in sources checked 2026-09-12
 source_maintenance: original declares 1.2, 1.3 and 1.4; abandoned under the project definition of no declared 1.6 support
 github_visibility: public (technical setting checked 2026-09-13)
 detached:     yes
-workflow_stage: ecosystem[1.0.0]
+workflow_stage: shootGallery[1.0.0]
 ecosystem_line: 1.0
 licence:      silent
 port_licence: MIT (port additions only; original assets excluded)
@@ -34,7 +34,7 @@ xml_tests: passed, 2026-10-15, e57955d (Check-Xml.ps1)
 manual_tests: nine scenarios in TEST_SCENARIOS.md, not executed by hand; Pickle covered A, B, D and H in game (initial tickets 2026-10-12, replays green), see docs/runs/
 workshop: 3806766441 (prepublished 2026-09-28: item created, private; CHANGELOG 0.1.0 added)
 remaining:
-  - "2.h done 2026-11-22 (PiI delta, nothing new). Next: replay-audit; known absent later: gallery_validated_sha (9.f), preview_source_decision (10.a bis)"
+  - "replay ecosystem.. 2026-11-22 (was dormant[1.0.0]): 9.d gallery images to open and look at; 9.f gallery_validated_sha absent (her oui, hash via Get-GalleryHash.ps1); later 10.a bis preview_source_decision absent. Weak proofs: 4.g, 5.g, 6.h (no Settings audit or Translation audit section)"
   - "cleanUp[1.0.0] (2026-11-18): PUBLICATION.md cleaned (NVW draft deleted, UTI text moved to docs/runs/2026-11-18-cleanup-1-0-0.txt), STATUS.md dated sections moved to docs/runs/2026-11-17-status-journal.txt. WSL 2026-11-18: nothing to remove (workshop-cache holds neither 2560113727 nor 1055485938; staged from the Windows Workshop folder; other ids shared by 46 to 62 other mods, kept). DONE: dormant[1.0.0] 2026-11-18. Owner 2026-11-18: no unsubscribe from the original 2560113727, the incompat pass (wsl-deps.incompat-spinomegafauna.map, 06-original-alongside) stays"
   - "BACKLOG.md: ACG genes for every coat (owner, 2026-11-17), not started, not part of 1.0.0"
   - "2026-10-10: defect: flaky off-thread spawn in CoatSteps (c9a2: Accessing map pawns off main thread, not at 5630), not this repository's code, reported to colorfulcoats.dodosrenew"
@@ -45,8 +45,8 @@ publication_changelog_review_sha: 1538ad35eded912d1478cc0593fd51d6fb832c1b
 echo_review_sha: 1413c50fa3d6bb63de43c776f108d15ac8c558a3
 social_preview_sha256: 9420de29c82572a7d8614bdc20c983dd42a92c4560d46dcfa04384445403af64
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
-updated: 2026-11-22, ecosystem[1.0.0] (replay 2026-11-22: was dormant[1.0.0])
-protocols_read_sha: e79686c28ff9d1220f987640e54125cea3382e72
+updated: 2026-11-22, shootGallery[1.0.0] (replay ecosystem.. 2026-11-22: was dormant[1.0.0])
+protocols_read_sha: 4c4cc478c3c24593980e177de94cf9cadfb06f9a
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
