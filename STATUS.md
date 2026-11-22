@@ -46,7 +46,7 @@ echo_review_sha: 1413c50fa3d6bb63de43c776f108d15ac8c558a3
 social_preview_sha256: 9420de29c82572a7d8614bdc20c983dd42a92c4560d46dcfa04384445403af64
 session:      local_3131dacd-09d8-4d4f-aa8e-c26defdb4e74
 updated: 2026-11-22, shootGallery[1.0.0] (replay ecosystem.. 2026-11-22: was dormant[1.0.0])
-protocols_read_sha: 4c4cc478c3c24593980e177de94cf9cadfb06f9a
+protocols_read_sha: d41f16042895ec5a4a18312bfb8c3091e322d89f
 ---
 # Colorful Coats - Megafauna! Renew (unofficial): status
 
